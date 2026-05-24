@@ -58,6 +58,17 @@ Do not repeat: [list already-established facts]
 - Re-explaining architecture every turn without delta.
 - Keeping failed attempts at full length after resolution.
 
+## Session setup (context engineering)
+
+Before long tasks, establish a minimal working set:
+
+1. **Objective block** — one paragraph: goal, non-goals, done-when
+2. **Constraint block** — versions, env, files off-limits
+3. **Reference map** — paths to spec, ADR, or ticket; load on demand
+4. **Tool policy** — which tools/skills apply; avoid loading unused skill bodies
+
+Refresh the objective block after major pivots; do not re-paste full history.
+
 ## Pairing
 
-Use with `rag-systems` for external knowledge; `clarify-underspecified` when scope grows mid-session.
+Use with `rag-systems` for external knowledge; `clarify-underspecified` when scope grows mid-session; `interview-me` before loading large specs.

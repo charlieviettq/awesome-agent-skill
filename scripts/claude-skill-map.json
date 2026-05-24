@@ -23,6 +23,11 @@
       "source_name": "mcp-builder"
     },
     {
+      "cursor_path": "ai-agent-systems/mcp-ecosystem-optimizer",
+      "claude_name": "mcp-ecosystem-optimizer",
+      "source_name": "mcp-ecosystem-optimizer"
+    },
+    {
       "cursor_path": "ai-agent-systems/rag-systems",
       "claude_name": "rag-systems",
       "source_name": "rag-systems"
@@ -43,6 +48,16 @@
       "source_name": "statsmodels"
     },
     {
+      "cursor_path": "architecture/system-mapping",
+      "claude_name": "system-mapping",
+      "source_name": "system-mapping"
+    },
+    {
+      "cursor_path": "core-workflow/api-and-interface-design",
+      "claude_name": "api-and-interface-design",
+      "source_name": "api-and-interface-design"
+    },
+    {
       "cursor_path": "core-workflow/architecture-decision-records",
       "claude_name": "architecture-decision-records",
       "source_name": "architecture-decision-records"
@@ -51,6 +66,11 @@
       "cursor_path": "core-workflow/clarify-underspecified",
       "claude_name": "clarify-underspecified",
       "source_name": "clarify-underspecified"
+    },
+    {
+      "cursor_path": "core-workflow/code-simplification",
+      "claude_name": "code-simplification",
+      "source_name": "code-simplification"
     },
     {
       "cursor_path": "core-workflow/deprecation-and-migration",
@@ -73,9 +93,19 @@
       "source_name": "github-comment-triage"
     },
     {
+      "cursor_path": "core-workflow/idea-refine",
+      "claude_name": "idea-refine",
+      "source_name": "idea-refine"
+    },
+    {
       "cursor_path": "core-workflow/incremental-implementation",
       "claude_name": "incremental-implementation",
       "source_name": "incremental-implementation"
+    },
+    {
+      "cursor_path": "core-workflow/interview-me",
+      "claude_name": "interview-me",
+      "source_name": "interview-me"
     },
     {
       "cursor_path": "core-workflow/planning-and-task-breakdown",
@@ -113,6 +143,11 @@
       "source_name": "verify-before-done"
     },
     {
+      "cursor_path": "core-workflow/work-access-handoff",
+      "claude_name": "work-access-handoff",
+      "source_name": "work-access-handoff"
+    },
+    {
       "cursor_path": "data-compute/dask",
       "claude_name": "dask",
       "source_name": "dask"
@@ -143,9 +178,19 @@
       "source_name": "umap-learn"
     },
     {
+      "cursor_path": "frontend-engineering/browser-testing-with-devtools",
+      "claude_name": "browser-testing-with-devtools",
+      "source_name": "browser-testing-with-devtools"
+    },
+    {
       "cursor_path": "frontend-engineering/frontend-ui-accessibility",
       "claude_name": "frontend-ui-accessibility",
       "source_name": "frontend-ui-accessibility"
+    },
+    {
+      "cursor_path": "frontend-engineering/frontend-ui-engineering",
+      "claude_name": "frontend-ui-engineering",
+      "source_name": "frontend-ui-engineering"
     },
     {
       "cursor_path": "gstack",
@@ -398,6 +443,11 @@
       "source_name": "setup-browser-cookies"
     },
     {
+      "cursor_path": "marketing/meta-ads-analyzer",
+      "claude_name": "meta-ads-analyzer",
+      "source_name": "meta-ads-analyzer"
+    },
+    {
       "cursor_path": "meta-tools/autoskill",
       "claude_name": "autoskill",
       "source_name": "autoskill"
@@ -423,6 +473,16 @@
       "source_name": "transformers"
     },
     {
+      "cursor_path": "mobile/app-store-submission-packager",
+      "claude_name": "app-store-submission-packager",
+      "source_name": "app-store-submission-packager"
+    },
+    {
+      "cursor_path": "mobile/ios-testflight-github-actions",
+      "claude_name": "ios-testflight-github-actions",
+      "source_name": "ios-testflight-github-actions"
+    },
+    {
       "cursor_path": "performance/performance-optimization",
       "claude_name": "performance-optimization",
       "source_name": "performance-optimization"
@@ -431,6 +491,11 @@
       "cursor_path": "product-growth/product-analytics-experiments",
       "claude_name": "product-analytics-experiments",
       "source_name": "product-analytics-experiments"
+    },
+    {
+      "cursor_path": "product-growth/product-offer-design",
+      "claude_name": "product-offer-design",
+      "source_name": "product-offer-design"
     },
     {
       "cursor_path": "reflect-yourself",
@@ -443,6 +508,16 @@
       "source_name": "ci-cd-quality-gates"
     },
     {
+      "cursor_path": "reliability-ops/cross-platform-error-handling",
+      "claude_name": "cross-platform-error-handling",
+      "source_name": "cross-platform-error-handling"
+    },
+    {
+      "cursor_path": "reliability-ops/dynamic-config-management",
+      "claude_name": "dynamic-config-management",
+      "source_name": "dynamic-config-management"
+    },
+    {
       "cursor_path": "reliability-ops/observability-slo",
       "claude_name": "observability-slo",
       "source_name": "observability-slo"
@@ -451,6 +526,11 @@
       "cursor_path": "reliability-ops/postmortem-writing",
       "claude_name": "postmortem-writing",
       "source_name": "postmortem-writing"
+    },
+    {
+      "cursor_path": "reliability-ops/serverless-debugging",
+      "claude_name": "serverless-debugging",
+      "source_name": "serverless-debugging"
     },
     {
       "cursor_path": "reliability-ops/shipping-launch-checklist",

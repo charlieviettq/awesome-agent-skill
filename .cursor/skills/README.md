@@ -6,13 +6,16 @@ Skills live in subfolders with `SKILL.md` (and optional `reference.md` / `exampl
 
 | Folder | Contents |
 |--------|----------|
-| `core-workflow/` | Spec/plan/incremental/source/doubt/deprecation + clarify, verify, TDD, ADR, PR review |
-| `frontend-engineering/` | UI build + WCAG-oriented accessibility |
+| `core-workflow/` | Spec/plan/incremental/source/doubt/deprecation + interview, idea-refine, API design, simplify, handoff, clarify, verify, TDD, ADR, PR review |
+| `frontend-engineering/` | UI engineering, DevTools browser testing, WCAG accessibility |
+| `mobile/` | App Store/Play submission checklist, iOS TestFlight CI |
+| `marketing/` | Meta ads performance analysis |
+| `architecture/` | System mapping and diagram workflows |
 | `performance/` | Measure-identify-fix-verify-guard performance workflow |
 | `security-appsec/` | Skill supply-chain audit, API security test/design |
-| `ai-agent-systems/` | Agent eval, MCP builder, tool contracts, RAG, context budget |
-| `reliability-ops/` | CI quality gates, launch checklist, observability/SLO, postmortems |
-| `product-growth/` | Product analytics and A/B experiment gates |
+| `ai-agent-systems/` | Agent eval, MCP builder/optimizer, tool contracts, RAG, context budget |
+| `reliability-ops/` | CI gates, serverless debug, config management, error handling, launch checklist, observability/SLO, postmortems |
+| `product-growth/` | Product analytics, A/B experiments, offer design |
 | `ml-dl/` | scikit-learn, scikit-survival, transformers, PyTorch Lightning |
 | `analysis-stats/` | SHAP, statsmodels, statistical analysis |
 | `data-compute/` | Dask, Polars, NetworkX |

@@ -48,12 +48,16 @@ High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 ## Core workflow
 
 - `core-workflow/architecture-decision-records`
+- `core-workflow/api-and-interface-design`
 - `core-workflow/clarify-underspecified`
+- `core-workflow/code-simplification`
 - `core-workflow/deprecation-and-migration`
 - `core-workflow/design-smell-review`
 - `core-workflow/doubt-driven-review`
 - `core-workflow/github-comment-triage`
+- `core-workflow/idea-refine`
 - `core-workflow/incremental-implementation`
+- `core-workflow/interview-me`
 - `core-workflow/planning-and-task-breakdown`
 - `core-workflow/receiving-code-review`
 - `core-workflow/source-driven-development`
@@ -61,13 +65,45 @@ High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 - `core-workflow/test-failure-triage`
 - `core-workflow/test-first-development`
 - `core-workflow/verify-before-done`
+- `core-workflow/work-access-handoff`
+
+## Frontend engineering
+
+- `frontend-engineering/browser-testing-with-devtools`
+- `frontend-engineering/frontend-ui-accessibility`
+- `frontend-engineering/frontend-ui-engineering`
+
+## Mobile
+
+- `mobile/app-store-submission-packager`
+- `mobile/ios-testflight-github-actions`
+
+## Marketing
+
+- `marketing/meta-ads-analyzer`
+
+## Architecture
+
+- `architecture/system-mapping`
+
+## AI agent systems
+
+- `ai-agent-systems/agent-evaluation`
+- `ai-agent-systems/agent-tool-contracts`
+- `ai-agent-systems/context-window-management`
+- `ai-agent-systems/mcp-builder`
+- `ai-agent-systems/mcp-ecosystem-optimizer`
+- `ai-agent-systems/rag-systems`
 
 ## Performance & reliability
 
 - `performance/performance-optimization`
 - `reliability-ops/ci-cd-quality-gates`
+- `reliability-ops/cross-platform-error-handling`
+- `reliability-ops/dynamic-config-management`
 - `reliability-ops/observability-slo`
 - `reliability-ops/postmortem-writing`
+- `reliability-ops/serverless-debugging`
 - `reliability-ops/shipping-launch-checklist`
 
 ## Security & appsec
@@ -79,6 +115,7 @@ High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 ## Product & growth
 
 - `product-growth/product-analytics-experiments`
+- `product-growth/product-offer-design`
 
 ## Browser QA & ship (gstack)
 
