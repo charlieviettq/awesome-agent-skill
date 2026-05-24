@@ -2,7 +2,7 @@
 name: prose-polish
 description: >
   Polish technical and stakeholder prose—clarity, tone, structure, and reducing
-  generic AI-writing patterns. Use for blog posts, Confluence, READMEs, exec
+  generic AI-writing patterns. Use for blog posts, knowledge-base pages, READMEs, exec
   summaries, and user-facing copy before publish.
   Triggers: "edit prose", "polish writing", "sounds like AI", "copy edit", "tone".
 ---

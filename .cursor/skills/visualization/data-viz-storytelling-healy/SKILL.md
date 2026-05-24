@@ -7,7 +7,7 @@ description: >
   cho stakeholder, hoặc kiểm tra xem figure có gây hiểu lầm không. Để vẽ Python
   thực tế, chuyển sang matplotlib / seaborn / scientific-visualization.
 metadata:
-  skill-author: Cake DS team
+  skill-author: community
   sources:
     - name: "Kieran Healy, Data Visualization: A Practical Introduction (Princeton, 2019)"
       url: https://press.princeton.edu/books/ebook/9780691185064/data-visualization-pdf

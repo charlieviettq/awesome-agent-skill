@@ -325,7 +325,7 @@ def load_or_build_map(skills_root: Path, write_map: bool) -> list[dict[str, str]
     if write_map or not MAP_FILE.exists():
         payload = {
             "version": 1,
-            "generated_from": str(skills_root),
+            "generated_from": ".cursor/skills",
             "mappings": mappings,
         }
         MAP_FILE.write_text(
