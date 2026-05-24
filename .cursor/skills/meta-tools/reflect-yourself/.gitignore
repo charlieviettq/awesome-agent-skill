@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+nul
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+
+# Local Cursor installation (this is the source repo)
+.cursor/

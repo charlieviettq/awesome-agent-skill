@@ -1,0 +1,25 @@
+name: Lint skills
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check SKILL.md presence
+        run: |
+          missing=0
+          while IFS= read -r dir; do
+            if [ ! -f "$dir/SKILL.md" ]; then
+              echo "::error file=$dir::Missing SKILL.md in $dir"
+              missing=1
+            fi
+          done < <(find .cursor/skills -mindepth 1 -maxdepth 2 -type d)
+          exit $missing
+

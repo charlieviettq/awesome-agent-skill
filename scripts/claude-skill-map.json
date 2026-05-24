@@ -1,0 +1,896 @@
+{
+  "version": 1,
+  "generated_from": "/Users/viet.tran1/Documents/CakeProjects/Credit Scoring Repos/data-science-skills/.cursor/skills",
+  "mappings": [
+    {
+      "cursor_path": "ai-agent-systems/agent-evaluation",
+      "claude_name": "agent-evaluation",
+      "source_name": "agent-evaluation"
+    },
+    {
+      "cursor_path": "ai-agent-systems/agent-tool-contracts",
+      "claude_name": "agent-tool-contracts",
+      "source_name": "agent-tool-contracts"
+    },
+    {
+      "cursor_path": "ai-agent-systems/context-window-management",
+      "claude_name": "context-window-management",
+      "source_name": "context-window-management"
+    },
+    {
+      "cursor_path": "ai-agent-systems/mcp-builder",
+      "claude_name": "mcp-builder",
+      "source_name": "mcp-builder"
+    },
+    {
+      "cursor_path": "ai-agent-systems/rag-systems",
+      "claude_name": "rag-systems",
+      "source_name": "rag-systems"
+    },
+    {
+      "cursor_path": "analysis-stats/shap",
+      "claude_name": "shap",
+      "source_name": "shap"
+    },
+    {
+      "cursor_path": "analysis-stats/statistical-analysis",
+      "claude_name": "statistical-analysis",
+      "source_name": "statistical-analysis"
+    },
+    {
+      "cursor_path": "analysis-stats/statsmodels",
+      "claude_name": "statsmodels",
+      "source_name": "statsmodels"
+    },
+    {
+      "cursor_path": "core-workflow/architecture-decision-records",
+      "claude_name": "architecture-decision-records",
+      "source_name": "architecture-decision-records"
+    },
+    {
+      "cursor_path": "core-workflow/clarify-underspecified",
+      "claude_name": "clarify-underspecified",
+      "source_name": "clarify-underspecified"
+    },
+    {
+      "cursor_path": "core-workflow/deprecation-and-migration",
+      "claude_name": "deprecation-and-migration",
+      "source_name": "deprecation-and-migration"
+    },
+    {
+      "cursor_path": "core-workflow/design-smell-review",
+      "claude_name": "design-smell-review",
+      "source_name": "design-smell-review"
+    },
+    {
+      "cursor_path": "core-workflow/doubt-driven-review",
+      "claude_name": "doubt-driven-review",
+      "source_name": "doubt-driven-review"
+    },
+    {
+      "cursor_path": "core-workflow/github-comment-triage",
+      "claude_name": "github-comment-triage",
+      "source_name": "github-comment-triage"
+    },
+    {
+      "cursor_path": "core-workflow/incremental-implementation",
+      "claude_name": "incremental-implementation",
+      "source_name": "incremental-implementation"
+    },
+    {
+      "cursor_path": "core-workflow/planning-and-task-breakdown",
+      "claude_name": "planning-and-task-breakdown",
+      "source_name": "planning-and-task-breakdown"
+    },
+    {
+      "cursor_path": "core-workflow/receiving-code-review",
+      "claude_name": "receiving-code-review",
+      "source_name": "receiving-code-review"
+    },
+    {
+      "cursor_path": "core-workflow/source-driven-development",
+      "claude_name": "source-driven-development",
+      "source_name": "source-driven-development"
+    },
+    {
+      "cursor_path": "core-workflow/spec-driven-development",
+      "claude_name": "spec-driven-development",
+      "source_name": "spec-driven-development"
+    },
+    {
+      "cursor_path": "core-workflow/test-failure-triage",
+      "claude_name": "test-failure-triage",
+      "source_name": "test-failure-triage"
+    },
+    {
+      "cursor_path": "core-workflow/test-first-development",
+      "claude_name": "test-first-development",
+      "source_name": "test-first-development"
+    },
+    {
+      "cursor_path": "core-workflow/verify-before-done",
+      "claude_name": "verify-before-done",
+      "source_name": "verify-before-done"
+    },
+    {
+      "cursor_path": "data-compute/dask",
+      "claude_name": "dask",
+      "source_name": "dask"
+    },
+    {
+      "cursor_path": "data-compute/networkx",
+      "claude_name": "networkx",
+      "source_name": "networkx"
+    },
+    {
+      "cursor_path": "data-compute/polars",
+      "claude_name": "polars",
+      "source_name": "polars"
+    },
+    {
+      "cursor_path": "eda-research/exploratory-data-analysis",
+      "claude_name": "exploratory-data-analysis",
+      "source_name": "exploratory-data-analysis"
+    },
+    {
+      "cursor_path": "eda-research/hypothesis-generation",
+      "claude_name": "hypothesis-generation",
+      "source_name": "hypothesis-generation"
+    },
+    {
+      "cursor_path": "eda-research/umap-learn",
+      "claude_name": "umap-learn",
+      "source_name": "umap-learn"
+    },
+    {
+      "cursor_path": "frontend-engineering/frontend-ui-accessibility",
+      "claude_name": "frontend-ui-accessibility",
+      "source_name": "frontend-ui-accessibility"
+    },
+    {
+      "cursor_path": "gstack",
+      "claude_name": "gstack",
+      "source_name": "gstack"
+    },
+    {
+      "cursor_path": "gstack/browser-qa/benchmark",
+      "claude_name": "gstack-benchmark",
+      "source_name": "benchmark"
+    },
+    {
+      "cursor_path": "gstack/browser-qa/benchmark-models",
+      "claude_name": "gstack-benchmark-models",
+      "source_name": "benchmark-models"
+    },
+    {
+      "cursor_path": "gstack/browser-qa/browse",
+      "claude_name": "gstack-browse",
+      "source_name": "browse"
+    },
+    {
+      "cursor_path": "gstack/browser-qa/canary",
+      "claude_name": "gstack-canary",
+      "source_name": "canary"
+    },
+    {
+      "cursor_path": "gstack/browser-qa/qa",
+      "claude_name": "gstack-qa",
+      "source_name": "qa"
+    },
+    {
+      "cursor_path": "gstack/browser-qa/qa-only",
+      "claude_name": "gstack-qa-only",
+      "source_name": "qa-only"
+    },
+    {
+      "cursor_path": "gstack/code-quality/codex",
+      "claude_name": "gstack-codex",
+      "source_name": "codex"
+    },
+    {
+      "cursor_path": "gstack/code-quality/health",
+      "claude_name": "gstack-health",
+      "source_name": "health"
+    },
+    {
+      "cursor_path": "gstack/code-quality/investigate",
+      "claude_name": "gstack-investigate",
+      "source_name": "investigate"
+    },
+    {
+      "cursor_path": "gstack/code-quality/review",
+      "claude_name": "gstack-review",
+      "source_name": "review"
+    },
+    {
+      "cursor_path": "gstack/context-memory/context-restore",
+      "claude_name": "gstack-context-restore",
+      "source_name": "context-restore"
+    },
+    {
+      "cursor_path": "gstack/context-memory/context-save",
+      "claude_name": "gstack-context-save",
+      "source_name": "context-save"
+    },
+    {
+      "cursor_path": "gstack/context-memory/learn",
+      "claude_name": "gstack-learn",
+      "source_name": "learn"
+    },
+    {
+      "cursor_path": "gstack/context-memory/setup-gbrain",
+      "claude_name": "gstack-setup-gbrain",
+      "source_name": "setup-gbrain"
+    },
+    {
+      "cursor_path": "gstack/context-memory/sync-gbrain",
+      "claude_name": "gstack-sync-gbrain",
+      "source_name": "sync-gbrain"
+    },
+    {
+      "cursor_path": "gstack/deploy-ship/document-release",
+      "claude_name": "gstack-document-release",
+      "source_name": "document-release"
+    },
+    {
+      "cursor_path": "gstack/deploy-ship/land-and-deploy",
+      "claude_name": "gstack-land-and-deploy",
+      "source_name": "land-and-deploy"
+    },
+    {
+      "cursor_path": "gstack/deploy-ship/landing-report",
+      "claude_name": "gstack-landing-report",
+      "source_name": "landing-report"
+    },
+    {
+      "cursor_path": "gstack/deploy-ship/setup-deploy",
+      "claude_name": "gstack-setup-deploy",
+      "source_name": "setup-deploy"
+    },
+    {
+      "cursor_path": "gstack/deploy-ship/ship",
+      "claude_name": "gstack-ship",
+      "source_name": "ship"
+    },
+    {
+      "cursor_path": "gstack/design/design-consultation",
+      "claude_name": "gstack-design-consultation",
+      "source_name": "design-consultation"
+    },
+    {
+      "cursor_path": "gstack/design/design-html",
+      "claude_name": "gstack-design-html",
+      "source_name": "design-html"
+    },
+    {
+      "cursor_path": "gstack/design/design-review",
+      "claude_name": "gstack-design-review",
+      "source_name": "design-review"
+    },
+    {
+      "cursor_path": "gstack/design/design-shotgun",
+      "claude_name": "gstack-design-shotgun",
+      "source_name": "design-shotgun"
+    },
+    {
+      "cursor_path": "gstack/plan-review/autoplan",
+      "claude_name": "gstack-autoplan",
+      "source_name": "autoplan"
+    },
+    {
+      "cursor_path": "gstack/plan-review/devex-review",
+      "claude_name": "gstack-devex-review",
+      "source_name": "devex-review"
+    },
+    {
+      "cursor_path": "gstack/plan-review/plan-ceo-review",
+      "claude_name": "gstack-plan-ceo-review",
+      "source_name": "plan-ceo-review"
+    },
+    {
+      "cursor_path": "gstack/plan-review/plan-design-review",
+      "claude_name": "gstack-plan-design-review",
+      "source_name": "plan-design-review"
+    },
+    {
+      "cursor_path": "gstack/plan-review/plan-devex-review",
+      "claude_name": "gstack-plan-devex-review",
+      "source_name": "plan-devex-review"
+    },
+    {
+      "cursor_path": "gstack/plan-review/plan-eng-review",
+      "claude_name": "gstack-plan-eng-review",
+      "source_name": "plan-eng-review"
+    },
+    {
+      "cursor_path": "gstack/plan-review/plan-tune",
+      "claude_name": "gstack-plan-tune",
+      "source_name": "plan-tune"
+    },
+    {
+      "cursor_path": "gstack/remote-agents/openclaw/gstack-openclaw-ceo-review",
+      "claude_name": "gstack-gstack-openclaw-ceo-review",
+      "source_name": "gstack-openclaw-ceo-review"
+    },
+    {
+      "cursor_path": "gstack/remote-agents/openclaw/gstack-openclaw-investigate",
+      "claude_name": "gstack-gstack-openclaw-investigate",
+      "source_name": "gstack-openclaw-investigate"
+    },
+    {
+      "cursor_path": "gstack/remote-agents/openclaw/gstack-openclaw-office-hours",
+      "claude_name": "gstack-gstack-openclaw-office-hours",
+      "source_name": "gstack-openclaw-office-hours"
+    },
+    {
+      "cursor_path": "gstack/remote-agents/openclaw/gstack-openclaw-retro",
+      "claude_name": "gstack-gstack-openclaw-retro",
+      "source_name": "gstack-openclaw-retro"
+    },
+    {
+      "cursor_path": "gstack/remote-agents/pair-agent",
+      "claude_name": "gstack-pair-agent",
+      "source_name": "pair-agent"
+    },
+    {
+      "cursor_path": "gstack/scrape/browser-skills/hackernews-frontpage",
+      "claude_name": "gstack-hackernews-frontpage",
+      "source_name": "hackernews-frontpage"
+    },
+    {
+      "cursor_path": "gstack/scrape/scrape",
+      "claude_name": "gstack-scrape",
+      "source_name": "scrape"
+    },
+    {
+      "cursor_path": "gstack/scrape/skillify",
+      "claude_name": "gstack-skillify",
+      "source_name": "skillify"
+    },
+    {
+      "cursor_path": "gstack/security-safety/careful",
+      "claude_name": "gstack-careful",
+      "source_name": "careful"
+    },
+    {
+      "cursor_path": "gstack/security-safety/cso",
+      "claude_name": "gstack-cso",
+      "source_name": "cso"
+    },
+    {
+      "cursor_path": "gstack/security-safety/freeze",
+      "claude_name": "gstack-freeze",
+      "source_name": "freeze"
+    },
+    {
+      "cursor_path": "gstack/security-safety/guard",
+      "claude_name": "gstack-guard",
+      "source_name": "guard"
+    },
+    {
+      "cursor_path": "gstack/security-safety/unfreeze",
+      "claude_name": "gstack-unfreeze",
+      "source_name": "unfreeze"
+    },
+    {
+      "cursor_path": "gstack/utility/gstack-upgrade",
+      "claude_name": "gstack-gstack-upgrade",
+      "source_name": "gstack-upgrade"
+    },
+    {
+      "cursor_path": "gstack/utility/office-hours",
+      "claude_name": "gstack-office-hours",
+      "source_name": "office-hours"
+    },
+    {
+      "cursor_path": "gstack/utility/open-gstack-browser",
+      "claude_name": "gstack-open-gstack-browser",
+      "source_name": "open-gstack-browser"
+    },
+    {
+      "cursor_path": "gstack/utility/retro",
+      "claude_name": "gstack-retro",
+      "source_name": "retro"
+    },
+    {
+      "cursor_path": "gstack/utility/setup-browser-cookies",
+      "claude_name": "gstack-setup-browser-cookies",
+      "source_name": "setup-browser-cookies"
+    },
+    {
+      "cursor_path": "meta-tools/autoskill",
+      "claude_name": "autoskill",
+      "source_name": "autoskill"
+    },
+    {
+      "cursor_path": "ml-dl/pytorch-lightning",
+      "claude_name": "pytorch-lightning",
+      "source_name": "pytorch-lightning"
+    },
+    {
+      "cursor_path": "ml-dl/scikit-learn",
+      "claude_name": "scikit-learn",
+      "source_name": "scikit-learn"
+    },
+    {
+      "cursor_path": "ml-dl/scikit-survival",
+      "claude_name": "scikit-survival",
+      "source_name": "scikit-survival"
+    },
+    {
+      "cursor_path": "ml-dl/transformers",
+      "claude_name": "transformers",
+      "source_name": "transformers"
+    },
+    {
+      "cursor_path": "performance/performance-optimization",
+      "claude_name": "performance-optimization",
+      "source_name": "performance-optimization"
+    },
+    {
+      "cursor_path": "private/confluence-doc-style",
+      "claude_name": "private/confluence-doc-style",
+      "source_name": "confluence-doc-style"
+    },
+    {
+      "cursor_path": "private/credit-scoring/business-stakeholder-brief",
+      "claude_name": "private/business-stakeholder-brief",
+      "source_name": "business-stakeholder-brief"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-data-preparation-checklist",
+      "claude_name": "private/credit-data-preparation-checklist",
+      "source_name": "credit-data-preparation-checklist"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-etb-universal-model",
+      "claude_name": "private/credit-etb-universal-model",
+      "source_name": "credit-etb-universal-model"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-feature-hypothesis-iv",
+      "claude_name": "private/credit-feature-hypothesis-iv",
+      "source_name": "credit-feature-hypothesis-iv"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-model-business-impact-estimate",
+      "claude_name": "private/credit-model-business-impact-estimate",
+      "source_name": "credit-model-business-impact-estimate"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-model-experiment",
+      "claude_name": "private/credit-model-experiment",
+      "source_name": "credit-model-experiment"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-model-monitoring-post-deploy",
+      "claude_name": "private/credit-model-monitoring-post-deploy",
+      "source_name": "credit-model-monitoring-post-deploy"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-model-requirements-spec",
+      "claude_name": "private/credit-model-requirements-spec",
+      "source_name": "credit-model-requirements-spec"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-model-retrain-cycle",
+      "claude_name": "private/credit-model-retrain-cycle",
+      "source_name": "credit-model-retrain-cycle"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-risk-gate-pack",
+      "claude_name": "private/credit-risk-gate-pack",
+      "source_name": "credit-risk-gate-pack"
+    },
+    {
+      "cursor_path": "private/credit-scoring/credit-uplimit-model",
+      "claude_name": "private/credit-uplimit-model",
+      "source_name": "credit-uplimit-model"
+    },
+    {
+      "cursor_path": "private/credit-scoring/ds-modeling-credit",
+      "claude_name": "private/ds-modeling-credit",
+      "source_name": "ds-modeling-credit"
+    },
+    {
+      "cursor_path": "private/credit-scoring/ds-modeling-credit-automl-py",
+      "claude_name": "private/ds-modeling-credit-automl-py",
+      "source_name": "ds-modeling-credit-automl-py"
+    },
+    {
+      "cursor_path": "private/credit-scoring/ds-notebooks",
+      "claude_name": "private/ds-notebooks",
+      "source_name": "ds-notebooks"
+    },
+    {
+      "cursor_path": "private/credit-scoring/ds-partner-boundaries",
+      "claude_name": "private/ds-partner-boundaries",
+      "source_name": "ds-partner-boundaries"
+    },
+    {
+      "cursor_path": "private/credit-scoring/internal-credit-train-lifecycle",
+      "claude_name": "private/internal-credit-train-lifecycle",
+      "source_name": "internal-credit-train-lifecycle"
+    },
+    {
+      "cursor_path": "private/credit-scoring/model-evaluation-report",
+      "claude_name": "private/model-evaluation-report",
+      "source_name": "model-evaluation-report"
+    },
+    {
+      "cursor_path": "private/credit-scoring/model-tuning-credit-constraints",
+      "claude_name": "private/model-tuning-credit-constraints",
+      "source_name": "model-tuning-credit-constraints"
+    },
+    {
+      "cursor_path": "private/credit-scoring/notebook-to-module-promotion",
+      "claude_name": "private/notebook-to-module-promotion",
+      "source_name": "notebook-to-module-promotion"
+    },
+    {
+      "cursor_path": "private/credit-scoring/partner-credit-model-handoff",
+      "claude_name": "private/partner-credit-model-handoff",
+      "source_name": "partner-credit-model-handoff"
+    },
+    {
+      "cursor_path": "private/credit-scoring/python-style-legacy",
+      "claude_name": "private/python-style-legacy",
+      "source_name": "python-style-legacy"
+    },
+    {
+      "cursor_path": "private/credit-scoring/refactor-legacy-python-pr",
+      "claude_name": "private/refactor-legacy-python-pr",
+      "source_name": "refactor-legacy-python-pr"
+    },
+    {
+      "cursor_path": "private/credit-scoring/risk-team-alignment-negotiation",
+      "claude_name": "private/risk-team-alignment-negotiation",
+      "source_name": "risk-team-alignment-negotiation"
+    },
+    {
+      "cursor_path": "product-growth/product-analytics-experiments",
+      "claude_name": "product-analytics-experiments",
+      "source_name": "product-analytics-experiments"
+    },
+    {
+      "cursor_path": "reflect-yourself",
+      "claude_name": "reflect-yourself",
+      "source_name": "reflect-yourself"
+    },
+    {
+      "cursor_path": "reliability-ops/ci-cd-quality-gates",
+      "claude_name": "ci-cd-quality-gates",
+      "source_name": "ci-cd-quality-gates"
+    },
+    {
+      "cursor_path": "reliability-ops/observability-slo",
+      "claude_name": "observability-slo",
+      "source_name": "observability-slo"
+    },
+    {
+      "cursor_path": "reliability-ops/postmortem-writing",
+      "claude_name": "postmortem-writing",
+      "source_name": "postmortem-writing"
+    },
+    {
+      "cursor_path": "reliability-ops/shipping-launch-checklist",
+      "claude_name": "shipping-launch-checklist",
+      "source_name": "shipping-launch-checklist"
+    },
+    {
+      "cursor_path": "security-appsec/api-security-testing",
+      "claude_name": "api-security-testing",
+      "source_name": "api-security-testing"
+    },
+    {
+      "cursor_path": "security-appsec/secure-api-design",
+      "claude_name": "secure-api-design",
+      "source_name": "secure-api-design"
+    },
+    {
+      "cursor_path": "security-appsec/skill-supply-chain-audit",
+      "claude_name": "skill-supply-chain-audit",
+      "source_name": "skill-supply-chain-audit"
+    },
+    {
+      "cursor_path": "visualization/data-viz-storytelling-healy",
+      "claude_name": "data-viz-storytelling-healy",
+      "source_name": "data-viz-storytelling-healy"
+    },
+    {
+      "cursor_path": "visualization/infographics",
+      "claude_name": "infographics",
+      "source_name": "infographics"
+    },
+    {
+      "cursor_path": "visualization/matplotlib",
+      "claude_name": "matplotlib",
+      "source_name": "matplotlib"
+    },
+    {
+      "cursor_path": "visualization/scientific-visualization",
+      "claude_name": "scientific-visualization",
+      "source_name": "scientific-visualization"
+    },
+    {
+      "cursor_path": "visualization/seaborn",
+      "claude_name": "seaborn",
+      "source_name": "seaborn"
+    },
+    {
+      "cursor_path": "voltagent",
+      "claude_name": "voltagent-subagents",
+      "source_name": "voltagent-subagents"
+    },
+    {
+      "cursor_path": "voltagent/business-product/business-analyst",
+      "claude_name": "va-business-analyst",
+      "source_name": "\"business-analyst\""
+    },
+    {
+      "cursor_path": "voltagent/business-product/customer-success-manager",
+      "claude_name": "va-customer-success-manager",
+      "source_name": "\"customer-success-manager\""
+    },
+    {
+      "cursor_path": "voltagent/business-product/product-manager",
+      "claude_name": "va-product-manager",
+      "source_name": "\"product-manager\""
+    },
+    {
+      "cursor_path": "voltagent/business-product/project-manager",
+      "claude_name": "va-project-manager",
+      "source_name": "\"project-manager\""
+    },
+    {
+      "cursor_path": "voltagent/business-product/scrum-master",
+      "claude_name": "va-scrum-master",
+      "source_name": "\"scrum-master\""
+    },
+    {
+      "cursor_path": "voltagent/business-product/technical-writer",
+      "claude_name": "va-technical-writer",
+      "source_name": "\"technical-writer\""
+    },
+    {
+      "cursor_path": "voltagent/business-product/ux-researcher",
+      "claude_name": "va-ux-researcher",
+      "source_name": "\"ux-researcher\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/ai-engineer",
+      "claude_name": "va-ai-engineer",
+      "source_name": "\"ai-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/data-analyst",
+      "claude_name": "va-data-analyst",
+      "source_name": "\"data-analyst\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/data-engineer",
+      "claude_name": "va-data-engineer",
+      "source_name": "\"data-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/data-scientist",
+      "claude_name": "va-data-scientist",
+      "source_name": "\"data-scientist\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/database-optimizer",
+      "claude_name": "va-database-optimizer",
+      "source_name": "\"database-optimizer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/llm-architect",
+      "claude_name": "va-llm-architect",
+      "source_name": "\"llm-architect\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/machine-learning-engineer",
+      "claude_name": "va-machine-learning-engineer",
+      "source_name": "\"machine-learning-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/ml-engineer",
+      "claude_name": "va-ml-engineer",
+      "source_name": "\"ml-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/mlops-engineer",
+      "claude_name": "va-mlops-engineer",
+      "source_name": "\"mlops-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/nlp-engineer",
+      "claude_name": "va-nlp-engineer",
+      "source_name": "\"nlp-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/postgres-pro",
+      "claude_name": "va-postgres-pro",
+      "source_name": "\"postgres-pro\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/prompt-engineer",
+      "claude_name": "va-prompt-engineer",
+      "source_name": "\"prompt-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/data-ai/reinforcement-learning-engineer",
+      "claude_name": "va-reinforcement-learning-engineer",
+      "source_name": "\"reinforcement-learning-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/dev-workflow/documentation-engineer",
+      "claude_name": "va-documentation-engineer",
+      "source_name": "\"documentation-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/dev-workflow/git-workflow-manager",
+      "claude_name": "va-git-workflow-manager",
+      "source_name": "\"git-workflow-manager\""
+    },
+    {
+      "cursor_path": "voltagent/dev-workflow/refactoring-specialist",
+      "claude_name": "va-refactoring-specialist",
+      "source_name": "\"refactoring-specialist\""
+    },
+    {
+      "cursor_path": "voltagent/fintech-risk/fintech-engineer",
+      "claude_name": "va-fintech-engineer",
+      "source_name": "\"fintech-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/fintech-risk/healthcare-admin",
+      "claude_name": "va-healthcare-admin",
+      "source_name": "\"healthcare-admin\""
+    },
+    {
+      "cursor_path": "voltagent/fintech-risk/quant-analyst",
+      "claude_name": "va-quant-analyst",
+      "source_name": "\"quant-analyst\""
+    },
+    {
+      "cursor_path": "voltagent/fintech-risk/risk-manager",
+      "claude_name": "va-risk-manager",
+      "source_name": "\"risk-manager\""
+    },
+    {
+      "cursor_path": "voltagent/infra/deployment-engineer",
+      "claude_name": "va-deployment-engineer",
+      "source_name": "\"deployment-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/languages/python-pro",
+      "claude_name": "va-python-pro",
+      "source_name": "\"python-pro\""
+    },
+    {
+      "cursor_path": "voltagent/languages/sql-pro",
+      "claude_name": "va-sql-pro",
+      "source_name": "\"sql-pro\""
+    },
+    {
+      "cursor_path": "voltagent/orchestration/context-manager",
+      "claude_name": "va-context-manager",
+      "source_name": "\"context-manager\""
+    },
+    {
+      "cursor_path": "voltagent/orchestration/error-coordinator",
+      "claude_name": "va-error-coordinator",
+      "source_name": "\"error-coordinator\""
+    },
+    {
+      "cursor_path": "voltagent/orchestration/knowledge-synthesizer",
+      "claude_name": "va-knowledge-synthesizer",
+      "source_name": "\"knowledge-synthesizer\""
+    },
+    {
+      "cursor_path": "voltagent/orchestration/multi-agent-coordinator",
+      "claude_name": "va-multi-agent-coordinator",
+      "source_name": "\"multi-agent-coordinator\""
+    },
+    {
+      "cursor_path": "voltagent/orchestration/task-distributor",
+      "claude_name": "va-task-distributor",
+      "source_name": "\"task-distributor\""
+    },
+    {
+      "cursor_path": "voltagent/quality-engineering/code-reviewer",
+      "claude_name": "va-code-reviewer",
+      "source_name": "\"code-reviewer\""
+    },
+    {
+      "cursor_path": "voltagent/quality-engineering/debugger",
+      "claude_name": "va-debugger",
+      "source_name": "\"debugger\""
+    },
+    {
+      "cursor_path": "voltagent/quality-engineering/performance-engineer",
+      "claude_name": "va-performance-engineer",
+      "source_name": "\"performance-engineer\""
+    },
+    {
+      "cursor_path": "voltagent/quality-engineering/qa-expert",
+      "claude_name": "va-qa-expert",
+      "source_name": "\"qa-expert\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/competitive-analyst",
+      "claude_name": "va-competitive-analyst",
+      "source_name": "\"competitive-analyst\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/data-researcher",
+      "claude_name": "va-data-researcher",
+      "source_name": "\"data-researcher\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/market-researcher",
+      "claude_name": "va-market-researcher",
+      "source_name": "\"market-researcher\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/project-idea-validator",
+      "claude_name": "va-project-idea-validator",
+      "source_name": "\"project-idea-validator\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/research-analyst",
+      "claude_name": "va-research-analyst",
+      "source_name": "\"research-analyst\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/scientific-literature-researcher",
+      "claude_name": "va-scientific-literature-researcher",
+      "source_name": "\"scientific-literature-researcher\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/search-specialist",
+      "claude_name": "va-search-specialist",
+      "source_name": "\"search-specialist\""
+    },
+    {
+      "cursor_path": "voltagent/research-analysis/trend-analyst",
+      "claude_name": "va-trend-analyst",
+      "source_name": "\"trend-analyst\""
+    },
+    {
+      "cursor_path": "writing-docs/docx",
+      "claude_name": "docx",
+      "source_name": "docx"
+    },
+    {
+      "cursor_path": "writing-docs/pdf",
+      "claude_name": "pdf",
+      "source_name": "pdf"
+    },
+    {
+      "cursor_path": "writing-docs/pptx",
+      "claude_name": "pptx",
+      "source_name": "pptx"
+    },
+    {
+      "cursor_path": "writing-docs/prose-polish",
+      "claude_name": "prose-polish",
+      "source_name": "prose-polish"
+    },
+    {
+      "cursor_path": "writing-docs/scientific-writing",
+      "claude_name": "scientific-writing",
+      "source_name": "scientific-writing"
+    },
+    {
+      "cursor_path": "writing-docs/sympy",
+      "claude_name": "sympy",
+      "source_name": "sympy"
+    },
+    {
+      "cursor_path": "writing-docs/xlsx",
+      "claude_name": "xlsx",
+      "source_name": "xlsx"
+    }
+  ]
+}
