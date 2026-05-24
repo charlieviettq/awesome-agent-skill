@@ -1,0 +1,69 @@
+name: Propose a new skill
+description: Suggest a new agent skill for awesome-agent-skill
+title: "[Skill]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a skill. Check [SKILL_INVENTORY.md](https://github.com/charlieviettq/awesome-agent-skill/blob/main/SKILL_INVENTORY.md) first to avoid duplicates.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Proposed skill name (kebab-case)
+      placeholder: e.g. api-rate-limit-design
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Suggested domain folder
+      options:
+        - core-workflow
+        - ai-agent-systems
+        - frontend-engineering
+        - reliability-ops
+        - security-appsec
+        - mobile
+        - marketing
+        - architecture
+        - product-growth
+        - performance
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What problem does this skill solve?
+      placeholder: When would an agent reach for this skill instead of guessing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Example user phrases (triggers)
+      placeholder: |
+        "design rate limits"
+        "how do I throttle API"
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow-outline
+    attributes:
+      label: High-level workflow (optional)
+      placeholder: 3-5 steps the skill should guide
+
+  - type: checkboxes
+    id: overlap
+    attributes:
+      label: Overlap check
+      options:
+        - label: I searched existing skills and this is not a duplicate
+          required: true

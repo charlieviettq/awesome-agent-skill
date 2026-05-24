@@ -71,8 +71,8 @@
   <g transform="translate(250 328)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
     <g>
       <rect width="176" height="62" rx="18" fill="#020617" stroke="#334155"/>
-      <text x="22" y="26" fill="#93C5FD" font-size="15" font-weight="700">154</text>
-      <text x="22" y="47" fill="#E2E8F0" font-size="16">skill folders</text>
+      <text x="22" y="26" fill="#93C5FD" font-size="15" font-weight="700">170</text>
+      <text x="22" y="47" fill="#E2E8F0" font-size="16">skills</text>
     </g>
     <g transform="translate(196 0)">
       <rect width="176" height="62" rx="18" fill="#020617" stroke="#334155"/>
