@@ -1,0 +1,8 @@
+# Sync Claude skills
+
+Regenerate Claude skills from Cursor source:
+
+```bash
+python3 scripts/convert-to-claude.py --in-repo --force --write-map
+python3 scripts/validate-skills.py
+```

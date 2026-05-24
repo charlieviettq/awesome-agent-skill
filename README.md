@@ -51,6 +51,18 @@ Portable `SKILL.md` folders for agentic coding tools:
 
 Copy only the domains you need. Reload the agent session after installing skills.
 
+## Compatibility Matrix
+
+| Tool | Install path | Reload required | Commands support |
+|------|--------------|-----------------|------------------|
+| Cursor | `.cursor/skills/` | Reload window / new chat | Project rules optional |
+| Claude Code | `.claude/skills/` | Restart session | Optional `.claude/commands/` |
+| Codex CLI | project skills dir | Restart session | Follow client docs |
+| OpenCode | `.opencode/skills/` or `.cursor/skills/` | Restart session | Follow client docs |
+| Gemini CLI | `.gemini/commands/` + skills dir | Restart session | Optional `.gemini/commands/` |
+
+Skills remain the source of truth. Commands in `.claude/commands/` and `.gemini/commands/` are optional wrappers for validate/sync/install workflows.
+
 ## Quickstart
 
 Clone the pack:
@@ -60,7 +72,17 @@ git clone https://github.com/charlieviettq/awesome-agent-skill.git
 cd awesome-agent-skill
 ```
 
-Install a few Cursor skills into a project:
+Install with scripts (recommended):
+
+```bash
+# Starter bundle: core-workflow + security + reliability
+bash scripts/install/install-bundle.sh starter /path/to/project --format both
+
+# Single domain
+bash scripts/install/install-domain.sh core-workflow /path/to/project --format cursor
+```
+
+Manual install (Cursor):
 
 ```bash
 mkdir -p /path/to/project/.cursor/skills
@@ -77,6 +99,19 @@ rsync -a .claude/skills/ /path/to/project/.claude/skills/
 ```
 
 Reload your agent session after copying skills.
+
+## Optional Commands
+
+Optional slash-command wrappers (skills remain source of truth):
+
+| Command | Claude Code | Gemini CLI |
+|---------|-------------|------------|
+| Validate skills | `/validate-skills` | `validate-skills` |
+| Sync Claude output | `/sync-skills` | `sync-skills` |
+| Install domain | `/install-domain` | copy from `scripts/install/` |
+| Install bundle | `/install-bundle` | copy from `scripts/install/` |
+
+Copy `.claude/commands/` or `.gemini/commands/` into your project to enable.
 
 ## Formats
 
@@ -103,8 +138,11 @@ Full index: [`SKILL_INVENTORY.md`](SKILL_INVENTORY.md)
 .
 ├── .cursor/skills/      # Cursor skill format, source of truth
 ├── .claude/skills/      # Claude Code skill format, generated from Cursor skills
-├── scripts/             # Conversion and maintenance scripts
-├── .github/workflows/   # Lightweight validation
+├── .claude/commands/    # Optional Claude slash commands
+├── .gemini/commands/    # Optional Gemini command wrappers
+├── scripts/             # Conversion, validation, install, metrics
+├── docs/                # Contributor guides, distribution, release cadence
+├── .github/workflows/   # Skill validation CI
 └── SKILL_INVENTORY.md   # Human-readable skill index
 ```
 
@@ -143,19 +181,16 @@ Regenerate Claude output:
 python3 scripts/convert-to-claude.py --in-repo --force --write-map
 ```
 
-Run the lightweight check:
+Run validation:
 
 ```bash
-python3 - <<'PY'
-from pathlib import Path
-skill_files = list(Path(".cursor/skills").rglob("SKILL.md")) + list(Path(".claude/skills").rglob("SKILL.md"))
-if not skill_files:
-    raise SystemExit("No skills found")
-bad = [path for path in skill_files if not path.read_text(encoding="utf-8").startswith("---")]
-if bad:
-    raise SystemExit("\\n".join(map(str, bad)))
-print(f"Validated {len(skill_files)} skill files")
-PY
+python3 scripts/validate-skills.py
+```
+
+Generate metrics snapshot:
+
+```bash
+python3 scripts/repo-metrics.py
 ```
 
 ## Private Skills
@@ -164,12 +199,14 @@ Keep team-specific or sensitive skills in your own repository under paths such a
 
 ## Contributing
 
-Contributions welcome. See [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) for the skill template, PR checklist, and validation steps.
+Contributions welcome. See [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md), [`docs/skill-writing-guide.md`](docs/skill-writing-guide.md), and [`docs/review-rubric.md`](docs/review-rubric.md).
 
 - Propose a skill: [New skill issue](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=new-skill.yml)
 - Report outdated content: [Outdated skill issue](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=outdated-skill.yml)
+- Track awesome-list submission: [Distribution issue](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=awesome-list-submission.yml)
+- Good first issues: [`docs/good-first-issues.md`](docs/good-first-issues.md)
 
-Recent changes: [`CHANGELOG.md`](CHANGELOG.md)
+Recent changes: [`CHANGELOG.md`](CHANGELOG.md) | Release cadence: [`docs/RELEASE_CADENCE.md`](docs/RELEASE_CADENCE.md)
 
 ## Submit to Awesome Lists
 
@@ -177,7 +214,7 @@ If you maintain an awesome-list or agent-tools roundup, consider linking this re
 
 > **awesome-agent-skill** — 170+ portable agent skills (planning, QA, security, MCP, browser automation, data/docs) for Cursor and Claude Code.
 
-External catalogs we track: [`EXTERNAL_SKILLS.md`](EXTERNAL_SKILLS.md)
+External catalogs we track: [`EXTERNAL_SKILLS.md`](EXTERNAL_SKILLS.md) | Submission tracker: [`docs/distribution.md`](docs/distribution.md)
 
 ## License
 

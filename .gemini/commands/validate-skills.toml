@@ -1,0 +1,9 @@
+# Validate skills
+
+Run the repository skill validator:
+
+```bash
+python3 scripts/validate-skills.py
+```
+
+Report failures with file paths and minimal fixes.
