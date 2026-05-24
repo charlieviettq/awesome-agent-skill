@@ -64,14 +64,7 @@ Before opening a pull request:
   ```
 - [ ] Ran validation:
   ```bash
-  python3 - <<'PY'
-  from pathlib import Path
-  skill_files = list(Path(".cursor/skills").rglob("SKILL.md")) + list(Path(".claude/skills").rglob("SKILL.md"))
-  bad = [p for p in skill_files if not p.read_text(encoding="utf-8").startswith("---")]
-  if bad:
-      raise SystemExit("\n".join(map(str, bad)))
-  print(f"Validated {len(skill_files)} skill files")
-  PY
+  python3 scripts/validate-skills.py
   ```
 - [ ] Updated [`SKILL_INVENTORY.md`](../SKILL_INVENTORY.md) if adding a new top-level skill path
 - [ ] Added a line to [`CHANGELOG.md`](../CHANGELOG.md) under `[Unreleased]` or the next version
@@ -100,6 +93,14 @@ awesome-list, cursor, claude-code, ai-agents, llm, developer-tools, mcp, agent-s
 
 - **New skill:** use the [New skill proposal](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=new-skill.yml) template
 - **Outdated skill:** use the [Outdated skill report](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=outdated-skill.yml) template
+- **Awesome-list submission:** use the [Distribution tracker](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=awesome-list-submission.yml) template
+
+## Further reading
+
+- [`docs/skill-writing-guide.md`](../docs/skill-writing-guide.md)
+- [`docs/review-rubric.md`](../docs/review-rubric.md)
+- [`docs/good-first-issues.md`](../docs/good-first-issues.md)
+- [`docs/RELEASE_CADENCE.md`](../docs/RELEASE_CADENCE.md)
 
 ## License
 

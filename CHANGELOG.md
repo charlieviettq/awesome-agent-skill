@@ -2,6 +2,24 @@
 
 All notable changes to this repository are documented here.
 
+## [Unreleased]
+
+### Added
+
+- Install scripts: `scripts/install/install-domain.sh`, `scripts/install/install-bundle.sh`
+- Validation script: `scripts/validate-skills.py` (used in CI)
+- Metrics script: `scripts/repo-metrics.py`
+- Optional commands: `.claude/commands/`, `.gemini/commands/`
+- Contributor docs: `docs/skill-writing-guide.md`, `docs/review-rubric.md`, `docs/good-first-issues.md`
+- Distribution tracker: `docs/distribution.md`
+- Release cadence: `docs/RELEASE_CADENCE.md`
+- Issue template: awesome-list submission tracking
+
+### Changed
+
+- CI lint workflow uses extended skill validation
+- README: compatibility matrix, install scripts, optional commands
+
 ## [2.0.0] - 2026-05-24
 
 ### Added
