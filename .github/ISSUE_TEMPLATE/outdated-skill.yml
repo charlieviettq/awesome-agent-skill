@@ -1,0 +1,40 @@
+name: Report outdated skill
+description: Flag a skill that is wrong, stale, or unsafe
+title: "[Outdated]: "
+labels:
+  - bug
+body:
+  - type: input
+    id: skill-path
+    attributes:
+      label: Skill path
+      placeholder: e.g. core-workflow/spec-driven-development
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      options:
+        - Incorrect workflow or advice
+        - Broken links or references
+        - Overlaps another skill confusingly
+        - Security or safety concern
+        - Tool/API no longer applies
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is wrong?
+      placeholder: Describe the outdated part and why it matters.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested fix (optional)
+      placeholder: Updated steps, replacement skill, or source link

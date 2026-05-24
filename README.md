@@ -6,8 +6,11 @@
 
 [![Stars](https://img.shields.io/github/stars/charlieviettq/awesome-agent-skill?style=for-the-badge&logo=github&color=60a5fa)](https://github.com/charlieviettq/awesome-agent-skill/stargazers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-154-8b5cf6?style=for-the-badge)](.cursor/skills)
+[![Skills](https://img.shields.io/badge/skills-170-8b5cf6?style=for-the-badge)](.cursor/skills)
 [![Formats](https://img.shields.io/badge/formats-Cursor%20%2B%20Claude-0ea5e9?style=for-the-badge)](#quickstart)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Last commit](https://img.shields.io/github/last-commit/charlieviettq/awesome-agent-skill?style=for-the-badge&color=f97316)](https://github.com/charlieviettq/awesome-agent-skill/commits/main)
+[![Contributors](https://img.shields.io/github/contributors/charlieviettq/awesome-agent-skill?style=for-the-badge&color=a855f7)](https://github.com/charlieviettq/awesome-agent-skill/graphs/contributors)
 
 **A curated, open-source skill library for agentic developer tools.**
 
@@ -33,6 +36,20 @@ Most agents start every task from a blank prompt. Skills give them reusable oper
 | Reliability and security | CI gates, launch checklists, observability, API security, skill supply-chain audit |
 | Data and content | Analysis, visualization, documents, spreadsheets, PDFs, presentations |
 | Role playbooks | Engineering, research, product, operations, orchestration, language experts |
+
+## Works With
+
+Portable `SKILL.md` folders for agentic coding tools:
+
+| Tool | Install path | Notes |
+|------|--------------|-------|
+| [Cursor](https://cursor.com) | `.cursor/skills/` | Source of truth in this repo |
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | `.claude/skills/` | Generated from Cursor skills |
+| [Codex CLI](https://github.com/openai/codex) | `.claude/skills/` or project skills dir | Copy compatible skill folders |
+| [OpenCode](https://github.com/opencode-ai/opencode) | `.opencode/skills/` or `.cursor/skills/` | Follow your client’s skill discovery path |
+| Gemini CLI / other agents | Project skills directory | Same `SKILL.md` format; verify client docs |
+
+Copy only the domains you need. Reload the agent session after installing skills.
 
 ## Quickstart
 
@@ -147,16 +164,22 @@ Keep team-specific or sensitive skills in your own repository under paths such a
 
 ## Contributing
 
-Contributions are welcome. A good skill is:
+Contributions welcome. See [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) for the skill template, PR checklist, and validation steps.
 
-- Narrow enough for an agent to know when to use it.
-- Explicit about triggers, workflow, inputs, outputs, and verification.
-- Free of secrets, private URLs, customer data, and organization-specific assumptions.
-- Useful without requiring hidden context.
+- Propose a skill: [New skill issue](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=new-skill.yml)
+- Report outdated content: [Outdated skill issue](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=outdated-skill.yml)
 
-Open a PR with a short explanation of the workflow the skill improves.
+Recent changes: [`CHANGELOG.md`](CHANGELOG.md)
+
+## Submit to Awesome Lists
+
+If you maintain an awesome-list or agent-tools roundup, consider linking this repo under categories such as **AI agents**, **Cursor**, **Claude Code**, **MCP**, or **developer tools**. Suggested blurb:
+
+> **awesome-agent-skill** — 170+ portable agent skills (planning, QA, security, MCP, browser automation, data/docs) for Cursor and Claude Code.
+
+External catalogs we track: [`EXTERNAL_SKILLS.md`](EXTERNAL_SKILLS.md)
 
 ## License
 
-MIT. Use it, fork it, and adapt it for your own agents.
+MIT. See [LICENSE](LICENSE). Use it, fork it, and adapt it for your own agents.
 
