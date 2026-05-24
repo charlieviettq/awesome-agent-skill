@@ -1,0 +1,93 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">awesome-agent-skill</title>
+  <desc id="desc">A modern hero graphic for a reusable agent skill library.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090F1F"/>
+      <stop offset="0.45" stop-color="#111827"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(216 109) rotate(51.8) scale(290 338)">
+      <stop stop-color="#60A5FA" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(989 409) rotate(-141.5) scale(293 248)">
+      <stop stop-color="#A78BFA" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="92" y1="78" x2="1108" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="270" y1="150" x2="805" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.52" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="shadow" x="58" y="52" width="1084" height="436" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.05 0 0 0 0 0.12 0 0 0 0.42 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg)"/>
+  <rect width="1200" height="520" fill="url(#orb1)"/>
+  <rect width="1200" height="520" fill="url(#orb2)"/>
+  <g opacity="0.22">
+    <path d="M90 111H1110" stroke="#93C5FD"/>
+    <path d="M90 203H1110" stroke="#93C5FD"/>
+    <path d="M90 295H1110" stroke="#93C5FD"/>
+    <path d="M90 387H1110" stroke="#93C5FD"/>
+    <path d="M198 78V442" stroke="#93C5FD"/>
+    <path d="M400 78V442" stroke="#93C5FD"/>
+    <path d="M602 78V442" stroke="#93C5FD"/>
+    <path d="M804 78V442" stroke="#93C5FD"/>
+    <path d="M1006 78V442" stroke="#93C5FD"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="92" y="78" width="1016" height="364" rx="34" fill="url(#card)" stroke="#334155"/>
+  </g>
+  <g transform="translate(140 128)">
+    <rect width="72" height="72" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    <path d="M25 24H47M25 36H53M25 48H42" stroke="#BAE6FD" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="248" y="154" fill="url(#accent)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="54" font-weight="800" letter-spacing="-1.6">awesome-agent-skill</text>
+  <text x="250" y="207" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="24" font-weight="500">Reusable skills for Cursor, Claude Code, Codex, Gemini CLI, OpenCode, and agentic developer tools.</text>
+  <g transform="translate(250 252)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="700">
+    <rect width="152" height="44" rx="22" fill="#172554" stroke="#2563EB"/>
+    <text x="25" y="29" fill="#DBEAFE">Cursor</text>
+    <rect x="166" width="188" height="44" rx="22" fill="#1E1B4B" stroke="#6366F1"/>
+    <text x="192" y="29" fill="#E0E7FF">Claude Code</text>
+    <rect x="368" width="132" height="44" rx="22" fill="#082F49" stroke="#0284C7"/>
+    <text x="393" y="29" fill="#E0F2FE">Codex</text>
+    <rect x="514" width="172" height="44" rx="22" fill="#312E81" stroke="#8B5CF6"/>
+    <text x="540" y="29" fill="#F3E8FF">OpenCode</text>
+  </g>
+  <g transform="translate(250 328)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <g>
+      <rect width="176" height="62" rx="18" fill="#020617" stroke="#334155"/>
+      <text x="22" y="26" fill="#93C5FD" font-size="15" font-weight="700">154</text>
+      <text x="22" y="47" fill="#E2E8F0" font-size="16">skill folders</text>
+    </g>
+    <g transform="translate(196 0)">
+      <rect width="176" height="62" rx="18" fill="#020617" stroke="#334155"/>
+      <text x="22" y="26" fill="#93C5FD" font-size="15" font-weight="700">2 formats</text>
+      <text x="22" y="47" fill="#E2E8F0" font-size="16">Cursor + Claude</text>
+    </g>
+    <g transform="translate(392 0)">
+      <rect width="176" height="62" rx="18" fill="#020617" stroke="#334155"/>
+      <text x="22" y="26" fill="#93C5FD" font-size="15" font-weight="700">MIT</text>
+      <text x="22" y="47" fill="#E2E8F0" font-size="16">open source</text>
+    </g>
+    <g transform="translate(588 0)">
+      <rect width="176" height="62" rx="18" fill="#020617" stroke="#334155"/>
+      <text x="22" y="26" fill="#93C5FD" font-size="15" font-weight="700">agent-ready</text>
+      <text x="22" y="47" fill="#E2E8F0" font-size="16">not prompts</text>
+    </g>
+  </g>
+</svg>

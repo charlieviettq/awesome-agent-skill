@@ -1,83 +1,162 @@
-# awesome-agent-skill
+<div align="center">
 
-Curated skill pack for LLM agents in data science and machine learning, ready for Cursor and Claude.
+<img src=".github/assets/readme-hero.svg" alt="awesome-agent-skill — reusable skills for agentic developer tools" width="100%" />
 
-This repository collects reusable agent workflows for EDA, statistics, visualization, ML/DL, reporting, QA, security, reliability, and agent orchestration. Each skill is packaged as a `SKILL.md` so your coding agent can load domain-specific playbooks instead of starting from a blank prompt.
+<br />
 
-## What you get
+[![Stars](https://img.shields.io/github/stars/charlieviettq/awesome-agent-skill?style=for-the-badge&logo=github&color=60a5fa)](https://github.com/charlieviettq/awesome-agent-skill/stargazers)
+[![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)](LICENSE)
+[![Skills](https://img.shields.io/badge/skills-154-8b5cf6?style=for-the-badge)](.cursor/skills)
+[![Formats](https://img.shields.io/badge/formats-Cursor%20%2B%20Claude-0ea5e9?style=for-the-badge)](#quickstart)
 
-- **Agent-ready skills** organized by domain (stats, viz, ML, docs, QA, security, reliability, workflows).
-- **Cursor & Claude support** via `.cursor/skills/**` and generated `.claude/skills/**`.
-- **Batteries-included workflows** instead of one-off prompts.
+**A curated, open-source skill library for agentic developer tools.**
 
-## Quickstart (project-local)
+Give your coding agent reusable playbooks for planning, debugging, QA, security, docs, data work, browser automation, and shipping.
 
-Clone this repo next to your project and copy the skills you want:
+</div>
+
+---
+
+## Why This Exists
+
+Most agents start every task from a blank prompt. Skills give them reusable operating procedures: when to ask for clarification, how to run a review, how to triage tests, how to handle PDFs, how to build a quick analysis, how to use browser QA, and how to ship safely.
+
+`awesome-agent-skill` packages those workflows as portable `SKILL.md` files for modern coding agents.
+
+## What You Get
+
+| Area | Includes |
+|------|----------|
+| Agent workflow | Specs, planning, TDD, incremental implementation, code review, verification |
+| Agent systems | MCP, RAG, tool contracts, context-window management, agent evaluation |
+| Browser QA | gstack-style browsing, QA, canary checks, benchmarks, screenshots |
+| Reliability and security | CI gates, launch checklists, observability, API security, skill supply-chain audit |
+| Data and content | Analysis, visualization, documents, spreadsheets, PDFs, presentations |
+| Role playbooks | Engineering, research, product, operations, orchestration, language experts |
+
+## Quickstart
+
+Clone the pack:
 
 ```bash
 git clone https://github.com/charlieviettq/awesome-agent-skill.git
-
-# Example: copy analysis & visualization skills into your project
-rsync -a awesome-agent-skill/.cursor/skills/analysis-stats/  .cursor/skills/analysis-stats/
-rsync -a awesome-agent-skill/.cursor/skills/visualization/   .cursor/skills/visualization/
+cd awesome-agent-skill
 ```
 
-Reload Cursor/Claude in your project so the agent can see the new skills.
-
-## Skill layout
-
-All Cursor-format skills live under `.cursor/skills/`:
-
-- `analysis-stats/` — SHAP, statistical tests, statsmodels, and related analysis helpers.
-- `data-compute/` — dask, polars, networkx.
-- `eda-research/` — exploratory data analysis helpers and hypothesis tooling.
-- `frontend-engineering/` — UI accessibility and frontend-focused helpers.
-- `ml-dl/` — scikit-learn, PyTorch Lightning, transformers.
-- `performance/` — performance measurement and optimization patterns.
-- `product-growth/` — experiment design and product analytics.
-- `reliability-ops/` — CI quality gates, SLO/observability, launch checklists, postmortems.
-- `security-appsec/` — secure API design, API security testing, skill supply-chain audit.
-- `visualization/` — matplotlib, seaborn, scientific-visualization, infographics, chart selection.
-- `writing-docs/` — docx/pdf/pptx/xlsx, scientific writing, prose polish.
-- `core-workflow/` — planning, task breakdown, TDD, spec-driven development, code review, etc.
-- `gstack/` — browser QA, deployment, ship workflows for web apps.
-- `voltagent/` — role-based DS/ML/product subagents (converted from VoltAgent).
-- `meta-tools/` — higher-level tooling like autoskill.
-
-Generated Claude-format skills live under `.claude/skills/` and are produced by:
+Install a few Cursor skills into a project:
 
 ```bash
-python3 scripts/convert-to-claude.py --in-repo --force
+mkdir -p /path/to/project/.cursor/skills
+rsync -a .cursor/skills/core-workflow/ /path/to/project/.cursor/skills/core-workflow/
+rsync -a .cursor/skills/security-appsec/ /path/to/project/.cursor/skills/security-appsec/
+rsync -a .cursor/skills/writing-docs/ /path/to/project/.cursor/skills/writing-docs/
 ```
 
-## Using with Cursor
+Install Claude Code skills:
 
-1. Ensure this repo is cloned somewhere accessible.
-2. Copy or sync the desired skill folders into your project’s `.cursor/skills/`.
-3. Reload Cursor (\"Reload Window\") so the agent picks up the new skills.
+```bash
+mkdir -p /path/to/project/.claude/skills
+rsync -a .claude/skills/ /path/to/project/.claude/skills/
+```
 
-Skills are automatically discovered by Cursor under `.cursor/skills/**` and can be triggered based on their descriptions and triggers.
+Reload your agent session after copying skills.
 
-## Using with Claude Code
+## Formats
 
-If your project uses `.claude/skills/`, either:
+| Agent surface | Path | Status |
+|---------------|------|--------|
+| Cursor | `.cursor/skills/**/SKILL.md` | Source of truth |
+| Claude Code | `.claude/skills/**/SKILL.md` | Generated and committed |
 
-- Generate `.claude/skills/` in your project with `convert-to-claude.py`, or
-- Copy from this repo’s `.claude/skills/**` into your project.
+Regenerate Claude-format skills after editing Cursor-format skills:
 
-Restart your Claude Code session to load the new skills.
+```bash
+python3 scripts/convert-to-claude.py --in-repo --force --write-map
+```
+
+## Skill Map
+
+<img src=".github/assets/skill-map.svg" alt="Skill map for awesome-agent-skill" width="100%" />
+
+Full index: [`SKILL_INVENTORY.md`](SKILL_INVENTORY.md)
+
+## Repository Layout
+
+```text
+.
+├── .cursor/skills/      # Cursor skill format, source of truth
+├── .claude/skills/      # Claude Code skill format, generated from Cursor skills
+├── scripts/             # Conversion and maintenance scripts
+├── .github/workflows/   # Lightweight validation
+└── SKILL_INVENTORY.md   # Human-readable skill index
+```
+
+## Highlights
+
+| Folder | Good For |
+|--------|----------|
+| `core-workflow/` | Spec-first implementation, planning, TDD, verification, reviews |
+| `ai-agent-systems/` | MCP servers, RAG systems, agent evals, tool schemas |
+| `gstack/` | Browser QA, ship workflows, design review, scrape flows |
+| `voltagent/` | Role-based subagent playbooks |
+| `security-appsec/` | API security, secure design, skill supply-chain checks |
+| `reliability-ops/` | CI gates, SLOs, launch readiness, postmortems |
+| `writing-docs/` | PDF, DOCX, XLSX, PPTX, prose polish |
+| `visualization/` | Charts, figures, infographics, data storytelling |
+
+## Design Principles
+
+- **Portable:** skills are plain folders with `SKILL.md`.
+- **Composable:** copy one domain or the full pack.
+- **Public-safe:** no secrets, customer data, or private org assumptions.
+- **Agent-first:** written as workflows an agent can follow, not as static articles.
+- **Reviewable:** skills stay small; long references belong in `reference.md` or examples.
+
+## Updating Skills
+
+Edit the Cursor source:
+
+```bash
+$EDITOR .cursor/skills/core-workflow/spec-driven-development/SKILL.md
+```
+
+Regenerate Claude output:
+
+```bash
+python3 scripts/convert-to-claude.py --in-repo --force --write-map
+```
+
+Run the lightweight check:
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+skill_files = list(Path(".cursor/skills").rglob("SKILL.md")) + list(Path(".claude/skills").rglob("SKILL.md"))
+if not skill_files:
+    raise SystemExit("No skills found")
+bad = [path for path in skill_files if not path.read_text(encoding="utf-8").startswith("---")]
+if bad:
+    raise SystemExit("\\n".join(map(str, bad)))
+print(f"Validated {len(skill_files)} skill files")
+PY
+```
+
+## Private Skills
+
+Keep team-specific or sensitive skills in your own repository under paths such as `.cursor/skills/private/` and `.claude/skills/private/`. This public pack is intentionally generic.
 
 ## Contributing
 
-Contributions are welcome. Good contributions include:
+Contributions are welcome. A good skill is:
 
-- New skills that follow the existing structure (`SKILL.md` + optional references/examples).
-- Improvements to existing skills (better triggers, clearer descriptions, safer defaults).
-- CI improvements and docs that make these skills easier to adopt.
+- Narrow enough for an agent to know when to use it.
+- Explicit about triggers, workflow, inputs, outputs, and verification.
+- Free of secrets, private URLs, customer data, and organization-specific assumptions.
+- Useful without requiring hidden context.
 
-Please open an issue or PR with a short description, and keep skills generic and safe for public use (no secrets, internal-only details, or partner data).
+Open a PR with a short explanation of the workflow the skill improves.
 
 ## License
 
-MIT license (proposed) — pick a permissive license so teams can adopt these skills in their own agents.
+MIT. Use it, fork it, and adapt it for your own agents.
 
