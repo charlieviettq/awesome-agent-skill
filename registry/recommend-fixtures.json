@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "fixtures": [
+    {
+      "query": "verify tests pass before saying done",
+      "expect_any": ["core-workflow/verify-before-done"]
+    },
+    {
+      "query": "write spec before coding",
+      "expect_any": ["core-workflow/spec-driven-development"]
+    },
+    {
+      "query": "build mcp server for agents",
+      "expect_any": ["ai-agent-systems/mcp-builder"]
+    },
+    {
+      "query": "security audit API owasp",
+      "expect_any": [
+        "security-appsec/api-security-testing",
+        "security-appsec/secure-api-design"
+      ]
+    },
+    {
+      "query": "shap feature importance model",
+      "expect_any": ["analysis-stats/shap"]
+    },
+    {
+      "query": "incremental small commits vertical slice",
+      "expect_any": ["core-workflow/incremental-implementation"]
+    },
+    {
+      "query": "postmortem incident blameless",
+      "expect_any": ["reliability-ops/postmortem-writing"]
+    },
+    {
+      "query": "rag embeddings retrieval",
+      "expect_any": ["ai-agent-systems/rag-systems"]
+    }
+  ]
+}
