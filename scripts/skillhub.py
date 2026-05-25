@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "registry" / "skills.json"
 BUNDLES = ROOT / "registry" / "bundles.json"
 FIXTURES = ROOT / "registry" / "recommend-fixtures.json"
+QUALITY = ROOT / "registry" / "quality.json"
 
 
 def load_registry() -> dict:
@@ -151,6 +152,30 @@ def bundle_domains(bundle_id: str) -> set[str]:
     return set(bundle.get("domains", []))
 
 
+def cmd_quality(args: argparse.Namespace) -> int:
+    gen = ROOT / "scripts" / "generate-quality.py"
+    if args.regenerate or not QUALITY.exists():
+        r = subprocess.run([sys.executable, str(gen)], cwd=ROOT)
+        if r.returncode != 0:
+            return r.returncode
+    if not QUALITY.exists():
+        print("quality.json missing", file=sys.stderr)
+        return 1
+    data = json.loads(QUALITY.read_text(encoding="utf-8"))
+    rows = data["skills"]
+    if args.low_only:
+        rows = [r for r in rows if r["score"] < 50]
+    rows.sort(key=lambda r: r["score"])
+    for r in rows[: args.limit]:
+        issues = ", ".join(r.get("issues", [])) or "-"
+        print(f"{r['score']:3d}  {r['id']}\t{issues}")
+    print(
+        f"\navg={data.get('average_score')} low={data.get('low_score_count')}",
+        file=sys.stderr,
+    )
+    return 0
+
+
 def cmd_eval_recommend(_: argparse.Namespace) -> int:
     if not FIXTURES.exists():
         print("Missing registry/recommend-fixtures.json", file=sys.stderr)
@@ -232,6 +257,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     ev = sub.add_parser("eval-recommend", help="Run recommendation fixture eval")
     ev.set_defaults(func=cmd_eval_recommend)
+
+    ql = sub.add_parser("quality", help="List skill quality scores")
+    ql.add_argument("--regenerate", action="store_true", help="Run generate-quality.py first")
+    ql.add_argument("--low-only", action="store_true")
+    ql.add_argument("-n", "--limit", type=int, default=20)
+    ql.set_defaults(func=cmd_quality)
 
     sh = sub.add_parser("show", help="Show skill metadata as JSON")
     sh.add_argument("skill_id")
