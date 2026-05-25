@@ -17,11 +17,12 @@ description: >
 ## Workflow
 
 1. **Read fully** — understand intent, not only the literal suggestion.
-2. **Verify** — reproduce issue or confirm the concern in code.
-3. **Prioritize** — correctness and security before style.
-4. **Respond** — agree + fix, or disagree with evidence (snippet, test, spec).
-5. **Batch** related fixes; avoid drive-by changes outside review scope.
-6. **Confirm** — run verification before marking threads resolved.
+2. **Clarify** — if feedback is vague, ask one focused question before partial implementation.
+3. **Verify** — reproduce issue or confirm the concern in code; do not assume the reviewer is correct.
+4. **Prioritize** — correctness and security before style.
+5. **Respond** — agree + fix, or disagree with evidence (snippet, test, spec).
+6. **Batch** related fixes; avoid drive-by changes outside review scope.
+7. **Confirm** — run verification before marking threads resolved.
 
 ## When to push back
 
@@ -40,3 +41,10 @@ description: >
 - Defensive replies without technical substance.
 - Blindly applying every suggestion without understanding.
 - Scope creep disguised as "while we're here".
+- Implementing every comment without verifying technical accuracy.
+
+## Related
+
+`requesting-code-review`, `github-comment-triage`, `verify-before-done`
+
+*Review handling patterns inspired by [obra/superpowers](https://github.com/obra/superpowers) (MIT).*

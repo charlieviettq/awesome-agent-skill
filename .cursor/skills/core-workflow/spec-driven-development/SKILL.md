@@ -27,6 +27,12 @@ SPECIFY -> PLAN -> TASKS -> IMPLEMENT
 
 Do not implement until spec (or explicit assumptions) is agreed.
 
+## Chunked approval
+
+- Present spec sections in digestible chunks (objective, boundaries, testing) when scope is large
+- Ask for explicit approval or corrections per chunk before moving to plan/tasks
+- Do not treat silence as sign-off
+
 ## Spec sections (minimum)
 
 1. **Objective** — user, problem, success criteria
@@ -62,3 +68,5 @@ Update spec when scope or decisions change; link spec sections in PRs.
 - `incremental-implementation` — during build
 
 See [reference.md](reference.md) for a lightweight template.
+
+*Workflow patterns inspired by [obra/superpowers](https://github.com/obra/superpowers) (MIT).*

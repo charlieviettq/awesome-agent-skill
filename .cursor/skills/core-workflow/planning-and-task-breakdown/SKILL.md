@@ -25,14 +25,22 @@ description: >
 4. **Write tasks** — each with acceptance + verify + files + size
 5. **Checkpoints** — every 2-3 tasks, full verify
 
+## High-quality plan checklist
+
+- Each task is small enough to complete in one focused session (roughly 2–15 minutes of agent work)
+- **Files:** lists exact paths to create or edit (no "update relevant files")
+- **Verify:** includes full command and expected outcome (exit code, key output line)
+- No placeholders like "add tests here" or "implement logic"
+- For behavior changes, note which test should fail first (TDD) when applicable
+
 ## Task template
 
 ```markdown
 ## Task N: [Title]
 **Acceptance:** ...
-**Verify:** test/build/manual check
+**Verify:** `command` -> expected result
 **Depends on:** ...
-**Files:** ...
+**Files:** path/to/file.ext, path/to/test.ext
 **Size:** S | M | L (L = split further)
 ```
 
@@ -56,3 +64,5 @@ Plan doc with phases, risks, open questions. Human approval before implementatio
 ## Related
 
 `spec-driven-development`, `incremental-implementation`, `verify-before-done`
+
+*Plan quality patterns inspired by [obra/superpowers](https://github.com/obra/superpowers) (MIT).*

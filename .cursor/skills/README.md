@@ -6,14 +6,14 @@ Skills live in subfolders with `SKILL.md` (and optional `reference.md` / `exampl
 
 | Folder | Contents |
 |--------|----------|
-| `core-workflow/` | Spec/plan/incremental/source/doubt/deprecation + interview, idea-refine, API design, simplify, handoff, clarify, verify, TDD, ADR, PR review |
+| `core-workflow/` | Spec/plan/incremental/debug/TDD + interview, idea-refine, systematic-debugging, request/receive review, verify, ADR, API design |
 | `frontend-engineering/` | UI engineering, DevTools browser testing, WCAG accessibility |
 | `mobile/` | App Store/Play submission checklist, iOS TestFlight CI |
 | `marketing/` | Meta ads performance analysis |
 | `architecture/` | System mapping and diagram workflows |
 | `performance/` | Measure-identify-fix-verify-guard performance workflow |
 | `security-appsec/` | Skill supply-chain audit, API security test/design |
-| `ai-agent-systems/` | Agent eval, MCP builder/optimizer, tool contracts, RAG, context budget |
+| `ai-agent-systems/` | Agent eval, parallel/subagent execution (gated), MCP builder/optimizer, tool contracts, RAG, context budget |
 | `reliability-ops/` | CI gates, serverless debug, config management, error handling, launch checklist, observability/SLO, postmortems |
 | `product-growth/` | Product analytics, A/B experiments, offer design |
 | `ml-dl/` | scikit-learn, scikit-survival, transformers, PyTorch Lightning |
@@ -22,7 +22,7 @@ Skills live in subfolders with `SKILL.md` (and optional `reference.md` / `exampl
 | `eda-research/` | EDA, hypothesis generation, UMAP |
 | `visualization/` | matplotlib, seaborn, scientific-visualization, infographics, data-viz-storytelling |
 | `writing-docs/` | PDF, DOCX, XLSX, PPTX, scientific writing, sympy |
-| `meta-tools/` | Autoskill, reflect-yourself (self-learning system) |
+| `meta-tools/` | Autoskill, writing-skills, reflect-yourself (self-learning system) |
 | `gstack/` | Converted [gstack](https://github.com/garrytan/gstack) browser/QA/ship workflows |
 | `voltagent/` | Converted [VoltAgent awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) role playbooks. See [`voltagent/SKILL.md`](voltagent/SKILL.md). |
 

@@ -14,11 +14,15 @@ All notable changes to this repository are documented here.
 - Distribution tracker: `docs/distribution.md`
 - Release cadence: `docs/RELEASE_CADENCE.md`
 - Issue template: awesome-list submission tracking
+- Superpowers-inspired skills: `systematic-debugging`, `requesting-code-review`, `dispatching-parallel-agents`, `subagent-driven-development`, `writing-skills`
+- `EXTERNAL_SKILLS.md` audit section for [obra/superpowers](https://github.com/obra/superpowers)
 
 ### Changed
 
 - CI lint workflow uses extended skill validation
 - README: compatibility matrix, install scripts, optional commands
+- Core workflow skills enriched from Superpowers: idea-refine, interview-me, spec-driven-development, planning-and-task-breakdown, incremental-implementation, test-first-development, verify-before-done, receiving-code-review
+- `docs/skill-writing-guide.md`: pressure-test triggers and external adaptation notes
 
 ## [2.0.0] - 2026-05-24
 

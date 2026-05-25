@@ -38,7 +38,13 @@ Early-stage idea shaping: generate options, stress-test assumptions, then narrow
 
 - Recommend one direction with rationale
 - List what to validate in the next 1–2 hours/days
+- Present design in **short sections** the user can approve or correct before locking scope
 - Hand off to `interview-me`, `spec-driven-development`, or `planning-and-task-breakdown`
+
+### Before code
+
+- Do not start implementation during brainstorming
+- Do not auto-save specs or commit without explicit user request
 
 ## Output template
 

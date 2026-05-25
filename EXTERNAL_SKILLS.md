@@ -2,7 +2,7 @@
 
 Curated audit of third-party skill sources reviewed for integration into [awesome-agent-skill](https://github.com/charlieviettq/awesome-agent-skill). Use this file as the provenance ledger before importing or adapting external content.
 
-**Last audit:** 2026-05-24
+**Last audit:** 2026-05-25
 
 ## Sources reviewed
 
@@ -10,6 +10,7 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 |--------|-----|---------|-------------------|---------|
 | addyosmani/agent-skills | https://github.com/addyosmani/agent-skills | MIT | ~45k | Adapt selected skills with attribution |
 | abcnuts/manus-skills | https://github.com/abcnuts/manus-skills | Unverified (README claims MIT; no LICENSE file in repo) | ~24 | Clean-room rewrite only; do not copy text/scripts |
+| obra/superpowers | https://github.com/obra/superpowers | MIT | ~206k | Cherry-pick workflows; no plugin/runtime vendoring |
 
 ## Decision key
 
@@ -117,6 +118,52 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 | internet-skill-finder | Overlap with `skill-supply-chain-audit` |
 
 **Attribution:** abcnuts skills used as **inspiration only**. Local files are clean-room rewrites. Do not copy scripts from that repo until license is verified.
+
+---
+
+## obra/superpowers
+
+**Audit date:** 2026-05-25. Upstream is a methodology + multi-harness plugin pack ([superpowers](https://github.com/obra/superpowers)). We adapt **workflow content only** into `.cursor/skills/`; we do **not** vendor `skills/` tree, hooks, `.claude-plugin`, `.cursor-plugin`, OpenCode bootstrap, or local visual server scripts.
+
+### Merged into existing skills
+
+| External skill | Local skill | Risk | Notes |
+|----------------|-------------|------|-------|
+| brainstorming | `core-workflow/idea-refine`, `interview-me`, `spec-driven-development` | Low | One-question cadence, 2–3 options, chunked design approval; no auto-commit |
+| writing-plans | `core-workflow/planning-and-task-breakdown` | Low | Small tasks, exact files, verify commands, no placeholders |
+| executing-plans | `core-workflow/incremental-implementation` | Low | Plan review before execute, stop-on-blocker; no auto-finish branch |
+| test-driven-development | `core-workflow/test-first-development` | Low | RED-GREEN-REFACTOR + anti-patterns; relax for docs/config/prototypes |
+| verification-before-completion | `core-workflow/verify-before-done` | Low | Evidence + requirements checklist |
+| receiving-code-review | `core-workflow/receiving-code-review` | Low | Verify claims, clarify vague feedback, evidence-based pushback |
+| using-git-worktrees | (notes only) | Medium | Hygiene notes in `incremental-implementation`; no auto worktree/create/cleanup |
+| finishing-a-development-branch | (notes only) | Medium | Land/merge via PR + `verify-before-done`; no discard-branch workflow |
+
+### New skills (adapted)
+
+| External skill | Local skill | Risk | Notes |
+|----------------|-------------|------|-------|
+| systematic-debugging | `core-workflow/systematic-debugging` | Low | Four-phase root cause; no `find-polluter.sh` import |
+| requesting-code-review | `core-workflow/requesting-code-review` | Low | Thin review request; optional subagent only when allowed |
+| dispatching-parallel-agents | `ai-agent-systems/dispatching-parallel-agents` | Medium | Gated parallel tasks; integration review required |
+| subagent-driven-development | `ai-agent-systems/subagent-driven-development` | Medium | Gated; one task per agent; no auto-commit |
+| writing-skills | `meta-tools/writing-skills` | Low | Thin skill + `docs/skill-writing-guide.md`; no `render-graphs.js` |
+
+### Skip (this pass)
+
+| External skill | Reason |
+|----------------|--------|
+| using-superpowers | Meta-bootstrap forcing skill use before every response; conflicts with agent protocol |
+| using-git-worktrees (standalone) | Auto worktree, `.gitignore` edits, install deps, destructive cleanup |
+| finishing-a-development-branch (standalone) | Discard/merge/cleanup branch flows conflict with Git safety and explicit PR rules |
+
+### Not copied from upstream
+
+- Plugin manifests (`.claude-plugin`, `.cursor-plugin`, `.codex-plugin`, `gemini-extension.json`)
+- OpenCode `superpowers.js` bootstrap injection
+- `scripts/sync-to-codex-plugin.sh`, hooks, local HTTP visual companion
+- `find-polluter.sh`, `render-graphs.js`
+
+**Attribution:** Workflows inspired by [obra/superpowers](https://github.com/obra/superpowers) (MIT, Jesse Vincent). Wording rewritten for this catalog.
 
 ---
 
