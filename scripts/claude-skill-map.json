@@ -18,6 +18,11 @@
       "source_name": "context-window-management"
     },
     {
+      "cursor_path": "ai-agent-systems/dispatching-parallel-agents",
+      "claude_name": "dispatching-parallel-agents",
+      "source_name": "dispatching-parallel-agents"
+    },
+    {
       "cursor_path": "ai-agent-systems/mcp-builder",
       "claude_name": "mcp-builder",
       "source_name": "mcp-builder"
@@ -31,6 +36,11 @@
       "cursor_path": "ai-agent-systems/rag-systems",
       "claude_name": "rag-systems",
       "source_name": "rag-systems"
+    },
+    {
+      "cursor_path": "ai-agent-systems/subagent-driven-development",
+      "claude_name": "subagent-driven-development",
+      "source_name": "subagent-driven-development"
     },
     {
       "cursor_path": "analysis-stats/shap",
@@ -118,6 +128,11 @@
       "source_name": "receiving-code-review"
     },
     {
+      "cursor_path": "core-workflow/requesting-code-review",
+      "claude_name": "requesting-code-review",
+      "source_name": "requesting-code-review"
+    },
+    {
       "cursor_path": "core-workflow/source-driven-development",
       "claude_name": "source-driven-development",
       "source_name": "source-driven-development"
@@ -126,6 +141,11 @@
       "cursor_path": "core-workflow/spec-driven-development",
       "claude_name": "spec-driven-development",
       "source_name": "spec-driven-development"
+    },
+    {
+      "cursor_path": "core-workflow/systematic-debugging",
+      "claude_name": "systematic-debugging",
+      "source_name": "systematic-debugging"
     },
     {
       "cursor_path": "core-workflow/test-failure-triage",
@@ -451,6 +471,11 @@
       "cursor_path": "meta-tools/autoskill",
       "claude_name": "autoskill",
       "source_name": "autoskill"
+    },
+    {
+      "cursor_path": "meta-tools/writing-skills",
+      "claude_name": "writing-skills",
+      "source_name": "writing-skills"
     },
     {
       "cursor_path": "ml-dl/pytorch-lightning",

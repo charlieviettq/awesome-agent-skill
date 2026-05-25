@@ -34,6 +34,7 @@ Structured intent extraction before specs, plans, or code. Complements `clarify-
 - Prefer multiple-choice or examples over open-ended vagueness.
 - Do not start implementation until stop condition is met or user waives interview.
 - Flag assumptions explicitly; do not silently fill gaps.
+- If user jumps to implementation, pause and confirm intent or non-goals in one question.
 
 ## Output template
 

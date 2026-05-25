@@ -33,6 +33,7 @@ Structured intent extraction before specs, plans, or code. Complements `clarify-
 - Prefer multiple-choice or examples over open-ended vagueness.
 - Do not start implementation until stop condition is met or user waives interview.
 - Flag assumptions explicitly; do not silently fill gaps.
+- If user jumps to implementation, pause and confirm intent or non-goals in one question.
 
 ## Output template
 
@@ -52,4 +53,4 @@ Structured intent extraction before specs, plans, or code. Complements `clarify-
 - `idea-refine` — divergent exploration before intent lock
 - `spec-driven-development` — after intent is clear
 
-*Adapted from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) (MIT).*
+*Adapted from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) and [obra/superpowers](https://github.com/obra/superpowers) (MIT).*

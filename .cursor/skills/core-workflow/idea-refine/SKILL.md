@@ -37,7 +37,13 @@ Early-stage idea shaping: generate options, stress-test assumptions, then narrow
 
 - Recommend one direction with rationale
 - List what to validate in the next 1–2 hours/days
+- Present design in **short sections** the user can approve or correct before locking scope
 - Hand off to `interview-me`, `spec-driven-development`, or `planning-and-task-breakdown`
+
+### Before code
+
+- Do not start implementation during brainstorming
+- Do not auto-save specs or commit without explicit user request
 
 ## Output template
 
@@ -56,4 +62,4 @@ Early-stage idea shaping: generate options, stress-test assumptions, then narrow
 - `doubt-driven-review` — adversarial check before high-blast-radius choices
 - `architecture-decision-records` — when converged choice is architectural
 
-*Adapted from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) (MIT).*
+*Adapted from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) and [obra/superpowers](https://github.com/obra/superpowers) (MIT).*

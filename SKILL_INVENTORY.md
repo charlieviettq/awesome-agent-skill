@@ -59,7 +59,9 @@ High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 - `core-workflow/incremental-implementation`
 - `core-workflow/interview-me`
 - `core-workflow/planning-and-task-breakdown`
+- `core-workflow/requesting-code-review`
 - `core-workflow/receiving-code-review`
+- `core-workflow/systematic-debugging`
 - `core-workflow/source-driven-development`
 - `core-workflow/spec-driven-development`
 - `core-workflow/test-failure-triage`
@@ -89,6 +91,8 @@ High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 ## AI agent systems
 
 - `ai-agent-systems/agent-evaluation`
+- `ai-agent-systems/dispatching-parallel-agents`
+- `ai-agent-systems/subagent-driven-development`
 - `ai-agent-systems/agent-tool-contracts`
 - `ai-agent-systems/context-window-management`
 - `ai-agent-systems/mcp-builder`
@@ -136,4 +140,5 @@ See `voltagent/SKILL.md` and children under `voltagent/**` for DS/ML/product/inf
 ## Meta tools
 
 - `meta-tools/autoskill`
+- `meta-tools/writing-skills`
 

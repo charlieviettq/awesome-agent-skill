@@ -21,13 +21,15 @@ description: >
 - Generated code with separate validation.
 - Pure config or documentation-only changes.
 
-## Workflow
+## Workflow (RED-GREEN-REFACTOR)
 
 1. **Define** expected behavior in one sentence.
-2. **RED:** Add or identify a test that fails for the right reason (missing behavior, not typo).
-3. **GREEN:** Minimal code to pass.
-4. **Verify:** Run targeted tests, then broader suite if scope warrants.
-5. **REFACTOR:** Only after green; keep tests passing.
+2. **RED:** Add or identify a test that fails for the right reason (missing behavior, not typo). Run it and confirm failure.
+3. **GREEN:** Minimal code to pass. Run the same test and confirm pass.
+4. **REFACTOR:** Only after green; keep tests passing.
+5. **Verify:** Run targeted tests, then broader suite if scope warrants.
+
+For bugfixes: if production code was written before the failing test, treat as process violation—add the test, confirm fail, then fix.
 
 ## Good tests
 
@@ -42,8 +44,17 @@ description: >
 - [ ] Targeted tests pass
 - [ ] No unrelated test failures introduced
 
-## Anti-patterns
+## Testing anti-patterns
 
 - Implement first, add tests only at the end for logic changes.
 - Tests that pass immediately without proving anything.
 - Vague test names (`test1`, `test_fix`).
+- Heavy mocking that does not assert real behavior.
+- Test-only methods or flags added to production code solely to make tests pass.
+- Incomplete mocks that hide integration failures.
+
+## Related
+
+`systematic-debugging`, `test-failure-triage`, `verify-before-done`
+
+*TDD discipline inspired by [obra/superpowers](https://github.com/obra/superpowers) (MIT).*

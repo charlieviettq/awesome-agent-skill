@@ -34,9 +34,21 @@ No completion claims without **fresh verification evidence** in the current turn
 - Trusting subagent or prior message without re-running
 - Partial verification only
 
+## Requirements met (not tests alone)
+
+- Map plan/spec acceptance criteria to evidence (test output, screenshot, API response, manual step)
+- A green test suite does not prove every requirement if scope included non-testable items
+
 ## Regression discipline
 
 For bugfixes: failing test or repro first, fix, verify pass, optionally revert fix and confirm fail again.
+
+## Branch completion (lightweight)
+
+- Before claiming PR-ready: tests/lint/build per project norms, no known blockers, user informed of scope
+- Do not discard branches, force-merge, or cleanup worktrees without explicit user approval
+
+*Verification gate inspired by [obra/superpowers](https://github.com/obra/superpowers) (MIT).*
 
 ## Output format
 

@@ -57,6 +57,24 @@ Too vague; no triggers, no steps, no done condition.
 
 Skills under `gstack/` and `voltagent/` are imported packs. New contributions should prefer top-level domains (`core-workflow/`, `reliability-ops/`, etc.) unless extending those packs intentionally.
 
+## Pressure-test triggers
+
+Before merging a new skill, write:
+
+1. Three phrases that **should** invoke it
+2. Two phrases that **should not** (too broad or wrong domain)
+3. One edge case (e.g. user asks for speed over process)
+
+If the skill would fire on almost every message, narrow the description or move content to a reference file.
+
+## External adaptation
+
+When adapting from catalogs such as [obra/superpowers](https://github.com/obra/superpowers):
+
+- Record the decision in `EXTERNAL_SKILLS.md`
+- Rewrite wording; do not copy plugin hooks or bootstrap meta-skills
+- Prefer **merge** into an existing skill when overlap is high
+
 ## Before opening a PR
 
 - Read [`review-rubric.md`](review-rubric.md)
