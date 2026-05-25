@@ -78,8 +78,16 @@ Install with scripts (recommended):
 # Starter bundle: core-workflow + security + reliability
 bash scripts/install/install-bundle.sh starter /path/to/project --format both
 
-# Single domain
+# Curated bundles (see registry/bundles.json)
+bash scripts/install/install-bundle.sh ship-ready /path/to/project --format both
+bash scripts/install/install-bundle.sh agent-builder /path/to/project --format cursor
+
+# Single domain or skill
 bash scripts/install/install-domain.sh core-workflow /path/to/project --format cursor
+bash scripts/install/install-skill.sh core-workflow/verify-before-done /path/to/project --format cursor
+
+# Regenerate skill index after adding skills
+python3 scripts/generate-registry.py
 ```
 
 Manual install (Cursor):

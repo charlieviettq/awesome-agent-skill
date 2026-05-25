@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "bundles": [
+    {
+      "id": "starter",
+      "title": "Starter",
+      "description": "Core workflow, security, and reliability skills for everyday agent-assisted development.",
+      "domains": ["core-workflow", "security-appsec", "reliability-ops"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "ship-ready",
+      "title": "Ship Ready",
+      "description": "Spec, plan, implement, test, verify, and review before merge.",
+      "domains": [],
+      "skills": [
+        "core-workflow/spec-driven-development",
+        "core-workflow/planning-and-task-breakdown",
+        "core-workflow/incremental-implementation",
+        "core-workflow/test-first-development",
+        "core-workflow/verify-before-done",
+        "core-workflow/receiving-code-review",
+        "reliability-ops/shipping-launch-checklist"
+      ],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "agent-builder",
+      "title": "Agent Builder",
+      "description": "Build and evaluate agent tools, MCP servers, RAG, and context workflows.",
+      "domains": [],
+      "skills": [
+        "ai-agent-systems/mcp-builder",
+        "ai-agent-systems/agent-tool-contracts",
+        "ai-agent-systems/agent-evaluation",
+        "ai-agent-systems/rag-systems",
+        "ai-agent-systems/context-window-management"
+      ],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "data-scientist",
+      "title": "Data Scientist",
+      "description": "EDA, ML/DL, statistics, visualization, and notebook-friendly workflows.",
+      "domains": [
+        "eda-research",
+        "ml-dl",
+        "analysis-stats",
+        "data-compute",
+        "visualization"
+      ],
+      "skills": [],
+      "formats": ["cursor", "claude"]
+    },
+    {
+      "id": "security-reviewer",
+      "title": "Security Reviewer",
+      "description": "API security testing, secure design, and skill supply-chain audit.",
+      "domains": ["security-appsec"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "full",
+      "title": "Full Catalog",
+      "description": "All top-level skill domains in this repository.",
+      "domains": [],
+      "skills": [],
+      "install_all_domains": true,
+      "formats": ["cursor", "claude", "both"]
+    }
+  ]
+}

@@ -6,6 +6,9 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- SkillHub registry: `registry/skills.json`, `registry/bundles.json`, `scripts/generate-registry.py`
+- Bundle resolver: `scripts/resolve-bundle.py`; per-skill install: `scripts/install/install-skill.sh`
+- Bundles: `ship-ready`, `agent-builder`, `data-scientist`, `security-reviewer` (plus existing `starter`, `full`)
 - Install scripts: `scripts/install/install-domain.sh`, `scripts/install/install-bundle.sh`
 - Validation script: `scripts/validate-skills.py` (used in CI)
 - Metrics script: `scripts/repo-metrics.py`

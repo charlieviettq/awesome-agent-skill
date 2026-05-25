@@ -5,9 +5,7 @@ usage() {
   cat <<'EOF'
 Usage: install-bundle.sh <bundle> <target-project> [--format cursor|claude|both]
 
-Bundles:
-  starter   core-workflow + security-appsec + reliability-ops
-  full      all top-level domains
+Bundles are defined in registry/bundles.json (starter, ship-ready, agent-builder, data-scientist, security-reviewer, full).
 EOF
 }
 
@@ -27,21 +25,29 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 INSTALL="${SCRIPT_DIR}/install-domain.sh"
 
-case "${BUNDLE}" in
-  starter)
-    DOMAINS="core-workflow security-appsec reliability-ops"
-    ;;
-  full)
-    DOMAINS="$(find "${REPO_ROOT}/.cursor/skills" -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort | tr '\n' ' ')"
-    ;;
-  *)
-    echo "Unknown bundle: ${BUNDLE}" >&2
-    exit 1
-    ;;
-esac
+INSTALL_SKILL="${SCRIPT_DIR}/install-skill.sh"
+RESOLVE="${REPO_ROOT}/scripts/resolve-bundle.py"
 
-for domain in ${DOMAINS}; do
-  bash "${INSTALL}" "${domain}" "${TARGET}" --format "${FORMAT}"
-done
+if ! PLAN="$(python3 "${RESOLVE}" "${BUNDLE}")"; then
+  exit 1
+fi
+
+while IFS= read -r line; do
+  [[ -z "${line}" ]] && continue
+  kind="${line%%:*}"
+  value="${line#*:}"
+  case "${kind}" in
+    domain)
+      bash "${INSTALL}" "${value}" "${TARGET}" --format "${FORMAT}"
+      ;;
+    skill)
+      bash "${INSTALL_SKILL}" "${value}" "${TARGET}" --format "${FORMAT}"
+      ;;
+    *)
+      echo "Unknown plan entry: ${line}" >&2
+      exit 1
+      ;;
+  esac
+done <<< "${PLAN}"
 
 echo "Bundle '${BUNDLE}' installed into ${TARGET}"
