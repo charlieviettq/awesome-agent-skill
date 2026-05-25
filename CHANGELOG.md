@@ -6,6 +6,7 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- SkillHub web catalog: `scripts/generate-catalog.py`, static `catalog/index.html`
 - SkillHub quality: `generate-quality.py`, `skillhub quality`, CI `eval-recommend`
 - SkillHub recommend: `recommend`, `eval-recommend` with `registry/recommend-fixtures.json`
 - SkillHub CLI: `scripts/skillhub.py` (`list`, `search`, `show`, `bundles`, `install`, `install-bundle`, `validate`, `doctor`)
