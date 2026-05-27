@@ -7,6 +7,7 @@
 [![Stars](https://img.shields.io/github/stars/charlieviettq/awesome-agent-skill?style=for-the-badge&logo=github&color=60a5fa)](https://github.com/charlieviettq/awesome-agent-skill/stargazers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-178-8b5cf6?style=for-the-badge)](.cursor/skills)
+[![Marketplace](https://img.shields.io/badge/Skill_Marketplace-live-6366f1?style=for-the-badge)](https://charlieviettq.github.io/awesome-agent-skill/)
 [![Formats](https://img.shields.io/badge/formats-Cursor%20%2B%20Claude-0ea5e9?style=for-the-badge)](#quickstart)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last commit](https://img.shields.io/github/last-commit/charlieviettq/awesome-agent-skill?style=for-the-badge&color=f97316)](https://github.com/charlieviettq/awesome-agent-skill/commits/main)
@@ -15,6 +16,8 @@
 **A curated, open-source skill library for agentic developer tools.**
 
 Give your coding agent reusable playbooks for planning, debugging, QA, security, docs, data work, browser automation, and shipping.
+
+**[Open Skill Marketplace](https://charlieviettq.github.io/awesome-agent-skill/)** — search 178 skills, preview `SKILL.md` inline, explore the bundle graph, copy install commands.
 
 </div>
 
@@ -25,6 +28,19 @@ Give your coding agent reusable playbooks for planning, debugging, QA, security,
 Most agents start every task from a blank prompt. Skills give them reusable operating procedures: when to ask for clarification, how to run a review, how to triage tests, how to handle PDFs, how to build a quick analysis, how to use browser QA, and how to ship safely.
 
 `awesome-agent-skill` packages those workflows as portable `SKILL.md` files for modern coding agents.
+
+## Skill Marketplace
+
+Live demo: **[charlieviettq.github.io/awesome-agent-skill](https://charlieviettq.github.io/awesome-agent-skill/)**
+
+| Feature | What you get |
+|---------|----------------|
+| Task advisor | Describe your task, get skills + bundle + install command |
+| Browse & filter | Domain, tier, risk, quality, bundle filters |
+| Bundle graph | Interactive force graph of bundle → domain → skill |
+| Skill preview | Read `SKILL.md` on the page without opening GitHub |
+
+Regenerate locally: `python3 scripts/generate-catalog.py` then serve `catalog/`.
 
 ## What You Get
 

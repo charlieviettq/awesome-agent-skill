@@ -24,10 +24,11 @@ python3 -m http.server 8765 --directory catalog
 
 ## Features
 
-- Hero + task advisor (client-side recommend engine, same scoring as CLI)
+- Hero + task advisor (client-side recommend engine)
+- **Bundle graph** (D3 force layout, click-to-filter)
 - Bundle landing sections from `registry/bundles.json`
-- Skill grid with domain / tier / risk / agent filters
+- Skill grid with domain / tier / risk / bundle / quality filters
+- **Inline skill preview** from generated `data/skill-content.json`
 - Copy install commands per skill and bundle
-- Links to `SKILL.md` on GitHub
 
 Regenerate after skill or registry changes, or run `python3 scripts/skillhub.py sync`.

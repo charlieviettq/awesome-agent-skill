@@ -1,4 +1,4 @@
-/* SkillHub Marketplace — client-side recommend engine (keep in sync with scripts/skillhub_recommend.py) */
+/* SkillHub Marketplace — recommend engine + browse + preview */
 
 const SYNONYM_MAP = {
   tdd: ["test", "tests"],
@@ -117,12 +117,8 @@ function installBundleCmd(id, fmt) {
 }
 
 function fullWorkflow(bundleId, skillId, fmt) {
-  const cmd = bundleId
-    ? installBundleCmd(bundleId, fmt)
-    : installSkillCmd(skillId, fmt);
-  return (
-    `git clone https://github.com/${REPO}.git && cd awesome-agent-skill && ${cmd}`
-  );
+  const cmd = bundleId ? installBundleCmd(bundleId, fmt) : installSkillCmd(skillId, fmt);
+  return `git clone https://github.com/${REPO}.git && cd awesome-agent-skill && ${cmd}`;
 }
 
 function skillGithubUrl(id) {
@@ -154,7 +150,64 @@ function renderCommandBox(container, command, label) {
   container.appendChild(wrap);
 }
 
-function initMarketplace(skills, bundles, quality) {
+function initSkillModal(skillContent, agentFmt) {
+  const modal = document.getElementById("skill-modal");
+  const titleEl = document.getElementById("modal-title");
+  const metaEl = document.getElementById("modal-meta");
+  const bodyEl = document.getElementById("modal-body");
+  const copyBtn = document.getElementById("modal-copy-install");
+  const githubLink = document.getElementById("modal-github");
+  let lastFocus = null;
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+    if (lastFocus) lastFocus.focus();
+  }
+
+  function openPreview(skillId, skillMeta) {
+    const entry = skillContent[skillId];
+    const meta = skillMeta || {};
+    lastFocus = document.activeElement;
+    titleEl.textContent = entry?.name || meta.name || skillId;
+    metaEl.textContent = [skillId, meta.domain, meta.tier, meta.risk && `${meta.risk} risk`]
+      .filter(Boolean)
+      .join(" · ");
+    githubLink.href = skillGithubUrl(skillId);
+    const cmd = installSkillCmd(skillId, agentFmt());
+    copyBtn.onclick = () => copyText(cmd, copyBtn);
+    if (entry && entry.markdown && typeof marked !== "undefined") {
+      bodyEl.innerHTML = marked.parse(entry.markdown);
+    } else if (entry && entry.markdown) {
+      bodyEl.innerHTML = `<pre>${escapeHtml(entry.markdown)}</pre>`;
+    } else {
+      bodyEl.innerHTML =
+        '<p class="sub">Preview not available. Open SKILL.md on GitHub.</p>';
+    }
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    modal.querySelector(".modal-close").focus();
+  }
+
+  modal.querySelectorAll("[data-close-modal]").forEach((el) => {
+    el.addEventListener("click", closeModal);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (!modal.hidden && e.key === "Escape") closeModal();
+  });
+
+  return { openPreview, closeModal };
+}
+
+function escapeHtml(s) {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function initMarketplace(skills, bundles, quality, skillContent) {
   const params = new URLSearchParams(location.search);
   let domainFilter = params.get("domain") || "";
   let bundleFilter = params.get("bundle") || "";
@@ -168,23 +221,68 @@ function initMarketplace(skills, bundles, quality) {
   const agentSelect = document.getElementById("agent");
   const list = document.getElementById("list");
   const domainsEl = document.getElementById("domains");
+  const bundlesFilterEl = document.getElementById("bundles-filter");
   const tierEl = document.getElementById("tiers");
   const riskEl = document.getElementById("risks");
+  const qualityEl = document.getElementById("quality-filter");
   const bundleGrid = document.getElementById("bundle-grid");
   const countEl = document.getElementById("shown-count");
   const advisorResult = document.getElementById("advisor-result");
+  const activeFiltersWrap = document.getElementById("active-filters");
+  const activeFilterChips = document.getElementById("active-filter-chips");
+
+  const modalApi = initSkillModal(skillContent, () => agentSelect.value);
 
   if (params.get("task")) taskInput.value = params.get("task");
   if (params.get("q")) qInput.value = params.get("q");
   agentSelect.value = agentFilter;
 
-  function bundleSkillCount(bundle) {
-    if (bundle.install_all_domains) return skills.length;
-    let n = (bundle.skills || []).length;
-    (bundle.domains || []).forEach((d) => {
-      n += skills.filter((s) => s.domain === d).length;
-    });
-    return n;
+  function bundleSkillIds(bundle) {
+    const ids = new Set(bundle.skills || []);
+    if (bundle.domains) {
+      skills.forEach((s) => {
+        if (bundle.domains.includes(s.domain)) ids.add(s.id);
+      });
+    }
+    return ids;
+  }
+
+  function applyBundleFilter(bundleId) {
+    bundleFilter = bundleId;
+    domainFilter = "";
+    renderFilters();
+    renderSkills();
+    updateActiveFilters();
+    document.getElementById("skills-section").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function applyDomainFilter(domain) {
+    domainFilter = domain;
+    bundleFilter = "";
+    renderFilters();
+    renderSkills();
+    updateActiveFilters();
+    document.getElementById("skills-section").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function applySkillFilter(skillId) {
+    qInput.value = skillId.split("/").pop();
+    renderSkills();
+    updateActiveFilters();
+    document.getElementById("skills-section").scrollIntoView({ behavior: "smooth" });
+  }
+
+  if (typeof SkillHubGraph !== "undefined") {
+    SkillHubGraph.initBundleGraph(
+      document.getElementById("graph-container"),
+      skills,
+      bundles,
+      {
+        onBundle: applyBundleFilter,
+        onDomain: applyDomainFilter,
+        onSkill: (id) => modalApi.openPreview(id, skills.find((s) => s.id === id)),
+      }
+    );
   }
 
   function renderBundles() {
@@ -192,7 +290,7 @@ function initMarketplace(skills, bundles, quality) {
       .filter((b) => b.id !== "full")
       .map(
         (b) => `
-      <article class="bundle-card" data-bundle="${b.id}">
+      <article class="bundle-card glass" data-bundle="${b.id}">
         <h3>${b.title}</h3>
         <p>${b.description || ""}</p>
         <div class="badges"><span class="badge">~${bundleSkillCount(b)} skills</span></div>
@@ -210,55 +308,69 @@ function initMarketplace(skills, bundles, quality) {
       });
     });
     bundleGrid.querySelectorAll("[data-filter-bundle]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        bundleFilter = btn.dataset.filterBundle;
-        domainFilter = "";
-        renderFilters();
-        renderSkills();
-        document.getElementById("skills-section").scrollIntoView({ behavior: "smooth" });
-      });
+      btn.addEventListener("click", () => applyBundleFilter(btn.dataset.filterBundle));
     });
   }
 
-  function bundleSkillIds(bundle) {
-    const ids = new Set(bundle.skills || []);
-    if (bundle.domains) {
-      skills.forEach((s) => {
-        if (bundle.domains.includes(s.domain)) ids.add(s.id);
-      });
-    }
-    return ids;
+  function bundleSkillCount(bundle) {
+    if (bundle.install_all_domains) return skills.length;
+    let n = (bundle.skills || []).length;
+    (bundle.domains || []).forEach((d) => {
+      n += skills.filter((s) => s.domain === d).length;
+    });
+    return n;
   }
 
   function renderFilters() {
     const mk = (el, items, current, key, allLabel) => {
       el.innerHTML = "";
       const all = document.createElement("button");
+      all.type = "button";
       all.className = `chip${current ? "" : " active"}`;
       all.textContent = allLabel;
       all.onclick = () => {
         if (key === "domain") domainFilter = "";
         if (key === "tier") tierFilter = "";
         if (key === "risk") riskFilter = "";
+        if (key === "bundle") bundleFilter = "";
+        if (key === "quality") minQuality = 0;
         renderFilters();
         renderSkills();
+        updateActiveFilters();
       };
       el.appendChild(all);
       items.forEach((item) => {
         const b = document.createElement("button");
+        b.type = "button";
         b.className = `chip${current === item ? " active" : ""}`;
-        b.textContent = item;
+        b.textContent = typeof item === "number" ? `Q${item}+` : item;
         b.onclick = () => {
-          if (key === "domain") domainFilter = item;
+          if (key === "domain") {
+            domainFilter = item;
+            bundleFilter = "";
+          }
           if (key === "tier") tierFilter = item;
           if (key === "risk") riskFilter = item;
-          bundleFilter = "";
+          if (key === "bundle") {
+            bundleFilter = item;
+            domainFilter = "";
+          }
+          if (key === "quality") minQuality = item;
           renderFilters();
           renderSkills();
+          updateActiveFilters();
         };
         el.appendChild(b);
       });
     };
+
+    mk(
+      bundlesFilterEl,
+      bundles.filter((b) => b.id !== "full").map((b) => b.id),
+      bundleFilter,
+      "bundle",
+      "All bundles"
+    );
     mk(
       domainsEl,
       [...new Set(skills.map((s) => s.domain))].sort(),
@@ -268,7 +380,50 @@ function initMarketplace(skills, bundles, quality) {
     );
     mk(tierEl, ["core", "extended"], tierFilter, "tier", "All tiers");
     mk(riskEl, ["low", "medium", "high"], riskFilter, "risk", "All risk");
+    mk(qualityEl, [50, 70, 85], minQuality, "quality", "Any");
   }
+
+  function updateActiveFilters() {
+    const active = [];
+    if (bundleFilter) active.push({ label: `bundle: ${bundleFilter}`, clear: () => { bundleFilter = ""; } });
+    if (domainFilter) active.push({ label: `domain: ${domainFilter}`, clear: () => { domainFilter = ""; } });
+    if (tierFilter) active.push({ label: `tier: ${tierFilter}`, clear: () => { tierFilter = ""; } });
+    if (riskFilter) active.push({ label: `risk: ${riskFilter}`, clear: () => { riskFilter = ""; } });
+    if (minQuality) active.push({ label: `Q${minQuality}+`, clear: () => { minQuality = 0; } });
+    if (qInput.value.trim()) active.push({ label: `search: ${qInput.value.trim()}`, clear: () => { qInput.value = ""; } });
+
+    if (!active.length) {
+      activeFiltersWrap.hidden = true;
+      return;
+    }
+    activeFiltersWrap.hidden = false;
+    activeFilterChips.innerHTML = "";
+    active.forEach((a) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "chip active filter-removable";
+      chip.textContent = `${a.label} ×`;
+      chip.onclick = () => {
+        a.clear();
+        renderFilters();
+        renderSkills();
+        updateActiveFilters();
+      };
+      activeFilterChips.appendChild(chip);
+    });
+  }
+
+  document.getElementById("clear-filters").addEventListener("click", () => {
+    domainFilter = "";
+    bundleFilter = "";
+    tierFilter = "";
+    riskFilter = "";
+    minQuality = 0;
+    qInput.value = "";
+    renderFilters();
+    renderSkills();
+    updateActiveFilters();
+  });
 
   function passesFilters(s) {
     if (domainFilter && s.domain !== domainFilter) return false;
@@ -291,7 +446,7 @@ function initMarketplace(skills, bundles, quality) {
 
   function renderSkills() {
     const filtered = skills.filter(passesFilters);
-    countEl.textContent = `${filtered.length} / ${skills.length} skills`;
+    countEl.textContent = `${filtered.length} / ${skills.length}`;
     if (!filtered.length) {
       list.innerHTML = '<div class="empty">No skills match your filters.</div>';
       return;
@@ -307,8 +462,9 @@ function initMarketplace(skills, bundles, quality) {
           .map((t) => `<span class="badge">${t}</span>`)
           .join("");
         const installCmd = installSkillCmd(s.id, agentSelect.value);
+        const hasPreview = !!skillContent[s.id];
         return `
-        <article class="skill-card">
+        <article class="skill-card glass">
           <header>
             <div>
               <h3>${s.name}</h3>
@@ -319,16 +475,21 @@ function initMarketplace(skills, bundles, quality) {
           <div class="badges">${tags}</div>
           <p>${(s.description || "").replace(/^>\s*/gm, "").slice(0, 180)}</p>
           <div class="card-actions">
-            <button class="btn btn-small" data-copy="${encodeURIComponent(installCmd)}">Copy install</button>
-            <a class="btn btn-small btn-secondary" href="${skillGithubUrl(s.id)}" target="_blank" rel="noopener">View SKILL.md</a>
+            ${hasPreview ? `<button class="btn btn-small" data-preview="${s.id}">Preview skill</button>` : ""}
+            <button class="btn btn-small btn-secondary" data-copy="${encodeURIComponent(installCmd)}">Copy install</button>
+            <a class="btn btn-small btn-secondary" href="${skillGithubUrl(s.id)}" target="_blank" rel="noopener">GitHub</a>
           </div>
         </article>`;
       })
       .join("");
 
     list.querySelectorAll("[data-copy]").forEach((btn) => {
+      btn.addEventListener("click", () => copyText(decodeURIComponent(btn.dataset.copy), btn));
+    });
+    list.querySelectorAll("[data-preview]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        copyText(decodeURIComponent(btn.dataset.copy), btn);
+        const skill = skills.find((s) => s.id === btn.dataset.preview);
+        modalApi.openPreview(btn.dataset.preview, skill);
       });
     });
   }
@@ -362,6 +523,15 @@ function initMarketplace(skills, bundles, quality) {
       const reasons = matchReasons(query, s).join(" · ");
       const li = document.createElement("li");
       li.innerHTML = `<strong>${s.name}</strong> <span class="skill-id">(${s.id})</span> — score ${sc}<br><span style="color:var(--text-muted);font-size:0.85rem">${reasons}</span>`;
+      if (skillContent[s.id]) {
+        const pb = document.createElement("button");
+        pb.className = "btn btn-small btn-secondary";
+        pb.style.marginTop = "0.35rem";
+        pb.textContent = "Preview";
+        pb.onclick = () => modalApi.openPreview(s.id, s);
+        li.appendChild(document.createElement("br"));
+        li.appendChild(pb);
+      }
       ul.appendChild(li);
     });
     advisorResult.appendChild(ul);
@@ -375,7 +545,10 @@ function initMarketplace(skills, bundles, quality) {
     advisorResult.appendChild(note);
   }
 
-  qInput.addEventListener("input", renderSkills);
+  qInput.addEventListener("input", () => {
+    renderSkills();
+    updateActiveFilters();
+  });
   agentSelect.addEventListener("change", () => {
     agentFilter = agentSelect.value;
     renderSkills();
@@ -385,17 +558,24 @@ function initMarketplace(skills, bundles, quality) {
     if (e.key === "Enter") runAdvisor();
   });
 
+  if (params.get("preview")) {
+    const pid = params.get("preview");
+    if (skillContent[pid]) modalApi.openPreview(pid, skills.find((s) => s.id === pid));
+  }
+
   renderBundles();
   renderFilters();
   renderSkills();
+  updateActiveFilters();
   if (taskInput.value) runAdvisor();
 }
 
 async function boot() {
-  const [skillsRes, bundlesRes, qualityRes] = await Promise.all([
+  const [skillsRes, bundlesRes, qualityRes, contentRes] = await Promise.all([
     fetch("data/skills.json"),
     fetch("data/bundles.json"),
     fetch("data/quality.json").catch(() => null),
+    fetch("data/skill-content.json").catch(() => null),
   ]);
   const skillsPayload = await skillsRes.json();
   const bundlesPayload = await bundlesRes.json();
@@ -410,7 +590,16 @@ async function boot() {
       quality = qdata;
     }
   }
-  initMarketplace(skillsPayload.skills || skillsPayload, bundlesPayload.bundles || bundlesPayload, quality);
+  let skillContent = {};
+  if (contentRes && contentRes.ok) {
+    skillContent = await contentRes.json();
+  }
+  initMarketplace(
+    skillsPayload.skills || skillsPayload,
+    bundlesPayload.bundles || bundlesPayload,
+    quality,
+    skillContent
+  );
 }
 
 boot();
