@@ -45,7 +45,24 @@ def score_match(query: str, skill: dict) -> int:
     if not tokens:
         tokens = [query.lower()]
     score = 0
-    for token in tokens:
+    text_fields = {
+        "id": str(skill.get("id", "")),
+        "name": str(skill.get("name", "")),
+        "domain": str(skill.get("domain", "")),
+        "description": str(skill.get("description", "")),
+        "summary": str(skill.get("summary", "")),
+    }
+    # Simple synonym expansion for common abbreviations
+    synonym_map = {
+        "tdd": ["test", "tests"],
+        "spec": ["requirements", "design"],
+        "rag": ["retrieval", "embeddings"],
+    }
+    expanded_tokens: list[str] = []
+    for t in tokens:
+        expanded_tokens.append(t)
+        expanded_tokens.extend(synonym_map.get(t, []))
+    for token in expanded_tokens:
         for field in ("id", "name", "domain", "description"):
             val = str(skill.get(field, "")).lower()
             if token in val:
