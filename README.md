@@ -96,6 +96,8 @@ python3 scripts/skillhub.py install-bundle agent-builder /path/to/project --form
 
 See [docs/skillhub-cli.md](docs/skillhub-cli.md).
 
+**Web catalog:** `python3 scripts/generate-catalog.py` then open `catalog/index.html` (or serve `catalog/` statically).
+
 Manual install (Cursor):
 
 ```bash
