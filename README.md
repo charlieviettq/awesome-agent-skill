@@ -33,6 +33,8 @@ Most agents start every task from a blank prompt. Skills give them reusable oper
 
 Live demo: **[charlieviettq.github.io/awesome-agent-skill](https://charlieviettq.github.io/awesome-agent-skill/)**
 
+![SkillHub bundle graph preview](.github/assets/bundle-graph.png)
+
 | Feature | What you get |
 |---------|----------------|
 | Task advisor | Describe your task, get skills + bundle + install command |
