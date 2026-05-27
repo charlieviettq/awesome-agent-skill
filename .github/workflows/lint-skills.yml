@@ -17,3 +17,6 @@ jobs:
 
       - name: Check registry sync
         run: python3 scripts/generate-registry.py --check
+
+      - name: Recommendation eval
+        run: python3 scripts/skillhub.py eval-recommend

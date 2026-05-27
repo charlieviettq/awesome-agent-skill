@@ -8,6 +8,8 @@ Machine-readable metadata for SkillHub CLI, web catalog, and MCP server.
 |------|---------|
 | `skills.json` | Generated index of all Cursor skills (do not edit by hand) |
 | `bundles.json` | Curated install bundles (edit when adding bundles) |
+| `quality.json` | Generated quality scores (`scripts/generate-quality.py`) |
+| `recommend-fixtures.json` | Recommendation eval fixtures |
 
 ## Regenerate skills index
 

@@ -1,0 +1,2517 @@
+{
+  "generated_at": "2026-05-25T10:22:20Z",
+  "schema_version": 1,
+  "count": 173,
+  "average_score": 70,
+  "low_score_count": 3,
+  "skills": [
+    {
+      "id": "ai-agent-systems/agent-evaluation",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "ai-agent-systems/agent-tool-contracts",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "ai-agent-systems/context-window-management",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "ai-agent-systems/mcp-builder",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "ai-agent-systems/mcp-ecosystem-optimizer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "ai-agent-systems/rag-systems",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "analysis-stats/shap",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "analysis-stats/statistical-analysis",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "analysis-stats/statsmodels",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "architecture/system-mapping",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/api-and-interface-design",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/architecture-decision-records",
+      "score": 100,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/clarify-underspecified",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/code-simplification",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/deprecation-and-migration",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/design-smell-review",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/doubt-driven-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/github-comment-triage",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/idea-refine",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/incremental-implementation",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/interview-me",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/planning-and-task-breakdown",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/receiving-code-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/source-driven-development",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/spec-driven-development",
+      "score": 100,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/test-failure-triage",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/test-first-development",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/verify-before-done",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/work-access-handoff",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "data-compute/dask",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "data-compute/networkx",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "data-compute/polars",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "eda-research/exploratory-data-analysis",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "eda-research/hypothesis-generation",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "eda-research/umap-learn",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "frontend-engineering/browser-testing-with-devtools",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "frontend-engineering/frontend-ui-accessibility",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "frontend-engineering/frontend-ui-engineering",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "gstack",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/browser-qa/benchmark",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/browser-qa/benchmark-models",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/browser-qa/browse",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/browser-qa/canary",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/browser-qa/qa",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/browser-qa/qa-only",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/code-quality/codex",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/code-quality/health",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/code-quality/investigate",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/code-quality/review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/context-memory/context-restore",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/context-memory/context-save",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/context-memory/learn",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/context-memory/setup-gbrain",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/context-memory/sync-gbrain",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/deploy-ship/document-release",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/deploy-ship/land-and-deploy",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/deploy-ship/landing-report",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/deploy-ship/setup-deploy",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/deploy-ship/ship",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/design/design-consultation",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/design/design-html",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/design/design-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/design/design-shotgun",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/plan-review/autoplan",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/plan-review/devex-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/plan-review/plan-ceo-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/plan-review/plan-design-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/plan-review/plan-devex-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/plan-review/plan-eng-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/plan-review/plan-tune",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/remote-agents/openclaw/gstack-openclaw-ceo-review",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/remote-agents/openclaw/gstack-openclaw-investigate",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/remote-agents/openclaw/gstack-openclaw-office-hours",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/remote-agents/openclaw/gstack-openclaw-retro",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/remote-agents/pair-agent",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/scrape/browser-skills/hackernews-frontpage",
+      "score": 50,
+      "checks": {
+        "description_min_80": false,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "short description",
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/scrape/scrape",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/scrape/skillify",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/security-safety/careful",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/security-safety/cso",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/security-safety/freeze",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/security-safety/guard",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/security-safety/unfreeze",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/utility/gstack-upgrade",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/utility/office-hours",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/utility/open-gstack-browser",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/utility/retro",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "gstack/utility/setup-browser-cookies",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "marketing/meta-ads-analyzer",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "meta-tools/autoskill",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "meta-tools/reflect-yourself",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "meta-tools/reflect-yourself/skill-examples/phase-kickoff",
+      "score": 33,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "missing ## section",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "ml-dl/pytorch-lightning",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "ml-dl/scikit-learn",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "ml-dl/scikit-survival",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "ml-dl/transformers",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "mobile/app-store-submission-packager",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "mobile/ios-testflight-github-actions",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "performance/performance-optimization",
+      "score": 100,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "product-growth/product-analytics-experiments",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "product-growth/product-offer-design",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "reflect-yourself",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "reflect-yourself/skill-examples/phase-kickoff",
+      "score": 33,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "missing ## section",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "reliability-ops/ci-cd-quality-gates",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "reliability-ops/cross-platform-error-handling",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "reliability-ops/dynamic-config-management",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "reliability-ops/observability-slo",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "reliability-ops/postmortem-writing",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "reliability-ops/serverless-debugging",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "reliability-ops/shipping-launch-checklist",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "security-appsec/api-security-testing",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "security-appsec/secure-api-design",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "security-appsec/skill-supply-chain-audit",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "visualization/data-viz-storytelling-healy",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "visualization/infographics",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "visualization/matplotlib",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "visualization/scientific-visualization",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "visualization/seaborn",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent",
+      "score": 33,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "missing ## section",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "voltagent/business-product/business-analyst",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/business-product/customer-success-manager",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/business-product/product-manager",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/business-product/project-manager",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/business-product/scrum-master",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/business-product/technical-writer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/business-product/ux-researcher",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/ai-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/data-analyst",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/data-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/data-scientist",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/database-optimizer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/llm-architect",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/machine-learning-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/ml-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/mlops-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/nlp-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/postgres-pro",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/prompt-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/data-ai/reinforcement-learning-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/dev-workflow/documentation-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/dev-workflow/git-workflow-manager",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/dev-workflow/refactoring-specialist",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/fintech-risk/fintech-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/fintech-risk/healthcare-admin",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/fintech-risk/quant-analyst",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/fintech-risk/risk-manager",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/infra/deployment-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/languages/python-pro",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/languages/sql-pro",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/orchestration/context-manager",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/orchestration/error-coordinator",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/orchestration/knowledge-synthesizer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/orchestration/multi-agent-coordinator",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/orchestration/task-distributor",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/quality-engineering/code-reviewer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/quality-engineering/debugger",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/quality-engineering/performance-engineer",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/quality-engineering/qa-expert",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/competitive-analyst",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/data-researcher",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/market-researcher",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/project-idea-validator",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/research-analyst",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/scientific-literature-researcher",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/search-specialist",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "voltagent/research-analysis/trend-analyst",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "writing-docs/docx",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "writing-docs/pdf",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "writing-docs/pptx",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "writing-docs/prose-polish",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "writing-docs/scientific-writing",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "writing-docs/sympy",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "writing-docs/xlsx",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    }
+  ]
+}
