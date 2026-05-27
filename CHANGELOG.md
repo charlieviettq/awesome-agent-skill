@@ -6,6 +6,7 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- SkillHub CLI: `scripts/skillhub.py` (`list`, `search`, `show`, `bundles`, `install`, `install-bundle`, `validate`, `doctor`)
 - SkillHub registry: `registry/skills.json`, `registry/bundles.json`, `scripts/generate-registry.py`
 - Bundle resolver: `scripts/resolve-bundle.py`; per-skill install: `scripts/install/install-skill.sh`
 - Bundles: `ship-ready`, `agent-builder`, `data-scientist`, `security-reviewer` (plus existing `starter`, `full`)

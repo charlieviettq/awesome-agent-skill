@@ -88,7 +88,13 @@ bash scripts/install/install-skill.sh core-workflow/verify-before-done /path/to/
 
 # Regenerate skill index after adding skills
 python3 scripts/generate-registry.py
+
+# SkillHub CLI (list / search / install)
+python3 scripts/skillhub.py search "verify"
+python3 scripts/skillhub.py install-bundle agent-builder /path/to/project --format cursor
 ```
+
+See [docs/skillhub-cli.md](docs/skillhub-cli.md).
 
 Manual install (Cursor):
 
