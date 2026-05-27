@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "registry_schema_version": 2,
+  "count": 178,
+  "paths": [
+    "registry/skills.json",
+    "registry/bundles.json",
+    ".cursor/skills/**"
+  ]
+}
