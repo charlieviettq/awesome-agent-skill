@@ -3,10 +3,11 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import tarfile
-from pathlib import Path
 from io import BytesIO
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "registry" / "skills.json"
@@ -72,6 +73,31 @@ def main() -> int:
         add_file(tar, MANIFEST, "registry/manifest.json")
 
     print(f"Wrote deterministic skillpack tarball to {tar_path}")
+
+    digest = hashlib.sha256(tar_path.read_bytes()).hexdigest()
+    checksum_path = OUT_DIR / "skillpack.tar.sha256"
+    checksum_path.write_text(f"{digest}  skillpack.tar\n", encoding="utf-8")
+    print(f"Wrote checksum to {checksum_path}")
+
+    release_notes = OUT_DIR / "RELEASE_NOTES.txt"
+    release_notes.write_text(
+        "\n".join(
+            [
+                "awesome-agent-skill skillpack",
+                f"skills: {data.get('count')}",
+                f"sha256: {digest}",
+                "",
+                "Install:",
+                "  tar -xf skillpack.tar",
+                "  cd awesome-agent-skill  # if extracted to subdir",
+                "  pip install -e .",
+                "  skillhub install-bundle starter . --format cursor",
+            ]
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    print(f"Wrote {release_notes}")
     return 0
 
 

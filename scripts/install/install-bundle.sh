@@ -83,23 +83,26 @@ while IFS= read -r line; do
   [[ -z "${line}" ]] && continue
   kind="${line%%:*}"
   value="${line#*:}"
+  domain_extra=()
+  skill_extra=()
+  if [[ "${DRY_RUN}" -eq 1 ]]; then
+    domain_extra+=(--dry-run)
+    skill_extra+=(--dry-run)
+  fi
+  if [[ "${NO_OVERWRITE}" -eq 1 ]]; then
+    domain_extra+=(--no-overwrite)
+    skill_extra+=(--no-overwrite)
+  fi
+  if [[ "${BACKUP}" -eq 1 ]]; then
+    domain_extra+=(--backup)
+    skill_extra+=(--backup)
+  fi
   case "${kind}" in
     domain)
-      bash "${INSTALL}" "${value}" "${TARGET}" --format "${FORMAT}"
+      bash "${INSTALL}" "${value}" "${TARGET}" --format "${FORMAT}" "${domain_extra[@]}"
       ;;
     skill)
-      if [[ "${DRY_RUN}" -eq 1 ]]; then
-        echo "Plan: install skill ${value} from bundle ${BUNDLE}"
-      else
-        extra=()
-        if [[ "${NO_OVERWRITE}" -eq 1 ]]; then
-          extra+=(--no-overwrite)
-        fi
-        if [[ "${BACKUP}" -eq 1 ]]; then
-          extra+=(--backup)
-        fi
-        bash "${INSTALL_SKILL}" "${value}" "${TARGET}" --format "${FORMAT}" "${extra[@]}"
-      fi
+      bash "${INSTALL_SKILL}" "${value}" "${TARGET}" --format "${FORMAT}" "${skill_extra[@]}"
       ;;
     *)
       echo "Unknown plan entry: ${line}" >&2
@@ -108,4 +111,8 @@ while IFS= read -r line; do
   esac
 done <<< "${PLAN}"
 
-echo "Bundle '${BUNDLE}' installed into ${TARGET}"
+if [[ "${DRY_RUN}" -eq 1 ]]; then
+  echo "Dry-run complete for bundle '${BUNDLE}' into ${TARGET}"
+else
+  echo "Bundle '${BUNDLE}' installed into ${TARGET}"
+fi

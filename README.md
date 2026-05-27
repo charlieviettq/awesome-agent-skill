@@ -63,40 +63,42 @@ Copy only the domains you need. Reload the agent session after installing skills
 
 Skills remain the source of truth. Commands in `.claude/commands/` and `.gemini/commands/` are optional wrappers for validate/sync/install workflows.
 
-## Quickstart
+## Quickstart (3 steps)
 
-Clone the pack:
+**1. Choose a bundle** — browse the [Skill Marketplace](https://charlieviettq.github.io/awesome-agent-skill/) or ask the advisor:
 
 ```bash
 git clone https://github.com/charlieviettq/awesome-agent-skill.git
 cd awesome-agent-skill
+python3 scripts/skillhub.py recommend "ship safely with tests and CI"
 ```
 
-Install with scripts (recommended):
+**2. Install** into your project (preview first with `--dry-run`):
 
 ```bash
-# Starter bundle: core-workflow + security + reliability
-bash scripts/install/install-bundle.sh starter /path/to/project --format both
+python3 scripts/skillhub.py install-bundle ship-ready /path/to/project --format cursor --dry-run
+python3 scripts/skillhub.py install-bundle ship-ready /path/to/project --format cursor
+```
 
+Or install the CLI package: `pip install -e .` then `skillhub install-bundle starter . --format cursor`.
+
+**3. Reload** your agent (Cursor: reload window / new chat; Claude Code: restart session).
+
+### More install options
+
+```bash
 # Curated bundles (see registry/bundles.json)
-bash scripts/install/install-bundle.sh ship-ready /path/to/project --format both
+bash scripts/install/install-bundle.sh starter /path/to/project --format both
 bash scripts/install/install-bundle.sh agent-builder /path/to/project --format cursor
 
 # Single domain or skill
 bash scripts/install/install-domain.sh core-workflow /path/to/project --format cursor
 bash scripts/install/install-skill.sh core-workflow/verify-before-done /path/to/project --format cursor
-
-# Regenerate skill index after adding skills
-python3 scripts/generate-registry.py
-
-# SkillHub CLI (list / search / install)
-python3 scripts/skillhub.py search "verify"
-python3 scripts/skillhub.py install-bundle agent-builder /path/to/project --format cursor
 ```
 
-See [docs/skillhub-cli.md](docs/skillhub-cli.md).
+See [docs/skillhub-cli.md](docs/skillhub-cli.md) and [docs/comparison.md](docs/comparison.md) (how this differs from a plain awesome list).
 
-**Web catalog:** `python3 scripts/generate-catalog.py` then open `catalog/index.html` (or serve `catalog/` statically).
+**Marketplace:** `python3 scripts/generate-catalog.py` — deployed via GitHub Pages from `catalog/`.
 
 Manual install (Cursor):
 

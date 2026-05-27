@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Backward-compatible entry point for SkillHub CLI."""
+"""Backward-compatible shim — use skillhub.recommend instead."""
 
 from __future__ import annotations
 
@@ -10,7 +10,4 @@ _ROOT = Path(__file__).resolve().parents[1]
 if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
 
-from skillhub.cli import main
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+from skillhub.recommend import *  # noqa: F403

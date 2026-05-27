@@ -1,6 +1,6 @@
-# SkillHub Web Catalog (static)
+# SkillHub Marketplace (static)
 
-Mini browser for the skill registry. No build step beyond Python generation.
+Modern browser UI for the skill registry — search, filters, bundle cards, and a **Describe your task** advisor.
 
 ## Generate
 
@@ -8,7 +8,7 @@ Mini browser for the skill registry. No build step beyond Python generation.
 python3 scripts/generate-catalog.py
 ```
 
-Requires `registry/skills.json`. Optionally includes quality scores if `registry/quality.json` exists.
+Copies `registry/*.json` into `catalog/data/`, renders `index.html` from `index.template.html`, and writes `.nojekyll` for GitHub Pages.
 
 ## Preview locally
 
@@ -19,4 +19,15 @@ python3 -m http.server 8765 --directory catalog
 
 ## Deploy
 
-Host the `catalog/` folder on GitHub Pages, S3, or any static host. Commit regenerated `index.html` when skills change, or run generate step in CI before deploy.
+- **GitHub Pages**: push to `main`; workflow `.github/workflows/pages.yml` builds and deploys `catalog/`.
+- Or host `catalog/` on any static CDN.
+
+## Features
+
+- Hero + task advisor (client-side recommend engine, same scoring as CLI)
+- Bundle landing sections from `registry/bundles.json`
+- Skill grid with domain / tier / risk / agent filters
+- Copy install commands per skill and bundle
+- Links to `SKILL.md` on GitHub
+
+Regenerate after skill or registry changes, or run `python3 scripts/skillhub.py sync`.
