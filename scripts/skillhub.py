@@ -45,7 +45,16 @@ def score_match(query: str, skill: dict) -> int:
     if not tokens:
         tokens = [query.lower()]
     score = 0
-    for token in tokens:
+    synonym_map = {
+        "tdd": ["test", "tests"],
+        "spec": ["requirements", "design"],
+        "rag": ["retrieval", "embeddings"],
+    }
+    expanded_tokens: list[str] = []
+    for t in tokens:
+        expanded_tokens.append(t)
+        expanded_tokens.extend(synonym_map.get(t, []))
+    for token in expanded_tokens:
         for field, weight in (
             ("id", 18),
             ("name", 15),
@@ -132,7 +141,16 @@ def cmd_install(args: argparse.Namespace) -> int:
     fmt_argv: list[str] = []
     if args.format:
         fmt_argv = ["--format", args.format]
-    return run_script(script, [args.skill_id, args.target, *fmt_argv])
+    extra: list[str] = []
+    if getattr(args, "dry_run", False):
+        extra.append("--dry-run")
+    if getattr(args, "plan_json", False):
+        extra.append("--plan-json")
+    if getattr(args, "no_overwrite", False):
+        extra.append("--no-overwrite")
+    if getattr(args, "backup", False):
+        extra.append("--backup")
+    return run_script(script, [args.skill_id, args.target, *fmt_argv, *extra])
 
 
 def cmd_install_bundle(args: argparse.Namespace) -> int:
@@ -140,7 +158,16 @@ def cmd_install_bundle(args: argparse.Namespace) -> int:
     fmt_argv: list[str] = []
     if args.format:
         fmt_argv = ["--format", args.format]
-    return run_script(script, [args.bundle_id, args.target, *fmt_argv])
+    extra: list[str] = []
+    if getattr(args, "dry_run", False):
+        extra.append("--dry-run")
+    if getattr(args, "plan_json", False):
+        extra.append("--plan-json")
+    if getattr(args, "no_overwrite", False):
+        extra.append("--no-overwrite")
+    if getattr(args, "backup", False):
+        extra.append("--backup")
+    return run_script(script, [args.bundle_id, args.target, *fmt_argv, *extra])
 
 
 def cmd_validate(_: argparse.Namespace) -> int:
@@ -204,6 +231,14 @@ def cmd_resolver_generate(_: argparse.Namespace) -> int:
     return subprocess.run([sys.executable, str(script)], cwd=ROOT).returncode
 
 
+def cmd_pack(_: argparse.Namespace) -> int:
+    script = ROOT / "scripts" / "pack-skills.py"
+    if not script.exists():
+        print("pack-skills.py missing", file=sys.stderr)
+        return 1
+    return subprocess.run([sys.executable, str(script)], cwd=ROOT).returncode
+
+
 def cmd_eval_recommend(_: argparse.Namespace) -> int:
     if not FIXTURES.exists():
         print("Missing registry/recommend-fixtures.json", file=sys.stderr)
@@ -249,18 +284,56 @@ def cmd_eval_recommend(_: argparse.Namespace) -> int:
     return 0 if hits == len(fixtures) else 1
 
 
-def cmd_doctor(_: argparse.Namespace) -> int:
+def cmd_sync(args: argparse.Namespace) -> int:
+    scripts_dir = ROOT / "scripts"
+    steps: list[tuple[str, list[str]]] = []
+
+    reg = scripts_dir / "generate-registry.py"
+    if reg.exists():
+        cmd = [sys.executable, str(reg)]
+        if args.check:
+            cmd.append("--check")
+        steps.append(("generate-registry", cmd))
+
+    qual = scripts_dir / "generate-quality.py"
+    if qual.exists() and not args.check:
+        steps.append(("generate-quality", [sys.executable, str(qual)]))
+
+    cat = scripts_dir / "generate-catalog.py"
+    if cat.exists() and not args.check:
+        steps.append(("generate-catalog", [sys.executable, str(cat)]))
+
+    val = scripts_dir / "validate-skills.py"
+    if val.exists():
+        steps.append(("validate-skills", [sys.executable, str(val)]))
+
     ok = True
+    for label, cmd in steps:
+        r = subprocess.run(cmd, cwd=ROOT)
+        status = "ok" if r.returncode == 0 else "FAIL"
+        print(f"[{status}] {label}")
+        if r.returncode != 0:
+            ok = False
+    return 0 if ok else 1
+
+
+def cmd_doctor(args: argparse.Namespace) -> int:
+    ok = True
+    results: list[dict[str, object]] = []
 
     def check(label: str, passed: bool, detail: str = "") -> None:
         nonlocal ok
-        status = "ok" if passed else "FAIL"
-        if not passed:
+        passed_bool = bool(passed)
+        status = "ok" if passed_bool else "FAIL"
+        if not passed_bool:
             ok = False
-        line = f"[{status}] {label}"
-        if detail:
-            line += f" — {detail}"
-        print(line)
+        entry = {"label": label, "passed": passed_bool, "detail": detail}
+        results.append(entry)
+        if not args.json:
+            line = f"[{status}] {label}"
+            if detail:
+                line += f" — {detail}"
+            print(line)
 
     check("registry/skills.json", REGISTRY.exists())
     check("registry/bundles.json", BUNDLES.exists())
@@ -321,6 +394,18 @@ def cmd_doctor(_: argparse.Namespace) -> int:
     v = subprocess.run([sys.executable, str(ROOT / "scripts" / "validate-skills.py")], cwd=ROOT, capture_output=True)
     check("validate-skills.py", v.returncode == 0, "see output above" if v.returncode else "")
 
+    if args.json:
+        print(
+            json.dumps(
+                {
+                    "ok": ok,
+                    "checks": results,
+                },
+                indent=2,
+                ensure_ascii=False,
+            )
+        )
+
     return 0 if ok else 1
 
 
@@ -368,19 +453,39 @@ def build_parser() -> argparse.ArgumentParser:
     ins.add_argument("skill_id")
     ins.add_argument("target")
     ins.add_argument("--format", choices=["cursor", "claude", "both"], default="both")
+    ins.add_argument("--dry-run", action="store_true", help="Show what would be installed without writing")
+    ins.add_argument("--plan-json", action="store_true", help="Print JSON install plan instead of writing")
+    ins.add_argument("--no-overwrite", action="store_true", help="Fail if target already has this skill")
+    ins.add_argument("--backup", action="store_true", help="Backup existing skill before overwriting")
     ins.set_defaults(func=cmd_install)
 
     ib = sub.add_parser("install-bundle", help="Install a bundle into a project")
     ib.add_argument("bundle_id")
     ib.add_argument("target")
     ib.add_argument("--format", choices=["cursor", "claude", "both"], default="both")
+    ib.add_argument("--dry-run", action="store_true", help="Show what would be installed without writing")
+    ib.add_argument("--plan-json", action="store_true", help="Print JSON install plan instead of writing")
+    ib.add_argument("--no-overwrite", action="store_true", help="Fail if target already has any of these skills")
+    ib.add_argument("--backup", action="store_true", help="Backup existing skills before overwriting")
     ib.set_defaults(func=cmd_install_bundle)
 
     val = sub.add_parser("validate", help="Run skill validation")
     val.set_defaults(func=cmd_validate)
 
+    pk = sub.add_parser("pack", help="Create deterministic skillpack tarball")
+    pk.set_defaults(func=cmd_pack)
+
     doc = sub.add_parser("doctor", help="Check registry, install scripts, validation")
+    doc.add_argument("--json", action="store_true", help="Output machine-readable JSON")
     doc.set_defaults(func=cmd_doctor)
+
+    sync = sub.add_parser("sync", help="Regenerate registry/quality/catalog and validate")
+    sync.add_argument(
+        "--check",
+        action="store_true",
+        help="Use lightweight checks when available instead of full regeneration",
+    )
+    sync.set_defaults(func=cmd_sync)
 
     return p
 

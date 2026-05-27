@@ -15,33 +15,83 @@ Guidance for authoring skills that agents can discover and follow reliably.
 ```yaml
 ---
 name: my-skill-name
+version: 1
 description: One sentence summary. Triggers: "phrase one", "phrase two".
+triggers:
+  - "phrase one"
+  - "phrase two"
+tools: []        # optional, list of MCP or CLI tools this skill calls
+mutating: false  # does this skill write files / change external systems?
+priority: normal # optional: normal | high | low
 ---
 ```
 
 - `name` must match the folder name (kebab-case)
-- Include `Triggers:` with quoted phrases for non-legacy domains
+- `version` should be bumped when behavior or contract changes
+- `triggers` should be an explicit list of phrases users or agents actually say
+- `tools` and `mutating` help agent routers decide when extra care is needed
 
-## Structure template
+## Structure template (Content Conformance V2)
 
-1. When to use
-2. When not to use
-3. Workflow (numbered)
-4. Output / acceptance criteria
-5. Related skills
+Every non-legacy skill should follow this structure:
+
+1. **Contract** — what this skill guarantees when it succeeds
+2. **When To Use**
+3. **When Not To Use**
+4. **Phases** — high-level stages of the workflow
+5. **Output Format** — shape of the final answer or artifact
+6. **Anti-Patterns** — what the skill must explicitly avoid
+7. **Related Skills** — pointers to adjacent skills or alternatives
+
+At minimum, include the following headings:
+
+```markdown
+## Contract
+## When To Use
+## When Not To Use
+## Phases
+## Output Format
+## Anti-Patterns
+## Related Skills
+```
 
 ## Examples
 
-### Good
+### Good (Content Conformance V2)
 
 ```markdown
-## Workflow
-1. Confirm target API surface and consumers
-2. Draft request/response examples including errors
-3. Run secure-api-design checklist for auth and validation
+## Contract
+Help the user produce a concrete API design proposal that is safe, reviewable, and ready for implementation.
+
+## When To Use
+- New or significantly changed HTTP/JSON API
+- Team needs alignment on request/response shapes and error handling
+
+## When Not To Use
+- Simple internal helper functions or private methods
+
+## Phases
+1. Clarify consumers and non-goals
+2. Sketch endpoints, request/response, and errors
+3. Run secure-api-design checklist
+4. Produce review-ready proposal
+
+## Output Format
+- Markdown section with:
+  - Table of endpoints
+  - Detailed request/response examples
+  - Auth and validation notes
+
+## Anti-Patterns
+- Do not invent undocumented auth schemes
+- Do not approve designs without error handling
+
+## Related Skills
+- `secure-api-design`
+- `deprecation-and-migration`
 ```
 
-Clear, ordered, verifiable.
+Clear contract, explicit phases, defined output, and concrete anti-patterns.
 
 ### Bad
 
@@ -74,6 +124,12 @@ When adapting from catalogs such as [obra/superpowers](https://github.com/obra/s
 - Record the decision in `EXTERNAL_SKILLS.md`
 - Rewrite wording; do not copy plugin hooks or bootstrap meta-skills
 - Prefer **merge** into an existing skill when overlap is high
+
+## Skill vs code
+
+- Deterministic operations (file layout, install plans, concrete commands) usually belong in **scripts/CLI**.
+- Judgment calls, routing between workflows, and failure-mode handling belong in **skills**.
+- When in doubt, keep the harness thin and the skill explicit about decisions and trade-offs.
 
 ## Before opening a PR
 

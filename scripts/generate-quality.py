@@ -20,6 +20,10 @@ def score_skill(skill: dict, skill_path: Path) -> dict:
     desc = skill.get("description", "")
     triggers = skill.get("triggers", [])
     has_h2 = bool(re.search(r"^##\s+", text, re.M))
+    has_contract = "## Contract" in text
+    has_phases = "## Phases" in text
+    has_output = "## Output Format" in text
+    has_anti_patterns = "## Anti-Patterns" in text
     has_examples = "Good:" in text or "Bad:" in text or "```" in text
     ref_dir = skill_path.parent
     has_reference = (ref_dir / "reference.md").exists() or any(ref_dir.glob("references/*"))
@@ -28,6 +32,10 @@ def score_skill(skill: dict, skill_path: Path) -> dict:
         "description_min_80": len(desc) >= 80,
         "has_triggers": len(triggers) >= 1,
         "has_usage_section": has_h2,
+        "has_contract": has_contract,
+        "has_phases": has_phases,
+        "has_output_format": has_output,
+        "has_anti_patterns": has_anti_patterns,
         "has_examples": has_examples,
         "has_reference": has_reference,
         "risk_set": skill.get("risk") in ("low", "medium", "high"),
