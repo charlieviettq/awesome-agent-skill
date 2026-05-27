@@ -49,6 +49,21 @@ DOMAIN_TAGS: dict[str, list[str]] = {
 }
 
 
+def default_tier(domain: str) -> str:
+    """Coarse tiering for now; can be refined later."""
+    if domain in {"core-workflow", "ai-agent-systems", "reliability-ops", "security-appsec"}:
+        return "core"
+    if domain in {"gstack", "voltagent"}:
+        return "imported"
+    return "community"
+
+
+def default_provenance(domain: str) -> str:
+    if domain in {"gstack", "voltagent"}:
+        return "imported-pack"
+    return "awesome-agent-skill"
+
+
 def parse_frontmatter(text: str) -> dict[str, str]:
     if not text.startswith("---"):
         return {}
@@ -104,6 +119,8 @@ def collect_skills() -> list[dict]:
         tags = list(DOMAIN_TAGS.get(dom, [dom]))
         if name not in tags:
             tags.append(name)
+        triggers = extract_triggers(desc)
+        summary = desc[:240] if desc else ""
         entries.append(
             {
                 "id": rel,
@@ -111,12 +128,23 @@ def collect_skills() -> list[dict]:
                 "domain": dom,
                 "path": f".cursor/skills/{rel}/SKILL.md",
                 "description": desc[:500],
-                "triggers": extract_triggers(desc),
+                "summary": summary,
+                "triggers": triggers,
+                "trigger_phrases": triggers,
                 "risk": DOMAIN_RISK.get(dom, "low"),
                 "formats": ["cursor", "claude"],
                 "source": "awesome-agent-skill",
                 "license": "MIT",
                 "tags": tags[:8],
+                # v2 metadata — defaults; can be refined by other tooling
+                "requires_tools": [],
+                "writes_files": [],
+                "network_access": "unknown",
+                "risk_reason": "",
+                "provenance": default_provenance(dom),
+                "related": [],
+                "tier": default_tier(dom),
+                "quality_score": None,
             }
         )
     return entries
@@ -150,7 +178,7 @@ def validate_bundles(skills: list[dict]) -> list[str]:
 def build_payload(skills: list[dict]) -> dict:
     return {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "schema_version": 1,
+        "schema_version": 2,
         "count": len(skills),
         "skills": skills,
     }

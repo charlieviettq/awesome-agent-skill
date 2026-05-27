@@ -225,6 +225,47 @@ def cmd_doctor(_: argparse.Namespace) -> int:
         )
         check("registry sync", r.returncode == 0, r.stderr.strip() or r.stdout.strip())
 
+        # Count drift checks: .cursor vs registry vs README badge vs metrics snapshot.
+        try:
+            data = load_registry()
+            registry_count = int(data.get("count", 0))
+        except Exception:
+            registry_count = -1
+
+        cursor_root = ROOT / ".cursor" / "skills"
+        cursor_count = len(list(cursor_root.rglob("SKILL.md"))) if cursor_root.exists() else -1
+        check(
+            "count: cursor vs registry",
+            cursor_count == registry_count and cursor_count >= 0,
+            f"cursor={cursor_count}, registry={registry_count}",
+        )
+
+        readme = ROOT / "README.md"
+        readme_count = None
+        if readme.exists():
+            m = re.search(r"skills-(\d+)-", readme.read_text(encoding="utf-8"))
+            if m:
+                readme_count = int(m.group(1))
+                check(
+                    "count: README badge vs registry",
+                    readme_count == registry_count,
+                    f"readme={readme_count}, registry={registry_count}",
+                )
+
+        metrics_path = ROOT / "docs" / "metrics" / "2026-05.md"
+        if metrics_path.exists():
+            m = re.search(
+                r"Cursor `SKILL\.md` files:\s*\*\*(\d+)\*\*",
+                metrics_path.read_text(encoding="utf-8"),
+            )
+            if m:
+                metrics_count = int(m.group(1))
+                check(
+                    "count: metrics vs registry",
+                    metrics_count == registry_count,
+                    f"metrics={metrics_count}, registry={registry_count}",
+                )
+
     for name in ("install-domain.sh", "install-bundle.sh", "install-skill.sh"):
         p = ROOT / "scripts" / "install" / name
         check(name, p.exists() and p.stat().st_mode & 0o111)
