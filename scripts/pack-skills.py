@@ -31,22 +31,31 @@ def main() -> int:
     data = json.loads(REGISTRY.read_text(encoding="utf-8"))
     skills = data.get("skills", [])
 
+    manifest_body: dict = {
+        "schema_version": 1,
+        "registry_schema_version": data.get("schema_version"),
+        "count": data.get("count"),
+        "paths": [
+            "registry/skills.json",
+            "registry/bundles.json",
+            ".cursor/skills/**",
+        ],
+    }
+    gstack_sync = ROOT / "registry" / "gstack-sync.json"
+    if gstack_sync.exists():
+        gs = json.loads(gstack_sync.read_text(encoding="utf-8"))
+        manifest_body["gstack_version"] = gs.get("upstream_version")
+        manifest_body["gstack_commit"] = gs.get("upstream_commit")
+        manifest_body["gstack_synced_at"] = gs.get("synced_at")
+        manifest_body["gstack_skill_count"] = gs.get("local_skill_count")
+    elif MANIFEST.exists():
+        existing = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        for key in ("gstack_version", "gstack_commit", "gstack_synced_at", "gstack_skill_count"):
+            if key in existing:
+                manifest_body[key] = existing[key]
+
     MANIFEST.write_text(
-        json.dumps(
-            {
-                "schema_version": 1,
-                "registry_schema_version": data.get("schema_version"),
-                "count": data.get("count"),
-                "paths": [
-                    "registry/skills.json",
-                    "registry/bundles.json",
-                    ".cursor/skills/**",
-                ],
-            },
-            indent=2,
-            ensure_ascii=False,
-        )
-        + "\n",
+        json.dumps(manifest_body, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
 

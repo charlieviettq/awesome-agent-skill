@@ -8,6 +8,7 @@ import json
 import re
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,9 @@ REGISTRY = ROOT / "registry" / "skills.json"
 BUNDLES = ROOT / "registry" / "bundles.json"
 FIXTURES = ROOT / "registry" / "recommend-fixtures.json"
 QUALITY = ROOT / "registry" / "quality.json"
+GSTACK_SYNC = ROOT / "registry" / "gstack-sync.json"
+MANIFEST = ROOT / "registry" / "manifest.json"
+GSTACK_PACK = ROOT / ".cursor" / "skills" / "gstack"
 
 
 def load_registry() -> dict:
@@ -246,7 +250,67 @@ def cmd_eval_recommend(_: argparse.Namespace) -> int:
     return 0 if hits == len(fixtures) else 1
 
 
-def cmd_doctor(_: argparse.Namespace) -> int:
+def check_gstack_freshness(check_fn) -> None:
+    """Lightweight gstack pack staleness checks (no network by default)."""
+    if not GSTACK_PACK.exists():
+        check_fn("gstack pack present", False, "missing .cursor/skills/gstack/")
+        return
+
+    local_count = len(list(GSTACK_PACK.rglob("SKILL.md")))
+    check_fn("gstack pack present", True, f"{local_count} SKILL.md files")
+
+    sync: dict = {}
+    if GSTACK_SYNC.exists():
+        sync = json.loads(GSTACK_SYNC.read_text(encoding="utf-8"))
+    else:
+        check_fn("gstack sync metadata", False, "registry/gstack-sync.json missing")
+        return
+
+    check_fn(
+        "gstack sync metadata",
+        bool(sync.get("upstream_commit")),
+        f"commit={str(sync.get('upstream_commit', ''))[:12]} version={sync.get('upstream_version', '?')}",
+    )
+
+    expected = sync.get("local_skill_count")
+    if expected is not None:
+        check_fn(
+            "gstack skill count",
+            local_count == int(expected),
+            f"local={local_count}, recorded={expected}",
+        )
+
+    synced_at = sync.get("synced_at", "")
+    max_age = int(sync.get("staleness_policy", {}).get("max_age_days", 90))
+    if synced_at:
+        try:
+            synced_date = datetime.strptime(synced_at, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            age_days = (datetime.now(timezone.utc) - synced_date).days
+            check_fn(
+                "gstack sync age",
+                age_days <= max_age,
+                f"synced {synced_at} ({age_days}d ago, max {max_age}d)",
+            )
+        except ValueError:
+            check_fn("gstack sync age", False, f"invalid synced_at: {synced_at}")
+
+    if MANIFEST.exists():
+        manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        for key in ("gstack_version", "gstack_commit", "gstack_synced_at"):
+            check_fn(
+                f"manifest {key}",
+                bool(manifest.get(key)),
+                str(manifest.get(key, "missing"))[:40],
+            )
+        if sync.get("upstream_commit") and manifest.get("gstack_commit"):
+            check_fn(
+                "manifest commit matches gstack-sync",
+                manifest.get("gstack_commit") == sync.get("upstream_commit"),
+                "",
+            )
+
+
+def cmd_doctor(args: argparse.Namespace) -> int:
     ok = True
 
     def check(label: str, passed: bool, detail: str = "") -> None:
@@ -258,6 +322,10 @@ def cmd_doctor(_: argparse.Namespace) -> int:
         if detail:
             line += f" — {detail}"
         print(line)
+
+    if getattr(args, "gstack_only", False):
+        check_gstack_freshness(check)
+        return 0 if ok else 1
 
     check("registry/skills.json", REGISTRY.exists())
     check("registry/bundles.json", BUNDLES.exists())
@@ -318,6 +386,9 @@ def cmd_doctor(_: argparse.Namespace) -> int:
     v = subprocess.run([sys.executable, str(ROOT / "scripts" / "validate-skills.py")], cwd=ROOT, capture_output=True)
     check("validate-skills.py", v.returncode == 0, "see output above" if v.returncode else "")
 
+    if getattr(args, "gstack", False):
+        check_gstack_freshness(check)
+
     return 0 if ok else 1
 
 
@@ -377,6 +448,8 @@ def build_parser() -> argparse.ArgumentParser:
     pk.set_defaults(func=cmd_pack)
 
     doc = sub.add_parser("doctor", help="Check registry, install scripts, validation")
+    doc.add_argument("--gstack", action="store_true", help="Also run gstack pack freshness checks")
+    doc.add_argument("--gstack-only", action="store_true", help="Only run gstack pack checks")
     doc.set_defaults(func=cmd_doctor)
 
     return p

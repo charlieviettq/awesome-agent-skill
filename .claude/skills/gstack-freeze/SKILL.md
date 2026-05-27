@@ -1,8 +1,20 @@
 ---
 name: freeze
-description: "Restrict file edits to a specific directory for the session. Blocks Edit and Write outside the allowed path. Use when debugging to prevent accidentally \"fixing\" unrelated code, or when you want to scope changes to one module. Use when asked to \"freeze\", \"restrict edits\", \"only edit this folder\", or \"lock down edits\". (gstack)."
-allowed-tools: Bash, Read, Write, Edit, Glob, Grep
+description: Restrict file edits to a specific directory for the session. (gstack).
+allowed-tools: - Bash   - Read   - AskUserQuestion
 ---
+
+<!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+<!-- Regenerate: bun run gen:skill-docs -->
+
+
+## When to invoke this skill
+
+Blocks Edit and
+Write outside the allowed path. Use when debugging to prevent accidentally
+"fixing" unrelated code, or when you want to scope changes to one module.
+Use when asked to "freeze", "restrict edits", "only edit this folder",
+or "lock down edits".
 
 # /freeze — Restrict Edits to a Directory
 

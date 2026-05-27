@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-27T12:21:23Z",
+  "generated_at": "2026-05-27T13:39:05Z",
   "schema_version": 2,
-  "count": 178,
+  "count": 186,
   "skills": [
     {
       "id": "ai-agent-systems/agent-evaluation",
@@ -22,6 +22,8 @@
         "tool accuracy",
         "agent regression"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -64,6 +66,8 @@
         "function calling",
         "AI CLI"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -106,6 +110,8 @@
         "summarize context",
         "token budget"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -146,6 +152,8 @@
         "fan out tasks",
         "run in parallel"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -188,6 +196,8 @@
         "Model Context Protocol",
         "build MCP"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -232,6 +242,8 @@
         "optimize MCP",
         "too many MCP tools"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -276,6 +288,8 @@
         "retrieval",
         "knowledge base"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -316,6 +330,8 @@
         "dispatch implementer",
         "agent per plan step"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -348,6 +364,8 @@
       "summary": "Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter,",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -378,6 +396,8 @@
       "summary": "Guided statistical analysis with test selection and reporting. Use when you need help choosing appropriate tests for your data, assumption checking, power analysis, and APA-formatted results. Best for academic research reporting, test selec",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -409,6 +429,8 @@
       "summary": "Statistical models library for Python. Use when you need specific model classes (OLS, GLM, mixed models, ARIMA) with detailed diagnostics, residuals, and inference. Best for econometrics, time series, rigorous inference with coefficient tab",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -452,6 +474,8 @@
         "C4",
         "how does this fit together"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -496,6 +520,8 @@
         "error codes",
         "backward compatible"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -538,6 +564,8 @@
         "document decision",
         "why we chose"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -580,6 +608,8 @@
         "not sure what you want",
         "multiple options"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -624,6 +654,8 @@
         "YAGNI",
         "reduce complexity"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -668,6 +700,8 @@
         "remove legacy",
         "strangler"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -710,6 +744,8 @@
         "too complex",
         "refactor structure"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -752,6 +788,8 @@
         "challenge this decision",
         "second look"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -794,6 +832,8 @@
         "address comments",
         "requested changes"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -838,6 +878,8 @@
         "which direction",
         "not sure yet"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -880,6 +922,8 @@
         "one step at a time",
         "small commits"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -922,6 +966,8 @@
         "clarify intent",
         "what do you need to know"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -964,6 +1010,8 @@
         "task breakdown",
         "plan mode"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1006,6 +1054,8 @@
         "address review",
         "feedback on PR"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1048,6 +1098,8 @@
         "pre-merge review",
         "second pair of eyes"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1090,6 +1142,8 @@
         "source-driven",
         "is this API still valid"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1134,6 +1188,8 @@
         "spec before code",
         "what are we building"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1176,6 +1232,8 @@
         "why is this broken",
         "still failing"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1218,6 +1276,8 @@
         "CI red",
         "make tests pass"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1262,6 +1322,8 @@
         "behavior change",
         "add test"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1306,6 +1368,8 @@
         "ready to merge",
         "all tests green"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1350,6 +1414,8 @@
         "share project",
         "where is the work"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1382,6 +1448,8 @@
       "summary": "Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code beyond memory or across clusters. Best for parallel file processing, distributed ML, integration with existing pandas co",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1413,6 +1481,8 @@
       "summary": "Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs in Python. Use when working with network/graph data structures, analyzing relationships between entities, computing graph algorithms (shortest paths,",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1444,6 +1514,8 @@
       "summary": "Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow but data still fits in memory. Lazy evaluation, parallel execution, Apache Arrow backend. Best for 1-100GB datasets, ETL pipelines, faster pandas rep",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1475,6 +1547,8 @@
       "summary": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automat",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1505,6 +1579,8 @@
       "summary": "Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable hypotheses with predictions, propose mechanisms, and design experiments to test them. Follows scientific",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1535,6 +1611,8 @@
       "summary": "UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -1579,6 +1657,8 @@
         "Lighthouse",
         "runtime check"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1622,6 +1702,8 @@
         "keyboard nav",
         "screen reader"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1667,6 +1749,8 @@
         "frontend",
         "layout"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1694,10 +1778,22 @@
       "name": "gstack",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/SKILL.md",
-      "description": "Fast headless browser for QA testing and site dogfooding. Navigate pages,   interact with elements, verify state, diff before/after, take annotated screenshots,   test responsive layouts, forms, uploads, dialogs, and capture bug evidence. Use   when asked to open or test a site, verify a deployment, dogfood a user flow, or   file a bug with screenshots. (gstack)",
-      "summary": "Fast headless browser for QA testing and site dogfooding. Navigate pages,   interact with elements, verify state, diff before/after, take annotated screenshots,   test responsive layouts, forms, uploads, dialogs, and capture bug evidence. U",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Fast headless browser for QA testing and site dogfooding. (gstack)",
+      "summary": "Fast headless browser for QA testing and site dogfooding. (gstack)",
+      "triggers": [
+        "browse this page",
+        "take a screenshot",
+        "navigate to url",
+        "inspect the page"
+      ],
+      "trigger_phrases": [
+        "browse this page",
+        "take a screenshot",
+        "navigate to url",
+        "inspect the page"
+      ],
+      "skill_version": "1.1.0",
+      "preamble_tier": "1",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1709,7 +1805,8 @@
         "qa",
         "ship",
         "browser",
-        "gstack"
+        "gstack",
+        "ios"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -1725,10 +1822,20 @@
       "name": "benchmark",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/browser-qa/benchmark/SKILL.md",
-      "description": "Performance regression detection using the browse daemon. Establishes   baselines for page load times, Core Web Vitals, and resource sizes. Compares before/after   on every PR. Tracks performance trends over time. Use when: \"performance\", \"benchmark\",   \"page speed\", \"lighthouse\", \"web vitals\", \"bundle size\", \"load time\". (gstack) Voice   triggers (speech-to-text aliases): \"speed test\", \"check performance\".",
-      "summary": "Performance regression detection using the browse daemon. Establishes   baselines for page load times, Core Web Vitals, and resource sizes. Compares before/after   on every PR. Tracks performance trends over time. Use when: \"performance\", \"",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Performance regression detection using the browse daemon. (gstack)",
+      "summary": "Performance regression detection using the browse daemon. (gstack)",
+      "triggers": [
+        "performance benchmark",
+        "check page speed",
+        "detect performance regression"
+      ],
+      "trigger_phrases": [
+        "performance benchmark",
+        "check page speed",
+        "detect performance regression"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "1",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1741,6 +1848,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "benchmark"
       ],
       "requires_tools": [],
@@ -1757,10 +1865,22 @@
       "name": "benchmark-models",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/browser-qa/benchmark-models/SKILL.md",
-      "description": "Cross-model benchmark for gstack skills. Runs the same prompt through   Claude, GPT (via Codex CLI), and Gemini side-by-side — compares latency, tokens,   cost, and optionally quality via LLM judge. Answers \"which model is actually best   for this skill?\" with data instead of vibes. Separate from /benchmark, which measures   web page performance. Use when: \"benchmark models\", \"compare models\", \"which model   is best for X\", \"cross-model comparison\", \"model shootout\". (gstack) Voice triggers   (s",
-      "summary": "Cross-model benchmark for gstack skills. Runs the same prompt through   Claude, GPT (via Codex CLI), and Gemini side-by-side — compares latency, tokens,   cost, and optionally quality via LLM judge. Answers \"which model is actually best   f",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Cross-model benchmark for gstack skills. (gstack)",
+      "summary": "Cross-model benchmark for gstack skills. (gstack)",
+      "triggers": [
+        "cross model benchmark",
+        "compare claude gpt gemini",
+        "benchmark skill across models",
+        "which model should I use"
+      ],
+      "trigger_phrases": [
+        "cross model benchmark",
+        "compare claude gpt gemini",
+        "benchmark skill across models",
+        "which model should I use"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "1",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1773,6 +1893,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "benchmark-models"
       ],
       "requires_tools": [],
@@ -1789,10 +1910,20 @@
       "name": "browse",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/browser-qa/browse/SKILL.md",
-      "description": "Fast headless browser for QA testing and site dogfooding. Navigate any   URL, interact with elements, verify page state, diff before/after actions, take   annotated screenshots, check responsive layouts, test forms and uploads, handle   dialogs, and assert element states. ~100ms per command. Use when you need to test   a feature, verify a deployment, dogfood a user flow, or file a bug with evidence.   Use when asked to \"open in browser\", \"test the site\", \"take a screenshot\", or \"dogfood   this\".",
-      "summary": "Fast headless browser for QA testing and site dogfooding. Navigate any   URL, interact with elements, verify page state, diff before/after actions, take   annotated screenshots, check responsive layouts, test forms and uploads, handle   dia",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Fast headless browser for QA testing and site dogfooding. (gstack)",
+      "summary": "Fast headless browser for QA testing and site dogfooding. (gstack)",
+      "triggers": [
+        "browse a page",
+        "headless browser",
+        "take page screenshot"
+      ],
+      "trigger_phrases": [
+        "browse a page",
+        "headless browser",
+        "take page screenshot"
+      ],
+      "skill_version": "1.1.0",
+      "preamble_tier": "1",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1805,6 +1936,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "browse"
       ],
       "requires_tools": [],
@@ -1821,10 +1953,20 @@
       "name": "canary",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/browser-qa/canary/SKILL.md",
-      "description": "Post-deploy canary monitoring. Watches the live app for console errors,   performance regressions, and page failures using the browse daemon. Takes periodic   screenshots, compares against pre-deploy baselines, and alerts on anomalies. Use   when: \"monitor deploy\", \"canary\", \"post-deploy check\", \"watch production\", \"verify   deploy\". (gstack)",
-      "summary": "Post-deploy canary monitoring. Watches the live app for console errors,   performance regressions, and page failures using the browse daemon. Takes periodic   screenshots, compares against pre-deploy baselines, and alerts on anomalies. Use ",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Post-deploy canary monitoring. (gstack)",
+      "summary": "Post-deploy canary monitoring. (gstack)",
+      "triggers": [
+        "monitor after deploy",
+        "canary check",
+        "watch for errors post-deploy"
+      ],
+      "trigger_phrases": [
+        "monitor after deploy",
+        "canary check",
+        "watch for errors post-deploy"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1837,6 +1979,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "canary"
       ],
       "requires_tools": [],
@@ -1853,10 +1996,20 @@
       "name": "qa",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/browser-qa/qa/SKILL.md",
-      "description": "Systematically QA test a web application and fix bugs found. Runs QA   testing, then iteratively fixes bugs in source code, committing each fix atomically   and re-verifying. Use when asked to \"qa\", \"QA\", \"test this site\", \"find bugs\", \"test   and fix\", or \"fix what''s broken\". Proactively suggest when the user says a feature   is ready for testing or asks \"does this work?\". Three tiers: Quick (critical/high   only), Standard (+ medium), Exhaustive (+ cosmetic). Produces before/after health   sc",
-      "summary": "Systematically QA test a web application and fix bugs found. Runs QA   testing, then iteratively fixes bugs in source code, committing each fix atomically   and re-verifying. Use when asked to \"qa\", \"QA\", \"test this site\", \"find bugs\", \"tes",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Systematically QA test a web application and fix bugs found. (gstack)",
+      "summary": "Systematically QA test a web application and fix bugs found. (gstack)",
+      "triggers": [
+        "qa test this",
+        "find bugs on site",
+        "test the site"
+      ],
+      "trigger_phrases": [
+        "qa test this",
+        "find bugs on site",
+        "test the site"
+      ],
+      "skill_version": "2.0.0",
+      "preamble_tier": "4",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1868,7 +2021,8 @@
         "qa",
         "ship",
         "browser",
-        "gstack"
+        "gstack",
+        "ios"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -1884,10 +2038,20 @@
       "name": "qa-only",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/browser-qa/qa-only/SKILL.md",
-      "description": "Report-only QA testing. Systematically tests a web application and produces   a structured report with health score, screenshots, and repro steps — but never   fixes anything. Use when asked to \"just report bugs\", \"qa report only\", or \"test   but don''t fix\". For the full test-fix-verify loop, use /qa instead. Proactively   suggest when the user wants a bug report without any code changes. (gstack) Voice   triggers (speech-to-text aliases): \"bug report\", \"just check for bugs\".",
-      "summary": "Report-only QA testing. Systematically tests a web application and produces   a structured report with health score, screenshots, and repro steps — but never   fixes anything. Use when asked to \"just report bugs\", \"qa report only\", or \"test",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Report-only QA testing. (gstack)",
+      "summary": "Report-only QA testing. (gstack)",
+      "triggers": [
+        "qa report only",
+        "just report bugs",
+        "test but dont fix"
+      ],
+      "trigger_phrases": [
+        "qa report only",
+        "just report bugs",
+        "test but dont fix"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "4",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1900,6 +2064,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "qa-only"
       ],
       "requires_tools": [],
@@ -1916,10 +2081,20 @@
       "name": "codex",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/code-quality/codex/SKILL.md",
-      "description": "OpenAI Codex CLI wrapper — three modes. Code review: independent diff   review via codex review with pass/fail gate. Challenge: adversarial mode that tries   to break your code. Consult: ask codex anything with session continuity for follow-ups.   The \"200 IQ autistic developer\" second opinion. Use when asked to \"codex review\",   \"codex challenge\", \"ask codex\", \"second opinion\", or \"consult codex\". (gstack) Voice   triggers (speech-to-text aliases): \"code x\", \"code ex\", \"get another opinion\".",
-      "summary": "OpenAI Codex CLI wrapper — three modes. Code review: independent diff   review via codex review with pass/fail gate. Challenge: adversarial mode that tries   to break your code. Consult: ask codex anything with session continuity for follow",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "OpenAI Codex CLI wrapper — three modes. (gstack)",
+      "summary": "OpenAI Codex CLI wrapper — three modes. (gstack)",
+      "triggers": [
+        "codex review",
+        "second opinion",
+        "outside voice challenge"
+      ],
+      "trigger_phrases": [
+        "codex review",
+        "second opinion",
+        "outside voice challenge"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1932,6 +2107,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "codex"
       ],
       "requires_tools": [],
@@ -1948,10 +2124,20 @@
       "name": "health",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/code-quality/health/SKILL.md",
-      "description": "Code quality dashboard. Wraps existing project tools (type checker,   linter, test runner, dead code detector, shell linter), computes a weighted composite   0-10 score, and tracks trends over time. Use when: \"health check\", \"code quality\",   \"how healthy is the codebase\", \"run all checks\", \"quality score\". (gstack)",
-      "summary": "Code quality dashboard. Wraps existing project tools (type checker,   linter, test runner, dead code detector, shell linter), computes a weighted composite   0-10 score, and tracks trends over time. Use when: \"health check\", \"code quality\",",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Code quality dashboard. (gstack)",
+      "summary": "Code quality dashboard. (gstack)",
+      "triggers": [
+        "code health check",
+        "quality dashboard",
+        "how healthy is codebase"
+      ],
+      "trigger_phrases": [
+        "code health check",
+        "quality dashboard",
+        "how healthy is codebase"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1964,6 +2150,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "health"
       ],
       "requires_tools": [],
@@ -1980,10 +2167,24 @@
       "name": "investigate",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/code-quality/investigate/SKILL.md",
-      "description": "Systematic debugging with root cause investigation. Four phases: investigate,   analyze, hypothesize, implement. Iron Law: no fixes without root cause. Use when   asked to \"debug this\", \"fix this bug\", \"why is this broken\", \"investigate this error\",   or \"root cause analysis\". Proactively invoke this skill (do NOT debug directly)   when the user reports errors, 500 errors, stack traces, unexpected behavior, \"it   was working yesterday\", or is troubleshooting why something stopped working. (gstac",
-      "summary": "Systematic debugging with root cause investigation. Four phases: investigate,   analyze, hypothesize, implement. Iron Law: no fixes without root cause. Use when   asked to \"debug this\", \"fix this bug\", \"why is this broken\", \"investigate thi",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Systematic debugging with root cause investigation. (gstack)",
+      "summary": "Systematic debugging with root cause investigation. (gstack)",
+      "triggers": [
+        "debug this",
+        "fix this bug",
+        "why is this broken",
+        "root cause analysis",
+        "investigate this error"
+      ],
+      "trigger_phrases": [
+        "debug this",
+        "fix this bug",
+        "why is this broken",
+        "root cause analysis",
+        "investigate this error"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -1996,6 +2197,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "investigate"
       ],
       "requires_tools": [],
@@ -2012,10 +2214,22 @@
       "name": "review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/code-quality/review/SKILL.md",
-      "description": "Pre-landing PR review. Analyzes diff against the base branch for SQL   safety, LLM trust boundary violations, conditional side effects, and other structural   issues. Use when asked to \"review this PR\", \"code review\", \"pre-landing review\",   or \"check my diff\". Proactively suggest when the user is about to merge or land   code changes. (gstack)",
-      "summary": "Pre-landing PR review. Analyzes diff against the base branch for SQL   safety, LLM trust boundary violations, conditional side effects, and other structural   issues. Use when asked to \"review this PR\", \"code review\", \"pre-landing review\", ",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Pre-landing PR review. (gstack)",
+      "summary": "Pre-landing PR review. (gstack)",
+      "triggers": [
+        "review this pr",
+        "code review",
+        "check my diff",
+        "pre-landing review"
+      ],
+      "trigger_phrases": [
+        "review this pr",
+        "code review",
+        "check my diff",
+        "pre-landing review"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "4",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2028,6 +2242,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "review"
       ],
       "requires_tools": [],
@@ -2044,10 +2259,24 @@
       "name": "context-restore",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/context-memory/context-restore/SKILL.md",
-      "description": "Restore working context saved earlier by /context-save. Loads the most   recent saved state (across all branches by default) so you can pick up where you   left off — even across Conductor workspace handoffs. Use when asked to \"resume\",   \"restore context\", \"where was I\", or \"pick up where I left off\". Pair with /context-save.   Formerly /checkpoint resume — renamed because Claude Code treats /checkpoint as   a native rewind alias in current environments. (gstack)",
-      "summary": "Restore working context saved earlier by /context-save. Loads the most   recent saved state (across all branches by default) so you can pick up where you   left off — even across Conductor workspace handoffs. Use when asked to \"resume\",   \"",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Restore working context saved earlier by /context-save. (gstack)",
+      "summary": "Restore working context saved earlier by /context-save. (gstack)",
+      "triggers": [
+        "resume where i left off",
+        "restore context",
+        "where was i",
+        "pick up where i left off",
+        "context restore"
+      ],
+      "trigger_phrases": [
+        "resume where i left off",
+        "restore context",
+        "where was i",
+        "pick up where i left off",
+        "context restore"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2060,6 +2289,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "context-restore"
       ],
       "requires_tools": [],
@@ -2076,10 +2306,22 @@
       "name": "context-save",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/context-memory/context-save/SKILL.md",
-      "description": "Save working context. Captures git state, decisions made, and remaining   work so any future session can pick up without losing a beat. Use when asked to   \"save progress\", \"save state\", \"context save\", or \"save my work\". Pair with /context-restore   to resume later. Formerly /checkpoint — renamed because Claude Code treats /checkpoint   as a native rewind alias in current environments, which was shadowing this skill.   (gstack)",
-      "summary": "Save working context. Captures git state, decisions made, and remaining   work so any future session can pick up without losing a beat. Use when asked to   \"save progress\", \"save state\", \"context save\", or \"save my work\". Pair with /context",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Save working context. (gstack)",
+      "summary": "Save working context. (gstack)",
+      "triggers": [
+        "save progress",
+        "save state",
+        "save my work",
+        "context save"
+      ],
+      "trigger_phrases": [
+        "save progress",
+        "save state",
+        "save my work",
+        "context save"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2092,6 +2334,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "context-save"
       ],
       "requires_tools": [],
@@ -2108,10 +2351,20 @@
       "name": "learn",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/context-memory/learn/SKILL.md",
-      "description": "Manage project learnings. Review, search, prune, and export what gstack   has learned across sessions. Use when asked to \"what have we learned\", \"show learnings\",   \"prune stale learnings\", or \"export learnings\". Proactively suggest when the user   asks about past patterns or wonders \"didn't we fix this before?",
-      "summary": "Manage project learnings. Review, search, prune, and export what gstack   has learned across sessions. Use when asked to \"what have we learned\", \"show learnings\",   \"prune stale learnings\", or \"export learnings\". Proactively suggest when th",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Manage project learnings.",
+      "summary": "Manage project learnings.",
+      "triggers": [
+        "show learnings",
+        "what have we learned",
+        "manage project learnings"
+      ],
+      "trigger_phrases": [
+        "show learnings",
+        "what have we learned",
+        "manage project learnings"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2124,6 +2377,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "learn"
       ],
       "requires_tools": [],
@@ -2140,10 +2394,24 @@
       "name": "setup-gbrain",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/context-memory/setup-gbrain/SKILL.md",
-      "description": "Set up gbrain for this coding agent: install the CLI, initialize a local   PGLite or Supabase brain, register MCP, capture per-remote trust policy. One command   from zero to \"gbrain is running, and this agent can call it.\" Use when: \"setup gbrain\",   \"connect gbrain\", \"start gbrain\", \"install gbrain\", \"configure gbrain for this machine\".   (gstack)",
-      "summary": "Set up gbrain for this coding agent: install the CLI, initialize a local   PGLite or Supabase brain, register MCP, capture per-remote trust policy. One command   from zero to \"gbrain is running, and this agent can call it.\" Use when: \"setup",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, capture per-remote trust policy. (gstack)",
+      "summary": "Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, capture per-remote trust policy. (gstack)",
+      "triggers": [
+        "setup gbrain",
+        "install gbrain",
+        "connect gbrain",
+        "start gbrain",
+        "configure gbrain"
+      ],
+      "trigger_phrases": [
+        "setup gbrain",
+        "install gbrain",
+        "connect gbrain",
+        "start gbrain",
+        "configure gbrain"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2156,6 +2424,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "setup-gbrain"
       ],
       "requires_tools": [],
@@ -2172,10 +2441,22 @@
       "name": "sync-gbrain",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/context-memory/sync-gbrain/SKILL.md",
-      "description": "Keep gbrain current with this repo''s code and refresh agent search   guidance in CLAUDE.md. Wraps the gstack-gbrain-sync orchestrator with state probing,   native code-surface registration, capability checks, and a verdict block. Re-runnable,   idempotent. Use when: \"sync gbrain\", \"refresh gbrain\", \"re-index this repo\", \"gbrain   search isn''t finding things\". (gstack)",
-      "summary": "Keep gbrain current with this repo''s code and refresh agent search   guidance in CLAUDE.md. Wraps the gstack-gbrain-sync orchestrator with state probing,   native code-surface registration, capability checks, and a verdict block. Re-runnab",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. Wraps the gstack-gbrain-sync orchestrator with state (gstack)",
+      "summary": "Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. Wraps the gstack-gbrain-sync orchestrator with state (gstack)",
+      "triggers": [
+        "sync gbrain",
+        "refresh gbrain",
+        "reindex repo",
+        "update gbrain"
+      ],
+      "trigger_phrases": [
+        "sync gbrain",
+        "refresh gbrain",
+        "reindex repo",
+        "update gbrain"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2188,7 +2469,59 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "sync-gbrain"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/deploy-ship/document-generate",
+      "name": "document-generate",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/deploy-ship/document-generate/SKILL.md",
+      "description": "Generate missing documentation from scratch for a feature, module, or entire project. (gstack)",
+      "summary": "Generate missing documentation from scratch for a feature, module, or entire project. (gstack)",
+      "triggers": [
+        "write docs for this",
+        "generate documentation",
+        "document this feature",
+        "create a tutorial",
+        "write a how-to",
+        "explain this module",
+        "docs for this project"
+      ],
+      "trigger_phrases": [
+        "write docs for this",
+        "generate documentation",
+        "document this feature",
+        "create a tutorial",
+        "write a how-to",
+        "explain this module",
+        "docs for this project"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "document-generate"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -2204,10 +2537,20 @@
       "name": "document-release",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/deploy-ship/document-release/SKILL.md",
-      "description": "Post-ship documentation update. Reads all project docs, cross-references   the diff, updates README/ARCHITECTURE/CONTRIBUTING/CLAUDE.md to match what shipped,   polishes CHANGELOG voice, cleans up TODOS, and optionally bumps VERSION. Use when   asked to \"update the docs\", \"sync documentation\", or \"post-ship docs\". Proactively   suggest after a PR is merged or code is shipped. (gstack)",
-      "summary": "Post-ship documentation update. Reads all project docs, cross-references   the diff, updates README/ARCHITECTURE/CONTRIBUTING/CLAUDE.md to match what shipped,   polishes CHANGELOG voice, cleans up TODOS, and optionally bumps VERSION. Use wh",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Post-ship documentation update. (gstack)",
+      "summary": "Post-ship documentation update. (gstack)",
+      "triggers": [
+        "update docs after ship",
+        "document what changed",
+        "post-ship docs"
+      ],
+      "trigger_phrases": [
+        "update docs after ship",
+        "document what changed",
+        "post-ship docs"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2220,6 +2563,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "document-release"
       ],
       "requires_tools": [],
@@ -2236,10 +2580,20 @@
       "name": "land-and-deploy",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/deploy-ship/land-and-deploy/SKILL.md",
-      "description": "Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies   production health via canary checks. Takes over after /ship creates the PR. Use   when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to production\".   (gstack)",
-      "summary": "Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies   production health via canary checks. Takes over after /ship creates the PR. Use   when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to produ",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Land and deploy workflow. (gstack)",
+      "summary": "Land and deploy workflow. (gstack)",
+      "triggers": [
+        "merge and deploy",
+        "land the pr",
+        "ship to production"
+      ],
+      "trigger_phrases": [
+        "merge and deploy",
+        "land the pr",
+        "ship to production"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "4",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2252,6 +2606,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "land-and-deploy"
       ],
       "requires_tools": [],
@@ -2268,10 +2623,24 @@
       "name": "landing-report",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/deploy-ship/landing-report/SKILL.md",
-      "description": "Read-only queue dashboard for workspace-aware ship. Shows which VERSION   slots are currently claimed by open PRs, which sibling Conductor workspaces have   WIP work likely to ship soon, and what slot /ship would pick next. No mutations   — just a snapshot. Use when asked to \"landing report\", \"what's in the queue\", \"show   me open PRs\", or \"which version do I claim next\". (gstack)",
-      "summary": "Read-only queue dashboard for workspace-aware ship. Shows which VERSION   slots are currently claimed by open PRs, which sibling Conductor workspaces have   WIP work likely to ship soon, and what slot /ship would pick next. No mutations   —",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Read-only queue dashboard for workspace-aware ship. (gstack)",
+      "summary": "Read-only queue dashboard for workspace-aware ship. (gstack)",
+      "triggers": [
+        "landing report",
+        "version queue",
+        "ship queue",
+        "what version comes next",
+        "show open PR versions"
+      ],
+      "trigger_phrases": [
+        "landing report",
+        "version queue",
+        "ship queue",
+        "what version comes next",
+        "show open PR versions"
+      ],
+      "skill_version": "0.1.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2284,6 +2653,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "landing-report"
       ],
       "requires_tools": [],
@@ -2300,10 +2670,20 @@
       "name": "setup-deploy",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/deploy-ship/setup-deploy/SKILL.md",
-      "description": "Configure deployment settings for /land-and-deploy. Detects your deploy   platform (Fly.io, Render, Vercel, Netlify, Heroku, GitHub Actions, custom), production   URL, health check endpoints, and deploy status commands. Writes the configuration   to CLAUDE.md so all future deploys are automatic. Use when: \"setup deploy\", \"configure   deployment\", \"set up land-and-deploy\", \"how do I deploy with gstack\", \"add deploy   config\".",
-      "summary": "Configure deployment settings for /land-and-deploy. Detects your deploy   platform (Fly.io, Render, Vercel, Netlify, Heroku, GitHub Actions, custom), production   URL, health check endpoints, and deploy status commands. Writes the configura",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Configure deployment settings for /land-and-deploy.",
+      "summary": "Configure deployment settings for /land-and-deploy.",
+      "triggers": [
+        "configure deploy",
+        "setup deployment",
+        "set deploy platform"
+      ],
+      "trigger_phrases": [
+        "configure deploy",
+        "setup deployment",
+        "set deploy platform"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2316,6 +2696,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "setup-deploy"
       ],
       "requires_tools": [],
@@ -2332,10 +2713,22 @@
       "name": "ship",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/deploy-ship/ship/SKILL.md",
-      "description": "Ship workflow: detect + merge base branch, run tests, review diff, bump   VERSION, update CHANGELOG, commit, push, create PR. Use when asked to \"ship\", \"deploy\",   \"push to main\", \"create a PR\", \"merge and push\", or \"get it deployed\". Proactively   invoke this skill (do NOT push/PR directly) when the user says code is ready, asks   about deploying, wants to push code up, or asks to create a PR. (gstack)",
-      "summary": "Ship workflow: detect + merge base branch, run tests, review diff, bump   VERSION, update CHANGELOG, commit, push, create PR. Use when asked to \"ship\", \"deploy\",   \"push to main\", \"create a PR\", \"merge and push\", or \"get it deployed\". Proac",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR. (gstack)",
+      "summary": "Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR. (gstack)",
+      "triggers": [
+        "ship it",
+        "create a pr",
+        "push to main",
+        "deploy this"
+      ],
+      "trigger_phrases": [
+        "ship it",
+        "create a pr",
+        "push to main",
+        "deploy this"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "4",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2347,7 +2740,8 @@
         "qa",
         "ship",
         "browser",
-        "gstack"
+        "gstack",
+        "ios"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -2363,10 +2757,20 @@
       "name": "design-consultation",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/design/design-consultation/SKILL.md",
-      "description": "Design consultation: understands your product, researches the landscape,   proposes a complete design system (aesthetic, typography, color, layout, spacing,   motion), and generates font+color preview pages. Creates DESIGN.md as your project''s   design source of truth. For existing sites, use /plan-design-review to infer the   system instead. Use when asked to \"design system\", \"brand guidelines\", or \"create   DESIGN.md\". Proactively suggest when starting a new project''s UI with no existing   d",
-      "summary": "Design consultation: understands your product, researches the landscape,   proposes a complete design system (aesthetic, typography, color, layout, spacing,   motion), and generates font+color preview pages. Creates DESIGN.md as your projec",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview... (gstack)",
+      "summary": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview... (gstack)",
+      "triggers": [
+        "design system",
+        "create a brand",
+        "design from scratch"
+      ],
+      "trigger_phrases": [
+        "design system",
+        "create a brand",
+        "design from scratch"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2379,6 +2783,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "design-consultation"
       ],
       "requires_tools": [],
@@ -2395,10 +2800,20 @@
       "name": "design-html",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/design/design-html/SKILL.md",
-      "description": "Design finalization: generates production-quality Pretext-native HTML/CSS.   Works with approved mockups from /design-shotgun, CEO plans from /plan-ceo-review,   design review context from /plan-design-review, or from scratch with a user description.   Text actually reflows, heights are computed, layouts are dynamic. 30KB overhead,   zero deps. Smart API routing: picks the right Pretext patterns for each design type.   Use when: \"finalize this design\", \"turn this into HTML\", \"build me a page\", \"",
-      "summary": "Design finalization: generates production-quality Pretext-native HTML/CSS.   Works with approved mockups from /design-shotgun, CEO plans from /plan-ceo-review,   design review context from /plan-design-review, or from scratch with a user de",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)",
+      "summary": "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)",
+      "triggers": [
+        "build the design",
+        "code the mockup",
+        "make design real"
+      ],
+      "trigger_phrases": [
+        "build the design",
+        "code the mockup",
+        "make design real"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2411,6 +2826,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "design-html"
       ],
       "requires_tools": [],
@@ -2427,10 +2843,20 @@
       "name": "design-review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/design/design-review/SKILL.md",
-      "description": "Designer''s eye QA: finds visual inconsistency, spacing issues, hierarchy   problems, AI slop patterns, and slow interactions — then fixes them. Iteratively   fixes issues in source code, committing each fix atomically and re-verifying with   before/after screenshots. For plan-mode design review (before implementation), use   /plan-design-review. Use when asked to \"audit the design\", \"visual QA\", \"check if   it looks good\", or \"design polish\". Proactively suggest when the user mentions visual   ",
-      "summary": "Designer''s eye QA: finds visual inconsistency, spacing issues, hierarchy   problems, AI slop patterns, and slow interactions — then fixes them. Iteratively   fixes issues in source code, committing each fix atomically and re-verifying with",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. (gstack)",
+      "summary": "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. (gstack)",
+      "triggers": [
+        "visual design audit",
+        "design qa",
+        "fix design issues"
+      ],
+      "trigger_phrases": [
+        "visual design audit",
+        "design qa",
+        "fix design issues"
+      ],
+      "skill_version": "2.0.0",
+      "preamble_tier": "4",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2443,6 +2869,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "design-review"
       ],
       "requires_tools": [],
@@ -2459,10 +2886,20 @@
       "name": "design-shotgun",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/design/design-shotgun/SKILL.md",
-      "description": "Design shotgun: generate multiple AI design variants, open a comparison   board, collect structured feedback, and iterate. Standalone design exploration you   can run anytime. Use when: \"explore designs\", \"show me options\", \"design variants\",   \"visual brainstorm\", or \"I don''t like how this looks\". Proactively suggest when   the user describes a UI feature but hasn''t seen what it could look like. (gstack)",
-      "summary": "Design shotgun: generate multiple AI design variants, open a comparison   board, collect structured feedback, and iterate. Standalone design exploration you   can run anytime. Use when: \"explore designs\", \"show me options\", \"design variants",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. (gstack)",
+      "summary": "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. (gstack)",
+      "triggers": [
+        "explore design variants",
+        "show me design options",
+        "visual design brainstorm"
+      ],
+      "trigger_phrases": [
+        "explore design variants",
+        "show me design options",
+        "visual design brainstorm"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2475,7 +2912,227 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "design-shotgun"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/ios/ios-clean",
+      "name": "ios-clean",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/ios/ios-clean/SKILL.md",
+      "description": "Remove the DebugBridge SPM package and all #if DEBUG wiring from an iOS app. (gstack)",
+      "summary": "Remove the DebugBridge SPM package and all #if DEBUG wiring from an iOS app. (gstack)",
+      "triggers": [
+        "clean the ios debug bridge",
+        "remove debugbridge",
+        "strip the gstack ios instrumentation"
+      ],
+      "trigger_phrases": [
+        "clean the ios debug bridge",
+        "remove debugbridge",
+        "strip the gstack ios instrumentation"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "ios-clean"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/ios/ios-design-review",
+      "name": "ios-design-review",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/ios/ios-design-review/SKILL.md",
+      "description": "Visual design audit for iOS apps on real hardware. (gstack)",
+      "summary": "Visual design audit for iOS apps on real hardware. (gstack)",
+      "triggers": [
+        "review the ios design",
+        "audit the iphone app visuals",
+        "design qa the ios app"
+      ],
+      "trigger_phrases": [
+        "review the ios design",
+        "audit the iphone app visuals",
+        "design qa the ios app"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "ios-design-review"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/ios/ios-fix",
+      "name": "ios-fix",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/ios/ios-fix/SKILL.md",
+      "description": "Autonomous iOS bug fixer. (gstack)",
+      "summary": "Autonomous iOS bug fixer. (gstack)",
+      "triggers": [
+        "fix this ios bug",
+        "patch the iphone app",
+        "auto-fix the ios issue"
+      ],
+      "trigger_phrases": [
+        "fix this ios bug",
+        "patch the iphone app",
+        "auto-fix the ios issue"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "ios-fix"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/ios/ios-qa",
+      "name": "ios-qa",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/ios/ios-qa/SKILL.md",
+      "description": "Live-device iOS QA for SwiftUI apps. (gstack)",
+      "summary": "Live-device iOS QA for SwiftUI apps. (gstack)",
+      "triggers": [
+        "ios qa",
+        "test the iphone app",
+        "test my ios app",
+        "find bugs on the device",
+        "qa the ios app"
+      ],
+      "trigger_phrases": [
+        "ios qa",
+        "test the iphone app",
+        "test my ios app",
+        "find bugs on the device",
+        "qa the ios app"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "ios-qa"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/ios/ios-sync",
+      "name": "ios-sync",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/ios/ios-sync/SKILL.md",
+      "description": "Regenerate the iOS debug bridge against the latest upstream gstack templates. (gstack)",
+      "summary": "Regenerate the iOS debug bridge against the latest upstream gstack templates. (gstack)",
+      "triggers": [
+        "resync the ios debug bridge",
+        "regenerate ios accessors",
+        "update the gstack ios instrumentation"
+      ],
+      "trigger_phrases": [
+        "resync the ios debug bridge",
+        "regenerate ios accessors",
+        "update the gstack ios instrumentation"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "ios-sync"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -2491,10 +3148,20 @@
       "name": "autoplan",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/plan-review/autoplan/SKILL.md",
-      "description": "Auto-review pipeline — reads the full CEO, design, eng, and DX review   skills from disk and runs them sequentially with auto-decisions using 6 decision   principles. Surfaces taste decisions (close approaches, borderline scope, codex   disagreements) at a final approval gate. One command, fully reviewed plan out. Use   when asked to \"auto review\", \"autoplan\", \"run all reviews\", \"review this plan automatically\",   or \"make the decisions for me\". Proactively suggest when the user has a plan file ",
-      "summary": "Auto-review pipeline — reads the full CEO, design, eng, and DX review   skills from disk and runs them sequentially with auto-decisions using 6 decision   principles. Surfaces taste decisions (close approaches, borderline scope, codex   dis",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. (gstack)",
+      "summary": "Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. (gstack)",
+      "triggers": [
+        "run all reviews",
+        "automatic review pipeline",
+        "auto plan review"
+      ],
+      "trigger_phrases": [
+        "run all reviews",
+        "automatic review pipeline",
+        "auto plan review"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2507,6 +3174,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "autoplan"
       ],
       "requires_tools": [],
@@ -2523,10 +3191,20 @@
       "name": "devex-review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/plan-review/devex-review/SKILL.md",
-      "description": "Live developer experience audit. Uses the browse tool to actually TEST   the developer experience: navigates docs, tries the getting started flow, times   TTHW, screenshots error messages, evaluates CLI help text. Produces a DX scorecard   with evidence. Compares against /plan-devex-review scores if they exist (the boomerang:   plan said 3 minutes, reality says 8). Use when asked to \"test the DX\", \"DX audit\",   \"developer experience test\", or \"try the onboarding\". Proactively suggest after   shi",
-      "summary": "Live developer experience audit. Uses the browse tool to actually TEST   the developer experience: navigates docs, tries the getting started flow, times   TTHW, screenshots error messages, evaluates CLI help text. Produces a DX scorecard   ",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Live developer experience audit. (gstack)",
+      "summary": "Live developer experience audit. (gstack)",
+      "triggers": [
+        "live dx audit",
+        "test developer experience",
+        "measure onboarding time"
+      ],
+      "trigger_phrases": [
+        "live dx audit",
+        "test developer experience",
+        "measure onboarding time"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2539,6 +3217,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "devex-review"
       ],
       "requires_tools": [],
@@ -2555,10 +3234,22 @@
       "name": "plan-ceo-review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/plan-review/plan-ceo-review/SKILL.md",
-      "description": "CEO/founder-mode plan review. Rethink the problem, find the 10-star   product, challenge premises, expand scope when it creates a better product. Four   modes: SCOPE EXPANSION (dream big), SELECTIVE EXPANSION (hold scope + cherry-pick   expansions), HOLD SCOPE (maximum rigor), SCOPE REDUCTION (strip to essentials).   Use when asked to \"think bigger\", \"expand scope\", \"strategy review\", \"rethink this\",   or \"is this ambitious enough\". Proactively suggest when the user is questioning   scope or amb",
-      "summary": "CEO/founder-mode plan review. Rethink the problem, find the 10-star   product, challenge premises, expand scope when it creates a better product. Four   modes: SCOPE EXPANSION (dream big), SELECTIVE EXPANSION (hold scope + cherry-pick   exp",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "CEO/founder-mode plan review. (gstack)",
+      "summary": "CEO/founder-mode plan review. (gstack)",
+      "triggers": [
+        "think bigger",
+        "expand scope",
+        "strategy review",
+        "rethink this plan"
+      ],
+      "trigger_phrases": [
+        "think bigger",
+        "expand scope",
+        "strategy review",
+        "rethink this plan"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2571,6 +3262,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "plan-ceo-review"
       ],
       "requires_tools": [],
@@ -2587,10 +3279,20 @@
       "name": "plan-design-review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/plan-review/plan-design-review/SKILL.md",
-      "description": "Designer's eye plan review — interactive, like CEO and Eng review. Rates   each design dimension 0-10, explains what would make it a 10, then fixes the plan   to get there. Works in plan mode. For live site visual audits, use /design-review.   Use when asked to \"review the design plan\" or \"design critique\". Proactively suggest   when the user has a plan with UI/UX components that should be reviewed before implementation.   (gstack)",
-      "summary": "Designer's eye plan review — interactive, like CEO and Eng review. Rates   each design dimension 0-10, explains what would make it a 10, then fixes the plan   to get there. Works in plan mode. For live site visual audits, use /design-review",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Designer's eye plan review — interactive, like CEO and Eng review. (gstack)",
+      "summary": "Designer's eye plan review — interactive, like CEO and Eng review. (gstack)",
+      "triggers": [
+        "design plan review",
+        "review ux plan",
+        "check design decisions"
+      ],
+      "trigger_phrases": [
+        "design plan review",
+        "review ux plan",
+        "check design decisions"
+      ],
+      "skill_version": "2.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2603,6 +3305,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "plan-design-review"
       ],
       "requires_tools": [],
@@ -2619,10 +3322,20 @@
       "name": "plan-devex-review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/plan-review/plan-devex-review/SKILL.md",
-      "description": "Interactive developer experience plan review. Explores developer personas,   benchmarks against competitors, designs magical moments, and traces friction points   before scoring. Three modes: DX EXPANSION (competitive advantage), DX POLISH (bulletproof   every touchpoint), DX TRIAGE (critical gaps only). Use when asked to \"DX review\",   \"developer experience audit\", \"devex review\", or \"API design review\". Proactively   suggest when the user has a plan for developer-facing products (APIs, CLIs, S",
-      "summary": "Interactive developer experience plan review. Explores developer personas,   benchmarks against competitors, designs magical moments, and traces friction points   before scoring. Three modes: DX EXPANSION (competitive advantage), DX POLISH ",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Interactive developer experience plan review. (gstack)",
+      "summary": "Interactive developer experience plan review. (gstack)",
+      "triggers": [
+        "developer experience review",
+        "dx plan review",
+        "check developer onboarding"
+      ],
+      "trigger_phrases": [
+        "developer experience review",
+        "dx plan review",
+        "check developer onboarding"
+      ],
+      "skill_version": "2.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2635,6 +3348,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "plan-devex-review"
       ],
       "requires_tools": [],
@@ -2651,10 +3365,20 @@
       "name": "plan-eng-review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/plan-review/plan-eng-review/SKILL.md",
-      "description": "Eng manager-mode plan review. Lock in the execution plan — architecture,   data flow, diagrams, edge cases, test coverage, performance. Walks through issues   interactively with opinionated recommendations. Use when asked to \"review the architecture\",   \"engineering review\", or \"lock in the plan\". Proactively suggest when the user has   a plan or design doc and is about to start coding — to catch architecture issues   before implementation. (gstack) Voice triggers (speech-to-text aliases): \"tech",
-      "summary": "Eng manager-mode plan review. Lock in the execution plan — architecture,   data flow, diagrams, edge cases, test coverage, performance. Walks through issues   interactively with opinionated recommendations. Use when asked to \"review the arc",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Eng manager-mode plan review. (gstack)",
+      "summary": "Eng manager-mode plan review. (gstack)",
+      "triggers": [
+        "review architecture",
+        "eng plan review",
+        "check the implementation plan"
+      ],
+      "trigger_phrases": [
+        "review architecture",
+        "eng plan review",
+        "check the implementation plan"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2667,6 +3391,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "plan-eng-review"
       ],
       "requires_tools": [],
@@ -2683,10 +3408,28 @@
       "name": "plan-tune",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/plan-review/plan-tune/SKILL.md",
-      "description": "Self-tuning question sensitivity + developer psychographic for gstack   (v1: observational). Review which AskUserQuestion prompts fire across gstack skills,   set per-question preferences (never-ask / always-ask / ask-only-for-one-way), inspect   the dual-track profile (what you declared vs what your behavior suggests), and enable/disable   question tuning. Conversational interface — no CLI syntax required. Use when asked   to \"tune questions\", \"stop asking me that\", \"too many questions\", \"show ",
-      "summary": "Self-tuning question sensitivity + developer psychographic for gstack   (v1: observational). Review which AskUserQuestion prompts fire across gstack skills,   set per-question preferences (never-ask / always-ask / ask-only-for-one-way), ins",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Self-tuning question sensitivity + developer psychographic for gstack (v1: observational). (gstack)",
+      "summary": "Self-tuning question sensitivity + developer psychographic for gstack (v1: observational). (gstack)",
+      "triggers": [
+        "tune questions",
+        "stop asking me that",
+        "too many questions",
+        "show my profile",
+        "show my vibe",
+        "developer profile",
+        "turn off question tuning"
+      ],
+      "trigger_phrases": [
+        "tune questions",
+        "stop asking me that",
+        "too many questions",
+        "show my profile",
+        "show my vibe",
+        "developer profile",
+        "turn off question tuning"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2699,7 +3442,57 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "plan-tune"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/plan-review/spec",
+      "name": "spec",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/plan-review/spec/SKILL.md",
+      "description": "Turn vague intent into a precise, executable spec in five phases. (gstack)",
+      "summary": "Turn vague intent into a precise, executable spec in five phases. (gstack)",
+      "triggers": [
+        "spec this out",
+        "file an issue",
+        "write up a ticket",
+        "turn this into an issue",
+        "make this a github issue",
+        "turn this into a backlog item"
+      ],
+      "trigger_phrases": [
+        "spec this out",
+        "file an issue",
+        "write up a ticket",
+        "turn this into an issue",
+        "make this a github issue",
+        "turn this into a backlog item"
+      ],
+      "skill_version": "0.1.0",
+      "preamble_tier": null,
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "spec"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -2715,10 +3508,12 @@
       "name": "gstack-openclaw-ceo-review",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/remote-agents/openclaw/gstack-openclaw-ceo-review/SKILL.md",
-      "description": "Use when asked to review a plan, challenge a proposal, run a CEO review,   poke holes in an approach, think bigger about scope, or decide whether to expand   or reduce the plan.",
-      "summary": "Use when asked to review a plan, challenge a proposal, run a CEO review,   poke holes in an approach, think bigger about scope, or decide whether to expand   or reduce the plan.",
+      "description": "Use when asked to review a plan, challenge a proposal, run a CEO review, poke holes in an approach, think bigger about scope, or decide whether to expand or reduce the plan.",
+      "summary": "Use when asked to review a plan, challenge a proposal, run a CEO review, poke holes in an approach, think bigger about scope, or decide whether to expand or reduce the plan.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2731,6 +3526,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "gstack-openclaw-ceo-review"
       ],
       "requires_tools": [],
@@ -2747,10 +3543,12 @@
       "name": "gstack-openclaw-investigate",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/remote-agents/openclaw/gstack-openclaw-investigate/SKILL.md",
-      "description": "Use when asked to debug, fix a bug, investigate an error, or do root   cause analysis, and when users report errors, stack traces, unexpected behavior,   or say something stopped working.",
-      "summary": "Use when asked to debug, fix a bug, investigate an error, or do root   cause analysis, and when users report errors, stack traces, unexpected behavior,   or say something stopped working.",
+      "description": "Use when asked to debug, fix a bug, investigate an error, or do root cause analysis, and when users report errors, stack traces, unexpected behavior, or say something stopped working.",
+      "summary": "Use when asked to debug, fix a bug, investigate an error, or do root cause analysis, and when users report errors, stack traces, unexpected behavior, or say something stopped working.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2763,6 +3561,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "gstack-openclaw-investigate"
       ],
       "requires_tools": [],
@@ -2779,10 +3578,12 @@
       "name": "gstack-openclaw-office-hours",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/remote-agents/openclaw/gstack-openclaw-office-hours/SKILL.md",
-      "description": "Use when asked to brainstorm, evaluate whether an idea is worth building,   run office hours, or think through a new product idea or design direction before   any code is written.",
-      "summary": "Use when asked to brainstorm, evaluate whether an idea is worth building,   run office hours, or think through a new product idea or design direction before   any code is written.",
+      "description": "Use when asked to brainstorm, evaluate whether an idea is worth building, run office hours, or think through a new product idea or design direction before any code is written.",
+      "summary": "Use when asked to brainstorm, evaluate whether an idea is worth building, run office hours, or think through a new product idea or design direction before any code is written.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2795,6 +3596,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "gstack-openclaw-office-hours"
       ],
       "requires_tools": [],
@@ -2811,10 +3613,12 @@
       "name": "gstack-openclaw-retro",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/remote-agents/openclaw/gstack-openclaw-retro/SKILL.md",
-      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns,   and code quality metrics with persistent history and trend tracking. Team-aware   with per-person contributions, praise, and growth areas. Use when asked for weekly   retro, what shipped this week, or engineering retrospective.",
-      "summary": "Weekly engineering retrospective. Analyzes commit history, work patterns,   and code quality metrics with persistent history and trend tracking. Team-aware   with per-person contributions, praise, and growth areas. Use when asked for weekly",
+      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware with per-person contributions, praise, and growth areas. Use when asked for weekly retro, what shipped this week, or engineering retrospective.",
+      "summary": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware with per-person contributions, praise, and growth areas. Use when asked for weekly ret",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2827,6 +3631,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "gstack-openclaw-retro"
       ],
       "requires_tools": [],
@@ -2843,10 +3648,20 @@
       "name": "pair-agent",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/remote-agents/pair-agent/SKILL.md",
-      "description": "Pair a remote AI agent with your browser. One command generates a setup   key and prints instructions the other agent can follow to connect. Works with OpenClaw,   Hermes, Codex, Cursor, or any agent that can make HTTP requests. The remote agent   gets its own tab with scoped access (read+write by default, admin on request). Use   when asked to \"pair agent\", \"connect agent\", \"share browser\", \"remote browser\",   \"let another agent use my browser\", or \"give browser access\". (gstack) Voice triggers",
-      "summary": "Pair a remote AI agent with your browser. One command generates a setup   key and prints instructions the other agent can follow to connect. Works with OpenClaw,   Hermes, Codex, Cursor, or any agent that can make HTTP requests. The remote ",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Pair a remote AI agent with your browser. (gstack)",
+      "summary": "Pair a remote AI agent with your browser. (gstack)",
+      "triggers": [
+        "pair with agent",
+        "connect remote agent",
+        "share my browser"
+      ],
+      "trigger_phrases": [
+        "pair with agent",
+        "connect remote agent",
+        "share my browser"
+      ],
+      "skill_version": "0.1.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2859,6 +3674,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "pair-agent"
       ],
       "requires_tools": [],
@@ -2877,8 +3693,20 @@
       "path": ".cursor/skills/gstack/scrape/browser-skills/hackernews-frontpage/SKILL.md",
       "description": "Scrape the Hacker News front page (titles, points, comment counts).",
       "summary": "Scrape the Hacker News front page (titles, points, comment counts).",
-      "triggers": [],
-      "trigger_phrases": [],
+      "triggers": [
+        "scrape hacker news frontpage",
+        "scrape hn frontpage",
+        "get hn top stories",
+        "latest hacker news stories"
+      ],
+      "trigger_phrases": [
+        "scrape hacker news frontpage",
+        "scrape hn frontpage",
+        "get hn top stories",
+        "latest hacker news stories"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2891,6 +3719,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "hackernews-frontpage"
       ],
       "requires_tools": [],
@@ -2907,10 +3736,24 @@
       "name": "scrape",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/scrape/scrape/SKILL.md",
-      "description": "Pull data from a web page. First call on a new intent prototypes the   flow via $B primitives and returns JSON. Subsequent calls on a matching intent route   to a codified browser-skill and return in ~200ms. Read-only — for mutating flows   (form fills, clicks, submissions), use /automate. Use when asked to \"scrape\", \"get   data from\", \"pull\", \"extract from\", or \"what's on\" a page. (gstack)",
-      "summary": "Pull data from a web page. First call on a new intent prototypes the   flow via $B primitives and returns JSON. Subsequent calls on a matching intent route   to a codified browser-skill and return in ~200ms. Read-only — for mutating flows  ",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Pull data from a web page. (gstack)",
+      "summary": "Pull data from a web page. (gstack)",
+      "triggers": [
+        "scrape this page",
+        "get data from",
+        "pull from",
+        "extract from",
+        "what is on"
+      ],
+      "trigger_phrases": [
+        "scrape this page",
+        "get data from",
+        "pull from",
+        "extract from",
+        "what is on"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2923,6 +3766,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "scrape"
       ],
       "requires_tools": [],
@@ -2939,10 +3783,22 @@
       "name": "skillify",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/scrape/skillify/SKILL.md",
-      "description": "Codify the most recent successful /scrape flow into a permanent browser-skill   on disk. Future /scrape calls with the same intent run the codified script in ~200ms   instead of re-driving the page. Walks back through the conversation, synthesizes   script.ts + script.test.ts + fixture, runs the test in a temp dir, and asks before   committing. Use when asked to \"skillify\", \"codify\", \"save this scrape\", or \"make   this permanent\". (gstack)",
-      "summary": "Codify the most recent successful /scrape flow into a permanent browser-skill   on disk. Future /scrape calls with the same intent run the codified script in ~200ms   instead of re-driving the page. Walks back through the conversation, synt",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Codify the most recent successful /scrape flow into a permanent browser-skill on disk. (gstack)",
+      "summary": "Codify the most recent successful /scrape flow into a permanent browser-skill on disk. (gstack)",
+      "triggers": [
+        "skillify",
+        "codify this scrape",
+        "save this scrape",
+        "make this permanent"
+      ],
+      "trigger_phrases": [
+        "skillify",
+        "codify this scrape",
+        "save this scrape",
+        "make this permanent"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2955,6 +3811,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "skillify"
       ],
       "requires_tools": [],
@@ -2971,10 +3828,20 @@
       "name": "careful",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/security-safety/careful/SKILL.md",
-      "description": "Safety guardrails for destructive commands. Warns before rm -rf, DROP   TABLE, force-push, git reset --hard, kubectl delete, and similar destructive operations.   User can override each warning. Use when touching prod, debugging live systems,   or working in a shared environment. Use when asked to \"be careful\", \"safety mode\",   \"prod mode\", or \"careful mode\". (gstack)",
-      "summary": "Safety guardrails for destructive commands. Warns before rm -rf, DROP   TABLE, force-push, git reset --hard, kubectl delete, and similar destructive operations.   User can override each warning. Use when touching prod, debugging live system",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Safety guardrails for destructive commands. (gstack)",
+      "summary": "Safety guardrails for destructive commands. (gstack)",
+      "triggers": [
+        "be careful",
+        "warn before destructive",
+        "safety mode"
+      ],
+      "trigger_phrases": [
+        "be careful",
+        "warn before destructive",
+        "safety mode"
+      ],
+      "skill_version": "0.1.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -2987,6 +3854,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "careful"
       ],
       "requires_tools": [],
@@ -3003,10 +3871,20 @@
       "name": "cso",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/security-safety/cso/SKILL.md",
-      "description": "Chief Security Officer mode. Infrastructure-first security audit: secrets   archaeology, dependency supply chain, CI/CD pipeline security, LLM/AI security,   skill supply chain scanning, plus OWASP Top 10, STRIDE threat modeling, and active   verification. Two modes: daily (zero-noise, 8/10 confidence gate) and comprehensive   (monthly deep scan, 2/10 bar). Trend tracking across audit runs. Use when: \"security   audit\", \"threat model\", \"pentest review\", \"OWASP\", \"CSO review\". (gstack) Voice   tr",
-      "summary": "Chief Security Officer mode. Infrastructure-first security audit: secrets   archaeology, dependency supply chain, CI/CD pipeline security, LLM/AI security,   skill supply chain scanning, plus OWASP Top 10, STRIDE threat modeling, and active",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Chief Security Officer mode. (gstack)",
+      "summary": "Chief Security Officer mode. (gstack)",
+      "triggers": [
+        "security audit",
+        "check for vulnerabilities",
+        "owasp review"
+      ],
+      "trigger_phrases": [
+        "security audit",
+        "check for vulnerabilities",
+        "owasp review"
+      ],
+      "skill_version": "2.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3019,6 +3897,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "cso"
       ],
       "requires_tools": [],
@@ -3035,10 +3914,20 @@
       "name": "freeze",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/security-safety/freeze/SKILL.md",
-      "description": "Restrict file edits to a specific directory for the session. Blocks Edit   and Write outside the allowed path. Use when debugging to prevent accidentally \"fixing\"   unrelated code, or when you want to scope changes to one module. Use when asked   to \"freeze\", \"restrict edits\", \"only edit this folder\", or \"lock down edits\". (gstack)",
-      "summary": "Restrict file edits to a specific directory for the session. Blocks Edit   and Write outside the allowed path. Use when debugging to prevent accidentally \"fixing\"   unrelated code, or when you want to scope changes to one module. Use when a",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Restrict file edits to a specific directory for the session. (gstack)",
+      "summary": "Restrict file edits to a specific directory for the session. (gstack)",
+      "triggers": [
+        "freeze edits to directory",
+        "lock editing scope",
+        "restrict file changes"
+      ],
+      "trigger_phrases": [
+        "freeze edits to directory",
+        "lock editing scope",
+        "restrict file changes"
+      ],
+      "skill_version": "0.1.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3051,6 +3940,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "freeze"
       ],
       "requires_tools": [],
@@ -3067,10 +3957,20 @@
       "name": "guard",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/security-safety/guard/SKILL.md",
-      "description": "Full safety mode: destructive command warnings + directory-scoped edits.   Combines /careful (warns before rm -rf, DROP TABLE, force-push, etc.) with /freeze   (blocks edits outside a specified directory). Use for maximum safety when touching   prod or debugging live systems. Use when asked to \"guard mode\", \"full safety\", \"lock   it down\", or \"maximum safety\". (gstack)",
-      "summary": "Full safety mode: destructive command warnings + directory-scoped edits.   Combines /careful (warns before rm -rf, DROP TABLE, force-push, etc.) with /freeze   (blocks edits outside a specified directory). Use for maximum safety when touchi",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Full safety mode: destructive command warnings + directory-scoped edits. (gstack)",
+      "summary": "Full safety mode: destructive command warnings + directory-scoped edits. (gstack)",
+      "triggers": [
+        "full safety mode",
+        "guard against mistakes",
+        "maximum safety"
+      ],
+      "trigger_phrases": [
+        "full safety mode",
+        "guard against mistakes",
+        "maximum safety"
+      ],
+      "skill_version": "0.1.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3083,6 +3983,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "guard"
       ],
       "requires_tools": [],
@@ -3099,10 +4000,20 @@
       "name": "unfreeze",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/security-safety/unfreeze/SKILL.md",
-      "description": "Clear the freeze boundary set by /freeze, allowing edits to all directories   again. Use when you want to widen edit scope without ending the session. Use when   asked to \"unfreeze\", \"unlock edits\", \"remove freeze\", or \"allow all edits\". (gstack)",
-      "summary": "Clear the freeze boundary set by /freeze, allowing edits to all directories   again. Use when you want to widen edit scope without ending the session. Use when   asked to \"unfreeze\", \"unlock edits\", \"remove freeze\", or \"allow all edits\". (g",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Clear the freeze boundary set by /freeze, allowing edits to all directories again. (gstack)",
+      "summary": "Clear the freeze boundary set by /freeze, allowing edits to all directories again. (gstack)",
+      "triggers": [
+        "unfreeze edits",
+        "unlock all directories",
+        "remove edit restrictions"
+      ],
+      "trigger_phrases": [
+        "unfreeze edits",
+        "unlock all directories",
+        "remove edit restrictions"
+      ],
+      "skill_version": "0.1.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3115,6 +4026,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "unfreeze"
       ],
       "requires_tools": [],
@@ -3131,10 +4043,20 @@
       "name": "gstack-upgrade",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/utility/gstack-upgrade/SKILL.md",
-      "description": "Upgrade gstack to the latest version. Detects global vs vendored install,   runs the upgrade, and shows what''s new. Use when asked to \"upgrade gstack\", \"update   gstack\", or \"get latest version\". Voice triggers (speech-to-text aliases): \"upgrade   the tools\", \"update the tools\", \"gee stack upgrade\", \"g stack upgrade\".",
-      "summary": "Upgrade gstack to the latest version. Detects global vs vendored install,   runs the upgrade, and shows what''s new. Use when asked to \"upgrade gstack\", \"update   gstack\", or \"get latest version\". Voice triggers (speech-to-text aliases): \"u",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Upgrade gstack to the latest version.",
+      "summary": "Upgrade gstack to the latest version.",
+      "triggers": [
+        "upgrade gstack",
+        "update gstack version",
+        "get latest gstack"
+      ],
+      "trigger_phrases": [
+        "upgrade gstack",
+        "update gstack version",
+        "get latest gstack"
+      ],
+      "skill_version": "1.1.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3147,7 +4069,53 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "gstack-upgrade"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "imported-pack",
+      "related": [],
+      "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "gstack/utility/make-pdf",
+      "name": "make-pdf",
+      "domain": "gstack",
+      "path": ".cursor/skills/gstack/utility/make-pdf/SKILL.md",
+      "description": "Turn any markdown file into a publication-quality PDF. (gstack)",
+      "summary": "Turn any markdown file into a publication-quality PDF. (gstack)",
+      "triggers": [
+        "markdown to pdf",
+        "generate pdf",
+        "make pdf",
+        "export pdf"
+      ],
+      "trigger_phrases": [
+        "markdown to pdf",
+        "generate pdf",
+        "make pdf",
+        "export pdf"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "1",
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "ship",
+        "browser",
+        "gstack",
+        "ios",
+        "make-pdf"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -3163,10 +4131,22 @@
       "name": "office-hours",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/utility/office-hours/SKILL.md",
-      "description": "YC Office Hours — two modes. Startup mode: six forcing questions that   expose demand reality, status quo, desperate specificity, narrowest wedge, observation,   and future-fit. Builder mode: design thinking brainstorming for side projects, hackathons,   learning, and open source. Saves a design doc. Use when asked to \"brainstorm this\",   \"I have an idea\", \"help me think through this\", \"office hours\", or \"is this worth   building\". Proactively invoke this skill (do NOT answer directly) when the ",
-      "summary": "YC Office Hours — two modes. Startup mode: six forcing questions that   expose demand reality, status quo, desperate specificity, narrowest wedge, observation,   and future-fit. Builder mode: design thinking brainstorming for side projects,",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "YC Office Hours — two modes. (gstack)",
+      "summary": "YC Office Hours — two modes. (gstack)",
+      "triggers": [
+        "brainstorm this",
+        "is this worth building",
+        "help me think through",
+        "office hours"
+      ],
+      "trigger_phrases": [
+        "brainstorm this",
+        "is this worth building",
+        "help me think through",
+        "office hours"
+      ],
+      "skill_version": "2.0.0",
+      "preamble_tier": "3",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3179,6 +4159,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "office-hours"
       ],
       "requires_tools": [],
@@ -3195,10 +4176,20 @@
       "name": "open-gstack-browser",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/utility/open-gstack-browser/SKILL.md",
-      "description": "Launch GStack Browser — AI-controlled Chromium with the sidebar extension   baked in. Opens a visible browser window where you can watch every action in real   time. The sidebar shows a live activity feed and chat. Anti-bot stealth built in.   Use when asked to \"open gstack browser\", \"launch browser\", \"connect chrome\", \"open   chrome\", \"real browser\", \"launch chrome\", \"side panel\", or \"control my browser\".   Voice triggers (speech-to-text aliases): \"show me the browser\".",
-      "summary": "Launch GStack Browser — AI-controlled Chromium with the sidebar extension   baked in. Opens a visible browser window where you can watch every action in real   time. The sidebar shows a live activity feed and chat. Anti-bot stealth built in",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in.",
+      "summary": "Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in.",
+      "triggers": [
+        "open gstack browser",
+        "launch chromium",
+        "show me the browser"
+      ],
+      "trigger_phrases": [
+        "open gstack browser",
+        "launch chromium",
+        "show me the browser"
+      ],
+      "skill_version": "0.2.0",
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3211,6 +4202,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "open-gstack-browser"
       ],
       "requires_tools": [],
@@ -3227,10 +4219,20 @@
       "name": "retro",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/utility/retro/SKILL.md",
-      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns,   and code quality metrics with persistent history and trend tracking. Team-aware:   breaks down per-person contributions with praise and growth areas. Use when asked   to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively   suggest at the end of a work week or sprint. (gstack)",
-      "summary": "Weekly engineering retrospective. Analyzes commit history, work patterns,   and code quality metrics with persistent history and trend tracking. Team-aware:   breaks down per-person contributions with praise and growth areas. Use when asked",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Weekly engineering retrospective. (gstack)",
+      "summary": "Weekly engineering retrospective. (gstack)",
+      "triggers": [
+        "weekly retro",
+        "what did we ship",
+        "engineering retrospective"
+      ],
+      "trigger_phrases": [
+        "weekly retro",
+        "what did we ship",
+        "engineering retrospective"
+      ],
+      "skill_version": "2.0.0",
+      "preamble_tier": "2",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3243,6 +4245,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "retro"
       ],
       "requires_tools": [],
@@ -3259,10 +4262,20 @@
       "name": "setup-browser-cookies",
       "domain": "gstack",
       "path": ".cursor/skills/gstack/utility/setup-browser-cookies/SKILL.md",
-      "description": "Import cookies from your real Chromium browser into the headless browse   session. Opens an interactive picker UI where you select which cookie domains to   import. Use before QA testing authenticated pages. Use when asked to \"import cookies\",   \"login to the site\", or \"authenticate the browser\". (gstack)",
-      "summary": "Import cookies from your real Chromium browser into the headless browse   session. Opens an interactive picker UI where you select which cookie domains to   import. Use before QA testing authenticated pages. Use when asked to \"import cookie",
-      "triggers": [],
-      "trigger_phrases": [],
+      "description": "Import cookies from your real Chromium browser into the headless browse session. (gstack)",
+      "summary": "Import cookies from your real Chromium browser into the headless browse session. (gstack)",
+      "triggers": [
+        "import browser cookies",
+        "login to test site",
+        "setup authenticated session"
+      ],
+      "trigger_phrases": [
+        "import browser cookies",
+        "login to test site",
+        "setup authenticated session"
+      ],
+      "skill_version": "1.0.0",
+      "preamble_tier": "1",
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3275,6 +4288,7 @@
         "ship",
         "browser",
         "gstack",
+        "ios",
         "setup-browser-cookies"
       ],
       "requires_tools": [],
@@ -3309,6 +4323,8 @@
         "ad account",
         "Breakdown Effect"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3339,6 +4355,8 @@
       "summary": "Observe the user's screen via screenpipe, detect repeated research workflows, match them against existing scientific-agent-skills, and draft new skills (or composition recipes that chain existing ones) for the patterns not yet covered. Use ",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3369,6 +4387,8 @@
       "summary": "Self-learning system that captures corrections, discovers workflow patterns, and syncs learnings to skills and rules. Use when ending a session, after corrections, or when the user wants to formalize learnings (v1.1.3).",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3399,6 +4419,8 @@
       "summary": "Convert the current phase doc into an ordered execution plan and propose work packages (spec-first + tiered tests), including RTL/Hebrew checks.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3439,6 +4461,8 @@
         "skill authoring",
         "improve skill triggers"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3469,6 +4493,8 @@
       "summary": "Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), fo",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3499,6 +4525,8 @@
       "summary": "Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or b",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3529,6 +4557,8 @@
       "summary": "Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival. Use this skill when working with censored survival data, performing time-to-event analysis, fitting Cox models, Random Survival Forests,",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3559,6 +4589,8 @@
       "summary": "This skill should be used when working with pre-trained transformer models for natural language processing, computer vision, audio, or multimodal tasks. Use for text generation, classification, question answering, translation, summarization",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3601,6 +4633,8 @@
         "app review",
         "release checklist"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3644,6 +4678,8 @@
         "beta release",
         "App Store Connect upload"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -3689,6 +4725,8 @@
         "bundle size",
         "profiling"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3730,6 +4768,8 @@
         "tracking plan",
         "product analytics"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3772,6 +4812,8 @@
         "positioning",
         "service productization"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3802,6 +4844,8 @@
       "summary": "Self-learning system that captures corrections, discovers workflow patterns, and syncs learnings to skills and rules. Use when ending a session, after corrections, or when the user wants to formalize learnings (v1.1.3).",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3830,6 +4874,8 @@
       "summary": "Convert the current phase doc into an ordered execution plan and propose work packages (spec-first + tiered tests), including RTL/Hebrew checks.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3871,6 +4917,8 @@
         "GitHub Actions",
         "pre-merge checks"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3915,6 +4963,8 @@
         "React Native errors",
         "global handler"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3953,6 +5003,8 @@
         "config",
         "environment variables"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -3999,6 +5051,8 @@
         "error budget",
         "monitoring"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4043,6 +5097,8 @@
         "blameless",
         "SEV"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4087,6 +5143,8 @@
         "cold start",
         "function timeout"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4131,6 +5189,8 @@
         "release checklist",
         "go live"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4175,6 +5235,8 @@
         "auth test",
         "security test"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -4218,6 +5280,8 @@
         "OAuth",
         "API best practices"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -4259,6 +5323,8 @@
         "skill security",
         "third-party skill"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "medium",
       "formats": [
         "cursor",
@@ -4290,6 +5356,8 @@
       "summary": ">   Chọn đúng biểu đồ, kể chuyện với số liệu, và tránh误导 — dựa trên nguyên tắc   từ Kieran Healy (Data Visualization, Princeton 2019) và taxonomy từ AntV   chart-visualization-skills. Dùng khi cần quyết định loại chart, trình bày insight   ",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4320,6 +5388,8 @@
       "summary": "Create professional infographics using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 Pro for quality review. Integrates research-lookup and web search for accurate data. Supports 10 infographic types, 8 industry styles, ",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4350,6 +5420,8 @@
       "summary": "Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creating novel plot types, or integrating with specific scientific workflows. Export to PNG/PDF/SVG for publication. For quic",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4380,6 +5452,8 @@
       "summary": "Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, significance annotations, error bars, colorblind-safe palettes, and specific journal formatting (Nature, Science, Cell). O",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4410,6 +5484,8 @@
       "summary": "Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive defaults. Best for box plots, violin plots, pair plots, heatmaps. Built on matplotlib.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4440,6 +5516,8 @@
       "summary": ">-   Cursor skills converted from VoltAgent awesome-claude-code-subagents (DS/ML/AI/   research, product, orchestration). Use when you want role-based playbooks aligned   with data science and stakeholder workflows.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4471,6 +5549,8 @@
       "summary": "Use when analyzing business processes, gathering requirements from stakeholders, or identifying process improvement opportunities to drive operational efficiency and measurable business value.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4502,6 +5582,8 @@
       "summary": "Use this agent when you need to assess customer health, develop retention strategies, identify upsell opportunities, or maximize customer lifetime value. Invoke this agent for account health analysis, churn prevention, product adoption opti",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4533,6 +5615,8 @@
       "summary": "Use this agent when you need to make product strategy decisions, prioritize features, or define roadmap plans based on user needs and business goals.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4564,6 +5648,8 @@
       "summary": "Use this agent when you need to establish project plans, track execution progress, manage risks, control budget/schedule, and coordinate stakeholders across complex initiatives.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4595,6 +5681,8 @@
       "summary": "Use when teams need facilitation, process optimization, velocity improvement, or agile ceremony management\\u2014especially for sprint planning, retrospectives, impediment removal, and scaling agile practices across multiple teams.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4626,6 +5714,8 @@
       "summary": "Use this agent when you need to create, improve, or maintain technical documentation including API references, user guides, SDK documentation, and getting-started guides.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4657,6 +5747,8 @@
       "summary": "Use this agent when you need to conduct user research, analyze user behavior, or generate actionable insights to validate design decisions and uncover user needs. Invoke when you need usability testing, user interviews, survey design, analy",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4688,6 +5780,8 @@
       "summary": "Use this agent when architecting, implementing, or optimizing end-to-end AI systems\\u2014from model selection and training pipelines to production deployment and monitoring.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4719,6 +5813,8 @@
       "summary": "Use when you need to extract insights from business data, create dashboards and reports, or perform statistical analysis to support decision-making.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4750,6 +5846,8 @@
       "summary": "Use this agent when you need to design, build, or optimize data pipelines, ETL/ELT processes, and data infrastructure. Invoke when designing data platforms, implementing pipeline orchestration, handling data quality issues, or optimizing da",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4781,6 +5879,8 @@
       "summary": "Use this agent when you need to analyze data patterns, build predictive models, or extract statistical insights from datasets. Invoke this agent for exploratory analysis, hypothesis testing, machine learning model development, and translati",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4812,6 +5912,8 @@
       "summary": "Use this agent when you need to analyze slow queries, optimize database performance across multiple systems, or implement indexing strategies to improve query execution.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4843,6 +5945,8 @@
       "summary": "Use when designing LLM systems for production, implementing fine-tuning or RAG architectures, optimizing inference serving infrastructure, or managing multi-model deployments.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4874,6 +5978,8 @@
       "summary": "Use this agent when you need to deploy, optimize, or serve machine learning models at scale in production environments.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4905,6 +6011,8 @@
       "summary": "Use this agent when building production ML systems requiring model training pipelines, model serving infrastructure, performance optimization, and automated retraining.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4936,6 +6044,8 @@
       "summary": "Use this agent when you need to design and implement ML infrastructure, set up CI/CD for machine learning models, establish model versioning systems, or optimize ML platforms for reliability and automation. Invoke this agent to build produc",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4967,6 +6077,8 @@
       "summary": "Use when building production NLP systems, implementing text processing pipelines, developing language models, or solving domain-specific NLP tasks like named entity recognition, sentiment analysis, or machine translation.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -4998,6 +6110,8 @@
       "summary": "Use when you need to optimize PostgreSQL performance, design high-availability replication, or troubleshoot database issues at scale. Invoke this agent for query optimization, configuration tuning, replication setup, backup strategies, and ",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5029,6 +6143,8 @@
       "summary": "Use this agent when you need to design, optimize, test, or evaluate prompts for large language models in production systems.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5060,6 +6176,8 @@
       "summary": "Use when designing RL environments, training agents with reward optimization, implementing policy gradient methods, or deploying decision-making systems for robotics, gaming, and autonomous operations.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5091,6 +6209,8 @@
       "summary": "Use this agent when you need to create, architect, or overhaul comprehensive documentation systems including API docs, tutorials, guides, and developer-friendly content that keeps pace with code changes.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5122,6 +6242,8 @@
       "summary": "Use this agent when you need to design, establish, or optimize Git workflows, branching strategies, and merge management for a project or team.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5153,6 +6275,8 @@
       "summary": "Use when you need to transform poorly structured, complex, or duplicated code into clean, maintainable systems while preserving all existing behavior.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5184,6 +6308,8 @@
       "summary": "Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adherence, and high transaction accuracy.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5215,6 +6341,8 @@
       "summary": "Use when working on healthcare administration tasks including revenue cycle management, HIPAA/compliance auditing, medical coding (ICD-10, CPT, DRGs), CMS cost reports, payer contract analysis, quality improvement, clinical operations, heal",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5246,6 +6374,8 @@
       "summary": "Use this agent when you need to develop quantitative trading strategies, build financial models with rigorous mathematical foundations, or conduct advanced risk analytics for derivatives and portfolios. Invoke this agent for statistical arb",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5277,6 +6407,8 @@
       "summary": "Use this agent when you need to identify, quantify, and mitigate enterprise-level risks across financial, operational, regulatory, and strategic domains. Invoke this agent when you need to assess risk exposure, design control frameworks, va",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5308,6 +6440,8 @@
       "summary": "Use this agent when designing, building, or optimizing CI/CD pipelines and deployment automation strategies.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5339,6 +6473,8 @@
       "summary": "Use this agent when you need to build type-safe, production-ready Python code for web APIs, system utilities, or complex applications requiring modern async patterns and extensive type coverage.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5370,6 +6506,8 @@
       "summary": "Use this agent when you need to optimize complex SQL queries, design efficient database schemas, or solve performance issues across PostgreSQL, MySQL, SQL Server, and Oracle requiring advanced query optimization, index strategies, or data w",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5401,6 +6539,8 @@
       "summary": "Use for managing shared state, information retrieval, and data synchronization when multiple agents need coordinated access to context and metadata.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5432,6 +6572,8 @@
       "summary": "Use this agent when distributed system errors occur and need coordinated handling across multiple components, or when you need to implement comprehensive error recovery strategies with automated failure detection and cascade prevention.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5463,6 +6605,8 @@
       "summary": "Use when you need to extract actionable patterns from agent interactions, synthesize insights across multiple workflows, and enable organizational learning from collective experience.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5494,6 +6638,8 @@
       "summary": "Use when coordinating multiple concurrent agents that need to communicate, share state, synchronize work, and handle distributed failures across a system.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5525,6 +6671,8 @@
       "summary": "Use when distributing tasks across multiple agents or workers, managing queues, and balancing workloads to maximize throughput while respecting priorities and deadlines.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5556,6 +6704,8 @@
       "summary": "Use this agent when you need to conduct comprehensive code reviews focusing on code quality, security vulnerabilities, and best practices.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5587,6 +6737,8 @@
       "summary": "Use this agent when you need to diagnose and fix bugs, identify root causes of failures, or analyze error logs and stack traces to resolve issues.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5618,6 +6770,8 @@
       "summary": "Use this agent when you need to identify and eliminate performance bottlenecks in applications, databases, or infrastructure systems, and when baseline performance metrics need improvement.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5649,6 +6803,8 @@
       "summary": "Use this agent when you need comprehensive quality assurance strategy, test planning across the entire development cycle, or quality metrics analysis to improve overall software quality.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5680,6 +6836,8 @@
       "summary": "Use when you need to analyze direct and indirect competitors, benchmark against market leaders, or develop strategies to strengthen competitive positioning and market advantage.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5711,6 +6869,8 @@
       "summary": "Use this agent when you need to discover, collect, and validate data from multiple sources to fuel analysis and decision-making. Invoke this agent for identifying data sources, gathering raw datasets, performing quality checks, and preparin",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5742,6 +6902,8 @@
       "summary": "Use this agent when you need to analyze markets, understand consumer behavior, assess competitive landscapes, and size opportunities to inform business strategy and market entry decisions.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5773,6 +6935,8 @@
       "summary": "Use this agent when you need an idea pressure-tested with brutal honesty, competitor teardown, market validation, and clear go/no-go guidance before building.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5804,6 +6968,8 @@
       "summary": "Use this agent when you need comprehensive research across multiple sources with synthesis of findings into actionable insights, trend identification, and detailed reporting.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5835,6 +7001,8 @@
       "summary": "Use when you need to search scientific literature and retrieve structured experimental data from published studies. Invoke this agent when the task requires evidence-grounded answers from full-text research papers, including methods, result",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5866,6 +7034,8 @@
       "summary": "Use when you need to find specific information across multiple sources using advanced search strategies, query optimization, and targeted information retrieval. Invoke this agent when the priority is locating precise, relevant results effic",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5897,6 +7067,8 @@
       "summary": "Use when analyzing emerging patterns, predicting industry shifts, or developing future scenarios to inform strategic planning and competitive positioning.",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5928,6 +7100,8 @@
       "summary": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting l",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -5958,6 +7132,8 @@
       "summary": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating ",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -6000,6 +7176,8 @@
         "deck",
         "presentation"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -6042,6 +7220,8 @@
         "copy edit",
         "tone"
       ],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -6072,6 +7252,8 @@
       "summary": "Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing pros",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -6102,6 +7284,8 @@
       "summary": "Use this skill when working with symbolic mathematics in Python. This skill should be used for symbolic computation tasks including solving equations algebraically, performing calculus operations (derivatives, integrals, limits), manipulati",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",
@@ -6132,6 +7316,8 @@
       "summary": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatt",
       "triggers": [],
       "trigger_phrases": [],
+      "skill_version": null,
+      "preamble_tier": null,
       "risk": "low",
       "formats": [
         "cursor",

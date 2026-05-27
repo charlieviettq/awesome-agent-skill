@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-25T10:22:20Z",
+  "generated_at": "2026-05-27T13:39:05Z",
   "schema_version": 1,
-  "count": 173,
-  "average_score": 70,
+  "count": 186,
+  "average_score": 72,
   "low_score_count": 3,
   "skills": [
     {
@@ -45,6 +45,19 @@
       "issues": []
     },
     {
+      "id": "ai-agent-systems/dispatching-parallel-agents",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
       "id": "ai-agent-systems/mcp-builder",
       "score": 83,
       "checks": {
@@ -78,6 +91,19 @@
         "has_triggers": true,
         "has_usage_section": true,
         "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "ai-agent-systems/subagent-driven-development",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
@@ -311,6 +337,19 @@
       "issues": []
     },
     {
+      "id": "core-workflow/requesting-code-review",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
       "id": "core-workflow/source-driven-development",
       "score": 83,
       "checks": {
@@ -332,6 +371,19 @@
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": true,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/systematic-debugging",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
         "risk_set": true
       },
       "issues": []
@@ -521,480 +573,561 @@
       "id": "gstack",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/browser-qa/benchmark",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/browser-qa/benchmark-models",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/browser-qa/browse",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/browser-qa/canary",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/browser-qa/qa",
-      "score": 67,
+      "score": 83,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
-        "has_reference": false,
+        "has_reference": true,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/browser-qa/qa-only",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/code-quality/codex",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/code-quality/health",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/code-quality/investigate",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/code-quality/review",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/context-memory/context-restore",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/context-memory/context-save",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/context-memory/learn",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/context-memory/setup-gbrain",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/context-memory/sync-gbrain",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
+    },
+    {
+      "id": "gstack/deploy-ship/document-generate",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
     },
     {
       "id": "gstack/deploy-ship/document-release",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/deploy-ship/land-and-deploy",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/deploy-ship/landing-report",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/deploy-ship/setup-deploy",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/deploy-ship/ship",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/design/design-consultation",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/design/design-html",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/design/design-review",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/design/design-shotgun",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "gstack/ios/ios-clean",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "gstack/ios/ios-design-review",
+      "score": 67,
+      "checks": {
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
-      "id": "gstack/plan-review/autoplan",
+      "id": "gstack/ios/ios-fix",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
+    },
+    {
+      "id": "gstack/ios/ios-qa",
+      "score": 67,
+      "checks": {
+        "description_min_80": false,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "short description"
+      ]
+    },
+    {
+      "id": "gstack/ios/ios-sync",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "gstack/plan-review/autoplan",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
     },
     {
       "id": "gstack/plan-review/devex-review",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/plan-review/plan-ceo-review",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/plan-review/plan-design-review",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/plan-review/plan-devex-review",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/plan-review/plan-eng-review",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/plan-review/plan-tune",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "gstack/plan-review/spec",
+      "score": 67,
+      "checks": {
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
@@ -1061,212 +1194,216 @@
       "id": "gstack/remote-agents/pair-agent",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/scrape/browser-skills/hackernews-frontpage",
-      "score": 50,
+      "score": 67,
       "checks": {
         "description_min_80": false,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "short description",
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/scrape/scrape",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/scrape/skillify",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/security-safety/careful",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/security-safety/cso",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/security-safety/freeze",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/security-safety/guard",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/security-safety/unfreeze",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/utility/gstack-upgrade",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
+      ]
+    },
+    {
+      "id": "gstack/utility/make-pdf",
+      "score": 67,
+      "checks": {
+        "description_min_80": false,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "short description"
       ]
     },
     {
       "id": "gstack/utility/office-hours",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/utility/open-gstack-browser",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "gstack/utility/retro",
       "score": 67,
       "checks": {
-        "description_min_80": true,
-        "has_triggers": false,
+        "description_min_80": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
       "issues": [
-        "no triggers in description"
+        "short description"
       ]
     },
     {
       "id": "gstack/utility/setup-browser-cookies",
-      "score": 67,
+      "score": 83,
       "checks": {
         "description_min_80": true,
-        "has_triggers": false,
+        "has_triggers": true,
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
-      "issues": [
-        "no triggers in description"
-      ]
+      "issues": []
     },
     {
       "id": "marketing/meta-ads-analyzer",
@@ -1327,6 +1464,19 @@
         "missing ## section",
         "low overall score"
       ]
+    },
+    {
+      "id": "meta-tools/writing-skills",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
     },
     {
       "id": "ml-dl/pytorch-lightning",

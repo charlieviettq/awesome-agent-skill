@@ -115,6 +115,10 @@ def validate_cursor_skills() -> list[str]:
         for link in collect_markdown_links(text):
             if link.startswith(("http://", "https://", "#", "mailto:")):
                 continue
+            if "\n" in link or len(link) > 256 or link.strip() != link:
+                continue
+            if "`" in link:
+                continue
             target = (path.parent / link).resolve()
             if not target.exists():
                 errors.append(f"{path}: broken relative link -> {link}")

@@ -1,10 +1,14 @@
 {
   "schema_version": 1,
   "registry_schema_version": 2,
-  "count": 178,
+  "count": 186,
   "paths": [
     "registry/skills.json",
     "registry/bundles.json",
     ".cursor/skills/**"
-  ]
+  ],
+  "gstack_version": "1.48.0.0",
+  "gstack_commit": "a6fb31726cece1d1bba401fde593db7cb96bc738",
+  "gstack_synced_at": "2026-05-27",
+  "gstack_skill_count": 58
 }

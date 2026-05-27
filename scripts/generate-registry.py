@@ -32,7 +32,7 @@ DOMAIN_TAGS: dict[str, list[str]] = {
     "security-appsec": ["security", "api", "audit"],
     "reliability-ops": ["ci", "ops", "launch", "observability"],
     "frontend-engineering": ["frontend", "ui", "browser"],
-    "gstack": ["qa", "ship", "browser", "gstack"],
+    "gstack": ["qa", "ship", "browser", "gstack", "ios"],
     "voltagent": ["persona", "subagent", "roles"],
     "ml-dl": ["ml", "deep-learning"],
     "analysis-stats": ["statistics", "shap", "modeling"],
@@ -88,6 +88,24 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     return fm
 
 
+def extract_triggers_from_fm(fm: dict[str, str], description: str) -> list[str]:
+    """Pull triggers from YAML list frontmatter or legacy Triggers: in description."""
+    raw = fm.get("triggers", "").strip()
+    if raw.startswith("-"):
+        out: list[str] = []
+        for line in raw.splitlines():
+            line = line.strip()
+            if line.startswith("- "):
+                out.append(line[2:].strip().strip('"').strip("'"))
+        if out:
+            return out
+    m = re.search(r'Triggers:\s*(.+?)(?:\.|$)', description, flags=re.I | re.S)
+    if not m:
+        return []
+    chunk = m.group(1)
+    return [t.strip().strip('"').strip("'") for t in re.findall(r'"([^"]+)"', chunk)]
+
+
 def extract_triggers(description: str) -> list[str]:
     m = re.search(r'Triggers:\s*(.+?)(?:\.|$)', description, flags=re.I | re.S)
     if not m:
@@ -119,8 +137,10 @@ def collect_skills() -> list[dict]:
         tags = list(DOMAIN_TAGS.get(dom, [dom]))
         if name not in tags:
             tags.append(name)
-        triggers = extract_triggers(desc)
+        triggers = extract_triggers_from_fm(fm, desc)
         summary = desc[:240] if desc else ""
+        skill_version = fm.get("version", "").strip() or None
+        preamble_tier = fm.get("preamble-tier", "").strip() or None
         entries.append(
             {
                 "id": rel,
@@ -131,6 +151,8 @@ def collect_skills() -> list[dict]:
                 "summary": summary,
                 "triggers": triggers,
                 "trigger_phrases": triggers,
+                "skill_version": skill_version,
+                "preamble_tier": preamble_tier,
                 "risk": DOMAIN_RISK.get(dom, "low"),
                 "formats": ["cursor", "claude"],
                 "source": "awesome-agent-skill",

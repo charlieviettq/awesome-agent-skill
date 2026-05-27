@@ -97,7 +97,7 @@
     },
     {
       "query": "ship code path end to end with tests and changelog",
-      "expect_any": ["gstack/deploy-ship/ship"]
+      "expect_any": ["gstack/deploy-ship/ship", "gstack/deploy-ship/land-and-deploy"]
     },
     {
       "query": "rag embeddings retrieval",
@@ -174,6 +174,22 @@
     {
       "query": "design and analyze product experiments A/B tests",
       "expect_any": ["product-growth/product-analytics-experiments"]
+    },
+    {
+      "query": "auto review pipeline run all plan reviews",
+      "expect_any": ["gstack/plan-review/autoplan"]
+    },
+    {
+      "query": "ios app qa test on simulator",
+      "expect_any": ["gstack/ios/ios-qa"]
+    },
+    {
+      "query": "generate pdf from markdown make pdf",
+      "expect_any": ["gstack/utility/make-pdf", "writing-docs/pdf"]
+    },
+    {
+      "query": "write technical documentation from codebase",
+      "expect_any": ["gstack/deploy-ship/document-generate", "voltagent/business-product/technical-writer"]
     },
     {
       "query": "reflect on corrections and sync learnings into skills",

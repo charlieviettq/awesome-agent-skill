@@ -1,0 +1,21 @@
+{
+  "upstream_repo": "https://github.com/garrytan/gstack",
+  "upstream_version": "1.48.0.0",
+  "upstream_commit": "a6fb31726cece1d1bba401fde593db7cb96bc738",
+  "synced_at": "2026-05-27",
+  "local_pack_path": ".cursor/skills/gstack",
+  "prior_snapshot": {
+    "commit": "a6fb31726cece1d1bba401fde593db7cb96bc738",
+    "version": "1.48.0.0",
+    "skill_count": 57,
+    "notes": "Snapshot before refresh-gstack-pack.py run"
+  },
+  "local_skill_count": 58,
+  "upstream_skill_count": 57,
+  "local_patches": [],
+  "refresh_script": "scripts/refresh-gstack-pack.py",
+  "staleness_policy": {
+    "max_age_days": 90,
+    "warn_if_commit_unknown": true
+  }
+}
