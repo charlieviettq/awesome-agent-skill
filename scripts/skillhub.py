@@ -184,20 +184,40 @@ def cmd_eval_recommend(_: argparse.Namespace) -> int:
     fixtures = json.loads(FIXTURES.read_text(encoding="utf-8"))["fixtures"]
     k = 5
     hits = 0
+    hits_at_1 = 0
+    hits_at_3 = 0
+    mrr_sum = 0.0
     for fx in fixtures:
         query = fx["query"]
         expect = set(fx.get("expect_any", []))
         ranked = rank_skills(data["skills"], query)
         top_ids = [s["id"] for _, s in ranked[:k]]
-        ok = bool(expect & set(top_ids))
-        hits += int(ok)
+        found_rank: int | None = None
+        for idx, (_sc, skill) in enumerate(ranked):
+            if skill["id"] in expect:
+                found_rank = idx + 1
+                break
+        ok = found_rank is not None and found_rank <= k
+        if found_rank is not None:
+            if found_rank <= 1:
+                hits_at_1 += 1
+            if found_rank <= 3:
+                hits_at_3 += 1
+            if found_rank <= 5:
+                hits += 1
+            mrr_sum += 1.0 / float(found_rank)
         mark = "PASS" if ok else "FAIL"
         print(f"[{mark}] {query}")
         if not ok:
             print(f"       expected any of: {', '.join(sorted(expect))}")
             print(f"       got top-{k}: {', '.join(top_ids[:3])}...")
-    rate = hits / len(fixtures) if fixtures else 0
-    print(f"\n{hits}/{len(fixtures)} passed (top-{k} hit rate {rate:.0%})")
+    total = len(fixtures)
+    rate_top5 = hits / total if total else 0.0
+    rate_top1 = hits_at_1 / total if total else 0.0
+    rate_top3 = hits_at_3 / total if total else 0.0
+    mrr = mrr_sum / total if total else 0.0
+    print(f"\n{hits}/{total} passed (top-{k} hit rate {rate_top5:.0%})")
+    print(f"top-1={rate_top1:.0%} top-3={rate_top3:.0%} MRR={mrr:.3f}")
     return 0 if hits == len(fixtures) else 1
 
 
