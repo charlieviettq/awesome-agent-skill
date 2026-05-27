@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-25T10:22:20Z",
+  "generated_at": "2026-05-27T13:09:13Z",
   "schema_version": 1,
-  "count": 173,
-  "average_score": 70,
+  "count": 178,
+  "average_score": 71,
   "low_score_count": 3,
   "skills": [
     {
@@ -45,6 +45,19 @@
       "issues": []
     },
     {
+      "id": "ai-agent-systems/dispatching-parallel-agents",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
       "id": "ai-agent-systems/mcp-builder",
       "score": 83,
       "checks": {
@@ -78,6 +91,19 @@
         "has_triggers": true,
         "has_usage_section": true,
         "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "ai-agent-systems/subagent-driven-development",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
         "has_reference": false,
         "risk_set": true
       },
@@ -311,6 +337,19 @@
       "issues": []
     },
     {
+      "id": "core-workflow/requesting-code-review",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
       "id": "core-workflow/source-driven-development",
       "score": 83,
       "checks": {
@@ -332,6 +371,19 @@
         "has_usage_section": true,
         "has_examples": true,
         "has_reference": true,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "core-workflow/systematic-debugging",
+      "score": 67,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": false,
+        "has_reference": false,
         "risk_set": true
       },
       "issues": []
@@ -1327,6 +1379,19 @@
         "missing ## section",
         "low overall score"
       ]
+    },
+    {
+      "id": "meta-tools/writing-skills",
+      "score": 83,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
     },
     {
       "id": "ml-dl/pytorch-lightning",
