@@ -45,7 +45,24 @@ def score_match(query: str, skill: dict) -> int:
     if not tokens:
         tokens = [query.lower()]
     score = 0
-    for token in tokens:
+    text_fields = {
+        "id": str(skill.get("id", "")),
+        "name": str(skill.get("name", "")),
+        "domain": str(skill.get("domain", "")),
+        "description": str(skill.get("description", "")),
+        "summary": str(skill.get("summary", "")),
+    }
+    # Simple synonym expansion for common abbreviations
+    synonym_map = {
+        "tdd": ["test", "tests"],
+        "spec": ["requirements", "design"],
+        "rag": ["retrieval", "embeddings"],
+    }
+    expanded_tokens: list[str] = []
+    for t in tokens:
+        expanded_tokens.append(t)
+        expanded_tokens.extend(synonym_map.get(t, []))
+    for token in expanded_tokens:
         for field in ("id", "name", "domain", "description"):
             val = str(skill.get(field, "")).lower()
             if token in val:
@@ -112,7 +129,16 @@ def cmd_install(args: argparse.Namespace) -> int:
     fmt_argv: list[str] = []
     if args.format:
         fmt_argv = ["--format", args.format]
-    return run_script(script, [args.skill_id, args.target, *fmt_argv])
+    extra: list[str] = []
+    if getattr(args, "dry_run", False):
+        extra.append("--dry-run")
+    if getattr(args, "plan_json", False):
+        extra.append("--plan-json")
+    if getattr(args, "no_overwrite", False):
+        extra.append("--no-overwrite")
+    if getattr(args, "backup", False):
+        extra.append("--backup")
+    return run_script(script, [args.skill_id, args.target, *fmt_argv, *extra])
 
 
 def cmd_install_bundle(args: argparse.Namespace) -> int:
@@ -120,7 +146,16 @@ def cmd_install_bundle(args: argparse.Namespace) -> int:
     fmt_argv: list[str] = []
     if args.format:
         fmt_argv = ["--format", args.format]
-    return run_script(script, [args.bundle_id, args.target, *fmt_argv])
+    extra: list[str] = []
+    if getattr(args, "dry_run", False):
+        extra.append("--dry-run")
+    if getattr(args, "plan_json", False):
+        extra.append("--plan-json")
+    if getattr(args, "no_overwrite", False):
+        extra.append("--no-overwrite")
+    if getattr(args, "backup", False):
+        extra.append("--backup")
+    return run_script(script, [args.bundle_id, args.target, *fmt_argv, *extra])
 
 
 def cmd_validate(_: argparse.Namespace) -> int:
@@ -174,6 +209,14 @@ def cmd_quality(args: argparse.Namespace) -> int:
         file=sys.stderr,
     )
     return 0
+
+
+def cmd_pack(_: argparse.Namespace) -> int:
+    script = ROOT / "scripts" / "pack-skills.py"
+    if not script.exists():
+        print("pack-skills.py missing", file=sys.stderr)
+        return 1
+    return subprocess.run([sys.executable, str(script)], cwd=ROOT).returncode
 
 
 def cmd_eval_recommend(_: argparse.Namespace) -> int:
@@ -387,16 +430,27 @@ def build_parser() -> argparse.ArgumentParser:
     ins.add_argument("skill_id")
     ins.add_argument("target")
     ins.add_argument("--format", choices=["cursor", "claude", "both"], default="both")
+    ins.add_argument("--dry-run", action="store_true", help="Show what would be installed without writing")
+    ins.add_argument("--plan-json", action="store_true", help="Print JSON install plan instead of writing")
+    ins.add_argument("--no-overwrite", action="store_true", help="Fail if target already has this skill")
+    ins.add_argument("--backup", action="store_true", help="Backup existing skill before overwriting")
     ins.set_defaults(func=cmd_install)
 
     ib = sub.add_parser("install-bundle", help="Install a bundle into a project")
     ib.add_argument("bundle_id")
     ib.add_argument("target")
     ib.add_argument("--format", choices=["cursor", "claude", "both"], default="both")
+    ib.add_argument("--dry-run", action="store_true", help="Show what would be installed without writing")
+    ib.add_argument("--plan-json", action="store_true", help="Print JSON install plan instead of writing")
+    ib.add_argument("--no-overwrite", action="store_true", help="Fail if target already has any of these skills")
+    ib.add_argument("--backup", action="store_true", help="Backup existing skills before overwriting")
     ib.set_defaults(func=cmd_install_bundle)
 
     val = sub.add_parser("validate", help="Run skill validation")
     val.set_defaults(func=cmd_validate)
+
+    pk = sub.add_parser("pack", help="Create deterministic skillpack tarball")
+    pk.set_defaults(func=cmd_pack)
 
     doc = sub.add_parser("doctor", help="Check registry, install scripts, validation")
     doc.add_argument("--json", action="store_true", help="Output machine-readable JSON")

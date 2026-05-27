@@ -1,10 +1,19 @@
 ---
 name: spec-driven-development
+version: 2
 description: >
   Write a structured spec before significant implementation—objective, commands,
   boundaries, testing, and success criteria. Use when starting a feature, project,
   or multi-file change without a written spec.
-  Triggers: "write spec", "PRD", "requirements", "spec before code", "what are we building".
+triggers:
+  - "write spec"
+  - "PRD"
+  - "requirements"
+  - "spec before code"
+  - "what are we building"
+tools: []
+mutating: false
+priority: normal
 ---
 
 # Spec-driven development
