@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "registry" / "skills.json"
 BUNDLES = ROOT / "registry" / "bundles.json"
+FIXTURES = ROOT / "registry" / "recommend-fixtures.json"
 
 
 def load_registry() -> dict:
@@ -39,26 +40,34 @@ def cmd_list(args: argparse.Namespace) -> int:
 
 
 def score_match(query: str, skill: dict) -> int:
-    q = query.lower()
+    tokens = [t for t in re.split(r"[^\w]+", query.lower()) if len(t) > 2]
+    if not tokens:
+        tokens = [query.lower()]
     score = 0
-    for field in ("id", "name", "domain", "description"):
-        val = str(skill.get(field, "")).lower()
-        if q in val:
-            score += 10
-    for tag in skill.get("tags", []):
-        if q in tag.lower():
-            score += 5
-    for trig in skill.get("triggers", []):
-        if q in trig.lower():
-            score += 8
+    for token in tokens:
+        for field in ("id", "name", "domain", "description"):
+            val = str(skill.get(field, "")).lower()
+            if token in val:
+                score += 10
+        for tag in skill.get("tags", []):
+            if token in tag.lower():
+                score += 5
+        for trig in skill.get("triggers", []):
+            if token in trig.lower():
+                score += 8
     return score
+
+
+def rank_skills(skills: list[dict], query: str) -> list[tuple[int, dict]]:
+    ranked = [(score_match(query, s), s) for s in skills]
+    ranked = [(sc, s) for sc, s in ranked if sc > 0]
+    ranked.sort(key=lambda x: (-x[0], x[1]["id"]))
+    return ranked
 
 
 def cmd_search(args: argparse.Namespace) -> int:
     data = load_registry()
-    ranked = [(score_match(args.query, s), s) for s in data["skills"]]
-    ranked = [(sc, s) for sc, s in ranked if sc > 0]
-    ranked.sort(key=lambda x: (-x[0], x[1]["id"]))
+    ranked = rank_skills(data["skills"], args.query)
     limit = args.limit
     for sc, s in ranked[:limit]:
         print(f"{sc:3d}  {s['id']}\t{s['name']}")
@@ -117,6 +126,56 @@ def cmd_validate(_: argparse.Namespace) -> int:
     return subprocess.run([sys.executable, str(ROOT / "scripts" / "validate-skills.py")], cwd=ROOT).returncode
 
 
+def cmd_recommend(args: argparse.Namespace) -> int:
+    data = load_registry()
+    ranked = rank_skills(data["skills"], args.query)
+    for sc, s in ranked[: args.limit]:
+        why = []
+        if s.get("triggers"):
+            why.append("triggers")
+        if args.bundle and s["domain"] in bundle_domains(args.bundle):
+            why.append(f"in-bundle:{args.bundle}")
+        extra = f" ({', '.join(why)})" if why else ""
+        print(f"{sc:3d}  {s['id']}\t{s['name']}{extra}")
+    if not ranked:
+        print("No recommendations", file=sys.stderr)
+        return 1
+    return 0
+
+
+def bundle_domains(bundle_id: str) -> set[str]:
+    data = load_bundles()
+    bundle = next((b for b in data["bundles"] if b["id"] == bundle_id), None)
+    if not bundle:
+        return set()
+    return set(bundle.get("domains", []))
+
+
+def cmd_eval_recommend(_: argparse.Namespace) -> int:
+    if not FIXTURES.exists():
+        print("Missing registry/recommend-fixtures.json", file=sys.stderr)
+        return 1
+    data = load_registry()
+    fixtures = json.loads(FIXTURES.read_text(encoding="utf-8"))["fixtures"]
+    k = 5
+    hits = 0
+    for fx in fixtures:
+        query = fx["query"]
+        expect = set(fx.get("expect_any", []))
+        ranked = rank_skills(data["skills"], query)
+        top_ids = [s["id"] for _, s in ranked[:k]]
+        ok = bool(expect & set(top_ids))
+        hits += int(ok)
+        mark = "PASS" if ok else "FAIL"
+        print(f"[{mark}] {query}")
+        if not ok:
+            print(f"       expected any of: {', '.join(sorted(expect))}")
+            print(f"       got top-{k}: {', '.join(top_ids[:3])}...")
+    rate = hits / len(fixtures) if fixtures else 0
+    print(f"\n{hits}/{len(fixtures)} passed (top-{k} hit rate {rate:.0%})")
+    return 0 if hits == len(fixtures) else 1
+
+
 def cmd_doctor(_: argparse.Namespace) -> int:
     ok = True
 
@@ -164,6 +223,15 @@ def build_parser() -> argparse.ArgumentParser:
     sr.add_argument("-n", "--limit", type=int, default=15)
     sr.add_argument("-v", "--verbose", action="store_true")
     sr.set_defaults(func=cmd_search)
+
+    rc = sub.add_parser("recommend", help="Recommend skills for a task description")
+    rc.add_argument("query")
+    rc.add_argument("-n", "--limit", type=int, default=8)
+    rc.add_argument("--bundle", help="Highlight skills in this bundle domain set")
+    rc.set_defaults(func=cmd_recommend)
+
+    ev = sub.add_parser("eval-recommend", help="Run recommendation fixture eval")
+    ev.set_defaults(func=cmd_eval_recommend)
 
     sh = sub.add_parser("show", help="Show skill metadata as JSON")
     sh.add_argument("skill_id")

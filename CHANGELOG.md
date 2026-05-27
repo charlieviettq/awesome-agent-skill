@@ -6,6 +6,7 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- SkillHub recommend: `recommend`, `eval-recommend` with `registry/recommend-fixtures.json`
 - SkillHub CLI: `scripts/skillhub.py` (`list`, `search`, `show`, `bundles`, `install`, `install-bundle`, `validate`, `doctor`)
 - SkillHub registry: `registry/skills.json`, `registry/bundles.json`, `scripts/generate-registry.py`
 - Bundle resolver: `scripts/resolve-bundle.py`; per-skill install: `scripts/install/install-skill.sh`

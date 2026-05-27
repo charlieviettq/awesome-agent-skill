@@ -18,6 +18,10 @@ python3 scripts/skillhub.py list --domain core-workflow
 python3 scripts/skillhub.py search "code review"
 python3 scripts/skillhub.py search mcp -n 5 -v
 
+# Recommend skills for a natural-language task
+python3 scripts/skillhub.py recommend "debug flaky CI tests"
+python3 scripts/skillhub.py eval-recommend
+
 # Show one skill as JSON
 python3 scripts/skillhub.py show core-workflow/verify-before-done
 
