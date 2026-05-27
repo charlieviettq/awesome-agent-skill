@@ -211,6 +211,14 @@ def cmd_quality(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_pack(_: argparse.Namespace) -> int:
+    script = ROOT / "scripts" / "pack-skills.py"
+    if not script.exists():
+        print("pack-skills.py missing", file=sys.stderr)
+        return 1
+    return subprocess.run([sys.executable, str(script)], cwd=ROOT).returncode
+
+
 def cmd_eval_recommend(_: argparse.Namespace) -> int:
     if not FIXTURES.exists():
         print("Missing registry/recommend-fixtures.json", file=sys.stderr)
@@ -390,6 +398,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     val = sub.add_parser("validate", help="Run skill validation")
     val.set_defaults(func=cmd_validate)
+
+    pk = sub.add_parser("pack", help="Create deterministic skillpack tarball")
+    pk.set_defaults(func=cmd_pack)
 
     doc = sub.add_parser("doctor", help="Check registry, install scripts, validation")
     doc.set_defaults(func=cmd_doctor)
