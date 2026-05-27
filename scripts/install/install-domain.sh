@@ -109,6 +109,10 @@ install_cursor() {
 }
 
 install_claude() {
+  if [[ "${DRY_RUN}" -eq 1 ]]; then
+    echo "Plan: install Claude skills for domain ${DOMAIN}"
+    return
+  fi
   mkdir -p "${TARGET}/.claude/skills"
   while IFS= read -r name; do
     [[ -z "${name}" ]] && continue

@@ -1,48 +1,68 @@
 # SkillHub CLI
 
-Local CLI for browsing and installing skills from this repository.
+Browse, recommend, and install skills from the awesome-agent-skill registry.
 
 ## Requirements
 
 - Python 3.9+
-- Run from repo root (or any cwd; paths resolve from `scripts/skillhub.py`)
+- Run from a clone of this repo, or `pip install -e .` from repo root
 
-## Commands
+## Quick commands
 
 ```bash
-# List all skills (optional domain filter)
-python3 scripts/skillhub.py list
-python3 scripts/skillhub.py list --domain core-workflow
-
-# Search by keyword (id, description, tags, triggers)
-python3 scripts/skillhub.py search "code review"
-python3 scripts/skillhub.py search mcp -n 5 -v
-
-# Recommend skills for a natural-language task
+# Recommend skills for a task (structured output)
 python3 scripts/skillhub.py recommend "debug flaky CI tests"
-python3 scripts/skillhub.py eval-recommend
+python3 scripts/skillhub.py recommend "ship a PR safely" --format cursor --json
 
-# Show one skill as JSON
-python3 scripts/skillhub.py show core-workflow/verify-before-done
+# After pip install -e .
+skillhub recommend "review this architecture" --json
 
-# Bundles
-python3 scripts/skillhub.py bundles -v
-
-# Install
-python3 scripts/skillhub.py install core-workflow/verify-before-done ~/my-app --format cursor
-python3 scripts/skillhub.py install-bundle ship-ready ~/my-app --format both
+# Install with safety flags
+python3 scripts/skillhub.py install-bundle ship-ready ~/my-app --format cursor --dry-run
+python3 scripts/skillhub.py install-bundle starter ~/my-app --backup --no-overwrite
 
 # Health
-python3 scripts/skillhub.py validate
 python3 scripts/skillhub.py doctor
+python3 scripts/skillhub.py doctor --target ~/my-app
+python3 scripts/skillhub.py eval-recommend
+python3 scripts/skillhub.py sync
 ```
 
-## Registry
+## `recommend` output
 
-Regenerate after skill changes:
+Human mode prints:
+
+- Suggested **bundle** (if match)
+- **Install command** (`install-bundle` or top skills)
+- **Full workflow** (clone + install) when useful
+- Top skills with **match reasons**
+- **Reload note** for Cursor / Claude
+
+`--json` returns the same structure for tooling and the marketplace advisor.
+
+## Packaging
 
 ```bash
-python3 scripts/generate-registry.py
+pip install -e .          # exposes `skillhub` on PATH
+uvx --from . skillhub list
+python3 scripts/pack-skills.py   # dist/skillpack.tar + sha256
+```
+
+Set `SKILLHUB_ROOT` if the CLI package is installed but skills live in another clone path.
+
+## All commands
+
+```bash
+python3 scripts/skillhub.py list [--domain DOMAIN]
+python3 scripts/skillhub.py search "query" [-n LIMIT] [-v]
+python3 scripts/skillhub.py show SKILL_ID
+python3 scripts/skillhub.py bundles [-v]
+python3 scripts/skillhub.py install SKILL_ID TARGET [--format cursor|claude|both] [--dry-run] [--backup] [--no-overwrite]
+python3 scripts/skillhub.py install-bundle BUNDLE TARGET [flags...]
+python3 scripts/skillhub.py quality [--regenerate] [--low-only]
+python3 scripts/skillhub.py validate
+python3 scripts/skillhub.py pack
+python3 scripts/skillhub.py resolver-generate
 ```
 
 See `registry/README.md` for bundle definitions.
