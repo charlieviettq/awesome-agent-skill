@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T13:05:37Z",
+  "generated_at": "2026-05-27T13:53:32Z",
   "schema_version": 1,
   "count": 178,
   "average_score": 43,
@@ -492,10 +492,10 @@
     },
     {
       "id": "core-workflow/spec-driven-development",
-      "score": 60,
+      "score": 50,
       "checks": {
         "description_min_80": true,
-        "has_triggers": true,
+        "has_triggers": false,
         "has_usage_section": true,
         "has_contract": false,
         "has_phases": false,
@@ -505,7 +505,9 @@
         "has_reference": true,
         "risk_set": true
       },
-      "issues": []
+      "issues": [
+        "no triggers in description"
+      ]
     },
     {
       "id": "core-workflow/systematic-debugging",

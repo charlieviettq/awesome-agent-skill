@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T12:21:23Z",
+  "generated_at": "2026-05-27T13:53:31Z",
   "schema_version": 2,
   "count": 178,
   "skills": [
@@ -1118,22 +1118,10 @@
       "name": "spec-driven-development",
       "domain": "core-workflow",
       "path": ".cursor/skills/core-workflow/spec-driven-development/SKILL.md",
-      "description": ">   Write a structured spec before significant implementation—objective, commands,   boundaries, testing, and success criteria. Use when starting a feature, project,   or multi-file change without a written spec.   Triggers: \"write spec\", \"PRD\", \"requirements\", \"spec before code\", \"what are we building\".",
-      "summary": ">   Write a structured spec before significant implementation—objective, commands,   boundaries, testing, and success criteria. Use when starting a feature, project,   or multi-file change without a written spec.   Triggers: \"write spec\", \"",
-      "triggers": [
-        "write spec",
-        "PRD",
-        "requirements",
-        "spec before code",
-        "what are we building"
-      ],
-      "trigger_phrases": [
-        "write spec",
-        "PRD",
-        "requirements",
-        "spec before code",
-        "what are we building"
-      ],
+      "description": ">   Write a structured spec before significant implementation—objective, commands,   boundaries, testing, and success criteria. Use when starting a feature, project,   or multi-file change without a written spec.",
+      "summary": ">   Write a structured spec before significant implementation—objective, commands,   boundaries, testing, and success criteria. Use when starting a feature, project,   or multi-file change without a written spec.",
+      "triggers": [],
+      "trigger_phrases": [],
       "risk": "low",
       "formats": [
         "cursor",

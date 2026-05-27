@@ -264,18 +264,56 @@ def cmd_eval_recommend(_: argparse.Namespace) -> int:
     return 0 if hits == len(fixtures) else 1
 
 
-def cmd_doctor(_: argparse.Namespace) -> int:
+def cmd_sync(args: argparse.Namespace) -> int:
+    scripts_dir = ROOT / "scripts"
+    steps: list[tuple[str, list[str]]] = []
+
+    reg = scripts_dir / "generate-registry.py"
+    if reg.exists():
+        cmd = [sys.executable, str(reg)]
+        if args.check:
+            cmd.append("--check")
+        steps.append(("generate-registry", cmd))
+
+    qual = scripts_dir / "generate-quality.py"
+    if qual.exists() and not args.check:
+        steps.append(("generate-quality", [sys.executable, str(qual)]))
+
+    cat = scripts_dir / "generate-catalog.py"
+    if cat.exists() and not args.check:
+        steps.append(("generate-catalog", [sys.executable, str(cat)]))
+
+    val = scripts_dir / "validate-skills.py"
+    if val.exists():
+        steps.append(("validate-skills", [sys.executable, str(val)]))
+
     ok = True
+    for label, cmd in steps:
+        r = subprocess.run(cmd, cwd=ROOT)
+        status = "ok" if r.returncode == 0 else "FAIL"
+        print(f"[{status}] {label}")
+        if r.returncode != 0:
+            ok = False
+    return 0 if ok else 1
+
+
+def cmd_doctor(args: argparse.Namespace) -> int:
+    ok = True
+    results: list[dict[str, object]] = []
 
     def check(label: str, passed: bool, detail: str = "") -> None:
         nonlocal ok
-        status = "ok" if passed else "FAIL"
-        if not passed:
+        passed_bool = bool(passed)
+        status = "ok" if passed_bool else "FAIL"
+        if not passed_bool:
             ok = False
-        line = f"[{status}] {label}"
-        if detail:
-            line += f" — {detail}"
-        print(line)
+        entry = {"label": label, "passed": passed_bool, "detail": detail}
+        results.append(entry)
+        if not args.json:
+            line = f"[{status}] {label}"
+            if detail:
+                line += f" — {detail}"
+            print(line)
 
     check("registry/skills.json", REGISTRY.exists())
     check("registry/bundles.json", BUNDLES.exists())
@@ -335,6 +373,18 @@ def cmd_doctor(_: argparse.Namespace) -> int:
 
     v = subprocess.run([sys.executable, str(ROOT / "scripts" / "validate-skills.py")], cwd=ROOT, capture_output=True)
     check("validate-skills.py", v.returncode == 0, "see output above" if v.returncode else "")
+
+    if args.json:
+        print(
+            json.dumps(
+                {
+                    "ok": ok,
+                    "checks": results,
+                },
+                indent=2,
+                ensure_ascii=False,
+            )
+        )
 
     return 0 if ok else 1
 
@@ -403,7 +453,16 @@ def build_parser() -> argparse.ArgumentParser:
     pk.set_defaults(func=cmd_pack)
 
     doc = sub.add_parser("doctor", help="Check registry, install scripts, validation")
+    doc.add_argument("--json", action="store_true", help="Output machine-readable JSON")
     doc.set_defaults(func=cmd_doctor)
+
+    sync = sub.add_parser("sync", help="Regenerate registry/quality/catalog and validate")
+    sync.add_argument(
+        "--check",
+        action="store_true",
+        help="Use lightweight checks when available instead of full regeneration",
+    )
+    sync.set_defaults(func=cmd_sync)
 
     return p
 
