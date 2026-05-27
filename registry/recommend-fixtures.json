@@ -10,8 +10,32 @@
       "expect_any": ["core-workflow/spec-driven-development"]
     },
     {
+      "query": "break work into small ordered tasks with acceptance criteria",
+      "expect_any": ["core-workflow/planning-and-task-breakdown"]
+    },
+    {
+      "query": "request a code review from teammates",
+      "expect_any": ["core-workflow/requesting-code-review"]
+    },
+    {
+      "query": "systematic debugging workflow for tricky bugs",
+      "expect_any": ["core-workflow/systematic-debugging"]
+    },
+    {
       "query": "build mcp server for agents",
       "expect_any": ["ai-agent-systems/mcp-builder"]
+    },
+    {
+      "query": "design function calling schema and agent tools",
+      "expect_any": ["ai-agent-systems/agent-tool-contracts"]
+    },
+    {
+      "query": "evaluate agent behavior and tool usage",
+      "expect_any": ["ai-agent-systems/agent-evaluation"]
+    },
+    {
+      "query": "manage context window and summarization strategy",
+      "expect_any": ["ai-agent-systems/context-window-management"]
     },
     {
       "query": "security audit API owasp",
@@ -21,20 +45,139 @@
       ]
     },
     {
+      "query": "audit skill supply chain before importing external skills",
+      "expect_any": ["security-appsec/skill-supply-chain-audit"]
+    },
+    {
       "query": "shap feature importance model",
       "expect_any": ["analysis-stats/shap"]
+    },
+    {
+      "query": "choose statistical test and report p values",
+      "expect_any": ["analysis-stats/statistical-analysis"]
+    },
+    {
+      "query": "fit regression or time series model with statsmodels",
+      "expect_any": ["analysis-stats/statsmodels"]
     },
     {
       "query": "incremental small commits vertical slice",
       "expect_any": ["core-workflow/incremental-implementation"]
     },
     {
+      "query": "write tests first before changing behavior",
+      "expect_any": ["core-workflow/test-first-development"]
+    },
+    {
+      "query": "handle code review feedback constructively",
+      "expect_any": ["core-workflow/receiving-code-review"]
+    },
+    {
       "query": "postmortem incident blameless",
       "expect_any": ["reliability-ops/postmortem-writing"]
     },
     {
+      "query": "shipping checklist before production launch",
+      "expect_any": ["reliability-ops/shipping-launch-checklist"]
+    },
+    {
+      "query": "set SLO and observability metrics",
+      "expect_any": ["reliability-ops/observability-slo"]
+    },
+    {
+      "query": "run browser qa test suite on a web app",
+      "expect_any": [
+        "gstack/browser-qa/qa",
+        "frontend-engineering/browser-testing-with-devtools"
+      ]
+    },
+    {
+      "query": "pre-landing pull request review",
+      "expect_any": ["gstack/code-quality/review"]
+    },
+    {
+      "query": "ship code path end to end with tests and changelog",
+      "expect_any": ["gstack/deploy-ship/ship"]
+    },
+    {
       "query": "rag embeddings retrieval",
       "expect_any": ["ai-agent-systems/rag-systems"]
+    },
+    {
+      "query": "exploratory data analysis on scientific data files",
+      "expect_any": ["eda-research/exploratory-data-analysis"]
+    },
+    {
+      "query": "run UMAP dimensionality reduction for visualization",
+      "expect_any": ["eda-research/umap-learn"]
+    },
+    {
+      "query": "scale pandas workflow with dask on large dataset",
+      "expect_any": ["data-compute/dask"]
+    },
+    {
+      "query": "faster in memory dataframe using polars",
+      "expect_any": ["data-compute/polars"]
+    },
+    {
+      "query": "EDA and hypothesis generation for research data",
+      "expect_any": ["eda-research/hypothesis-generation"]
+    },
+    {
+      "query": "quick seaborn plots for distributions and relationships",
+      "expect_any": ["visualization/seaborn"]
+    },
+    {
+      "query": "publication ready scientific figures with matplotlib",
+      "expect_any": ["visualization/matplotlib"]
+    },
+    {
+      "query": "choose non misleading charts and tell data story",
+      "expect_any": ["visualization/data-viz-storytelling-healy"]
+    },
+    {
+      "query": "core scientific visualization for multi panel figures",
+      "expect_any": ["visualization/scientific-visualization"]
+    },
+    {
+      "query": "train classification model in scikit learn",
+      "expect_any": ["ml-dl/scikit-learn"]
+    },
+    {
+      "query": "use pytorch lightning for deep learning training loop",
+      "expect_any": ["ml-dl/pytorch-lightning"]
+    },
+    {
+      "query": "write polished technical prose and reduce AI tone",
+      "expect_any": ["writing-docs/prose-polish"]
+    },
+    {
+      "query": "summarize and analyze pdf documents",
+      "expect_any": ["writing-docs/pdf"]
+    },
+    {
+      "query": "work with word docx documents",
+      "expect_any": ["writing-docs/docx"]
+    },
+    {
+      "query": "work with spreadsheets xlsx or csv files",
+      "expect_any": ["writing-docs/xlsx"]
+    },
+    {
+      "query": "create powerpoint slide deck",
+      "expect_any": ["writing-docs/pptx"]
+    },
+    {
+      "query": "run performance optimization on slow api",
+      "expect_any": ["performance/performance-optimization"]
+    },
+    {
+      "query": "design and analyze product experiments A/B tests",
+      "expect_any": ["product-growth/product-analytics-experiments"]
+    },
+    {
+      "query": "reflect on corrections and sync learnings into skills",
+      "expect_any": ["meta-tools/reflect-yourself"]
     }
   ]
 }
