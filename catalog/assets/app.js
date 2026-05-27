@@ -150,6 +150,31 @@ function renderCommandBox(container, command, label) {
   container.appendChild(wrap);
 }
 
+function normalizeSkillMarkdown(raw) {
+  if (!raw) return "";
+  let text = String(raw);
+
+  // Strip front-matter if present.
+  if (text.startsWith("---\n")) {
+    const idx = text.indexOf("\n---", 4);
+    if (idx !== -1) {
+      text = text.slice(idx + 4);
+    }
+  }
+
+  const hasHeading = /^#{1,6}\s/m.test(text);
+  const lines = text.split("\n").filter((ln) => ln.trim().length > 0);
+  const yamlLike =
+    !hasHeading &&
+    lines.length > 0 &&
+    lines.every((ln) => /^[\w\.\-]+\s*:/.test(ln.trim()));
+
+  if (yamlLike) {
+    return "```yaml\n" + text.trim() + "\n```";
+  }
+  return text;
+}
+
 function initSkillModal(skillContent, agentFmt) {
   const modal = document.getElementById("skill-modal");
   const titleEl = document.getElementById("modal-title");
@@ -176,8 +201,13 @@ function initSkillModal(skillContent, agentFmt) {
     githubLink.href = skillGithubUrl(skillId);
     const cmd = installSkillCmd(skillId, agentFmt());
     copyBtn.onclick = () => copyText(cmd, copyBtn);
-    if (entry && entry.markdown && typeof marked !== "undefined") {
-      bodyEl.innerHTML = marked.parse(entry.markdown);
+    if (entry && entry.markdown) {
+      const normalized = normalizeSkillMarkdown(entry.markdown);
+      if (typeof marked !== "undefined") {
+        bodyEl.innerHTML = marked.parse(normalized);
+      } else {
+        bodyEl.innerHTML = `<pre>${escapeHtml(normalized)}</pre>`;
+      }
     } else if (entry && entry.markdown) {
       bodyEl.innerHTML = `<pre>${escapeHtml(entry.markdown)}</pre>`;
     } else {
@@ -206,7 +236,6 @@ function escapeHtml(s) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 }
-
 function initMarketplace(skills, bundles, quality, skillContent) {
   const params = new URLSearchParams(location.search);
   let domainFilter = params.get("domain") || "";
@@ -475,9 +504,17 @@ function initMarketplace(skills, bundles, quality, skillContent) {
           <div class="badges">${tags}</div>
           <p>${(s.description || "").replace(/^>\s*/gm, "").slice(0, 180)}</p>
           <div class="card-actions">
-            ${hasPreview ? `<button class="btn btn-small" data-preview="${s.id}">Preview skill</button>` : ""}
-            <button class="btn btn-small btn-secondary" data-copy="${encodeURIComponent(installCmd)}">Copy install</button>
-            <a class="btn btn-small btn-secondary" href="${skillGithubUrl(s.id)}" target="_blank" rel="noopener">GitHub</a>
+            ${
+              hasPreview
+                ? `<button class="btn btn-small" data-preview="${s.id}">Preview skill</button>`
+                : ""
+            }
+            <button class="btn btn-small btn-secondary" data-copy="${encodeURIComponent(
+              installCmd
+            )}">Copy install</button>
+            <a class="btn btn-small btn-secondary" href="${skillGithubUrl(
+              s.id
+            )}" target="_blank" rel="noopener">GitHub</a>
           </div>
         </article>`;
       })
@@ -580,6 +617,7 @@ async function boot() {
   const skillsPayload = await skillsRes.json();
   const bundlesPayload = await bundlesRes.json();
   let quality = {};
+  let skillContent = {};
   if (qualityRes && qualityRes.ok) {
     const qdata = await qualityRes.json();
     if (Array.isArray(qdata.skills)) {
@@ -590,7 +628,6 @@ async function boot() {
       quality = qdata;
     }
   }
-  let skillContent = {};
   if (contentRes && contentRes.ok) {
     skillContent = await contentRes.json();
   }

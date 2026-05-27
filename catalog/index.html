@@ -130,6 +130,26 @@
     </section>
   </main>
 
+  <div id="skill-preview" class="preview-backdrop" aria-hidden="true">
+    <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title">
+      <header class="preview-header">
+        <div>
+          <h3 id="preview-title"></h3>
+          <div id="preview-id" class="skill-id"></div>
+        </div>
+        <div class="preview-header-actions">
+          <div id="preview-badges" class="badges"></div>
+          <button id="preview-close" type="button" class="btn btn-small btn-secondary">Close</button>
+        </div>
+      </header>
+      <div class="preview-toolbar">
+        <a id="preview-github" class="btn btn-small btn-secondary" href="#" target="_blank" rel="noopener">View on GitHub</a>
+        <button id="preview-copy" type="button" class="btn btn-small">Copy install</button>
+      </div>
+      <div id="preview-body" class="preview-body skill-markdown"></div>
+    </div>
+  </div>
+
   <footer class="container">
     <p>
       <a href="https://github.com/charlieviettq/awesome-agent-skill">awesome-agent-skill</a>

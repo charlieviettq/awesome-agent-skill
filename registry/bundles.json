@@ -62,6 +62,86 @@
       "formats": ["cursor", "claude", "both"]
     },
     {
+      "id": "ai-engineer",
+      "title": "AI Engineer persona bundle",
+      "description": "Build and ship AI systems end-to-end: agents, RAG, and ML pipelines.",
+      "domains": ["ai-agent-systems", "ml-dl", "data-compute"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "software-engineer",
+      "title": "Software Engineer persona bundle",
+      "description": "Spec, implement, test, secure, and ship reliable applications.",
+      "domains": ["core-workflow", "reliability-ops", "security-appsec"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "frontend-engineer",
+      "title": "Frontend Engineer persona bundle",
+      "description": "UI accessibility, visualization, and DX-focused workflows for frontend work.",
+      "domains": ["frontend-engineering", "visualization"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "backend-engineer",
+      "title": "Backend Engineer persona bundle",
+      "description": "Secure APIs, reliability, and observability for backend services.",
+      "domains": ["security-appsec", "reliability-ops"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "sre-engineer",
+      "title": "SRE Engineer persona bundle",
+      "description": "Reliability, SLOs, incident response, and postmortems.",
+      "domains": ["reliability-ops"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "data-engineer",
+      "title": "Data Engineer persona bundle",
+      "description": "Data pipelines, scalable compute, and analytics foundations.",
+      "domains": ["data-compute", "analysis-stats", "ml-dl"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing persona bundle",
+      "description": "Product analytics, experiments, storytelling, and visual assets.",
+      "domains": ["product-growth", "visualization", "writing-docs"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "ceo",
+      "title": "CEO persona bundle",
+      "description": "High-level product strategy, metrics, and decision docs.",
+      "domains": ["product-growth", "core-workflow", "writing-docs"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "cto",
+      "title": "CTO persona bundle",
+      "description": "Architecture decisions, platform reliability, and security posture.",
+      "domains": ["ai-agent-systems", "reliability-ops", "security-appsec"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
+      "id": "business-development",
+      "title": "Business Development persona bundle",
+      "description": "Market research, stakeholder briefs, and narrative decks.",
+      "domains": ["product-growth", "writing-docs"],
+      "skills": [],
+      "formats": ["cursor", "claude", "both"]
+    },
+    {
       "id": "full",
       "title": "Full Catalog",
       "description": "All top-level skill domains in this repository.",
