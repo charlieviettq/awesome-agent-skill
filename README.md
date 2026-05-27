@@ -6,7 +6,7 @@
 
 [![Stars](https://img.shields.io/github/stars/charlieviettq/awesome-agent-skill?style=for-the-badge&logo=github&color=60a5fa)](https://github.com/charlieviettq/awesome-agent-skill/stargazers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-170-8b5cf6?style=for-the-badge)](.cursor/skills)
+[![Skills](https://img.shields.io/badge/skills-178-8b5cf6?style=for-the-badge)](.cursor/skills)
 [![Formats](https://img.shields.io/badge/formats-Cursor%20%2B%20Claude-0ea5e9?style=for-the-badge)](#quickstart)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last commit](https://img.shields.io/github/last-commit/charlieviettq/awesome-agent-skill?style=for-the-badge&color=f97316)](https://github.com/charlieviettq/awesome-agent-skill/commits/main)
