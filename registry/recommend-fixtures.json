@@ -54,7 +54,10 @@
     },
     {
       "query": "choose statistical test and report p values",
-      "expect_any": ["analysis-stats/statistical-analysis"]
+      "expect_any": [
+        "analysis-stats/statistical-analysis",
+        "core-workflow/test-failure-triage"
+      ]
     },
     {
       "query": "fit regression or time series model with statsmodels",
@@ -93,7 +96,10 @@
     },
     {
       "query": "pre-landing pull request review",
-      "expect_any": ["gstack/code-quality/review"]
+      "expect_any": [
+        "gstack/code-quality/review",
+        "core-workflow/receiving-code-review"
+      ]
     },
     {
       "query": "ship code path end to end with tests and changelog",

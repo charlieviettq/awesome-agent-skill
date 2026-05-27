@@ -46,16 +46,36 @@ def score_match(query: str, skill: dict) -> int:
         tokens = [query.lower()]
     score = 0
     for token in tokens:
-        for field in ("id", "name", "domain", "description"):
+        for field, weight in (
+            ("id", 18),
+            ("name", 15),
+            ("domain", 8),
+            ("description", 8),
+            ("summary", 6),
+        ):
             val = str(skill.get(field, "")).lower()
             if token in val:
-                score += 10
+                score += weight
         for tag in skill.get("tags", []):
             if token in tag.lower():
                 score += 5
         for trig in skill.get("triggers", []):
             if token in trig.lower():
-                score += 8
+                score += 10
+        for trig in skill.get("trigger_phrases", []):
+            if token in trig.lower():
+                score += 10
+
+    # Tie-breakers: prefer core/low-risk skills for generic queries
+    tier = skill.get("tier")
+    if tier == "core":
+        score += 5
+    risk = skill.get("risk")
+    if risk == "low":
+        score += 2
+    elif risk == "high":
+        score -= 3
+
     return score
 
 
@@ -174,6 +194,14 @@ def cmd_quality(args: argparse.Namespace) -> int:
         file=sys.stderr,
     )
     return 0
+
+
+def cmd_resolver_generate(_: argparse.Namespace) -> int:
+    script = ROOT / "scripts" / "generate-resolver.py"
+    if not script.exists():
+        print("generate-resolver.py missing", file=sys.stderr)
+        return 1
+    return subprocess.run([sys.executable, str(script)], cwd=ROOT).returncode
 
 
 def cmd_eval_recommend(_: argparse.Namespace) -> int:
@@ -332,6 +360,9 @@ def build_parser() -> argparse.ArgumentParser:
     bd = sub.add_parser("bundles", help="List install bundles")
     bd.add_argument("-v", "--verbose", action="store_true")
     bd.set_defaults(func=cmd_bundles)
+
+    rv = sub.add_parser("resolver-generate", help="Generate compact resolver markdown")
+    rv.set_defaults(func=cmd_resolver_generate)
 
     ins = sub.add_parser("install", help="Install one skill into a project")
     ins.add_argument("skill_id")
