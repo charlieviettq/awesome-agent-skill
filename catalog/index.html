@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Browse and install 178+ portable agent skills for Cursor, Claude Code, and other AI coding agents." />
   <meta property="og:title" content="SkillHub Marketplace — awesome-agent-skill" />
-  <meta property="og:description" content="Find the right skill for your AI coding agent. Search, recommend, and copy install commands." />
+  <meta property="og:description" content="Find the right skill for your AI coding agent. Search, recommend, preview SKILL.md, and copy install commands." />
   <title>SkillHub Marketplace — awesome-agent-skill</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +19,12 @@
       <h1>Find the right skill for your AI coding agent</h1>
       <p class="lead">
         Search a curated registry of portable <code>SKILL.md</code> playbooks.
-        Describe your task, get recommendations, copy install commands — no README archaeology required.
+        Describe your task, explore the bundle graph, preview skills inline, copy install commands.
       </p>
+      <div class="hero-actions">
+        <a class="btn hero-cta" href="#graph-section">Explore bundle graph</a>
+        <a class="btn btn-secondary hero-cta-secondary" href="#skills-section">Browse all skills</a>
+      </div>
       <div class="hero-stats">
         <div class="stat"><strong id="stat-skills">—</strong><span>Skills</span></div>
         <div class="stat"><strong id="stat-bundles">—</strong><span>Bundles</span></div>
@@ -31,7 +35,7 @@
 
   <main class="container">
     <section class="section" style="padding-top:0">
-      <div class="panel">
+      <div class="panel glass">
         <h2>Describe your task</h2>
         <p class="sub">Task-to-skills advisor — same ranking logic as <code>skillhub recommend</code>.</p>
         <div class="search-row">
@@ -55,16 +59,74 @@
       <div id="bundle-grid" class="bundle-grid"></div>
     </section>
 
-    <section class="section" id="skills-section">
+    <section class="section" id="graph-section">
       <div class="section-head">
-        <h2>Browse skills</h2>
-        <span id="shown-count" class="sub">—</span>
+        <div>
+          <h2>Bundle graph</h2>
+          <p class="sub section-sub">Drag nodes, hover for details, click to filter skills below.</p>
+        </div>
+        <div class="graph-legend">
+          <span class="legend-item"><span class="legend-dot bundle"></span> Bundle</span>
+          <span class="legend-item"><span class="legend-dot domain"></span> Domain</span>
+          <span class="legend-item"><span class="legend-dot skill"></span> Skill</span>
+        </div>
       </div>
-      <input id="q" type="search" placeholder="Search skills, domains, triggers…" />
-      <div class="chips" id="domains" style="margin-top:0.75rem"></div>
-      <div class="chips" id="tiers"></div>
-      <div class="chips" id="risks"></div>
-      <div id="list" class="skill-grid" style="margin-top:1rem"></div>
+      <div class="panel graph-panel glass">
+        <div id="graph-container" class="graph-container" aria-label="Interactive bundle skill graph"></div>
+        <p id="graph-fallback" class="graph-fallback sub" hidden>Graph unavailable — use bundle cards and filters below.</p>
+      </div>
+    </section>
+
+    <section class="section" id="skills-section">
+      <div class="panel browse-panel glass">
+        <div class="browse-head">
+          <div>
+            <h2>Browse skills</h2>
+            <p class="sub">Search, filter, and preview skills without leaving this page.</p>
+          </div>
+          <span id="shown-count" class="count-badge">—</span>
+        </div>
+
+        <div class="search-field">
+          <label for="q" class="sr-only">Search skills</label>
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 20L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <input id="q" type="search" placeholder="Search skills, domains, triggers…" autocomplete="off" />
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-group">
+            <span class="filter-label">Bundle</span>
+            <div class="chips" id="bundles-filter"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Domain</span>
+            <div class="chips" id="domains"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Tier</span>
+            <div class="chips" id="tiers"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Risk</span>
+            <div class="chips" id="risks"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Min quality</span>
+            <div class="chips" id="quality-filter"></div>
+          </div>
+        </div>
+
+        <div id="active-filters" class="active-filters" hidden>
+          <span class="filter-label">Active</span>
+          <div id="active-filter-chips" class="chips"></div>
+          <button type="button" id="clear-filters" class="btn btn-small btn-secondary">Clear all</button>
+        </div>
+
+        <div id="list" class="skill-grid"></div>
+      </div>
     </section>
   </main>
 
@@ -75,6 +137,24 @@
       <a href="https://github.com/charlieviettq/awesome-agent-skill/blob/main/docs/comparison.md">Why this vs awesome lists</a>
     </p>
   </footer>
+
+  <div id="skill-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel glass" role="document">
+      <header class="modal-header">
+        <div>
+          <h2 id="modal-title">Skill preview</h2>
+          <p id="modal-meta" class="sub"></p>
+        </div>
+        <button type="button" class="modal-close" aria-label="Close preview" data-close-modal>&times;</button>
+      </header>
+      <div class="modal-actions">
+        <button type="button" id="modal-copy-install" class="btn btn-small">Copy install</button>
+        <a id="modal-github" class="btn btn-small btn-secondary" href="#" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+      <div id="modal-body" class="modal-body prose"></div>
+    </div>
+  </div>
 
   <script>
     fetch("data/skills.json").then(r => r.json()).then(d => {
@@ -87,6 +167,9 @@
       document.getElementById("stat-bundles").textContent = bundles.length;
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/graph.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
