@@ -17,19 +17,23 @@ Guidance for authoring skills that agents can discover and follow reliably.
 name: my-skill-name
 version: 1
 description: One sentence summary. Triggers: "phrase one", "phrase two".
+argument-hint: "<optional parameter hint>"   # optional; Claude plugin style
 triggers:
   - "phrase one"
   - "phrase two"
 tools: []        # optional, list of MCP or CLI tools this skill calls
 mutating: false  # does this skill write files / change external systems?
 priority: normal # optional: normal | high | low
+source: "anthropics/knowledge-work-plugins/data"  # optional provenance
 ---
 ```
 
 - `name` must match the folder name (kebab-case)
 - `version` should be bumped when behavior or contract changes
 - `triggers` should be an explicit list of phrases users or agents actually say
+- `argument-hint` is optional; preserved when converting to `.claude/skills/` (Anthropic plugin compatibility)
 - `tools` and `mutating` help agent routers decide when extra care is needed
+- `source` documents upstream pack when skills are adapted (see `EXTERNAL_SKILLS.md`)
 
 ## Structure template (Content Conformance V2)
 

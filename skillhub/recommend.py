@@ -31,6 +31,15 @@ FIELD_WEIGHTS: tuple[tuple[str, int], ...] = (
 )
 
 
+def token_in_text(token: str, text: str) -> bool:
+    """Substring match with word boundaries for short tokens (avoids 'end' in 'frontend')."""
+    text_l = text.lower()
+    token_l = token.lower()
+    if len(token_l) <= 4:
+        return re.search(r"\b" + re.escape(token_l) + r"\b", text_l) is not None
+    return token_l in text_l
+
+
 def expand_tokens(query: str) -> list[str]:
     tokens = [t for t in re.split(r"[^\w]+", query.lower()) if len(t) > 2]
     if not tokens:
@@ -47,16 +56,16 @@ def match_reasons(query: str, skill: dict[str, Any]) -> list[str]:
     tokens = expand_tokens(query)
     for token in tokens:
         for field, _weight in FIELD_WEIGHTS:
-            val = str(skill.get(field, "")).lower()
-            if token in val:
+            val = str(skill.get(field, ""))
+            if token_in_text(token, val):
                 reasons.append(f"matched {field}")
                 break
         for trig in skill.get("triggers", []) + skill.get("trigger_phrases", []):
-            if token in str(trig).lower():
+            if token_in_text(token, str(trig)):
                 reasons.append(f"trigger: {trig}")
                 break
         for tag in skill.get("tags", []):
-            if token in str(tag).lower():
+            if token_in_text(token, str(tag)):
                 reasons.append(f"tag: {tag}")
                 break
     # dedupe preserving order
@@ -73,17 +82,17 @@ def score_match(query: str, skill: dict[str, Any]) -> int:
     score = 0
     for token in expand_tokens(query):
         for field, weight in FIELD_WEIGHTS:
-            val = str(skill.get(field, "")).lower()
-            if token in val:
+            val = str(skill.get(field, ""))
+            if token_in_text(token, val):
                 score += weight
         for tag in skill.get("tags", []):
-            if token in str(tag).lower():
+            if token_in_text(token, str(tag)):
                 score += 5
         for trig in skill.get("triggers", []):
-            if token in str(trig).lower():
+            if token_in_text(token, str(trig)):
                 score += 10
         for trig in skill.get("trigger_phrases", []):
-            if token in str(trig).lower():
+            if token_in_text(token, str(trig)):
                 score += 10
 
     tier = skill.get("tier")
@@ -101,6 +110,12 @@ def score_match(query: str, skill: dict[str, Any]) -> int:
         score += 20
     if "document" in q_lower and any(x in sid for x in ("pdf", "docx", "writing-docs")):
         score += 8
+    if "changelog" in q_lower and sid == "gstack/deploy-ship/ship":
+        score += 22
+    if "ship" in q_lower and sid == "gstack/deploy-ship/ship":
+        score += 12
+    if any(k in q_lower for k in ("xlsx", "csv", "spreadsheet", ".tsv", ".xlsm")) and sid == "writing-docs/xlsx":
+        score += 22
 
     return score
 

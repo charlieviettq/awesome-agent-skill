@@ -2,6 +2,28 @@
 
 High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 
+**Catalog size:** 258 skills (including ~79 from Anthropic knowledge-work-plugins).
+
+## Knowledge Work (Anthropic plugins)
+
+Imported domain: `knowledge-work/` — see hub `knowledge-work/SKILL.md`.
+
+| Plugin folder | Skills |
+|---------------|--------|
+| `knowledge-work/data` | analyze, build-dashboard, create-viz, data-context-extractor, data-visualization, explore-data, sql-queries, statistical-analysis, validate-data, write-query |
+| `knowledge-work/engineering` | architecture, code-review, debug, deploy-checklist, documentation, incident-response, standup, system-design, tech-debt, testing-strategy |
+| `knowledge-work/product-management` | competitive-brief, metrics-review, product-brainstorming, roadmap-update, sprint-planning, stakeholder-update, synthesize-research, write-spec |
+| `knowledge-work/productivity` | memory-management, start, task-management, update |
+| `knowledge-work/marketing` | brand-review, campaign-plan, competitive-brief, content-creation, draft-content, email-sequence, performance-report, seo-audit |
+| `knowledge-work/sales` | account-research, call-prep, call-summary, competitive-intelligence, create-an-asset, daily-briefing, draft-outreach, forecast, pipeline-review |
+| `knowledge-work/finance` | audit-support, close-management, financial-statements, journal-entry, journal-entry-prep, reconciliation, sox-testing, variance-analysis |
+| `knowledge-work/legal` | brief, compliance-check, legal-response, legal-risk-assessment, meeting-briefing, review-contract, signature-request, triage-nda, vendor-check |
+| `knowledge-work/customer-support` | customer-escalation, customer-research, draft-response, kb-article, ticket-triage |
+| `knowledge-work/bio-research` | instrument-data-to-allotrope, nextflow-development, scientific-problem-selection, scvi-tools, single-cell-rna-qc, start |
+| `knowledge-work/cowork-plugin-management` | cowork-plugin-customizer, create-cowork-plugin |
+
+**Bundles:** `knowledge-work-<plugin>`, `knowledge-work-all`, plus personas `knowledge-worker`, `data-analyst-professional`, `sales-analyst`, `finance-analyst`, `legal-counsel`. Graph UI updates via `scripts/generate-catalog.py`.
+
 ## Analysis & statistics
 
 - `analysis-stats/shap`

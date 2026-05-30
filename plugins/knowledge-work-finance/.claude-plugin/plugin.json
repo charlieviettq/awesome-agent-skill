@@ -1,0 +1,6 @@
+{
+  "name": "knowledge-work-finance",
+  "description": "Anthropic knowledge-work-plugins \u2014 finance (8 skills).",
+  "version": "1.0.0",
+  "author": "awesome-agent-skill (adapted from anthropics/knowledge-work-plugins)"
+}

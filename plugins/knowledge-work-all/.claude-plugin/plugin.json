@@ -1,0 +1,6 @@
+{
+  "name": "knowledge-work-all",
+  "description": "All Anthropic knowledge-work-plugins skills.",
+  "version": "1.0.0",
+  "author": "awesome-agent-skill (adapted from anthropics/knowledge-work-plugins)"
+}

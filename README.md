@@ -153,13 +153,29 @@ Copy `.claude/commands/` or `.gemini/commands/` into your project to enable.
 
 | Agent surface | Path | Status |
 |---------------|------|--------|
-| Cursor | `.cursor/skills/**/SKILL.md` | Source of truth |
-| Claude Code | `.claude/skills/**/SKILL.md` | Generated and committed |
+| Cursor | `.cursor/skills/**/SKILL.md` | Source of truth (nested paths, e.g. `knowledge-work/data/analyze`) |
+| Claude Code | `.claude/skills/<flat-name>/SKILL.md` | Generated flat names via `scripts/claude-skill-map.json` |
 
-Regenerate Claude-format skills after editing Cursor-format skills:
+Claude uses **flat** directory names (`analyze`, `va-data-scientist`) mapped from nested Cursor paths. Cursor does not need flat copies at `.cursor/skills/analyze/` — the full path is the skill id for install and agent discovery.
+
+**Cursor → Claude** (normal workflow after editing `.cursor/skills/`):
 
 ```bash
-python3 scripts/convert-to-claude.py --in-repo --force --write-map
+python3 scripts/convert-to-claude.py --in-repo --force --write-map --prune-orphans
+```
+
+**Claude → Cursor** (recovery when you edited `.claude/skills/` only):
+
+```bash
+python3 scripts/convert-to-cursor.py --in-repo --only-newer
+python3 scripts/convert-to-claude.py --in-repo --force --write-map --prune-orphans
+```
+
+Check parity:
+
+```bash
+python3 scripts/audit-skill-parity.py
+python3 scripts/validate-skills.py --parity
 ```
 
 ## Skill Map
@@ -211,16 +227,16 @@ Edit the Cursor source:
 $EDITOR .cursor/skills/core-workflow/spec-driven-development/SKILL.md
 ```
 
-Regenerate Claude output:
+Regenerate Claude output (and prune stale nested copies under `.claude/skills/`):
 
 ```bash
-python3 scripts/convert-to-claude.py --in-repo --force --write-map
+python3 scripts/convert-to-claude.py --in-repo --force --write-map --prune-orphans
 ```
 
 Run validation:
 
 ```bash
-python3 scripts/validate-skills.py
+python3 scripts/validate-skills.py --parity
 ```
 
 Generate metrics snapshot:

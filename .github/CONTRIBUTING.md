@@ -60,11 +60,16 @@ Before opening a pull request:
 - [ ] Skill is public-safe (no credentials or internal-only naming)
 - [ ] Ran Claude converter if you edited `.cursor/skills/`:
   ```bash
-  python3 scripts/convert-to-claude.py --in-repo --force --write-map
+  python3 scripts/convert-to-claude.py --in-repo --force --write-map --prune-orphans
+  ```
+- [ ] If you edited only `.claude/skills/` (flat), sync back to Cursor then forward:
+  ```bash
+  python3 scripts/convert-to-cursor.py --in-repo --only-newer
+  python3 scripts/convert-to-claude.py --in-repo --force --write-map --prune-orphans
   ```
 - [ ] Ran validation:
   ```bash
-  python3 scripts/validate-skills.py
+  python3 scripts/validate-skills.py --parity
   ```
 - [ ] Updated [`SKILL_INVENTORY.md`](../SKILL_INVENTORY.md) if adding a new top-level skill path
 - [ ] Added a line to [`CHANGELOG.md`](../CHANGELOG.md) under `[Unreleased]` or the next version
