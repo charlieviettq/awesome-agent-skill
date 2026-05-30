@@ -6,6 +6,35 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- `scripts/skill_format.py` — shared frontmatter parsing, asset copy, trigger generation
+- `scripts/convert-to-cursor.py` — sync Claude flat skills back to Cursor nested paths via `claude-skill-map.json` (preserves `triggers`, `source`, etc.)
+- `scripts/prune_claude_skills.py` — remove orphan nested directories under `.claude/skills/`
+- `scripts/audit-skill-parity.py` — report map vs on-disk Cursor/Claude gaps
+- `convert-to-claude.py --prune-orphans` — optional prune after flat convert
+
+### Changed
+
+- `scripts/convert-to-claude.py`, `scripts/import-plugins.py` — use `skill_format` module
+- `scripts/validate-skills.py` — `--parity` checks map coverage; CI runs with `--parity`
+- README, CONTRIBUTING, `.claude/commands/sync-skills.md` — document bidirectional sync and dual layout
+
+### Added (continued)
+
+- **Knowledge Work plugins:** import ~79 skills from [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) into `.cursor/skills/knowledge-work/` (11 plugin folders)
+- `scripts/import-plugins.py` — fetch and adapt upstream `SKILL.md` (triggers, `argument-hint`, `source`)
+- `scripts/generate-plugins.py` — publish `plugins/<bundle>/` with `.claude-plugin/plugin.json`, `.mcp.json.template`, `CONNECTORS.md`
+- `mcp-templates/` — sanitized MCP stubs (data-warehouse, project-tracker, source-control, monitoring, comms)
+- Registry bundles: 11 `knowledge-work-*` plugin bundles, `knowledge-work-all`, and persona bundles (`knowledge-worker`, `data-analyst-professional`, `sales-analyst`, `finance-analyst`, `legal-counsel`)
+- `EXTERNAL_SKILLS.md` audit section for anthropics/knowledge-work-plugins
+
+### Changed
+
+- `scripts/convert-to-claude.py` — pass-through `argument-hint` in Claude frontmatter when present
+- Persona bundles `data-scientist`, `marketing`, `ceo`, `software-engineer`, `data-engineer` — include selected knowledge-work skills
+- Skill catalog graph (`catalog/`) regenerates with **258** skills and expanded bundle/persona nodes
+
+### Added (continued)
+
 - SkillHub web catalog: `scripts/generate-catalog.py`, static `catalog/index.html`
 - SkillHub quality: `generate-quality.py`, `skillhub quality`, CI `eval-recommend`
 - SkillHub recommend: `recommend`, `eval-recommend` with `registry/recommend-fixtures.json`

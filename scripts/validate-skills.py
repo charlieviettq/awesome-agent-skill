@@ -3,10 +3,15 @@
 
 from __future__ import annotations
 
+import argparse
+import json
 import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+MAP_FILE = SCRIPT_DIR / "claude-skill-map.json"
 
 ROOT = Path(__file__).resolve().parents[1]
 CURSOR_ROOT = ROOT / ".cursor" / "skills"
@@ -62,6 +67,10 @@ ENFORCED_TRIGGER_DOMAINS = {
 KNOWN_DUPLICATE_NAMES = {
     "reflect-yourself",
     "phase-kickoff",
+    # knowledge-work plugins reuse leaf names across plugins; paths are unique
+    "statistical-analysis",
+    "start",
+    "competitive-brief",
 }
 
 
@@ -138,8 +147,54 @@ def validate_claude_frontmatter() -> list[str]:
     return errors
 
 
+def check_map_parity(strict_orphans: bool) -> list[str]:
+    """Check claude-skill-map.json against on-disk Cursor and Claude flat skills."""
+    issues: list[str] = []
+    if not MAP_FILE.is_file():
+        return issues
+
+    data = json.loads(MAP_FILE.read_text(encoding="utf-8"))
+    mappings = data.get("mappings", [])
+    allowed_flat = {m["claude_name"] for m in mappings}
+
+    for m in mappings:
+        cpath = CURSOR_ROOT / m["cursor_path"] / "SKILL.md"
+        if not cpath.is_file():
+            issues.append(f"map parity: missing Cursor file for {m['cursor_path']}")
+        claude_md = CLAUDE_ROOT / m["claude_name"] / "SKILL.md"
+        if not claude_md.is_file():
+            issues.append(f"map parity: missing Claude flat for {m['claude_name']}")
+
+    if CLAUDE_ROOT.is_dir():
+        for child in sorted(CLAUDE_ROOT.iterdir()):
+            if child.is_dir() and child.name not in allowed_flat:
+                msg = f"map parity: Claude orphan directory {child.name}/ (run prune_claude_skills.py)"
+                if strict_orphans:
+                    issues.append(msg)
+                else:
+                    print(f"WARNING: {msg}", file=sys.stderr)
+
+    return issues
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Validate SKILL.md structure")
+    parser.add_argument(
+        "--parity",
+        action="store_true",
+        help="Also check claude-skill-map.json vs on-disk skills",
+    )
+    parser.add_argument(
+        "--strict-orphans",
+        action="store_true",
+        help="With --parity, fail on nested Claude orphan directories",
+    )
+    args = parser.parse_args()
+
     errors = validate_cursor_skills() + validate_claude_frontmatter()
+    if args.parity:
+        errors.extend(check_map_parity(strict_orphans=args.strict_orphans))
+
     cursor_count = len(list(CURSOR_ROOT.rglob("SKILL.md")))
     claude_count = len(list(CLAUDE_ROOT.rglob("SKILL.md")))
 

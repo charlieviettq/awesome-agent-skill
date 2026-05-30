@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Validate skill files
-        run: python3 scripts/validate-skills.py
+        run: python3 scripts/validate-skills.py --parity
 
       - name: Check registry sync
         run: python3 scripts/generate-registry.py --check

@@ -1,0 +1,6 @@
+{
+  "name": "knowledge-work-cowork-plugin-management",
+  "description": "Anthropic knowledge-work-plugins \u2014 cowork-plugin-management (2 skills).",
+  "version": "1.0.0",
+  "author": "awesome-agent-skill (adapted from anthropics/knowledge-work-plugins)"
+}

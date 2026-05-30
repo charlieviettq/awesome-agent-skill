@@ -5,9 +5,17 @@
       "id": "starter",
       "title": "Starter",
       "description": "Core workflow, security, and reliability skills for everyday agent-assisted development.",
-      "domains": ["core-workflow", "security-appsec", "reliability-ops"],
+      "domains": [
+        "core-workflow",
+        "security-appsec",
+        "reliability-ops"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "ship-ready",
@@ -23,7 +31,11 @@
         "core-workflow/receiving-code-review",
         "reliability-ops/shipping-launch-checklist"
       ],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "agent-builder",
@@ -37,12 +49,16 @@
         "ai-agent-systems/rag-systems",
         "ai-agent-systems/context-window-management"
       ],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "data-scientist",
       "title": "Data Scientist",
-      "description": "EDA, ML/DL, statistics, visualization, and notebook-friendly workflows.",
+      "description": "EDA, ML/DL, statistics, visualization, and notebook-friendly workflows. Includes Anthropic knowledge-work data plugin skills.",
       "domains": [
         "eda-research",
         "ml-dl",
@@ -50,96 +66,632 @@
         "data-compute",
         "visualization"
       ],
-      "skills": [],
-      "formats": ["cursor", "claude"]
+      "skills": [
+        "knowledge-work/data/analyze",
+        "knowledge-work/data/build-dashboard",
+        "knowledge-work/data/create-viz",
+        "knowledge-work/data/data-context-extractor",
+        "knowledge-work/data/data-visualization",
+        "knowledge-work/data/explore-data",
+        "knowledge-work/data/sql-queries",
+        "knowledge-work/data/statistical-analysis",
+        "knowledge-work/data/validate-data",
+        "knowledge-work/data/write-query"
+      ],
+      "formats": [
+        "cursor",
+        "claude"
+      ]
     },
     {
       "id": "security-reviewer",
       "title": "Security Reviewer",
       "description": "API security testing, secure design, and skill supply-chain audit.",
-      "domains": ["security-appsec"],
+      "domains": [
+        "security-appsec"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "ai-engineer",
       "title": "AI Engineer persona bundle",
       "description": "Build and ship AI systems end-to-end: agents, RAG, and ML pipelines.",
-      "domains": ["ai-agent-systems", "ml-dl", "data-compute"],
+      "domains": [
+        "ai-agent-systems",
+        "ml-dl",
+        "data-compute"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "software-engineer",
       "title": "Software Engineer persona bundle",
       "description": "Spec, implement, test, secure, and ship reliable applications.",
-      "domains": ["core-workflow", "reliability-ops", "security-appsec"],
-      "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "domains": [
+        "core-workflow",
+        "reliability-ops",
+        "security-appsec"
+      ],
+      "skills": [
+        "knowledge-work/engineering/architecture",
+        "knowledge-work/engineering/code-review",
+        "knowledge-work/engineering/debug",
+        "knowledge-work/engineering/deploy-checklist",
+        "knowledge-work/engineering/documentation"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "frontend-engineer",
       "title": "Frontend Engineer persona bundle",
       "description": "UI accessibility, visualization, and DX-focused workflows for frontend work.",
-      "domains": ["frontend-engineering", "visualization"],
+      "domains": [
+        "frontend-engineering",
+        "visualization"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "backend-engineer",
       "title": "Backend Engineer persona bundle",
       "description": "Secure APIs, reliability, and observability for backend services.",
-      "domains": ["security-appsec", "reliability-ops"],
+      "domains": [
+        "security-appsec",
+        "reliability-ops"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "sre-engineer",
       "title": "SRE Engineer persona bundle",
       "description": "Reliability, SLOs, incident response, and postmortems.",
-      "domains": ["reliability-ops"],
+      "domains": [
+        "reliability-ops"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "data-engineer",
       "title": "Data Engineer persona bundle",
       "description": "Data pipelines, scalable compute, and analytics foundations.",
-      "domains": ["data-compute", "analysis-stats", "ml-dl"],
-      "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "domains": [
+        "data-compute",
+        "analysis-stats",
+        "ml-dl"
+      ],
+      "skills": [
+        "knowledge-work/data/analyze",
+        "knowledge-work/data/build-dashboard",
+        "knowledge-work/data/create-viz",
+        "knowledge-work/data/data-context-extractor",
+        "knowledge-work/data/data-visualization"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "marketing",
       "title": "Marketing persona bundle",
-      "description": "Product analytics, experiments, storytelling, and visual assets.",
-      "domains": ["product-growth", "visualization", "writing-docs"],
-      "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "description": "Product analytics, experiments, storytelling, and visual assets. Includes Anthropic knowledge-work marketing plugin skills.",
+      "domains": [
+        "product-growth",
+        "visualization",
+        "writing-docs"
+      ],
+      "skills": [
+        "knowledge-work/marketing/brand-review",
+        "knowledge-work/marketing/campaign-plan",
+        "knowledge-work/marketing/competitive-brief",
+        "knowledge-work/marketing/content-creation",
+        "knowledge-work/marketing/draft-content",
+        "knowledge-work/marketing/email-sequence",
+        "knowledge-work/marketing/performance-report",
+        "knowledge-work/marketing/seo-audit"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "ceo",
       "title": "CEO persona bundle",
-      "description": "High-level product strategy, metrics, and decision docs.",
-      "domains": ["product-growth", "core-workflow", "writing-docs"],
-      "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "description": "High-level product strategy, metrics, and decision docs. Includes PM + finance knowledge-work skills.",
+      "domains": [
+        "product-growth",
+        "core-workflow",
+        "writing-docs"
+      ],
+      "skills": [
+        "knowledge-work/product-management/competitive-brief",
+        "knowledge-work/product-management/metrics-review",
+        "knowledge-work/product-management/product-brainstorming",
+        "knowledge-work/product-management/roadmap-update",
+        "knowledge-work/finance/audit-support",
+        "knowledge-work/finance/close-management",
+        "knowledge-work/finance/financial-statements",
+        "knowledge-work/finance/journal-entry"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "cto",
       "title": "CTO persona bundle",
       "description": "Architecture decisions, platform reliability, and security posture.",
-      "domains": ["ai-agent-systems", "reliability-ops", "security-appsec"],
+      "domains": [
+        "ai-agent-systems",
+        "reliability-ops",
+        "security-appsec"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "business-development",
       "title": "Business Development persona bundle",
       "description": "Market research, stakeholder briefs, and narrative decks.",
-      "domains": ["product-growth", "writing-docs"],
+      "domains": [
+        "product-growth",
+        "writing-docs"
+      ],
       "skills": [],
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "knowledge-work-bio-research",
+      "title": "Knowledge Work — Bio Research",
+      "description": "Anthropic knowledge-work-plugins — bio-research (6 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/bio-research/instrument-data-to-allotrope",
+        "knowledge-work/bio-research/nextflow-development",
+        "knowledge-work/bio-research/scientific-problem-selection",
+        "knowledge-work/bio-research/scvi-tools",
+        "knowledge-work/bio-research/single-cell-rna-qc",
+        "knowledge-work/bio-research/start"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "knowledge-work-cowork-plugin-management",
+      "title": "Knowledge Work — Plugin Management",
+      "description": "Anthropic knowledge-work-plugins — cowork-plugin-management (2 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/cowork-plugin-management/cowork-plugin-customizer",
+        "knowledge-work/cowork-plugin-management/create-cowork-plugin"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "knowledge-work-customer-support",
+      "title": "Knowledge Work — Customer Support",
+      "description": "Anthropic knowledge-work-plugins — customer-support (5 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/customer-support/customer-escalation",
+        "knowledge-work/customer-support/customer-research",
+        "knowledge-work/customer-support/draft-response",
+        "knowledge-work/customer-support/kb-article",
+        "knowledge-work/customer-support/ticket-triage"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "zendesk",
+        "intercom"
+      ]
+    },
+    {
+      "id": "knowledge-work-data",
+      "title": "Knowledge Work — Data",
+      "description": "Anthropic knowledge-work-plugins — data (10 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/data/analyze",
+        "knowledge-work/data/build-dashboard",
+        "knowledge-work/data/create-viz",
+        "knowledge-work/data/data-context-extractor",
+        "knowledge-work/data/data-visualization",
+        "knowledge-work/data/explore-data",
+        "knowledge-work/data/sql-queries",
+        "knowledge-work/data/statistical-analysis",
+        "knowledge-work/data/validate-data",
+        "knowledge-work/data/write-query"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "snowflake",
+        "bigquery",
+        "databricks",
+        "hex",
+        "amplitude"
+      ]
+    },
+    {
+      "id": "knowledge-work-engineering",
+      "title": "Knowledge Work — Engineering",
+      "description": "Anthropic knowledge-work-plugins — engineering (10 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/engineering/architecture",
+        "knowledge-work/engineering/code-review",
+        "knowledge-work/engineering/debug",
+        "knowledge-work/engineering/deploy-checklist",
+        "knowledge-work/engineering/documentation",
+        "knowledge-work/engineering/incident-response",
+        "knowledge-work/engineering/standup",
+        "knowledge-work/engineering/system-design",
+        "knowledge-work/engineering/tech-debt",
+        "knowledge-work/engineering/testing-strategy"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "github",
+        "linear",
+        "datadog"
+      ]
+    },
+    {
+      "id": "knowledge-work-finance",
+      "title": "Knowledge Work — Finance",
+      "description": "Anthropic knowledge-work-plugins — finance (8 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/finance/audit-support",
+        "knowledge-work/finance/close-management",
+        "knowledge-work/finance/financial-statements",
+        "knowledge-work/finance/journal-entry",
+        "knowledge-work/finance/journal-entry-prep",
+        "knowledge-work/finance/reconciliation",
+        "knowledge-work/finance/sox-testing",
+        "knowledge-work/finance/variance-analysis"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "knowledge-work-legal",
+      "title": "Knowledge Work — Legal",
+      "description": "Anthropic knowledge-work-plugins — legal (9 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/legal/brief",
+        "knowledge-work/legal/compliance-check",
+        "knowledge-work/legal/legal-response",
+        "knowledge-work/legal/legal-risk-assessment",
+        "knowledge-work/legal/meeting-briefing",
+        "knowledge-work/legal/review-contract",
+        "knowledge-work/legal/signature-request",
+        "knowledge-work/legal/triage-nda",
+        "knowledge-work/legal/vendor-check"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "knowledge-work-marketing",
+      "title": "Knowledge Work — Marketing",
+      "description": "Anthropic knowledge-work-plugins — marketing (8 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/marketing/brand-review",
+        "knowledge-work/marketing/campaign-plan",
+        "knowledge-work/marketing/competitive-brief",
+        "knowledge-work/marketing/content-creation",
+        "knowledge-work/marketing/draft-content",
+        "knowledge-work/marketing/email-sequence",
+        "knowledge-work/marketing/performance-report",
+        "knowledge-work/marketing/seo-audit"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "amplitude"
+      ]
+    },
+    {
+      "id": "knowledge-work-product-management",
+      "title": "Knowledge Work — Product Management",
+      "description": "Anthropic knowledge-work-plugins — product-management (8 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/product-management/competitive-brief",
+        "knowledge-work/product-management/metrics-review",
+        "knowledge-work/product-management/product-brainstorming",
+        "knowledge-work/product-management/roadmap-update",
+        "knowledge-work/product-management/sprint-planning",
+        "knowledge-work/product-management/stakeholder-update",
+        "knowledge-work/product-management/synthesize-research",
+        "knowledge-work/product-management/write-spec"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "linear",
+        "notion",
+        "figma"
+      ]
+    },
+    {
+      "id": "knowledge-work-productivity",
+      "title": "Knowledge Work — Productivity",
+      "description": "Anthropic knowledge-work-plugins — productivity (4 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/productivity/memory-management",
+        "knowledge-work/productivity/start",
+        "knowledge-work/productivity/task-management",
+        "knowledge-work/productivity/update"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "knowledge-work-sales",
+      "title": "Knowledge Work — Sales",
+      "description": "Anthropic knowledge-work-plugins — sales (9 skills).",
+      "domains": [],
+      "skills": [
+        "knowledge-work/sales/account-research",
+        "knowledge-work/sales/call-prep",
+        "knowledge-work/sales/call-summary",
+        "knowledge-work/sales/competitive-intelligence",
+        "knowledge-work/sales/create-an-asset",
+        "knowledge-work/sales/daily-briefing",
+        "knowledge-work/sales/draft-outreach",
+        "knowledge-work/sales/forecast",
+        "knowledge-work/sales/pipeline-review"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "salesforce",
+        "hubspot"
+      ]
+    },
+    {
+      "id": "knowledge-work-all",
+      "title": "Knowledge Work — Full Suite",
+      "description": "All Anthropic knowledge-work-plugins skills.",
+      "domains": [
+        "knowledge-work"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "snowflake",
+        "bigquery",
+        "github",
+        "linear"
+      ]
+    },
+    {
+      "id": "knowledge-worker",
+      "title": "Knowledge Worker persona bundle",
+      "description": "Data, engineering, and PM workflows.",
+      "domains": [],
+      "skills": [
+        "knowledge-work/data/analyze",
+        "knowledge-work/data/build-dashboard",
+        "knowledge-work/data/create-viz",
+        "knowledge-work/data/data-context-extractor",
+        "knowledge-work/data/data-visualization",
+        "knowledge-work/data/explore-data",
+        "knowledge-work/data/sql-queries",
+        "knowledge-work/data/statistical-analysis",
+        "knowledge-work/data/validate-data",
+        "knowledge-work/data/write-query",
+        "knowledge-work/engineering/architecture",
+        "knowledge-work/engineering/code-review",
+        "knowledge-work/engineering/debug",
+        "knowledge-work/engineering/deploy-checklist",
+        "knowledge-work/engineering/documentation",
+        "knowledge-work/engineering/incident-response",
+        "knowledge-work/engineering/standup",
+        "knowledge-work/engineering/system-design",
+        "knowledge-work/engineering/tech-debt",
+        "knowledge-work/engineering/testing-strategy",
+        "knowledge-work/product-management/competitive-brief",
+        "knowledge-work/product-management/metrics-review",
+        "knowledge-work/product-management/product-brainstorming",
+        "knowledge-work/product-management/roadmap-update",
+        "knowledge-work/product-management/sprint-planning",
+        "knowledge-work/product-management/stakeholder-update",
+        "knowledge-work/product-management/synthesize-research",
+        "knowledge-work/product-management/write-spec"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "data-analyst-professional",
+      "title": "Data Analyst (Knowledge Work)",
+      "description": "SQL, viz, dashboards.",
+      "domains": [],
+      "skills": [
+        "knowledge-work/data/analyze",
+        "knowledge-work/data/build-dashboard",
+        "knowledge-work/data/create-viz",
+        "knowledge-work/data/data-context-extractor",
+        "knowledge-work/data/data-visualization",
+        "knowledge-work/data/explore-data",
+        "knowledge-work/data/sql-queries",
+        "knowledge-work/data/statistical-analysis",
+        "knowledge-work/data/validate-data",
+        "knowledge-work/data/write-query"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "mcp-hints": [
+        "snowflake",
+        "bigquery"
+      ]
+    },
+    {
+      "id": "sales-analyst",
+      "title": "Sales Analyst persona bundle",
+      "description": "Sales + marketing kw skills.",
+      "domains": [],
+      "skills": [
+        "knowledge-work/sales/account-research",
+        "knowledge-work/sales/call-prep",
+        "knowledge-work/sales/call-summary",
+        "knowledge-work/sales/competitive-intelligence",
+        "knowledge-work/sales/create-an-asset",
+        "knowledge-work/sales/daily-briefing",
+        "knowledge-work/sales/draft-outreach",
+        "knowledge-work/sales/forecast",
+        "knowledge-work/sales/pipeline-review",
+        "knowledge-work/marketing/brand-review",
+        "knowledge-work/marketing/campaign-plan",
+        "knowledge-work/marketing/competitive-brief",
+        "knowledge-work/marketing/content-creation",
+        "knowledge-work/marketing/draft-content",
+        "knowledge-work/marketing/email-sequence",
+        "knowledge-work/marketing/performance-report",
+        "knowledge-work/marketing/seo-audit"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "finance-analyst",
+      "title": "Finance Analyst persona bundle",
+      "description": "Finance kw skills.",
+      "domains": [],
+      "skills": [
+        "knowledge-work/finance/audit-support",
+        "knowledge-work/finance/close-management",
+        "knowledge-work/finance/financial-statements",
+        "knowledge-work/finance/journal-entry",
+        "knowledge-work/finance/journal-entry-prep",
+        "knowledge-work/finance/reconciliation",
+        "knowledge-work/finance/sox-testing",
+        "knowledge-work/finance/variance-analysis"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "legal-counsel",
+      "title": "Legal Counsel persona bundle",
+      "description": "Legal kw skills.",
+      "domains": [],
+      "skills": [
+        "knowledge-work/legal/brief",
+        "knowledge-work/legal/compliance-check",
+        "knowledge-work/legal/legal-response",
+        "knowledge-work/legal/legal-risk-assessment",
+        "knowledge-work/legal/meeting-briefing",
+        "knowledge-work/legal/review-contract",
+        "knowledge-work/legal/signature-request",
+        "knowledge-work/legal/triage-nda",
+        "knowledge-work/legal/vendor-check"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     },
     {
       "id": "full",
@@ -148,7 +700,11 @@
       "domains": [],
       "skills": [],
       "install_all_domains": true,
-      "formats": ["cursor", "claude", "both"]
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
     }
   ]
 }

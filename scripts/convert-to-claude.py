@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Convert Cursor-format skills (data-science-skills/.cursor/skills/) to Claude Code format
-(.claude/skills/).
+Convert Cursor-format skills (.cursor/skills/) to Claude Code format (.claude/skills/).
 
 Usage:
   python3 scripts/convert-to-claude.py /path/to/project [--dry-run] [--force]
@@ -20,12 +19,18 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from skill_format import (
+    copy_skill_assets,
+    cursor_path_from_skill_md,
+    discover_skills,
+    parse_frontmatter,
+    strip_related_skills,
+    yaml_dump_simple,
+)
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_REPO_DIR = SCRIPT_DIR.parent
 MAP_FILE = SCRIPT_DIR / "claude-skill-map.json"
-
-COPY_DIRS = ("references", "scripts", "assets", "commands", "tests")
-COPY_FILES = ("reference.md", "LICENSE.txt", "LICENSE", "forms.md", "config.yaml")
 
 READ_ONLY_TOOLS = "Read, Glob, Grep"
 WRITE_TOOLS = "Bash, Read, Write, Edit, Glob, Grep"
@@ -39,58 +44,6 @@ AUTO_USER_INVOCABLE_FALSE = frozenset(
         "python-style-legacy",
     }
 )
-
-SKIP_PATH_PARTS = {".git", ".DS_Store", "__pycache__", "node_modules"}
-
-
-def parse_frontmatter(content: str) -> tuple[dict[str, Any], str]:
-    if not content.startswith("---"):
-        return {}, content
-    end = content.find("\n---", 3)
-    if end == -1:
-        return {}, content
-    raw_fm = content[3:end].strip()
-    body = content[end + 4 :].lstrip("\n")
-    fm: dict[str, Any] = {}
-    current_key: str | None = None
-    current_lines: list[str] = []
-
-    def flush() -> None:
-        nonlocal current_key, current_lines
-        if current_key is None:
-            return
-        text = "\n".join(current_lines).strip()
-        if current_key == "metadata" and text:
-            meta: dict[str, Any] = {}
-            for line in text.splitlines():
-                line = line.strip()
-                if ":" in line:
-                    k, v = line.split(":", 1)
-                    meta[k.strip()] = v.strip().strip('"')
-            fm[current_key] = meta
-        elif current_key == "description" and text.startswith(">"):
-            fm[current_key] = re.sub(r"^\s*>\s?", "", text, flags=re.MULTILINE).strip()
-        else:
-            fm[current_key] = text
-        current_key = None
-        current_lines = []
-
-    for line in raw_fm.splitlines():
-        if re.match(r"^[a-zA-Z0-9_-]+:\s*", line) and not line.startswith(" "):
-            flush()
-            key, _, val = line.partition(":")
-            current_key = key.strip()
-            val = val.strip()
-            if val == ">":
-                current_lines = []
-            elif val:
-                current_lines = [val]
-            else:
-                current_lines = []
-        else:
-            current_lines.append(line)
-    flush()
-    return fm, body
 
 
 def flatten_description(desc: str) -> str:
@@ -115,7 +68,6 @@ def flatten_description(desc: str) -> str:
             result += "."
         return result
 
-    # No structured tags — keep full description, strip only trailing metadata phrases
     text = re.sub(r"\[PROACTIVE\]:[^.]*\.?", "", text, flags=re.IGNORECASE)
     text = re.sub(r'Triggers:\s*"[^"]*"(,\s*"[^"]*")*', "", text, flags=re.IGNORECASE)
     text = re.sub(r"\s+", " ", text).strip()
@@ -124,19 +76,6 @@ def flatten_description(desc: str) -> str:
     if text and not text.endswith("."):
         text += "."
     return text
-
-
-def strip_related_skills(body: str) -> str:
-    pattern = re.compile(
-        r"\n## Related skills\b.*",
-        re.IGNORECASE | re.DOTALL,
-    )
-    return pattern.sub("", body).rstrip() + "\n"
-
-
-def cursor_path_from_skill_md(skill_md: Path, skills_root: Path) -> str:
-    rel = skill_md.parent.relative_to(skills_root)
-    return rel.as_posix()
 
 
 def propose_claude_name(cursor_path: str, fm_name: str | None) -> str:
@@ -200,7 +139,6 @@ def build_allowed_tools(skill_dir: Path, claude_name: str) -> str:
         "gstack-autoplan",
     }
     if claude_name in gstack_write or claude_name.startswith("gstack-"):
-        # Browser/ship skills need write; plan-review mostly read
         read_only_gstack = {
             "gstack-plan-ceo-review",
             "gstack-plan-eng-review",
@@ -247,36 +185,10 @@ def render_claude_frontmatter(
     if fm.get("allowed-tools"):
         out["allowed-tools"] = fm["allowed-tools"]
 
+    if fm.get("argument-hint"):
+        out["argument-hint"] = str(fm["argument-hint"]).strip()
+
     return out
-
-
-def yaml_dump_simple(data: dict[str, Any]) -> str:
-    lines = ["---"]
-    for key, val in data.items():
-        if isinstance(val, bool):
-            lines.append(f"{key}: {'true' if val else 'false'}")
-        else:
-            s = str(val).replace("\n", " ")
-            if ":" in s or s.startswith('"') or len(s) > 80:
-                s = s.replace('"', '\\"')
-                lines.append(f'{key}: "{s}"')
-            else:
-                lines.append(f"{key}: {s}")
-    lines.append("---")
-    return "\n".join(lines)
-
-
-def discover_skills(skills_root: Path) -> list[Path]:
-    skip_suffixes = ("/skill-examples/", "/tests/", "/node_modules/")
-    found: list[Path] = []
-    for skill_md in sorted(skills_root.rglob("SKILL.md")):
-        rel = skill_md.parent.relative_to(skills_root).as_posix()
-        if any(part in rel for part in skip_suffixes):
-            continue
-        if rel == "meta-tools/reflect-yourself" and (skills_root / "reflect-yourself" / "SKILL.md").is_file():
-            continue
-        found.append(skill_md)
-    return found
 
 
 def build_mappings(skills_root: Path) -> list[dict[str, str]]:
@@ -292,7 +204,6 @@ def build_mappings(skills_root: Path) -> list[dict[str, str]]:
         claude_name = propose_claude_name(cursor_path, fm_name)
 
         if claude_name in used and used[claude_name] != cursor_path:
-            # Disambiguate with parent segment
             parts = cursor_path.split("/")
             if len(parts) >= 2:
                 claude_name = f"{parts[-2]}-{parts[-1]}".replace("/", "-")
@@ -335,46 +246,11 @@ def load_or_build_map(skills_root: Path, write_map: bool) -> list[dict[str, str]
     return mappings
 
 
-def copy_skill_assets(src: Path, dest: Path, dry_run: bool) -> None:
-    if dry_run:
-        return
-    dest.mkdir(parents=True, exist_ok=True)
-
-    for name in COPY_FILES:
-        src_file = src / name
-        if src_file.is_file():
-            shutil.copy2(src_file, dest / name)
-
-    for dirname in COPY_DIRS:
-        src_dir = src / dirname
-        if src_dir.is_dir():
-            shutil.copytree(src_dir, dest / dirname, dirs_exist_ok=True)
-
-    # Copy office/docx nested trees not under standard dirs
-    skip_names = {"SKILL.md", *COPY_DIRS, *COPY_FILES}
-    for item in src.iterdir():
-        if item.name in skip_names:
-            continue
-        if item.name in SKIP_PATH_PARTS:
-            continue
-        if item.is_file() and item.suffix in {".md", ".txt", ".json", ".yaml", ".yml"}:
-            shutil.copy2(item, dest / item.name)
-        elif item.is_dir() and item.name not in SKIP_PATH_PARTS:
-            if not (dest / item.name).exists():
-                shutil.copytree(
-                    item,
-                    dest / item.name,
-                    dirs_exist_ok=True,
-                    ignore=shutil.ignore_patterns(".git", "__pycache__", "node_modules"),
-                )
-
-
 def convert_skill(
     skills_root: Path,
     mapping: dict[str, str],
     claude_skills_root: Path,
     dry_run: bool,
-    force: bool,
 ) -> str:
     cursor_path = mapping["cursor_path"]
     claude_name = mapping["claude_name"]
@@ -425,15 +301,22 @@ def main() -> int:
         action="store_true",
         help="Convert into this repo's own .claude/skills/ (project_dir = repo_dir)",
     )
+    parser.add_argument(
+        "--prune-orphans",
+        action="store_true",
+        help="After convert, remove nested .claude/skills paths not in flat map",
+    )
     args = parser.parse_args()
 
     repo_dir = Path(args.repo_dir).resolve()
-    # Source: .cursor/skills/ (new layout) or skills/ (legacy fallback)
     skills_root = repo_dir / ".cursor" / "skills"
     if not skills_root.is_dir():
         skills_root = repo_dir / "skills"
     if not skills_root.is_dir():
-        print(f"ERROR: skills root not found: {repo_dir / '.cursor' / 'skills'} or {repo_dir / 'skills'}", file=sys.stderr)
+        print(
+            f"ERROR: skills root not found: {repo_dir / '.cursor' / 'skills'} or {repo_dir / 'skills'}",
+            file=sys.stderr,
+        )
         return 1
 
     mappings = load_or_build_map(skills_root, write_map=args.write_map or args.write_map_only)
@@ -459,9 +342,7 @@ def main() -> int:
     errors: list[str] = []
     for m in mappings:
         try:
-            msg = convert_skill(
-                skills_root, m, claude_skills_root, args.dry_run, args.force
-            )
+            msg = convert_skill(skills_root, m, claude_skills_root, args.dry_run)
             print(msg)
             ok += 1
         except Exception as exc:  # noqa: BLE001
@@ -476,6 +357,11 @@ def main() -> int:
 
     if not args.dry_run:
         print(f"\nOutput: {claude_skills_root}")
+        if args.prune_orphans:
+            from prune_claude_skills import prune_orphans_v2
+
+            removed = prune_orphans_v2(claude_skills_root, mappings, dry_run=False)
+            print(f"Pruned {removed} orphan path(s)")
         print("Restart Claude Code session to load new skills.")
     return 0
 

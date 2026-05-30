@@ -1,0 +1,6 @@
+{
+  "name": "knowledge-work-bio-research",
+  "description": "Anthropic knowledge-work-plugins \u2014 bio-research (6 skills).",
+  "version": "1.0.0",
+  "author": "awesome-agent-skill (adapted from anthropics/knowledge-work-plugins)"
+}

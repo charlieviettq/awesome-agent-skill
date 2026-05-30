@@ -2,7 +2,7 @@
 
 Curated audit of third-party skill sources reviewed for integration into [awesome-agent-skill](https://github.com/charlieviettq/awesome-agent-skill). Use this file as the provenance ledger before importing or adapting external content.
 
-**Last audit:** 2026-05-25
+**Last audit:** 2026-05-30
 
 ## Sources reviewed
 
@@ -11,6 +11,7 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 | addyosmani/agent-skills | https://github.com/addyosmani/agent-skills | MIT | ~45k | Adapt selected skills with attribution |
 | abcnuts/manus-skills | https://github.com/abcnuts/manus-skills | Unverified (README claims MIT; no LICENSE file in repo) | ~24 | Clean-room rewrite only; do not copy text/scripts |
 | obra/superpowers | https://github.com/obra/superpowers | MIT | ~206k | Cherry-pick workflows; no plugin/runtime vendoring |
+| anthropics/knowledge-work-plugins | https://github.com/anthropics/knowledge-work-plugins | MIT | ~18k | **Adapt all 11 plugins** (~80 skills) into `knowledge-work/` domain |
 
 ## Decision key
 
@@ -164,6 +165,45 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 - `find-polluter.sh`, `render-graphs.js`
 
 **Attribution:** Workflows inspired by [obra/superpowers](https://github.com/obra/superpowers) (MIT, Jesse Vincent). Wording rewritten for this catalog.
+
+---
+
+## anthropics/knowledge-work-plugins
+
+**Audit date:** 2026-05-30. Official Anthropic knowledge-worker plugin pack for Claude Cowork/Code. Each plugin ships `.claude-plugin/plugin.json`, optional `.mcp.json` (Snowflake, BigQuery, Linear, etc.), and passive `skills/SKILL.md` files with `argument-hint` in frontmatter.
+
+### Verdict: Adapt all 11 plugins
+
+| Plugin | Skills (upstream) | Local path | MCP hints (reference) |
+|--------|-------------------|------------|------------------------|
+| data | 10 | `knowledge-work/data/` | snowflake, bigquery, databricks, hex, amplitude |
+| engineering | 10 | `knowledge-work/engineering/` | github, linear, datadog |
+| product-management | 8 | `knowledge-work/product-management/` | linear, notion |
+| productivity | 5 | `knowledge-work/productivity/` | — |
+| marketing | 8 | `knowledge-work/marketing/` | — |
+| sales | 9 | `knowledge-work/sales/` | salesforce, hubspot |
+| finance | 8 | `knowledge-work/finance/` | — |
+| legal | 9 | `knowledge-work/legal/` | — |
+| customer-support | 5 | `knowledge-work/customer-support/` | zendesk, intercom |
+| bio-research | 6 | `knowledge-work/bio-research/` | — |
+| cowork-plugin-management | 2 | `knowledge-work/cowork-plugin-management/` | — |
+
+**Import method:** `scripts/import-plugins.py` fetches `SKILL.md` via GitHub API, adds Cursor frontmatter (`version`, `triggers`, `source`), preserves `argument-hint`. Does **not** vendor `.claude-plugin` or live `.mcp.json` credentials — MCP templates live in `mcp-templates/` as optional stubs.
+
+### Not copied verbatim
+
+- Plugin runtime / Cowork installer UI
+- User-specific MCP OAuth tokens
+- Slash `commands/` trees (passive skills only in this pass)
+
+### Overlap notes
+
+| Upstream skill | Local overlap | Action |
+|----------------|---------------|--------|
+| statistical-analysis (data) | `analysis-stats/statistical-analysis` | Both kept; kw variant is data-warehouse workflow |
+| code-review (engineering) | `gstack/code-quality/review`, voltagent | Both kept; kw variant is standup/tracker oriented |
+
+**Attribution:** Skills adapted from [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (MIT). Frontmatter extended for this catalog; body text retained unless path-specific edits required.
 
 ---
 

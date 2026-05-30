@@ -463,6 +463,406 @@
       "source_name": "setup-browser-cookies"
     },
     {
+      "cursor_path": "knowledge-work",
+      "claude_name": "knowledge-work",
+      "source_name": "knowledge-work"
+    },
+    {
+      "cursor_path": "knowledge-work/bio-research/instrument-data-to-allotrope",
+      "claude_name": "instrument-data-to-allotrope",
+      "source_name": "instrument-data-to-allotrope"
+    },
+    {
+      "cursor_path": "knowledge-work/bio-research/nextflow-development",
+      "claude_name": "nextflow-development",
+      "source_name": "nextflow-development"
+    },
+    {
+      "cursor_path": "knowledge-work/bio-research/scientific-problem-selection",
+      "claude_name": "scientific-problem-selection",
+      "source_name": "scientific-problem-selection"
+    },
+    {
+      "cursor_path": "knowledge-work/bio-research/scvi-tools",
+      "claude_name": "scvi-tools",
+      "source_name": "scvi-tools"
+    },
+    {
+      "cursor_path": "knowledge-work/bio-research/single-cell-rna-qc",
+      "claude_name": "single-cell-rna-qc",
+      "source_name": "single-cell-rna-qc"
+    },
+    {
+      "cursor_path": "knowledge-work/bio-research/start",
+      "claude_name": "start",
+      "source_name": "start"
+    },
+    {
+      "cursor_path": "knowledge-work/cowork-plugin-management/cowork-plugin-customizer",
+      "claude_name": "cowork-plugin-customizer",
+      "source_name": "cowork-plugin-customizer"
+    },
+    {
+      "cursor_path": "knowledge-work/cowork-plugin-management/create-cowork-plugin",
+      "claude_name": "create-cowork-plugin",
+      "source_name": "create-cowork-plugin"
+    },
+    {
+      "cursor_path": "knowledge-work/customer-support/customer-escalation",
+      "claude_name": "customer-escalation",
+      "source_name": "customer-escalation"
+    },
+    {
+      "cursor_path": "knowledge-work/customer-support/customer-research",
+      "claude_name": "customer-research",
+      "source_name": "customer-research"
+    },
+    {
+      "cursor_path": "knowledge-work/customer-support/draft-response",
+      "claude_name": "draft-response",
+      "source_name": "draft-response"
+    },
+    {
+      "cursor_path": "knowledge-work/customer-support/kb-article",
+      "claude_name": "kb-article",
+      "source_name": "kb-article"
+    },
+    {
+      "cursor_path": "knowledge-work/customer-support/ticket-triage",
+      "claude_name": "ticket-triage",
+      "source_name": "ticket-triage"
+    },
+    {
+      "cursor_path": "knowledge-work/data/analyze",
+      "claude_name": "analyze",
+      "source_name": "analyze"
+    },
+    {
+      "cursor_path": "knowledge-work/data/build-dashboard",
+      "claude_name": "build-dashboard",
+      "source_name": "build-dashboard"
+    },
+    {
+      "cursor_path": "knowledge-work/data/create-viz",
+      "claude_name": "create-viz",
+      "source_name": "create-viz"
+    },
+    {
+      "cursor_path": "knowledge-work/data/data-context-extractor",
+      "claude_name": "data-context-extractor",
+      "source_name": "data-context-extractor"
+    },
+    {
+      "cursor_path": "knowledge-work/data/data-visualization",
+      "claude_name": "data-visualization",
+      "source_name": "data-visualization"
+    },
+    {
+      "cursor_path": "knowledge-work/data/explore-data",
+      "claude_name": "explore-data",
+      "source_name": "explore-data"
+    },
+    {
+      "cursor_path": "knowledge-work/data/sql-queries",
+      "claude_name": "sql-queries",
+      "source_name": "sql-queries"
+    },
+    {
+      "cursor_path": "knowledge-work/data/statistical-analysis",
+      "claude_name": "data-statistical-analysis",
+      "source_name": "statistical-analysis"
+    },
+    {
+      "cursor_path": "knowledge-work/data/validate-data",
+      "claude_name": "validate-data",
+      "source_name": "validate-data"
+    },
+    {
+      "cursor_path": "knowledge-work/data/write-query",
+      "claude_name": "write-query",
+      "source_name": "write-query"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/architecture",
+      "claude_name": "architecture",
+      "source_name": "architecture"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/code-review",
+      "claude_name": "code-review",
+      "source_name": "code-review"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/debug",
+      "claude_name": "debug",
+      "source_name": "debug"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/deploy-checklist",
+      "claude_name": "deploy-checklist",
+      "source_name": "deploy-checklist"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/documentation",
+      "claude_name": "documentation",
+      "source_name": "documentation"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/incident-response",
+      "claude_name": "incident-response",
+      "source_name": "incident-response"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/standup",
+      "claude_name": "standup",
+      "source_name": "standup"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/system-design",
+      "claude_name": "system-design",
+      "source_name": "system-design"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/tech-debt",
+      "claude_name": "tech-debt",
+      "source_name": "tech-debt"
+    },
+    {
+      "cursor_path": "knowledge-work/engineering/testing-strategy",
+      "claude_name": "testing-strategy",
+      "source_name": "testing-strategy"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/audit-support",
+      "claude_name": "audit-support",
+      "source_name": "audit-support"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/close-management",
+      "claude_name": "close-management",
+      "source_name": "close-management"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/financial-statements",
+      "claude_name": "financial-statements",
+      "source_name": "financial-statements"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/journal-entry",
+      "claude_name": "journal-entry",
+      "source_name": "journal-entry"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/journal-entry-prep",
+      "claude_name": "journal-entry-prep",
+      "source_name": "journal-entry-prep"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/reconciliation",
+      "claude_name": "reconciliation",
+      "source_name": "reconciliation"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/sox-testing",
+      "claude_name": "sox-testing",
+      "source_name": "sox-testing"
+    },
+    {
+      "cursor_path": "knowledge-work/finance/variance-analysis",
+      "claude_name": "variance-analysis",
+      "source_name": "variance-analysis"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/brief",
+      "claude_name": "brief",
+      "source_name": "brief"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/compliance-check",
+      "claude_name": "compliance-check",
+      "source_name": "compliance-check"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/legal-response",
+      "claude_name": "legal-response",
+      "source_name": "legal-response"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/legal-risk-assessment",
+      "claude_name": "legal-risk-assessment",
+      "source_name": "legal-risk-assessment"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/meeting-briefing",
+      "claude_name": "meeting-briefing",
+      "source_name": "meeting-briefing"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/review-contract",
+      "claude_name": "review-contract",
+      "source_name": "review-contract"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/signature-request",
+      "claude_name": "signature-request",
+      "source_name": "signature-request"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/triage-nda",
+      "claude_name": "triage-nda",
+      "source_name": "triage-nda"
+    },
+    {
+      "cursor_path": "knowledge-work/legal/vendor-check",
+      "claude_name": "vendor-check",
+      "source_name": "vendor-check"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/brand-review",
+      "claude_name": "brand-review",
+      "source_name": "brand-review"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/campaign-plan",
+      "claude_name": "campaign-plan",
+      "source_name": "campaign-plan"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/competitive-brief",
+      "claude_name": "competitive-brief",
+      "source_name": "competitive-brief"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/content-creation",
+      "claude_name": "content-creation",
+      "source_name": "content-creation"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/draft-content",
+      "claude_name": "draft-content",
+      "source_name": "draft-content"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/email-sequence",
+      "claude_name": "email-sequence",
+      "source_name": "email-sequence"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/performance-report",
+      "claude_name": "performance-report",
+      "source_name": "performance-report"
+    },
+    {
+      "cursor_path": "knowledge-work/marketing/seo-audit",
+      "claude_name": "seo-audit",
+      "source_name": "seo-audit"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/competitive-brief",
+      "claude_name": "product-management-competitive-brief",
+      "source_name": "competitive-brief"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/metrics-review",
+      "claude_name": "metrics-review",
+      "source_name": "metrics-review"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/product-brainstorming",
+      "claude_name": "product-brainstorming",
+      "source_name": "product-brainstorming"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/roadmap-update",
+      "claude_name": "roadmap-update",
+      "source_name": "roadmap-update"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/sprint-planning",
+      "claude_name": "sprint-planning",
+      "source_name": "sprint-planning"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/stakeholder-update",
+      "claude_name": "stakeholder-update",
+      "source_name": "stakeholder-update"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/synthesize-research",
+      "claude_name": "synthesize-research",
+      "source_name": "synthesize-research"
+    },
+    {
+      "cursor_path": "knowledge-work/product-management/write-spec",
+      "claude_name": "write-spec",
+      "source_name": "write-spec"
+    },
+    {
+      "cursor_path": "knowledge-work/productivity/memory-management",
+      "claude_name": "memory-management",
+      "source_name": "memory-management"
+    },
+    {
+      "cursor_path": "knowledge-work/productivity/start",
+      "claude_name": "productivity-start",
+      "source_name": "start"
+    },
+    {
+      "cursor_path": "knowledge-work/productivity/task-management",
+      "claude_name": "task-management",
+      "source_name": "task-management"
+    },
+    {
+      "cursor_path": "knowledge-work/productivity/update",
+      "claude_name": "update",
+      "source_name": "update"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/account-research",
+      "claude_name": "account-research",
+      "source_name": "account-research"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/call-prep",
+      "claude_name": "call-prep",
+      "source_name": "call-prep"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/call-summary",
+      "claude_name": "call-summary",
+      "source_name": "call-summary"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/competitive-intelligence",
+      "claude_name": "competitive-intelligence",
+      "source_name": "competitive-intelligence"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/create-an-asset",
+      "claude_name": "create-an-asset",
+      "source_name": "create-an-asset"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/daily-briefing",
+      "claude_name": "daily-briefing",
+      "source_name": "daily-briefing"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/draft-outreach",
+      "claude_name": "draft-outreach",
+      "source_name": "draft-outreach"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/forecast",
+      "claude_name": "forecast",
+      "source_name": "forecast"
+    },
+    {
+      "cursor_path": "knowledge-work/sales/pipeline-review",
+      "claude_name": "pipeline-review",
+      "source_name": "pipeline-review"
+    },
+    {
       "cursor_path": "marketing/meta-ads-analyzer",
       "claude_name": "meta-ads-analyzer",
       "source_name": "meta-ads-analyzer"

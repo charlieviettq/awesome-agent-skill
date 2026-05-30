@@ -1,0 +1,6 @@
+{
+  "name": "knowledge-work-sales",
+  "description": "Anthropic knowledge-work-plugins \u2014 sales (9 skills).",
+  "version": "1.0.0",
+  "author": "awesome-agent-skill (adapted from anthropics/knowledge-work-plugins)"
+}

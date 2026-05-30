@@ -46,6 +46,7 @@ DOMAIN_TAGS: dict[str, list[str]] = {
     "mobile": ["mobile", "ios", "android"],
     "marketing": ["marketing", "ads"],
     "architecture": ["architecture", "diagrams"],
+    "knowledge-work": ["knowledge-work", "anthropic", "cowork", "plugins"],
 }
 
 
@@ -53,7 +54,7 @@ def default_tier(domain: str) -> str:
     """Coarse tiering for now; can be refined later."""
     if domain in {"core-workflow", "ai-agent-systems", "reliability-ops", "security-appsec"}:
         return "core"
-    if domain in {"gstack", "voltagent"}:
+    if domain in {"gstack", "voltagent", "knowledge-work"}:
         return "imported"
     return "community"
 
@@ -61,6 +62,8 @@ def default_tier(domain: str) -> str:
 def default_provenance(domain: str) -> str:
     if domain in {"gstack", "voltagent"}:
         return "imported-pack"
+    if domain == "knowledge-work":
+        return "anthropics/knowledge-work-plugins"
     return "awesome-agent-skill"
 
 
