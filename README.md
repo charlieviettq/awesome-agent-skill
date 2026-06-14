@@ -81,20 +81,6 @@ Copy only the domains you need. Reload the agent session after installing skills
 
 Skills remain the source of truth. Commands in `.claude/commands/` and `.gemini/commands/` are optional wrappers for validate/sync/install workflows.
 
-## Commercial use cases (SpecFlow AI)
-
-This open-source library powers **[SpecFlow AI](docs/public-private-split.md)** — commercial workflow packs for B2B teams.
-
-| Track | What it is | Get started |
-|-------|------------|-------------|
-| **DataAgent Kit (Free)** | 5-skill data team starter bundle | `skillhub install-bundle dataagent-free . --format cursor` |
-| **SpecBot** | RFQ/spec PDF → structured response + trace | [Book a demo](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=specbot-demo-request.yml) (private pilot) |
-| **DataAgent Pro** | Full data + validation bundle + updates | [Request Pro access](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=dataagent-pro-request.yml) |
-
-Pricing and delivery playbooks live in the private **specflow-ai** repo under `~/Documents/OtherProject/personal-research/specflow-ai`. Public repo stays MIT and lead-gen safe — see [public/private split](docs/public-private-split.md).
-
-Bootstrap private workbench: `bash scripts/bootstrap-specflow-ai.sh`
-
 ## Quickstart (3 steps)
 
 **1. Choose a bundle** — browse the [Skill Marketplace](https://charlieviettq.github.io/awesome-agent-skill/) or ask the advisor:

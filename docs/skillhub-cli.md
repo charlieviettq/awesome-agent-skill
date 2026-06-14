@@ -21,9 +21,6 @@ skillhub recommend "review this architecture" --json
 python3 scripts/skillhub.py install-bundle ship-ready ~/my-app --format cursor --dry-run
 python3 scripts/skillhub.py install-bundle starter ~/my-app --backup --no-overwrite
 
-# SpecFlow AI free tier (lead-gen)
-python3 scripts/skillhub.py install-bundle dataagent-free ~/my-app --format cursor --dry-run
-
 # Health
 python3 scripts/skillhub.py doctor
 python3 scripts/skillhub.py doctor --target ~/my-app

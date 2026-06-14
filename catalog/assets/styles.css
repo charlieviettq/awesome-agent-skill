@@ -323,47 +323,6 @@ a:hover { text-decoration: underline; }
 
 .filter-removable { font-size: 0.78rem; }
 
-.offer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
-}
-
-.offer-card {
-  padding: 1.25rem;
-  border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-}
-
-.offer-card h3 { margin: 0; font-size: 1.1rem; }
-.offer-card p { margin: 0; color: var(--text-muted); font-size: 0.9rem; line-height: 1.45; }
-
-.offer-badge {
-  align-self: flex-start;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 0.2rem 0.5rem;
-  border-radius: 999px;
-  background: rgba(99, 102, 241, 0.15);
-  color: #a5b4fc;
-}
-
-.offer-cmd {
-  display: block;
-  font-size: 0.78rem;
-  padding: 0.5rem 0.65rem;
-  border-radius: 6px;
-  background: rgba(0, 0, 0, 0.25);
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.offer-card .btn { align-self: flex-start; margin-top: 0.25rem; }
-
 .bundle-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));

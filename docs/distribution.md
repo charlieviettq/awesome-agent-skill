@@ -63,17 +63,3 @@ See [comparison.md](./comparison.md) for positioning vs typical awesome lists.
 - Good first issues: thin descriptions, missing triggers, low quality score
 
 Update the submission table when a channel is contacted or accepted.
-
-## SpecFlow AI (commercial funnel)
-
-Public repo drives lead-gen; commercial delivery lives in private repo **specflow-ai** at `~/Documents/OtherProject/personal-research/specflow-ai`.
-
-| Surface | Purpose | CTA |
-|---------|---------|-----|
-| README commercial section | Explain SpecBot + DataAgent | Install free / book demo |
-| Marketplace offer cards | Same CTAs on GitHub Pages | Issue templates |
-| `dataagent-free` bundle | PLG entry | One-command install |
-
-See [public-private-split.md](./public-private-split.md) and bootstrap: `bash scripts/bootstrap-specflow-ai.sh`.
-
-**Public-safe only** — no pricing tables or sales scripts on GitHub. Full GTM board lives in specflow-ai private repo.
