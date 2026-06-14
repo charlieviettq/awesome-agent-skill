@@ -6,7 +6,7 @@
 
 [![Stars](https://img.shields.io/github/stars/charlieviettq/awesome-agent-skill?style=for-the-badge&logo=github&color=60a5fa)](https://github.com/charlieviettq/awesome-agent-skill/stargazers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-178-8b5cf6?style=for-the-badge)](.cursor/skills)
+[![Skills](https://img.shields.io/badge/skills-258-8b5cf6?style=for-the-badge)](.cursor/skills)
 [![Marketplace](https://img.shields.io/badge/Skill_Marketplace-live-6366f1?style=for-the-badge)](https://charlieviettq.github.io/awesome-agent-skill/)
 [![Formats](https://img.shields.io/badge/formats-Cursor%20%2B%20Claude-0ea5e9?style=for-the-badge)](#quickstart)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
@@ -17,7 +17,7 @@
 
 Give your coding agent reusable playbooks for planning, debugging, QA, security, docs, data work, browser automation, and shipping.
 
-**[Open Skill Marketplace](https://charlieviettq.github.io/awesome-agent-skill/)** — search 178 skills, preview `SKILL.md` inline, explore the bundle graph, copy install commands.
+**[Open Skill Marketplace](https://charlieviettq.github.io/awesome-agent-skill/)** — search 258 skills, preview `SKILL.md` inline, explore the bundle graph, copy install commands.
 
 </div>
 
@@ -80,6 +80,20 @@ Copy only the domains you need. Reload the agent session after installing skills
 | Gemini CLI | `.gemini/commands/` + skills dir | Restart session | Optional `.gemini/commands/` |
 
 Skills remain the source of truth. Commands in `.claude/commands/` and `.gemini/commands/` are optional wrappers for validate/sync/install workflows.
+
+## Commercial use cases (SpecFlow AI)
+
+This open-source library powers **[SpecFlow AI](docs/public-private-split.md)** — commercial workflow packs for B2B teams.
+
+| Track | What it is | Get started |
+|-------|------------|-------------|
+| **DataAgent Kit (Free)** | 5-skill data team starter bundle | `skillhub install-bundle dataagent-free . --format cursor` |
+| **SpecBot** | RFQ/spec PDF → structured response + trace | [Book a demo](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=specbot-demo-request.yml) (private pilot) |
+| **DataAgent Pro** | Full data + validation bundle + updates | [Request Pro access](https://github.com/charlieviettq/awesome-agent-skill/issues/new?template=dataagent-pro-request.yml) |
+
+Pricing and delivery playbooks live in the private **specflow-ai** repo under `~/Documents/OtherProject/personal-research/specflow-ai`. Public repo stays MIT and lead-gen safe — see [public/private split](docs/public-private-split.md).
+
+Bootstrap private workbench: `bash scripts/bootstrap-specflow-ai.sh`
 
 ## Quickstart (3 steps)
 

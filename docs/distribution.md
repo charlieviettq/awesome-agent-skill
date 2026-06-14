@@ -47,11 +47,11 @@ Social preview: `.github/assets/social-preview.svg` (set as Open Graph image or 
 
 ## Suggested blurb (short)
 
-> **awesome-agent-skill** — 178+ portable agent skills with a searchable marketplace, task-to-skills advisor, quality-scored registry, and one-command bundle install for Cursor and Claude Code.
+> **awesome-agent-skill** — 258+ portable agent skills with a searchable marketplace, task-to-skills advisor, quality-scored registry, and one-command bundle install for Cursor and Claude Code.
 
 ## Suggested blurb (HN / Reddit)
 
-> I open-sourced a skill marketplace for AI coding agents: browse 178 playbooks on GitHub Pages, type what you want to do, get matching skills + an install command. Registry-driven CLI (`skillhub recommend`, bundle install, dry-run/backup). Not just an awesome list — installable skills with metadata (tier, risk, quality).
+> I open-sourced a skill marketplace for AI coding agents: browse 258 playbooks on GitHub Pages, type what you want to do, get matching skills + an install command. Registry-driven CLI (`skillhub recommend`, bundle install, dry-run/backup). Not just an awesome list — installable skills with metadata (tier, risk, quality).
 
 ## Comparison page
 
@@ -63,3 +63,17 @@ See [comparison.md](./comparison.md) for positioning vs typical awesome lists.
 - Good first issues: thin descriptions, missing triggers, low quality score
 
 Update the submission table when a channel is contacted or accepted.
+
+## SpecFlow AI (commercial funnel)
+
+Public repo drives lead-gen; commercial delivery lives in private repo **specflow-ai** at `~/Documents/OtherProject/personal-research/specflow-ai`.
+
+| Surface | Purpose | CTA |
+|---------|---------|-----|
+| README commercial section | Explain SpecBot + DataAgent | Install free / book demo |
+| Marketplace offer cards | Same CTAs on GitHub Pages | Issue templates |
+| `dataagent-free` bundle | PLG entry | One-command install |
+
+See [public-private-split.md](./public-private-split.md) and bootstrap: `bash scripts/bootstrap-specflow-ai.sh`.
+
+**Public-safe only** — no pricing tables or sales scripts on GitHub. Full GTM board lives in specflow-ai private repo.

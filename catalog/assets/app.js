@@ -595,6 +595,13 @@ function initMarketplace(skills, bundles, quality, skillContent) {
     if (e.key === "Enter") runAdvisor();
   });
 
+  document.querySelectorAll("#commercial-section [data-filter-bundle]").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      applyBundleFilter(el.getAttribute("data-filter-bundle"));
+    });
+  });
+
   if (params.get("preview")) {
     const pid = params.get("preview");
     if (skillContent[pid]) modalApi.openPreview(pid, skills.find((s) => s.id === pid));

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "description": "Commercial bundles for SpecFlow AI — merged into registry/bundles.json on bootstrap/sync",
+  "bundles": [
+    {
+      "id": "dataagent-pro",
+      "title": "DataAgent Kit Pro",
+      "description": "Full data team workflow: EDA, SQL, analysis, viz, validation, specs, and ship discipline. SpecFlow AI commercial bundle.",
+      "domains": [
+        "eda-research",
+        "analysis-stats",
+        "visualization"
+      ],
+      "skills": [
+        "knowledge-work/data/analyze",
+        "knowledge-work/data/build-dashboard",
+        "knowledge-work/data/create-viz",
+        "knowledge-work/data/data-context-extractor",
+        "knowledge-work/data/data-visualization",
+        "knowledge-work/data/explore-data",
+        "knowledge-work/data/sql-queries",
+        "knowledge-work/data/statistical-analysis",
+        "knowledge-work/data/validate-data",
+        "knowledge-work/data/write-query",
+        "core-workflow/spec-driven-development",
+        "core-workflow/planning-and-task-breakdown",
+        "core-workflow/verify-before-done",
+        "writing-docs/xlsx"
+      ],
+      "formats": ["cursor", "claude", "both"],
+      "commercial": true,
+      "product": "dataagent-kit",
+      "tier": "pro"
+    },
+    {
+      "id": "specbot-demo",
+      "title": "SpecBot Demo",
+      "description": "RFQ/spec intake, structured spec writing, PDF handling, response drafting, and verification. For SpecBot sales demos and pilots.",
+      "domains": [],
+      "skills": [
+        "core-workflow/spec-driven-development",
+        "core-workflow/planning-and-task-breakdown",
+        "core-workflow/clarify-underspecified",
+        "core-workflow/verify-before-done",
+        "knowledge-work/product-management/write-spec",
+        "knowledge-work/sales/draft-outreach",
+        "writing-docs/pdf",
+        "writing-docs/docx",
+        "knowledge-work/legal/review-contract"
+      ],
+      "formats": ["cursor", "claude", "both"],
+      "commercial": true,
+      "product": "specbot",
+      "tier": "demo"
+    },
+    {
+      "id": "docflow-pack",
+      "title": "DocFlow Pack",
+      "description": "SOP and Confluence-ready documentation, stakeholder updates, and doc review workflows. P3/P4 add-on for SpecFlow AI.",
+      "domains": ["writing-docs"],
+      "skills": [
+        "writing-docs/docx",
+        "writing-docs/pptx",
+        "writing-docs/prose-polish",
+        "knowledge-work/engineering/documentation",
+        "knowledge-work/product-management/stakeholder-update",
+        "knowledge-work/product-management/write-spec",
+        "meta-tools/writing-skills"
+      ],
+      "formats": ["cursor", "claude", "both"],
+      "commercial": true,
+      "product": "docflow",
+      "tier": "addon"
+    },
+    {
+      "id": "ops-trace-pack",
+      "title": "Ops Trace Pack",
+      "description": "Review rubrics, launch checklists, and post-deploy trace discipline for tenant operations.",
+      "domains": ["reliability-ops", "security-appsec"],
+      "skills": [
+        "core-workflow/receiving-code-review",
+        "core-workflow/requesting-code-review",
+        "core-workflow/doubt-driven-review",
+        "reliability-ops/shipping-launch-checklist",
+        "reliability-ops/observability-slo",
+        "reliability-ops/postmortem-writing",
+        "security-appsec/skill-supply-chain-audit"
+      ],
+      "formats": ["cursor", "claude", "both"],
+      "commercial": true,
+      "product": "ops-trace",
+      "tier": "addon"
+    }
+  ]
+}

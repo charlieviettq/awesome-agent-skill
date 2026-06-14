@@ -1,0 +1,71 @@
+name: SpecBot demo request
+description: Book a 30-minute SpecBot RFQ demo (private pilot)
+title: "[SpecBot] Demo request — "
+labels:
+  - specflow-ai
+  - specbot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request a **SpecBot** demo: RFQ/spec PDF → structured fields → gap questions → draft response with trace checklist.
+
+        We use a redacted sample RFQ during the call — no integration required beforehand.
+
+  - type: input
+    id: company
+    attributes:
+      label: Company name
+      placeholder: e.g. ABC Distribution Co.
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Your name and role
+      placeholder: e.g. Nguyen Van A — Sales Ops Lead
+    validations:
+      required: true
+
+  - type: dropdown
+    id: industry
+    attributes:
+      label: Industry
+      options:
+        - Manufacturing / NPP
+        - Distribution / trading
+        - B2B services
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: rfq-volume
+    attributes:
+      label: Approx. RFQs per month (optional)
+      placeholder: e.g. 20–50
+
+  - type: textarea
+    id: pain
+    attributes:
+      label: Biggest pain today with RFQ/spec handling
+      placeholder: Turnaround time, spec errors, no trace, Zalo/email chaos…
+    validations:
+      required: true
+
+  - type: textarea
+    id: availability
+    attributes:
+      label: Preferred demo times (timezone + 2–3 slots)
+      placeholder: ICT, Tue/Thu 10:00–16:00
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this is a sales demo for a paid pilot — not a free forever tool
+          required: true

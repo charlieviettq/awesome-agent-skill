@@ -1,0 +1,5 @@
+# Tenant data — never commit
+tenants/
+samples/private/
+*.rfq.pdf
+**/kb-ingest/raw/

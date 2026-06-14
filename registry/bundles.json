@@ -694,6 +694,26 @@
       ]
     },
     {
+      "id": "dataagent-free",
+      "title": "DataAgent Kit (Free)",
+      "description": "Lead-gen bundle from SpecFlow AI: explore data, write SQL, analyze, spec discipline, and verify before sharing. Install in one command.",
+      "domains": [],
+      "skills": [
+        "knowledge-work/data/explore-data",
+        "knowledge-work/data/write-query",
+        "knowledge-work/data/analyze",
+        "core-workflow/spec-driven-development",
+        "core-workflow/verify-before-done"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ],
+      "product": "dataagent-kit",
+      "tier": "free"
+    },
+    {
       "id": "full",
       "title": "Full Catalog",
       "description": "All top-level skill domains in this repository.",

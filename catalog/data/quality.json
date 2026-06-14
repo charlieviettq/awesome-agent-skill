@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-27T13:54:25Z",
+  "generated_at": "2026-06-14T12:09:33Z",
   "schema_version": 1,
-  "count": 178,
-  "average_score": 43,
-  "low_score_count": 126,
+  "count": 258,
+  "average_score": 42,
+  "low_score_count": 187,
   "skills": [
     {
       "id": "ai-agent-systems/agent-evaluation",
@@ -1746,6 +1746,1585 @@
     },
     {
       "id": "gstack/utility/setup-browser-cookies",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/bio-research/instrument-data-to-allotrope",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/bio-research/nextflow-development",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": true,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/bio-research/scientific-problem-selection",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/bio-research/scvi-tools",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/bio-research/single-cell-rna-qc",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/bio-research/start",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/cowork-plugin-management/cowork-plugin-customizer",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/cowork-plugin-management/create-cowork-plugin",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/customer-support/customer-escalation",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/customer-support/customer-research",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/customer-support/draft-response",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/customer-support/kb-article",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/customer-support/ticket-triage",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/analyze",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/build-dashboard",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/create-viz",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/data-context-extractor",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": true,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": []
+    },
+    {
+      "id": "knowledge-work/data/data-visualization",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/explore-data",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/sql-queries",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/statistical-analysis",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/validate-data",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/data/write-query",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/architecture",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/code-review",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/debug",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/deploy-checklist",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/documentation",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/incident-response",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/standup",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/system-design",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/tech-debt",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/engineering/testing-strategy",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/audit-support",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/close-management",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/financial-statements",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/journal-entry",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/journal-entry-prep",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/reconciliation",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/sox-testing",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/finance/variance-analysis",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/brief",
+      "score": 60,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": true,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/compliance-check",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/legal-response",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/legal-risk-assessment",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/meeting-briefing",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/review-contract",
+      "score": 60,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": true,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/signature-request",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/triage-nda",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/legal/vendor-check",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/brand-review",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/campaign-plan",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/competitive-brief",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/content-creation",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/draft-content",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/email-sequence",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/performance-report",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/marketing/seo-audit",
+      "score": 30,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": false,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/competitive-brief",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/metrics-review",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/product-brainstorming",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/roadmap-update",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/sprint-planning",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/stakeholder-update",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/synthesize-research",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/product-management/write-spec",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/productivity/memory-management",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/productivity/start",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/productivity/task-management",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/productivity/update",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/account-research",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/call-prep",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/call-summary",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/competitive-intelligence",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/create-an-asset",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/daily-briefing",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/draft-outreach",
+      "score": 50,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": true,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/forecast",
+      "score": 40,
+      "checks": {
+        "description_min_80": true,
+        "has_triggers": false,
+        "has_usage_section": true,
+        "has_contract": false,
+        "has_phases": false,
+        "has_output_format": false,
+        "has_anti_patterns": false,
+        "has_examples": true,
+        "has_reference": false,
+        "risk_set": true
+      },
+      "issues": [
+        "no triggers in description",
+        "low overall score"
+      ]
+    },
+    {
+      "id": "knowledge-work/sales/pipeline-review",
       "score": 40,
       "checks": {
         "description_min_80": true,
