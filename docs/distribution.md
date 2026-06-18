@@ -47,11 +47,11 @@ Social preview: `.github/assets/social-preview.svg` (set as Open Graph image or 
 
 ## Suggested blurb (short)
 
-> **awesome-agent-skill** — 178+ portable agent skills with a searchable marketplace, task-to-skills advisor, quality-scored registry, and one-command bundle install for Cursor and Claude Code.
+> **awesome-agent-skill** — 258+ portable agent skills with a searchable marketplace, task-to-skills advisor, quality-scored registry, and one-command bundle install for Cursor and Claude Code.
 
 ## Suggested blurb (HN / Reddit)
 
-> I open-sourced a skill marketplace for AI coding agents: browse 178 playbooks on GitHub Pages, type what you want to do, get matching skills + an install command. Registry-driven CLI (`skillhub recommend`, bundle install, dry-run/backup). Not just an awesome list — installable skills with metadata (tier, risk, quality).
+> I open-sourced a skill marketplace for AI coding agents: browse 258 playbooks on GitHub Pages, type what you want to do, get matching skills + an install command. Registry-driven CLI (`skillhub recommend`, bundle install, dry-run/backup). Not just an awesome list — installable skills with metadata (tier, risk, quality).
 
 ## Comparison page
 
