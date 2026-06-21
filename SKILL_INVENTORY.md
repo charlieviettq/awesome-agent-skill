@@ -2,7 +2,7 @@
 
 High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 
-**Catalog size:** 258 skills (including ~79 from Anthropic knowledge-work-plugins).
+**Catalog size:** 259 skills (including ~79 from Anthropic knowledge-work-plugins).
 
 ## Knowledge Work (Anthropic plugins)
 
@@ -118,6 +118,7 @@ Imported domain: `knowledge-work/` — see hub `knowledge-work/SKILL.md`.
 - `ai-agent-systems/agent-tool-contracts`
 - `ai-agent-systems/context-window-management`
 - `ai-agent-systems/mcp-builder`
+- `ai-agent-systems/xquik-x-data-workflows`
 - `ai-agent-systems/mcp-ecosystem-optimizer`
 - `ai-agent-systems/rag-systems`
 
@@ -163,4 +164,3 @@ See `voltagent/SKILL.md` and children under `voltagent/**` for DS/ML/product/inf
 
 - `meta-tools/autoskill`
 - `meta-tools/writing-skills`
-

@@ -43,6 +43,11 @@
       "source_name": "subagent-driven-development"
     },
     {
+      "cursor_path": "ai-agent-systems/xquik-x-data-workflows",
+      "claude_name": "xquik-x-data-workflows",
+      "source_name": "xquik-x-data-workflows"
+    },
+    {
       "cursor_path": "analysis-stats/shap",
       "claude_name": "shap",
       "source_name": "shap"
