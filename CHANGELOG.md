@@ -6,6 +6,7 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- `ai-agent-systems/xquik-x-data-workflows` - source-backed Xquik REST API and remote MCP workflow planning for X data tasks
 - `scripts/skill_format.py` — shared frontmatter parsing, asset copy, trigger generation
 - `scripts/convert-to-cursor.py` — sync Claude flat skills back to Cursor nested paths via `claude-skill-map.json` (preserves `triggers`, `source`, etc.)
 - `scripts/prune_claude_skills.py` — remove orphan nested directories under `.claude/skills/`
