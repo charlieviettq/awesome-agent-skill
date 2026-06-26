@@ -1,0 +1,101 @@
+name: Sync gstack skills
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh gstack pack
+        run: |
+          python3 scripts/refresh-gstack-pack.py --ref main
+          python3 scripts/convert-to-claude.py --in-repo --force --write-map --prune-orphans
+          python3 scripts/generate-registry.py
+          python3 scripts/validate-skills.py --parity
+          python3 scripts/generate-registry.py --check
+          python3 scripts/skillhub.py eval-recommend
+
+      - name: Read gstack sync metadata
+        id: gstack
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("registry/gstack-sync.json").read_text())
+          print(f"version={data['upstream_version']}")
+          print(f"commit={data['upstream_commit']}")
+          print(f"short_commit={data['upstream_commit'][:7]}")
+          print(f"old_version={data.get('prior_snapshot', {}).get('upstream_version', 'unknown')}")
+          print(f"old_commit={data.get('prior_snapshot', {}).get('upstream_commit', 'unknown')}")
+          print(f"local_skill_count={data['local_skill_count']}")
+          print(f"upstream_skill_count={data['upstream_skill_count']}")
+          PY
+
+      - name: Summarize skill path changes
+        id: changes
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import subprocess
+
+          diff = subprocess.check_output(
+              ["git", "diff", "--name-status", "--", ".cursor/skills/gstack"],
+              text=True,
+          ).splitlines()
+          added = []
+          removed = []
+          for line in diff:
+              status, path = line.split("\t", 1)
+              if path.endswith("/SKILL.md"):
+                  skill_path = path.removeprefix(".cursor/skills/")
+                  if status == "A":
+                      added.append(skill_path)
+                  elif status == "D":
+                      removed.append(skill_path)
+
+          def block(name, values):
+              print(f"{name}<<EOF")
+              print("\n".join(f"- `{value}`" for value in values) if values else "- None")
+              print("EOF")
+
+          block("added_skill_paths", added)
+          block("removed_skill_paths", removed)
+          PY
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/sync-gstack-${{ steps.gstack.outputs.short_commit }}
+          delete-branch: true
+          title: Update gstack skills to ${{ steps.gstack.outputs.version }}
+          commit-message: Update gstack skills to ${{ steps.gstack.outputs.version }}
+          body: |
+            Refreshes the vendored gstack skills from upstream.
+
+            - Upstream: https://github.com/garrytan/gstack
+            - Previous version: `${{ steps.gstack.outputs.old_version }}`
+            - Previous commit: `${{ steps.gstack.outputs.old_commit }}`
+            - New version: `${{ steps.gstack.outputs.version }}`
+            - New commit: `${{ steps.gstack.outputs.commit }}`
+            - Local skill count: `${{ steps.gstack.outputs.local_skill_count }}`
+            - Upstream mapped skill count: `${{ steps.gstack.outputs.upstream_skill_count }}`
+
+            Added skill paths:
+            ${{ steps.changes.outputs.added_skill_paths }}
+
+            Removed skill paths:
+            ${{ steps.changes.outputs.removed_skill_paths }}
+
+            Validation run:
+            - `python3 scripts/validate-skills.py --parity`
+            - `python3 scripts/generate-registry.py --check`
+            - `python3 scripts/skillhub.py eval-recommend`
