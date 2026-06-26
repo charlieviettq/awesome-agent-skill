@@ -36,15 +36,21 @@ def prune_orphans_v2(
         name = child.name
         if name in allowed_flat:
             # Ensure no nested SKILL.md inside flat dir except at root of that dir
-            for nested_md in child.rglob("SKILL.md"):
-                rel = nested_md.parent.relative_to(child).as_posix()
-                if rel != ".":
-                    if dry_run:
-                        print(f"DRY-RUN remove nested under flat {name}: {rel}")
-                    else:
-                        shutil.rmtree(nested_md.parent)
-                        print(f"Removed nested under flat {name}: {rel}")
-                    removed += 1
+            nested_dirs = {
+                nested_md.parent
+                for nested_md in child.rglob("SKILL.md")
+                if nested_md.parent != child
+            }
+            for nested_dir in sorted(nested_dirs, key=lambda p: len(p.parts), reverse=True):
+                if not nested_dir.exists():
+                    continue
+                rel = nested_dir.relative_to(child).as_posix()
+                if dry_run:
+                    print(f"DRY-RUN remove nested under flat {name}: {rel}")
+                else:
+                    shutil.rmtree(nested_dir)
+                    print(f"Removed nested under flat {name}: {rel}")
+                removed += 1
             continue
 
         if dry_run:

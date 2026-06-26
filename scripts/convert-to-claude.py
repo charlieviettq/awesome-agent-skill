@@ -106,7 +106,7 @@ def propose_claude_name(cursor_path: str, fm_name: str | None) -> str:
 def has_scripts(skill_dir: Path) -> bool:
     scripts = skill_dir / "scripts"
     if scripts.is_dir():
-        return any(scripts.rglob("*.py")) or any(scripts.rglob("*.sh"))
+        return any(scripts.rglob(pattern) for pattern in ("*.py", "*.sh", "*.mjs", "*.js", "*.ts"))
     return False
 
 
