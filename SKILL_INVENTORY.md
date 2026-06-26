@@ -104,6 +104,7 @@ Imported domain: `knowledge-work/` — see hub `knowledge-work/SKILL.md`.
 
 ## Marketing
 
+- `marketing/linkedin-growth`
 - `marketing/meta-ads-analyzer`
 
 ## Architecture
