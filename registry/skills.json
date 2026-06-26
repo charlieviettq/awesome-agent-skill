@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-30T05:02:48Z",
+  "generated_at": "2026-06-26T14:44:04Z",
   "schema_version": 2,
-  "count": 258,
+  "count": 261,
   "skills": [
     {
       "id": "ai-agent-systems/agent-evaluation",
@@ -329,6 +329,48 @@
         "rag",
         "tools",
         "subagent-driven-development"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "awesome-agent-skill",
+      "related": [],
+      "tier": "core",
+      "quality_score": null
+    },
+    {
+      "id": "ai-agent-systems/xquik-x-data-workflows",
+      "name": "xquik-x-data-workflows",
+      "domain": "ai-agent-systems",
+      "path": ".cursor/skills/ai-agent-systems/xquik-x-data-workflows/SKILL.md",
+      "description": "Source-check and plan Xquik REST API or remote MCP workflows for X data tasks. Triggers: \"Xquik\", \"X/Twitter data workflow\", \"tweet search API\", \"X MCP server\".",
+      "summary": "Source-check and plan Xquik REST API or remote MCP workflows for X data tasks. Triggers: \"Xquik\", \"X/Twitter data workflow\", \"tweet search API\", \"X MCP server\".",
+      "triggers": [
+        "Xquik",
+        "X/Twitter data workflow",
+        "tweet search API",
+        "X MCP server"
+      ],
+      "trigger_phrases": [
+        "Xquik",
+        "X/Twitter data workflow",
+        "tweet search API",
+        "X MCP server"
+      ],
+      "risk": "low",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "agents",
+        "mcp",
+        "rag",
+        "tools",
+        "xquik-x-data-workflows"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -5849,6 +5891,94 @@
       "provenance": "anthropics/knowledge-work-plugins",
       "related": [],
       "tier": "imported",
+      "quality_score": null
+    },
+    {
+      "id": "marketing/linkedin",
+      "name": "linkedin",
+      "domain": "marketing",
+      "path": ".cursor/skills/marketing/linkedin/SKILL.md",
+      "description": "Fetch LinkedIn profiles, search people and companies, send messages, manage connections, create posts, react, comment, and run custom LinkedIn workflows from Claude Code, Codex, Cursor, and Windsurf. Triggers: \"LinkedIn\", \"LinkedIn automation\", \"connection request\", \"LinkedIn message\", \"lead pipeline\", \"Sales Navigator\".",
+      "summary": "Fetch LinkedIn profiles, search people and companies, send messages, manage connections, create posts, react, comment, and run custom LinkedIn workflows from Claude Code, Codex, Cursor, and Windsurf. Triggers: \"LinkedIn\", \"LinkedIn automati",
+      "triggers": [
+        "LinkedIn",
+        "LinkedIn automation",
+        "connection request",
+        "LinkedIn message",
+        "lead pipeline",
+        "Sales Navigator"
+      ],
+      "trigger_phrases": [
+        "LinkedIn",
+        "LinkedIn automation",
+        "connection request",
+        "LinkedIn message",
+        "lead pipeline",
+        "Sales Navigator"
+      ],
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "marketing",
+        "ads",
+        "linkedin"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "awesome-agent-skill",
+      "related": [],
+      "tier": "community",
+      "quality_score": null
+    },
+    {
+      "id": "marketing/linkedin-growth",
+      "name": "linkedin-growth",
+      "domain": "marketing",
+      "path": ".cursor/skills/marketing/linkedin-growth/SKILL.md",
+      "description": "Import leads from LinkedIn or Sales Navigator searches, qualify them against an ideal-customer profile, schedule safe connection invites across accounts, track acceptances, and withdraw stale pending requests. Triggers: \"LinkedIn\", \"LinkedIn automation\", \"connection request\", \"LinkedIn message\", \"lead pipeline\", \"Sales Navigator\".",
+      "summary": "Import leads from LinkedIn or Sales Navigator searches, qualify them against an ideal-customer profile, schedule safe connection invites across accounts, track acceptances, and withdraw stale pending requests. Triggers: \"LinkedIn\", \"LinkedI",
+      "triggers": [
+        "LinkedIn",
+        "LinkedIn automation",
+        "connection request",
+        "LinkedIn message",
+        "lead pipeline",
+        "Sales Navigator"
+      ],
+      "trigger_phrases": [
+        "LinkedIn",
+        "LinkedIn automation",
+        "connection request",
+        "LinkedIn message",
+        "lead pipeline",
+        "Sales Navigator"
+      ],
+      "risk": "medium",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "marketing",
+        "ads",
+        "linkedin-growth"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "awesome-agent-skill",
+      "related": [],
+      "tier": "community",
       "quality_score": null
     },
     {

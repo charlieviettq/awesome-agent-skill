@@ -868,6 +868,16 @@
       "source_name": "pipeline-review"
     },
     {
+      "cursor_path": "marketing/linkedin",
+      "claude_name": "linkedin",
+      "source_name": "linkedin"
+    },
+    {
+      "cursor_path": "marketing/linkedin-growth",
+      "claude_name": "linkedin-growth",
+      "source_name": "linkedin-growth"
+    },
+    {
       "cursor_path": "marketing/meta-ads-analyzer",
       "claude_name": "meta-ads-analyzer",
       "source_name": "meta-ads-analyzer"
