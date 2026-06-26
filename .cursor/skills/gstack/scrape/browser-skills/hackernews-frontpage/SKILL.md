@@ -1,6 +1,16 @@
 ---
 name: hackernews-frontpage
 description: Scrape the Hacker News front page (titles, points, comment counts).
+host: news.ycombinator.com
+trusted: true
+source: human
+version: 1.0.0
+args: []
+triggers:
+  - scrape hacker news frontpage
+  - scrape hn frontpage
+  - get hn top stories
+  - latest hacker news stories
 ---
 
 # Hacker News front-page scraper

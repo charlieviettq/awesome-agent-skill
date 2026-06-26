@@ -298,6 +298,11 @@
       "source_name": "sync-gbrain"
     },
     {
+      "cursor_path": "gstack/deploy-ship/document-generate",
+      "claude_name": "gstack-document-generate",
+      "source_name": "document-generate"
+    },
+    {
       "cursor_path": "gstack/deploy-ship/document-release",
       "claude_name": "gstack-document-release",
       "source_name": "document-release"
@@ -343,6 +348,31 @@
       "source_name": "design-shotgun"
     },
     {
+      "cursor_path": "gstack/ios/ios-clean",
+      "claude_name": "gstack-ios-clean",
+      "source_name": "ios-clean"
+    },
+    {
+      "cursor_path": "gstack/ios/ios-design-review",
+      "claude_name": "gstack-ios-design-review",
+      "source_name": "ios-design-review"
+    },
+    {
+      "cursor_path": "gstack/ios/ios-fix",
+      "claude_name": "gstack-ios-fix",
+      "source_name": "ios-fix"
+    },
+    {
+      "cursor_path": "gstack/ios/ios-qa",
+      "claude_name": "gstack-ios-qa",
+      "source_name": "ios-qa"
+    },
+    {
+      "cursor_path": "gstack/ios/ios-sync",
+      "claude_name": "gstack-ios-sync",
+      "source_name": "ios-sync"
+    },
+    {
       "cursor_path": "gstack/plan-review/autoplan",
       "claude_name": "gstack-autoplan",
       "source_name": "autoplan"
@@ -376,6 +406,11 @@
       "cursor_path": "gstack/plan-review/plan-tune",
       "claude_name": "gstack-plan-tune",
       "source_name": "plan-tune"
+    },
+    {
+      "cursor_path": "gstack/plan-review/spec",
+      "claude_name": "gstack-spec",
+      "source_name": "spec"
     },
     {
       "cursor_path": "gstack/remote-agents/openclaw/gstack-openclaw-ceo-review",
@@ -443,9 +478,19 @@
       "source_name": "unfreeze"
     },
     {
+      "cursor_path": "gstack/utility/diagram",
+      "claude_name": "gstack-diagram",
+      "source_name": "diagram"
+    },
+    {
       "cursor_path": "gstack/utility/gstack-upgrade",
       "claude_name": "gstack-gstack-upgrade",
       "source_name": "gstack-upgrade"
+    },
+    {
+      "cursor_path": "gstack/utility/make-pdf",
+      "claude_name": "gstack-make-pdf",
+      "source_name": "make-pdf"
     },
     {
       "cursor_path": "gstack/utility/office-hours",

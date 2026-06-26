@@ -91,7 +91,19 @@ def should_enforce_triggers(path: Path) -> bool:
 
 
 def collect_markdown_links(text: str) -> list[str]:
-    return re.findall(r"\]\(([^)]+)\)", text)
+    return re.findall(r"(?<!!)\[[^\]]*\]\(([^)]+)\)", text)
+
+
+def should_validate_relative_link(link: str) -> bool:
+    """Return True for Markdown links that look like local file targets."""
+    link = link.strip()
+    if not link or link.startswith(("http://", "https://", "#", "mailto:")):
+        return False
+    if "\n" in link or "\r" in link:
+        return False
+    if len(link) > 240:
+        return False
+    return True
 
 
 def validate_cursor_skills() -> list[str]:
@@ -122,9 +134,14 @@ def validate_cursor_skills() -> list[str]:
         names[name].append(path)
 
         for link in collect_markdown_links(text):
-            if link.startswith(("http://", "https://", "#", "mailto:")):
+            if not should_validate_relative_link(link):
                 continue
-            target = (path.parent / link).resolve()
+            link_path = link.split("#", 1)[0]
+            try:
+                target = (path.parent / link_path).resolve()
+            except OSError as exc:
+                errors.append(f"{path}: invalid relative link -> {link[:120]} ({exc})")
+                continue
             if not target.exists():
                 errors.append(f"{path}: broken relative link -> {link}")
 
