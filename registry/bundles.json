@@ -47,7 +47,8 @@
         "ai-agent-systems/agent-tool-contracts",
         "ai-agent-systems/agent-evaluation",
         "ai-agent-systems/rag-systems",
-        "ai-agent-systems/context-window-management"
+        "ai-agent-systems/context-window-management",
+        "ai-agent-systems/xquik-x-data-workflows"
       ],
       "formats": [
         "cursor",
@@ -120,7 +121,8 @@
       "domains": [
         "core-workflow",
         "reliability-ops",
-        "security-appsec"
+        "security-appsec",
+        "performance"
       ],
       "skills": [
         "knowledge-work/engineering/architecture",
@@ -141,7 +143,8 @@
       "description": "UI accessibility, visualization, and DX-focused workflows for frontend work.",
       "domains": [
         "frontend-engineering",
-        "visualization"
+        "visualization",
+        "performance"
       ],
       "skills": [],
       "formats": [
@@ -208,7 +211,8 @@
       "domains": [
         "product-growth",
         "visualization",
-        "writing-docs"
+        "writing-docs",
+        "marketing"
       ],
       "skills": [
         "knowledge-work/marketing/brand-review",
@@ -258,7 +262,8 @@
       "domains": [
         "ai-agent-systems",
         "reliability-ops",
-        "security-appsec"
+        "security-appsec",
+        "architecture"
       ],
       "skills": [],
       "formats": [
@@ -274,6 +279,91 @@
       "domains": [
         "product-growth",
         "writing-docs"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "description": "System mapping, diagrams, and architecture reasoning skills.",
+      "domains": [
+        "architecture"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile",
+      "description": "Mobile release, TestFlight, and app-store submission workflows.",
+      "domains": [
+        "mobile"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "Performance",
+      "description": "Performance profiling, optimization, and regression guardrails.",
+      "domains": [
+        "performance"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "gstack",
+      "title": "GStack",
+      "description": "Vendored gstack browser QA, shipping, review, design, and utility skills.",
+      "domains": [
+        "gstack"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "voltagent-subagents",
+      "title": "VoltAgent Subagents",
+      "description": "Imported VoltAgent role/persona subagent skills.",
+      "domains": [
+        "voltagent"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "skill-meta-tools",
+      "title": "Skill Meta Tools",
+      "description": "Skills for creating, maintaining, and improving skill catalogs.",
+      "domains": [
+        "meta-tools",
+        "reflect-yourself"
       ],
       "skills": [],
       "formats": [

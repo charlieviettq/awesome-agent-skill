@@ -14,6 +14,7 @@ CURSOR_ROOT = ROOT / ".cursor" / "skills"
 REGISTRY_DIR = ROOT / "registry"
 SKILLS_JSON = REGISTRY_DIR / "skills.json"
 BUNDLES_JSON = REGISTRY_DIR / "bundles.json"
+MANIFEST_JSON = REGISTRY_DIR / "manifest.json"
 
 DOMAIN_RISK = {
     "security-appsec": "medium",
@@ -167,14 +168,29 @@ def validate_bundles(skills: list[dict]) -> list[str]:
         domain_skills.setdefault(s["domain"], []).append(s["id"])
 
     data = load_bundles()
+    covered_domains: set[str] = set()
+    covered_skills: set[str] = set()
     for bundle in data.get("bundles", []):
         bid = bundle.get("id", "?")
+        if bid != "full":
+            covered_domains.update(bundle.get("domains", []))
+            covered_skills.update(bundle.get("skills", []))
         for sid in bundle.get("skills", []):
             if sid not in skill_ids:
                 errors.append(f"bundle {bid}: unknown skill id {sid}")
         for dom in bundle.get("domains", []):
             if dom not in domain_skills:
                 errors.append(f"bundle {bid}: unknown domain {dom}")
+
+    for dom, ids in sorted(domain_skills.items()):
+        if dom in covered_domains:
+            continue
+        missing = sorted(sid for sid in ids if sid not in covered_skills)
+        if missing:
+            errors.append(
+                f"domain coverage: {dom} is not covered by a non-full bundle "
+                f"({len(missing)} uncovered skill(s))"
+            )
     return errors
 
 
@@ -202,7 +218,16 @@ def check_sync(payload: dict) -> list[str]:
     committed = json.loads(SKILLS_JSON.read_text(encoding="utf-8"))
     if registry_body(payload) != registry_body(committed):
         return ["registry/skills.json is out of date; run scripts/generate-registry.py"]
-    return []
+
+    if not MANIFEST_JSON.exists():
+        return ["registry/manifest.json is missing; run scripts/pack-skills.py or update manifest"]
+    manifest = json.loads(MANIFEST_JSON.read_text(encoding="utf-8"))
+    errors: list[str] = []
+    if manifest.get("registry_schema_version") != payload["schema_version"]:
+        errors.append("registry/manifest.json registry_schema_version is out of date")
+    if manifest.get("count") != payload["count"]:
+        errors.append("registry/manifest.json count is out of date")
+    return errors
 
 
 def main() -> int:
