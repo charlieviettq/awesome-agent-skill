@@ -32,7 +32,7 @@ DOMAIN_TAGS: dict[str, list[str]] = {
     "ai-agent-systems": ["agents", "mcp", "rag", "tools"],
     "security-appsec": ["security", "api", "audit"],
     "reliability-ops": ["ci", "ops", "launch", "observability"],
-    "frontend-engineering": ["frontend", "ui", "browser"],
+    "frontend-engineering": ["frontend", "ui", "browser", "design", "taste"],
     "gstack": ["qa", "ship", "browser", "gstack"],
     "voltagent": ["persona", "subagent", "roles"],
     "ml-dl": ["ml", "deep-learning"],

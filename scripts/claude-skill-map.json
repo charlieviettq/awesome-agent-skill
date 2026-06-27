@@ -218,6 +218,71 @@
       "source_name": "frontend-ui-engineering"
     },
     {
+      "cursor_path": "frontend-engineering/taste/brandkit",
+      "claude_name": "brandkit",
+      "source_name": "brandkit"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/design-taste-frontend",
+      "claude_name": "design-taste-frontend",
+      "source_name": "design-taste-frontend"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/design-taste-frontend-v1",
+      "claude_name": "design-taste-frontend-v1",
+      "source_name": "design-taste-frontend-v1"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/full-output-enforcement",
+      "claude_name": "full-output-enforcement",
+      "source_name": "full-output-enforcement"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/gpt-taste",
+      "claude_name": "gpt-taste",
+      "source_name": "gpt-taste"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/high-end-visual-design",
+      "claude_name": "high-end-visual-design",
+      "source_name": "high-end-visual-design"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/image-to-code",
+      "claude_name": "image-to-code",
+      "source_name": "image-to-code"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/imagegen-frontend-mobile",
+      "claude_name": "imagegen-frontend-mobile",
+      "source_name": "imagegen-frontend-mobile"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/imagegen-frontend-web",
+      "claude_name": "imagegen-frontend-web",
+      "source_name": "imagegen-frontend-web"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/industrial-brutalist-ui",
+      "claude_name": "industrial-brutalist-ui",
+      "source_name": "industrial-brutalist-ui"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/minimalist-ui",
+      "claude_name": "minimalist-ui",
+      "source_name": "minimalist-ui"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/redesign-existing-projects",
+      "claude_name": "redesign-existing-projects",
+      "source_name": "redesign-existing-projects"
+    },
+    {
+      "cursor_path": "frontend-engineering/taste/stitch-design-taste",
+      "claude_name": "stitch-design-taste",
+      "source_name": "stitch-design-taste"
+    },
+    {
       "cursor_path": "gstack",
       "claude_name": "gstack",
       "source_name": "gstack"
