@@ -1378,6 +1378,11 @@
       "source_name": "pdf"
     },
     {
+      "cursor_path": "writing-docs/ppt-master",
+      "claude_name": "ppt-master",
+      "source_name": "ppt-master"
+    },
+    {
       "cursor_path": "writing-docs/pptx",
       "claude_name": "pptx",
       "source_name": "pptx"

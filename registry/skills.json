@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-27T11:11:10Z",
+  "generated_at": "2026-06-27T14:43:42Z",
   "schema_version": 2,
-  "count": 283,
+  "count": 284,
   "skills": [
     {
       "id": "ai-agent-systems/agent-evaluation",
@@ -9387,6 +9387,36 @@
         "docs",
         "writing",
         "pdf"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "awesome-agent-skill",
+      "related": [],
+      "tier": "community",
+      "quality_score": null
+    },
+    {
+      "id": "writing-docs/ppt-master",
+      "name": "ppt-master",
+      "domain": "writing-docs",
+      "path": ".cursor/skills/writing-docs/ppt-master/SKILL.md",
+      "description": ">   AI-driven multi-format SVG content generation system. Converts source documents   (PDF/DOCX/URL/Markdown) into high-quality SVG pages and exports to PPTX through   multi-role collaboration. Use when user asks to \"create PPT\", \"make presentation\",   \"生成PPT\", \"做PPT\", \"制作演示文稿\", or mentions \"ppt-master\".",
+      "summary": ">   AI-driven multi-format SVG content generation system. Converts source documents   (PDF/DOCX/URL/Markdown) into high-quality SVG pages and exports to PPTX through   multi-role collaboration. Use when user asks to \"create PPT\", \"make pres",
+      "triggers": [],
+      "trigger_phrases": [],
+      "risk": "low",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "docs",
+        "writing",
+        "ppt-master"
       ],
       "requires_tools": [],
       "writes_files": [],

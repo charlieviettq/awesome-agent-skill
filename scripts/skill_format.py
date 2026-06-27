@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 COPY_DIRS = ("references", "scripts", "assets", "commands", "tests")
-COPY_FILES = ("reference.md", "LICENSE.txt", "LICENSE", "forms.md", "config.yaml")
+COPY_FILES = ("reference.md", "LICENSE.txt", "LICENSE", "forms.md", "config.yaml", ".env.example")
 SKIP_PATH_PARTS = {".git", ".DS_Store", "__pycache__", "node_modules"}
 
 CURSOR_PRESERVE_KEYS = frozenset(

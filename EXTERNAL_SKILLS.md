@@ -13,6 +13,7 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 | obra/superpowers | https://github.com/obra/superpowers | MIT | ~206k | Cherry-pick workflows; no plugin/runtime vendoring |
 | anthropics/knowledge-work-plugins | https://github.com/anthropics/knowledge-work-plugins | MIT | ~18k | **Adapt all 11 plugins** (~80 skills) into `knowledge-work/` domain |
 | Leonxlnx/taste-skill | https://github.com/Leonxlnx/taste-skill | MIT | Unchecked | Import all `skills/` entries plus referenced skill-local files into `frontend-engineering/taste/` |
+| charlieviettq/ppt-master | https://github.com/charlieviettq/ppt-master | MIT | Unchecked | Import full `skills/ppt-master` runtime package into `writing-docs/ppt-master` |
 
 ## Decision key
 
@@ -239,6 +240,35 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 - Repo-level `llms.txt`
 
 **Attribution:** Skills imported from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT, Leonxlnx). Body text preserved; frontmatter extended for this catalog with provenance, license, trigger hints, and Claude tool metadata where needed.
+
+---
+
+## charlieviettq/ppt-master
+
+**Audit date:** 2026-06-27. Upstream commit `13a25616e6354fe5abe16f41da18f532e51ac644`. PPT Master is an AI-driven document-to-editable-PPTX skill package with SVG generation, template libraries, image workflows, narration tooling, and PPTX export scripts.
+
+### Imported
+
+| External package | Local skill | Risk | Notes |
+|------------------|-------------|------|-------|
+| `skills/ppt-master` | `writing-docs/ppt-master` | High | Full runtime package: `SKILL.md`, references, scripts, templates, workflows, `.env.example`, requirements, and embedded assets |
+
+### Runtime files copied
+
+- `references/` including markdown references and image comparison assets
+- `scripts/` including Python conversion, SVG, PPTX, image, narration, preview, and quality tooling
+- `templates/` including brand, layout, chart, icon, and deck template libraries
+- `workflows/` standalone PPT Master workflows
+- Upstream root docs referenced by skill-local markdown links, vendored under `references/upstream-docs/`
+
+### Not copied from upstream
+
+- Root `.claude-plugin/` and marketplace metadata
+- Root README/site assets and Pages files
+- Root examples, exported PPTX decks, screenshots, and generated project outputs
+- Repository-level docs that are not referenced by the imported skill runtime
+
+**Attribution:** Skill runtime imported from [charlieviettq/ppt-master](https://github.com/charlieviettq/ppt-master), originally by Hugo He, MIT. Body text and runtime assets preserved; frontmatter and local doc links adapted for this catalog.
 
 ---
 
