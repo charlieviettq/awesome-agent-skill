@@ -6,6 +6,9 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- `writing-docs/ppt-master` - import the full MIT-licensed `ppt-master` skill runtime from [charlieviettq/ppt-master](https://github.com/charlieviettq/ppt-master) for editable PPTX generation, SVG pipelines, templates, workflows, and narration/enhancement tooling.
+- `ppt-master` bundle - dedicated bundle for the imported PPT Master skill package.
+- `writing-docs` bundle - domain bundle for document, presentation, spreadsheet, PDF, prose, and symbolic math skills.
 - `frontend-engineering/taste/*` - import all 13 MIT-licensed skills from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) for frontend design taste, redesign, image-to-code, brand kits, and image-generation prompt direction.
 - `taste-skill` bundle - dedicated bundle for the imported Taste Skill pack.
 - `marketing/linkedin` - Fetch LinkedIn profiles, search people and companies, send messages, manage connections, create posts, react, comment, and run custom LinkedIn workflows from Claude Code, Codex, Cursor, and Windsurf.

@@ -2,7 +2,7 @@
 
 High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 
-**Catalog size:** 283 skills (including ~79 from Anthropic knowledge-work-plugins).
+**Catalog size:** 284 skills (including ~79 from Anthropic knowledge-work-plugins).
 
 ## Knowledge Work (Anthropic plugins)
 
@@ -60,6 +60,7 @@ Imported domain: `knowledge-work/` — see hub `knowledge-work/SKILL.md`.
 ## Writing & docs
 
 - `writing-docs/docx`
+- `writing-docs/ppt-master`
 - `writing-docs/pdf`
 - `writing-docs/pptx`
 - `writing-docs/xlsx`

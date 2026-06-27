@@ -374,6 +374,34 @@
       ]
     },
     {
+      "id": "writing-docs",
+      "title": "Writing & Docs",
+      "description": "Document, presentation, spreadsheet, PDF, prose, and symbolic math skills.",
+      "domains": [
+        "writing-docs"
+      ],
+      "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "ppt-master",
+      "title": "PPT Master",
+      "description": "Generate editable PPTX decks from documents, URLs, Markdown, and existing presentations using the PPT Master SVG-to-PPTX workflow.",
+      "domains": [],
+      "skills": [
+        "writing-docs/ppt-master"
+      ],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
       "id": "gstack",
       "title": "GStack",
       "description": "Vendored gstack browser QA, shipping, review, design, and utility skills.",
@@ -719,7 +747,8 @@
         "knowledge-work/product-management/sprint-planning",
         "knowledge-work/product-management/stakeholder-update",
         "knowledge-work/product-management/synthesize-research",
-        "knowledge-work/product-management/write-spec"
+        "knowledge-work/product-management/write-spec",
+        "writing-docs/ppt-master"
       ],
       "formats": [
         "cursor",
