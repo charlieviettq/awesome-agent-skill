@@ -2,7 +2,7 @@
 
 High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 
-**Catalog size:** 259 skills (including ~79 from Anthropic knowledge-work-plugins).
+**Catalog size:** 283 skills (including ~79 from Anthropic knowledge-work-plugins).
 
 ## Knowledge Work (Anthropic plugins)
 
@@ -96,6 +96,19 @@ Imported domain: `knowledge-work/` — see hub `knowledge-work/SKILL.md`.
 - `frontend-engineering/browser-testing-with-devtools`
 - `frontend-engineering/frontend-ui-accessibility`
 - `frontend-engineering/frontend-ui-engineering`
+- `frontend-engineering/taste/brandkit`
+- `frontend-engineering/taste/design-taste-frontend`
+- `frontend-engineering/taste/design-taste-frontend-v1`
+- `frontend-engineering/taste/full-output-enforcement`
+- `frontend-engineering/taste/gpt-taste`
+- `frontend-engineering/taste/high-end-visual-design`
+- `frontend-engineering/taste/image-to-code`
+- `frontend-engineering/taste/imagegen-frontend-mobile`
+- `frontend-engineering/taste/imagegen-frontend-web`
+- `frontend-engineering/taste/industrial-brutalist-ui`
+- `frontend-engineering/taste/minimalist-ui`
+- `frontend-engineering/taste/redesign-existing-projects`
+- `frontend-engineering/taste/stitch-design-taste`
 
 ## Mobile
 

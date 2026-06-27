@@ -2,7 +2,7 @@
 
 Curated audit of third-party skill sources reviewed for integration into [awesome-agent-skill](https://github.com/charlieviettq/awesome-agent-skill). Use this file as the provenance ledger before importing or adapting external content.
 
-**Last audit:** 2026-05-30
+**Last audit:** 2026-06-27
 
 ## Sources reviewed
 
@@ -12,6 +12,7 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 | abcnuts/manus-skills | https://github.com/abcnuts/manus-skills | Unverified (README claims MIT; no LICENSE file in repo) | ~24 | Clean-room rewrite only; do not copy text/scripts |
 | obra/superpowers | https://github.com/obra/superpowers | MIT | ~206k | Cherry-pick workflows; no plugin/runtime vendoring |
 | anthropics/knowledge-work-plugins | https://github.com/anthropics/knowledge-work-plugins | MIT | ~18k | **Adapt all 11 plugins** (~80 skills) into `knowledge-work/` domain |
+| Leonxlnx/taste-skill | https://github.com/Leonxlnx/taste-skill | MIT | Unchecked | Import all `skills/` entries plus referenced skill-local files into `frontend-engineering/taste/` |
 
 ## Decision key
 
@@ -204,6 +205,40 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 | code-review (engineering) | `gstack/code-quality/review`, voltagent | Both kept; kw variant is standup/tracker oriented |
 
 **Attribution:** Skills adapted from [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (MIT). Frontmatter extended for this catalog; body text retained unless path-specific edits required.
+
+---
+
+## Leonxlnx/taste-skill
+
+**Audit date:** 2026-06-27. Upstream commit `06d6028b5c623016c59ce8536f578e5a1127b499`. Taste Skill is a Claude/agent skill pack for frontend design taste, redesign, image-to-code, and image-generation prompt direction.
+
+### Imported
+
+| External skill | Local skill | Risk | Notes |
+|----------------|-------------|------|-------|
+| brandkit | `frontend-engineering/taste/brandkit` | Low | Image prompt direction for brand-kit boards |
+| brutalist-skill | `frontend-engineering/taste/industrial-brutalist-ui` | Medium | Strong frontend aesthetic rules |
+| gpt-tasteskill | `frontend-engineering/taste/gpt-taste` | Medium | Code-writing frontend direction |
+| image-to-code-skill | `frontend-engineering/taste/image-to-code` | Medium | Image-first website implementation workflow |
+| imagegen-frontend-mobile | `frontend-engineering/taste/imagegen-frontend-mobile` | Low | Image prompt direction only |
+| imagegen-frontend-web | `frontend-engineering/taste/imagegen-frontend-web` | Low | Image prompt direction only |
+| minimalist-skill | `frontend-engineering/taste/minimalist-ui` | Medium | Frontend aesthetic rules |
+| output-skill | `frontend-engineering/taste/full-output-enforcement` | Medium | Output completeness enforcement |
+| redesign-skill | `frontend-engineering/taste/redesign-existing-projects` | Medium | Existing UI redesign workflow |
+| soft-skill | `frontend-engineering/taste/high-end-visual-design` | Medium | Frontend aesthetic rules |
+| stitch-skill | `frontend-engineering/taste/stitch-design-taste` | Medium | Includes referenced `DESIGN.md` |
+| taste-skill-v1 | `frontend-engineering/taste/design-taste-frontend-v1` | Medium | Preserved v1 behavior |
+| taste-skill | `frontend-engineering/taste/design-taste-frontend` | Medium | Current v2 experimental default |
+
+### Not copied from upstream
+
+- `.claude-plugin/` manifests
+- README marketing/sponsor assets
+- Research notes and examples
+- Asset-processing scripts
+- Repo-level `llms.txt`
+
+**Attribution:** Skills imported from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT, Leonxlnx). Body text preserved; frontmatter extended for this catalog with provenance, license, trigger hints, and Claude tool metadata where needed.
 
 ---
 

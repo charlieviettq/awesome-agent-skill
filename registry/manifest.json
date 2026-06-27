@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry_schema_version": 2,
-  "count": 270,
+  "count": 283,
   "paths": [
     "registry/skills.json",
     "registry/bundles.json",

@@ -48,7 +48,9 @@
         "ai-agent-systems/agent-evaluation",
         "ai-agent-systems/rag-systems",
         "ai-agent-systems/context-window-management",
-        "ai-agent-systems/xquik-x-data-workflows"
+        "ai-agent-systems/xquik-x-data-workflows",
+        "meta-tools/writing-skills",
+        "security-appsec/skill-supply-chain-audit"
       ],
       "formats": [
         "cursor",
@@ -122,14 +124,28 @@
         "core-workflow",
         "reliability-ops",
         "security-appsec",
-        "performance"
+        "performance",
+        "gstack"
       ],
       "skills": [
         "knowledge-work/engineering/architecture",
         "knowledge-work/engineering/code-review",
         "knowledge-work/engineering/debug",
         "knowledge-work/engineering/deploy-checklist",
-        "knowledge-work/engineering/documentation"
+        "knowledge-work/engineering/documentation",
+        "frontend-engineering/taste/brandkit",
+        "frontend-engineering/taste/design-taste-frontend",
+        "frontend-engineering/taste/design-taste-frontend-v1",
+        "frontend-engineering/taste/full-output-enforcement",
+        "frontend-engineering/taste/gpt-taste",
+        "frontend-engineering/taste/high-end-visual-design",
+        "frontend-engineering/taste/image-to-code",
+        "frontend-engineering/taste/imagegen-frontend-mobile",
+        "frontend-engineering/taste/imagegen-frontend-web",
+        "frontend-engineering/taste/industrial-brutalist-ui",
+        "frontend-engineering/taste/minimalist-ui",
+        "frontend-engineering/taste/redesign-existing-projects",
+        "frontend-engineering/taste/stitch-design-taste"
       ],
       "formats": [
         "cursor",
@@ -144,7 +160,8 @@
       "domains": [
         "frontend-engineering",
         "visualization",
-        "performance"
+        "performance",
+        "mobile"
       ],
       "skills": [],
       "formats": [
@@ -263,7 +280,8 @@
         "ai-agent-systems",
         "reliability-ops",
         "security-appsec",
-        "architecture"
+        "architecture",
+        "gstack"
       ],
       "skills": [],
       "formats": [
@@ -323,6 +341,32 @@
         "performance"
       ],
       "skills": [],
+      "formats": [
+        "cursor",
+        "claude",
+        "both"
+      ]
+    },
+    {
+      "id": "taste-skill",
+      "title": "Taste Skill",
+      "description": "Leonxlnx Taste Skill frontend design, image-to-code, redesign, and image-generation skills.",
+      "domains": [],
+      "skills": [
+        "frontend-engineering/taste/brandkit",
+        "frontend-engineering/taste/design-taste-frontend",
+        "frontend-engineering/taste/design-taste-frontend-v1",
+        "frontend-engineering/taste/full-output-enforcement",
+        "frontend-engineering/taste/gpt-taste",
+        "frontend-engineering/taste/high-end-visual-design",
+        "frontend-engineering/taste/image-to-code",
+        "frontend-engineering/taste/imagegen-frontend-mobile",
+        "frontend-engineering/taste/imagegen-frontend-web",
+        "frontend-engineering/taste/industrial-brutalist-ui",
+        "frontend-engineering/taste/minimalist-ui",
+        "frontend-engineering/taste/redesign-existing-projects",
+        "frontend-engineering/taste/stitch-design-taste"
+      ],
       "formats": [
         "cursor",
         "claude",

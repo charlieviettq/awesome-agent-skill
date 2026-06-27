@@ -6,6 +6,8 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- `frontend-engineering/taste/*` - import all 13 MIT-licensed skills from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) for frontend design taste, redesign, image-to-code, brand kits, and image-generation prompt direction.
+- `taste-skill` bundle - dedicated bundle for the imported Taste Skill pack.
 - `marketing/linkedin` - Fetch LinkedIn profiles, search people and companies, send messages, manage connections, create posts, react, comment, and run custom LinkedIn workflows from Claude Code, Codex, Cursor, and Windsurf.
 - `marketing/linkedin-growth` - Import leads from LinkedIn or Sales Navigator searches, qualify them against an ideal-customer profile, schedule safe connection invites across accounts, track acceptances, and withdraw stale pending requests.
 - `ai-agent-systems/xquik-x-data-workflows` - source-backed Xquik REST API and remote MCP workflow planning for X data tasks
