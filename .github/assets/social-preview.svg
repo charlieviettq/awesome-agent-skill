@@ -2,15 +2,15 @@
   <rect width="1280" height="640" fill="#0b1020"/>
   <rect x="48" y="48" width="1184" height="544" rx="24" fill="#111827" stroke="#1f2937" stroke-width="2"/>
   <text x="96" y="140" fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="44" font-weight="700">awesome-agent-skill</text>
-  <text x="96" y="200" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="28">Modern skill marketplace for AI coding agents</text>
+  <text x="96" y="200" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="28">598 portable SKILL.md playbooks for AI coding agents</text>
   <rect x="96" y="250" width="320" height="120" rx="16" fill="#1e293b"/>
-  <text x="120" y="300" fill="#60a5fa" font-family="ui-monospace, monospace" font-size="22">178+ skills</text>
-  <text x="120" y="340" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="18">Bundles · Quality · Install</text>
+  <text x="120" y="300" fill="#60a5fa" font-family="ui-monospace, monospace" font-size="22">598 skills</text>
+  <text x="120" y="340" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="18">Bundles / quality / install</text>
   <rect x="440" y="250" width="320" height="120" rx="16" fill="#1e293b"/>
   <text x="464" y="300" fill="#a78bfa" font-family="ui-monospace, monospace" font-size="22">Task advisor</text>
-  <text x="464" y="340" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="18">Describe task ’ skills + command</text>
+  <text x="464" y="340" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="18">Describe task -> skills + command</text>
   <rect x="784" y="250" width="360" height="120" rx="16" fill="#1e293b"/>
-  <text x="808" y="300" fill="#34d399" font-family="ui-monospace, monospace" font-size="22">Cursor + Claude</text>
+  <text x="808" y="300" fill="#34d399" font-family="ui-monospace, monospace" font-size="22">Cursor + Claude + Codex</text>
   <text x="808" y="340" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="18">One registry, safe install</text>
-  <text x="96" y="460" fill="#64748b" font-family="ui-monospace, monospace" font-size="20">skillhub recommend "debug flaky CI" · install-bundle ship-ready</text>
+  <text x="96" y="460" fill="#64748b" font-family="ui-monospace, monospace" font-size="20">skillhub recommend "debug flaky CI" -> install-bundle ship-ready</text>
 </svg>
