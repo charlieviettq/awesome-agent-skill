@@ -3,13 +3,13 @@
   "upstream_ref": "main",
   "upstream_version": "1.58.5.0",
   "upstream_commit": "11de390be1be6849eb9a15f91ff4922dd16c589a",
-  "synced_at": "2026-06-26",
+  "synced_at": "2026-06-29",
   "local_pack_path": ".cursor/skills/gstack",
   "prior_snapshot": {
-    "upstream_commit": "unknown",
-    "upstream_version": "unknown",
-    "local_skill_count": 50,
-    "synced_at": null
+    "upstream_commit": "11de390be1be6849eb9a15f91ff4922dd16c589a",
+    "upstream_version": "1.58.5.0",
+    "local_skill_count": 59,
+    "synced_at": "2026-06-26"
   },
   "local_skill_count": 59,
   "upstream_skill_count": 59,
