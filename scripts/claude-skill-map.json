@@ -68,6 +68,1576 @@
       "source_name": "system-mapping"
     },
     {
+      "cursor_path": "asgard-ai-platform/algo-ad-bidding",
+      "claude_name": "algo-ad-bidding",
+      "source_name": "\"algo-ad-bidding\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-ad-budget",
+      "claude_name": "algo-ad-budget",
+      "source_name": "\"algo-ad-budget\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-ad-ctr",
+      "claude_name": "algo-ad-ctr",
+      "source_name": "\"algo-ad-ctr\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-ad-gsp",
+      "claude_name": "algo-ad-gsp",
+      "source_name": "\"algo-ad-gsp\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-ad-vcg",
+      "claude_name": "algo-ad-vcg",
+      "source_name": "\"algo-ad-vcg\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-blockchain-basics",
+      "claude_name": "algo-blockchain-basics",
+      "source_name": "\"algo-blockchain-basics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-blockchain-smart-contract",
+      "claude_name": "algo-blockchain-smart-contract",
+      "source_name": "\"algo-blockchain-smart-contract\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-ecom-bm25",
+      "claude_name": "algo-ecom-bm25",
+      "source_name": "\"algo-ecom-bm25\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-ecom-ranking",
+      "claude_name": "algo-ecom-ranking",
+      "source_name": "\"algo-ecom-ranking\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-ecom-search",
+      "claude_name": "algo-ecom-search",
+      "source_name": "\"algo-ecom-search\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-forecast-arima",
+      "claude_name": "algo-forecast-arima",
+      "source_name": "\"algo-forecast-arima\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-forecast-ensemble",
+      "claude_name": "algo-forecast-ensemble",
+      "source_name": "\"algo-forecast-ensemble\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-forecast-exponential",
+      "claude_name": "algo-forecast-exponential",
+      "source_name": "\"algo-forecast-exponential\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-forecast-prophet",
+      "claude_name": "algo-forecast-prophet",
+      "source_name": "\"algo-forecast-prophet\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-hr-compensation",
+      "claude_name": "algo-hr-compensation",
+      "source_name": "\"algo-hr-compensation\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-hr-matching",
+      "claude_name": "algo-hr-matching",
+      "source_name": "\"algo-hr-matching\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-hr-turnover",
+      "claude_name": "algo-hr-turnover",
+      "source_name": "\"algo-hr-turnover\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-mfg-cpk",
+      "claude_name": "algo-mfg-cpk",
+      "source_name": "\"algo-mfg-cpk\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-mfg-doe",
+      "claude_name": "algo-mfg-doe",
+      "source_name": "\"algo-mfg-doe\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-mfg-fmea",
+      "claude_name": "algo-mfg-fmea",
+      "source_name": "\"algo-mfg-fmea\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-mfg-spc",
+      "claude_name": "algo-mfg-spc",
+      "source_name": "\"algo-mfg-spc\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-net-centrality",
+      "claude_name": "algo-net-centrality",
+      "source_name": "\"algo-net-centrality\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-net-community",
+      "claude_name": "algo-net-community",
+      "source_name": "\"algo-net-community\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-net-influence",
+      "claude_name": "algo-net-influence",
+      "source_name": "\"algo-net-influence\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-nlp-lda",
+      "claude_name": "algo-nlp-lda",
+      "source_name": "\"algo-nlp-lda\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-nlp-ner",
+      "claude_name": "algo-nlp-ner",
+      "source_name": "\"algo-nlp-ner\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-nlp-similarity",
+      "claude_name": "algo-nlp-similarity",
+      "source_name": "\"algo-nlp-similarity\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-nlp-summarization",
+      "claude_name": "algo-nlp-summarization",
+      "source_name": "\"algo-nlp-summarization\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-price-bundle",
+      "claude_name": "algo-price-bundle",
+      "source_name": "\"algo-price-bundle\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-price-conjoint",
+      "claude_name": "algo-price-conjoint",
+      "source_name": "\"algo-price-conjoint\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-price-dynamic",
+      "claude_name": "algo-price-dynamic",
+      "source_name": "\"algo-price-dynamic\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-price-elasticity",
+      "claude_name": "algo-price-elasticity",
+      "source_name": "\"algo-price-elasticity\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-price-van-westendorp",
+      "claude_name": "algo-price-van-westendorp",
+      "source_name": "\"algo-price-van-westendorp\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rank-bayesian",
+      "claude_name": "algo-rank-bayesian",
+      "source_name": "\"algo-rank-bayesian\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rank-elo",
+      "claude_name": "algo-rank-elo",
+      "source_name": "\"algo-rank-elo\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rank-trueskill",
+      "claude_name": "algo-rank-trueskill",
+      "source_name": "\"algo-rank-trueskill\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rank-wilson",
+      "claude_name": "algo-rank-wilson",
+      "source_name": "\"algo-rank-wilson\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rec-cf",
+      "claude_name": "algo-rec-cf",
+      "source_name": "\"algo-rec-cf\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rec-content",
+      "claude_name": "algo-rec-content",
+      "source_name": "\"algo-rec-content\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rec-hybrid",
+      "claude_name": "algo-rec-hybrid",
+      "source_name": "\"algo-rec-hybrid\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rec-mf",
+      "claude_name": "algo-rec-mf",
+      "source_name": "\"algo-rec-mf\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-rec-session",
+      "claude_name": "algo-rec-session",
+      "source_name": "\"algo-rec-session\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-risk-altman-z",
+      "claude_name": "algo-risk-altman-z",
+      "source_name": "\"algo-risk-altman-z\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-risk-benford",
+      "claude_name": "algo-risk-benford",
+      "source_name": "\"algo-risk-benford\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-risk-credit",
+      "claude_name": "algo-risk-credit",
+      "source_name": "\"algo-risk-credit\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-risk-var",
+      "claude_name": "algo-risk-var",
+      "source_name": "\"algo-risk-var\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-sc-bullwhip",
+      "claude_name": "algo-sc-bullwhip",
+      "source_name": "\"algo-sc-bullwhip\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-sc-eoq",
+      "claude_name": "algo-sc-eoq",
+      "source_name": "\"algo-sc-eoq\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-sc-newsvendor",
+      "claude_name": "algo-sc-newsvendor",
+      "source_name": "\"algo-sc-newsvendor\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-sc-routing",
+      "claude_name": "algo-sc-routing",
+      "source_name": "\"algo-sc-routing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-sc-safety-stock",
+      "claude_name": "algo-sc-safety-stock",
+      "source_name": "\"algo-sc-safety-stock\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-seo-backlink",
+      "claude_name": "algo-seo-backlink",
+      "source_name": "\"algo-seo-backlink\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-seo-content",
+      "claude_name": "algo-seo-content",
+      "source_name": "\"algo-seo-content\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-seo-crawl",
+      "claude_name": "algo-seo-crawl",
+      "source_name": "\"algo-seo-crawl\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-seo-pagerank",
+      "claude_name": "algo-seo-pagerank",
+      "source_name": "\"algo-seo-pagerank\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-seo-schema",
+      "claude_name": "algo-seo-schema",
+      "source_name": "\"algo-seo-schema\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-seo-technical",
+      "claude_name": "algo-seo-technical",
+      "source_name": "\"algo-seo-technical\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-seo-tfidf",
+      "claude_name": "algo-seo-tfidf",
+      "source_name": "\"algo-seo-tfidf\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-social-engagement",
+      "claude_name": "algo-social-engagement",
+      "source_name": "\"algo-social-engagement\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-social-influence",
+      "claude_name": "algo-social-influence",
+      "source_name": "\"algo-social-influence\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-social-sentiment",
+      "claude_name": "algo-social-sentiment",
+      "source_name": "\"algo-social-sentiment\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/algo-social-virality",
+      "claude_name": "algo-social-virality",
+      "source_name": "\"algo-social-virality\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-4p-7p",
+      "claude_name": "biz-4p-7p",
+      "source_name": "\"biz-4p-7p\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-ansoff",
+      "claude_name": "biz-ansoff",
+      "source_name": "\"biz-ansoff\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-bcg-matrix",
+      "claude_name": "biz-bcg-matrix",
+      "source_name": "\"biz-bcg-matrix\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-blue-ocean",
+      "claude_name": "biz-blue-ocean",
+      "source_name": "\"biz-blue-ocean\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-brand-positioning",
+      "claude_name": "biz-brand-positioning",
+      "source_name": "\"biz-brand-positioning\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-breakeven",
+      "claude_name": "biz-breakeven",
+      "source_name": "\"biz-breakeven\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-bsc",
+      "claude_name": "biz-bsc",
+      "source_name": "\"biz-bsc\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-cac-ltv",
+      "claude_name": "biz-cac-ltv",
+      "source_name": "\"biz-cac-ltv\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-corporate-governance",
+      "claude_name": "biz-corporate-governance",
+      "source_name": "\"biz-corporate-governance\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-crm-strategy",
+      "claude_name": "biz-crm-strategy",
+      "source_name": "\"biz-crm-strategy\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-customer-journey",
+      "claude_name": "biz-customer-journey",
+      "source_name": "\"biz-customer-journey\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-dcf",
+      "claude_name": "biz-dcf",
+      "source_name": "\"biz-dcf\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-dupont",
+      "claude_name": "biz-dupont",
+      "source_name": "\"biz-dupont\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-erm",
+      "claude_name": "biz-erm",
+      "source_name": "\"biz-erm\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-financial-ratios",
+      "claude_name": "biz-financial-ratios",
+      "source_name": "\"biz-financial-ratios\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-innovation-management",
+      "claude_name": "biz-innovation-management",
+      "source_name": "\"biz-innovation-management\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-lean-six-sigma",
+      "claude_name": "biz-lean-six-sigma",
+      "source_name": "\"biz-lean-six-sigma\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-management-accounting",
+      "claude_name": "biz-management-accounting",
+      "source_name": "\"biz-management-accounting\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-net-zero-transition",
+      "claude_name": "biz-net-zero-transition",
+      "source_name": "\"biz-net-zero-transition\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-pestel",
+      "claude_name": "biz-pestel",
+      "source_name": "\"biz-pestel\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-porters-five-forces",
+      "claude_name": "biz-porters-five-forces",
+      "source_name": "\"biz-porters-five-forces\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-pricing-strategy",
+      "claude_name": "biz-pricing-strategy",
+      "source_name": "\"biz-pricing-strategy\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-sme-management",
+      "claude_name": "biz-sme-management",
+      "source_name": "\"biz-sme-management\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-stp",
+      "claude_name": "biz-stp",
+      "source_name": "\"biz-stp\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-supply-chain",
+      "claude_name": "biz-supply-chain",
+      "source_name": "\"biz-supply-chain\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-swot",
+      "claude_name": "biz-swot",
+      "source_name": "\"biz-swot\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-toc",
+      "claude_name": "biz-toc",
+      "source_name": "\"biz-toc\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-unit-economics",
+      "claude_name": "biz-unit-economics",
+      "source_name": "\"biz-unit-economics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/biz-value-chain",
+      "claude_name": "biz-value-chain",
+      "source_name": "\"biz-value-chain\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/cs-analytics",
+      "claude_name": "cs-analytics",
+      "source_name": "\"cs-analytics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/cs-chatbot-design",
+      "claude_name": "cs-chatbot-design",
+      "source_name": "\"cs-chatbot-design\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/cs-notification-strategy",
+      "claude_name": "cs-notification-strategy",
+      "source_name": "\"cs-notification-strategy\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/cs-sop",
+      "claude_name": "cs-sop",
+      "source_name": "\"cs-sop\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/data-cohort-analysis",
+      "claude_name": "data-cohort-analysis",
+      "source_name": "\"data-cohort-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/data-dashboard-design",
+      "claude_name": "data-dashboard-design",
+      "source_name": "\"data-dashboard-design\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/data-financial-analysis",
+      "claude_name": "data-financial-analysis",
+      "source_name": "\"data-financial-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/data-sql-optimization",
+      "claude_name": "data-sql-optimization",
+      "source_name": "\"data-sql-optimization\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ecom-analytics",
+      "claude_name": "ecom-analytics",
+      "source_name": "\"ecom-analytics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ecom-conversational",
+      "claude_name": "ecom-conversational",
+      "source_name": "\"ecom-conversational\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ecom-inventory-health",
+      "claude_name": "ecom-inventory-health",
+      "source_name": "\"ecom-inventory-health\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ecom-multilingual-listing",
+      "claude_name": "ecom-multilingual-listing",
+      "source_name": "\"ecom-multilingual-listing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ecom-promo-roi",
+      "claude_name": "ecom-promo-roi",
+      "source_name": "\"ecom-promo-roi\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ecom-rfm-analysis",
+      "claude_name": "ecom-rfm-analysis",
+      "source_name": "\"ecom-rfm-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ecom-sea-strategy",
+      "claude_name": "ecom-sea-strategy",
+      "source_name": "\"ecom-sea-strategy\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/econ-behavioral",
+      "claude_name": "econ-behavioral",
+      "source_name": "\"econ-behavioral\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/econ-business-cycle",
+      "claude_name": "econ-business-cycle",
+      "source_name": "\"econ-business-cycle\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/econ-game-theory",
+      "claude_name": "econ-game-theory",
+      "source_name": "\"econ-game-theory\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/econ-macro-indicators",
+      "claude_name": "econ-macro-indicators",
+      "source_name": "\"econ-macro-indicators\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/econ-market-structure",
+      "claude_name": "econ-market-structure",
+      "source_name": "\"econ-market-structure\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/econ-supply-demand",
+      "claude_name": "econ-supply-demand",
+      "source_name": "\"econ-supply-demand\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/fin-earnings-summary",
+      "claude_name": "fin-earnings-summary",
+      "source_name": "\"fin-earnings-summary\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/fin-m-and-a",
+      "claude_name": "fin-m-and-a",
+      "source_name": "\"fin-m-and-a\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/fin-modeling",
+      "claude_name": "fin-modeling",
+      "source_name": "\"fin-modeling\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-action-research",
+      "claude_name": "grad-action-research",
+      "source_name": "\"grad-action-research\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-affordance",
+      "claude_name": "grad-affordance",
+      "source_name": "\"grad-affordance\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-agenda-setting",
+      "claude_name": "grad-agenda-setting",
+      "source_name": "\"grad-agenda-setting\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-ai-ethics",
+      "claude_name": "grad-ai-ethics",
+      "source_name": "\"grad-ai-ethics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-ambidexterity",
+      "claude_name": "grad-ambidexterity",
+      "source_name": "\"grad-ambidexterity\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-ant",
+      "claude_name": "grad-ant",
+      "source_name": "\"grad-ant\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-auction-theory",
+      "claude_name": "grad-auction-theory",
+      "source_name": "\"grad-auction-theory\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-behavioral-finance",
+      "claude_name": "grad-behavioral-finance",
+      "source_name": "\"grad-behavioral-finance\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-blooms",
+      "claude_name": "grad-blooms",
+      "source_name": "\"grad-blooms\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-born-global",
+      "claude_name": "grad-born-global",
+      "source_name": "\"grad-born-global\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-brand-equity",
+      "claude_name": "grad-brand-equity",
+      "source_name": "\"grad-brand-equity\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-business-ecosystems",
+      "claude_name": "grad-business-ecosystems",
+      "source_name": "\"grad-business-ecosystems\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-capm",
+      "claude_name": "grad-capm",
+      "source_name": "\"grad-capm\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-cas",
+      "claude_name": "grad-cas",
+      "source_name": "\"grad-cas\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-case-study",
+      "claude_name": "grad-case-study",
+      "source_name": "\"grad-case-study\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-cct",
+      "claude_name": "grad-cct",
+      "source_name": "\"grad-cct\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-cognitive-load",
+      "claude_name": "grad-cognitive-load",
+      "source_name": "\"grad-cognitive-load\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-constructivism",
+      "claude_name": "grad-constructivism",
+      "source_name": "\"grad-constructivism\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-contract-theory",
+      "claude_name": "grad-contract-theory",
+      "source_name": "\"grad-contract-theory\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-coopetition",
+      "claude_name": "grad-coopetition",
+      "source_name": "\"grad-coopetition\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-critical-realism",
+      "claude_name": "grad-critical-realism",
+      "source_name": "\"grad-critical-realism\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-cultivation",
+      "claude_name": "grad-cultivation",
+      "source_name": "\"grad-cultivation\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-diamond",
+      "claude_name": "grad-diamond",
+      "source_name": "\"grad-diamond\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-did",
+      "claude_name": "grad-did",
+      "source_name": "\"grad-did\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-digital-transformation",
+      "claude_name": "grad-digital-transformation",
+      "source_name": "\"grad-digital-transformation\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-disruptive-innovation",
+      "claude_name": "grad-disruptive-innovation",
+      "source_name": "\"grad-disruptive-innovation\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-dual-process",
+      "claude_name": "grad-dual-process",
+      "source_name": "\"grad-dual-process\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-elm",
+      "claude_name": "grad-elm",
+      "source_name": "\"grad-elm\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-embeddedness",
+      "claude_name": "grad-embeddedness",
+      "source_name": "\"grad-embeddedness\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-emh",
+      "claude_name": "grad-emh",
+      "source_name": "\"grad-emh\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-ethnography",
+      "claude_name": "grad-ethnography",
+      "source_name": "\"grad-ethnography\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-event-study",
+      "claude_name": "grad-event-study",
+      "source_name": "\"grad-event-study\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-fama-french",
+      "claude_name": "grad-fama-french",
+      "source_name": "\"grad-fama-french\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-field-theory",
+      "claude_name": "grad-field-theory",
+      "source_name": "\"grad-field-theory\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-flow",
+      "claude_name": "grad-flow",
+      "source_name": "\"grad-flow\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-framing",
+      "claude_name": "grad-framing",
+      "source_name": "\"grad-framing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-governance",
+      "claude_name": "grad-governance",
+      "source_name": "\"grad-governance\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-grounded-theory",
+      "claude_name": "grad-grounded-theory",
+      "source_name": "\"grad-grounded-theory\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-habitual-domain",
+      "claude_name": "grad-habitual-domain",
+      "source_name": "\"grad-habitual-domain\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-hlm",
+      "claude_name": "grad-hlm",
+      "source_name": "\"grad-hlm\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-info-economics",
+      "claude_name": "grad-info-economics",
+      "source_name": "\"grad-info-economics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-innovation-diffusion-bass",
+      "claude_name": "grad-innovation-diffusion-bass",
+      "source_name": "\"grad-innovation-diffusion-bass\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-is-success",
+      "claude_name": "grad-is-success",
+      "source_name": "\"grad-is-success\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-mechanism-design",
+      "claude_name": "grad-mechanism-design",
+      "source_name": "\"grad-mechanism-design\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-meta-analysis",
+      "claude_name": "grad-meta-analysis",
+      "source_name": "\"grad-meta-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-mixed-methods",
+      "claude_name": "grad-mixed-methods",
+      "source_name": "\"grad-mixed-methods\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-mm-theorem",
+      "claude_name": "grad-mm-theorem",
+      "source_name": "\"grad-mm-theorem\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-narrative",
+      "claude_name": "grad-narrative",
+      "source_name": "\"grad-narrative\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-network-economics",
+      "claude_name": "grad-network-economics",
+      "source_name": "\"grad-network-economics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-oli",
+      "claude_name": "grad-oli",
+      "source_name": "\"grad-oli\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-org-ecology",
+      "claude_name": "grad-org-ecology",
+      "source_name": "\"grad-org-ecology\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-panel-data",
+      "claude_name": "grad-panel-data",
+      "source_name": "\"grad-panel-data\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-paradigms",
+      "claude_name": "grad-paradigms",
+      "source_name": "\"grad-paradigms\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-paradox-theory",
+      "claude_name": "grad-paradox-theory",
+      "source_name": "\"grad-paradox-theory\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-pecking-order",
+      "claude_name": "grad-pecking-order",
+      "source_name": "\"grad-pecking-order\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-phenomenology",
+      "claude_name": "grad-phenomenology",
+      "source_name": "\"grad-phenomenology\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-platform-economics",
+      "claude_name": "grad-platform-economics",
+      "source_name": "\"grad-platform-economics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-pls-sem",
+      "claude_name": "grad-pls-sem",
+      "source_name": "\"grad-pls-sem\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-policy-streams",
+      "claude_name": "grad-policy-streams",
+      "source_name": "\"grad-policy-streams\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-pragmatism",
+      "claude_name": "grad-pragmatism",
+      "source_name": "\"grad-pragmatism\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-public-choice",
+      "claude_name": "grad-public-choice",
+      "source_name": "\"grad-public-choice\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-real-options",
+      "claude_name": "grad-real-options",
+      "source_name": "\"grad-real-options\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-sd-logic",
+      "claude_name": "grad-sd-logic",
+      "source_name": "\"grad-sd-logic\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-sdt",
+      "claude_name": "grad-sdt",
+      "source_name": "\"grad-sdt\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-sem",
+      "claude_name": "grad-sem",
+      "source_name": "\"grad-sem\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-sensemaking",
+      "claude_name": "grad-sensemaking",
+      "source_name": "\"grad-sensemaking\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-servqual",
+      "claude_name": "grad-servqual",
+      "source_name": "\"grad-servqual\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-signaling",
+      "claude_name": "grad-signaling",
+      "source_name": "\"grad-signaling\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-social-capital",
+      "claude_name": "grad-social-capital",
+      "source_name": "\"grad-social-capital\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-social-identity",
+      "claude_name": "grad-social-identity",
+      "source_name": "\"grad-social-identity\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-sociotechnical",
+      "claude_name": "grad-sociotechnical",
+      "source_name": "\"grad-sociotechnical\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-spiral-of-silence",
+      "claude_name": "grad-spiral-of-silence",
+      "source_name": "\"grad-spiral-of-silence\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-agency",
+      "claude_name": "grad-strat-agency",
+      "source_name": "\"grad-strat-agency\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-dynamic-cap",
+      "claude_name": "grad-strat-dynamic-cap",
+      "source_name": "\"grad-strat-dynamic-cap\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-institutional",
+      "claude_name": "grad-strat-institutional",
+      "source_name": "\"grad-strat-institutional\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-kbv",
+      "claude_name": "grad-strat-kbv",
+      "source_name": "\"grad-strat-kbv\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-rbv",
+      "claude_name": "grad-strat-rbv",
+      "source_name": "\"grad-strat-rbv\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-stakeholder",
+      "claude_name": "grad-strat-stakeholder",
+      "source_name": "\"grad-strat-stakeholder\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-tce",
+      "claude_name": "grad-strat-tce",
+      "source_name": "\"grad-strat-tce\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-strat-upper-echelons",
+      "claude_name": "grad-strat-upper-echelons",
+      "source_name": "\"grad-strat-upper-echelons\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-structuration",
+      "claude_name": "grad-structuration",
+      "source_name": "\"grad-structuration\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-survey-design",
+      "claude_name": "grad-survey-design",
+      "source_name": "\"grad-survey-design\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-sustainability",
+      "claude_name": "grad-sustainability",
+      "source_name": "\"grad-sustainability\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-systematic-review",
+      "claude_name": "grad-systematic-review",
+      "source_name": "\"grad-systematic-review\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-tam-utaut",
+      "claude_name": "grad-tam-utaut",
+      "source_name": "\"grad-tam-utaut\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-tpack",
+      "claude_name": "grad-tpack",
+      "source_name": "\"grad-tpack\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-tpb",
+      "claude_name": "grad-tpb",
+      "source_name": "\"grad-tpb\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/grad-uppsala",
+      "claude_name": "grad-uppsala",
+      "source_name": "\"grad-uppsala\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-critical-thinking",
+      "claude_name": "hum-critical-thinking",
+      "source_name": "\"hum-critical-thinking\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-dialectics",
+      "claude_name": "hum-dialectics",
+      "source_name": "\"hum-dialectics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-discourse",
+      "claude_name": "hum-discourse",
+      "source_name": "\"hum-discourse\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-ethics",
+      "claude_name": "hum-ethics",
+      "source_name": "\"hum-ethics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-historical-analogy",
+      "claude_name": "hum-historical-analogy",
+      "source_name": "\"hum-historical-analogy\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-narrative",
+      "claude_name": "hum-narrative",
+      "source_name": "\"hum-narrative\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-rhetoric",
+      "claude_name": "hum-rhetoric",
+      "source_name": "\"hum-rhetoric\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-socratic",
+      "claude_name": "hum-socratic",
+      "source_name": "\"hum-socratic\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/hum-source-criticism",
+      "claude_name": "hum-source-criticism",
+      "source_name": "\"hum-source-criticism\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/law-contract",
+      "claude_name": "law-contract",
+      "source_name": "\"law-contract\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/law-gdpr-pdpa",
+      "claude_name": "law-gdpr-pdpa",
+      "source_name": "\"law-gdpr-pdpa\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/law-ip",
+      "claude_name": "law-ip",
+      "source_name": "\"law-ip\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/law-irac",
+      "claude_name": "law-irac",
+      "source_name": "\"law-irac\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/law-labor",
+      "claude_name": "law-labor",
+      "source_name": "\"law-labor\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-business",
+      "claude_name": "med-business",
+      "source_name": "\"med-business\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-culture",
+      "claude_name": "med-culture",
+      "source_name": "\"med-culture\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-education",
+      "claude_name": "med-education",
+      "source_name": "\"med-education\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-entertainment",
+      "claude_name": "med-entertainment",
+      "source_name": "\"med-entertainment\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-health",
+      "claude_name": "med-health",
+      "source_name": "\"med-health\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-international",
+      "claude_name": "med-international",
+      "source_name": "\"med-international\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-news-reporter",
+      "claude_name": "med-news-reporter",
+      "source_name": "\"med-news-reporter\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-political",
+      "claude_name": "med-political",
+      "source_name": "\"med-political\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/med-sports",
+      "claude_name": "med-sports",
+      "source_name": "\"med-sports\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/meta-decision-analysis",
+      "claude_name": "meta-decision-analysis",
+      "source_name": "\"meta-decision-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/meta-first-principles",
+      "claude_name": "meta-first-principles",
+      "source_name": "\"meta-first-principles\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/meta-mental-models",
+      "claude_name": "meta-mental-models",
+      "source_name": "\"meta-mental-models\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/meta-scenario-planning",
+      "claude_name": "meta-scenario-planning",
+      "source_name": "\"meta-scenario-planning\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/meta-structured-problem",
+      "claude_name": "meta-structured-problem",
+      "source_name": "\"meta-structured-problem\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/meta-systems-thinking",
+      "claude_name": "meta-systems-thinking",
+      "source_name": "\"meta-systems-thinking\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mfg-oee-analysis",
+      "claude_name": "mfg-oee-analysis",
+      "source_name": "\"mfg-oee-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mfg-predictive-maintenance",
+      "claude_name": "mfg-predictive-maintenance",
+      "source_name": "\"mfg-predictive-maintenance\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mfg-production-planning",
+      "claude_name": "mfg-production-planning",
+      "source_name": "\"mfg-production-planning\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mfg-supplier-scorecard",
+      "claude_name": "mfg-supplier-scorecard",
+      "source_name": "\"mfg-supplier-scorecard\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mkt-ab-testing",
+      "claude_name": "mkt-ab-testing",
+      "source_name": "\"mkt-ab-testing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mkt-ad-optimization",
+      "claude_name": "mkt-ad-optimization",
+      "source_name": "\"mkt-ad-optimization\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mkt-content-calendar",
+      "claude_name": "mkt-content-calendar",
+      "source_name": "\"mkt-content-calendar\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/mkt-seo-audit",
+      "claude_name": "mkt-seo-audit",
+      "source_name": "\"mkt-seo-audit\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-business-model-canvas",
+      "claude_name": "ops-business-model-canvas",
+      "source_name": "\"ops-business-model-canvas\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-contract-review",
+      "claude_name": "ops-contract-review",
+      "source_name": "\"ops-contract-review\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-digital-transformation",
+      "claude_name": "ops-digital-transformation",
+      "source_name": "\"ops-digital-transformation\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-leadership-styles",
+      "claude_name": "ops-leadership-styles",
+      "source_name": "\"ops-leadership-styles\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-meeting-minutes",
+      "claude_name": "ops-meeting-minutes",
+      "source_name": "\"ops-meeting-minutes\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-negotiation",
+      "claude_name": "ops-negotiation",
+      "source_name": "\"ops-negotiation\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-okr-planning",
+      "claude_name": "ops-okr-planning",
+      "source_name": "\"ops-okr-planning\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-org-behavior",
+      "claude_name": "ops-org-behavior",
+      "source_name": "\"ops-org-behavior\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-pitch-deck",
+      "claude_name": "ops-pitch-deck",
+      "source_name": "\"ops-pitch-deck\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ops-talent-strategy",
+      "claude_name": "ops-talent-strategy",
+      "source_name": "\"ops-talent-strategy\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/pr-crisis-communication",
+      "claude_name": "pr-crisis-communication",
+      "source_name": "\"pr-crisis-communication\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/pr-crisis-response",
+      "claude_name": "pr-crisis-response",
+      "source_name": "\"pr-crisis-response\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/pr-media-monitoring",
+      "claude_name": "pr-media-monitoring",
+      "source_name": "\"pr-media-monitoring\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/pr-press-release",
+      "claude_name": "pr-press-release",
+      "source_name": "\"pr-press-release\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/pr-social-copywriting",
+      "claude_name": "pr-social-copywriting",
+      "source_name": "\"pr-social-copywriting\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/soc-cialdini",
+      "claude_name": "soc-cialdini",
+      "source_name": "\"soc-cialdini\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/soc-cognitive-bias",
+      "claude_name": "soc-cognitive-bias",
+      "source_name": "\"soc-cognitive-bias\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/soc-innovation-diffusion",
+      "claude_name": "soc-innovation-diffusion",
+      "source_name": "\"soc-innovation-diffusion\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/soc-policy-analysis",
+      "claude_name": "soc-policy-analysis",
+      "source_name": "\"soc-policy-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/soc-social-network",
+      "claude_name": "soc-social-network",
+      "source_name": "\"soc-social-network\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/soc-stakeholder",
+      "claude_name": "soc-stakeholder",
+      "source_name": "\"soc-stakeholder\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/soc-user-research",
+      "claude_name": "soc-user-research",
+      "source_name": "\"soc-user-research\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/stat-ab-testing",
+      "claude_name": "stat-ab-testing",
+      "source_name": "\"stat-ab-testing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/stat-causal-inference",
+      "claude_name": "stat-causal-inference",
+      "source_name": "\"stat-causal-inference\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/stat-eda",
+      "claude_name": "stat-eda",
+      "source_name": "\"stat-eda\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/stat-hypothesis-testing",
+      "claude_name": "stat-hypothesis-testing",
+      "source_name": "\"stat-hypothesis-testing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tech-api-integration",
+      "claude_name": "tech-api-integration",
+      "source_name": "\"tech-api-integration\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tech-data-pipeline",
+      "claude_name": "tech-data-pipeline",
+      "source_name": "\"tech-data-pipeline\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tech-mcp-server-dev",
+      "claude_name": "tech-mcp-server-dev",
+      "source_name": "\"tech-mcp-server-dev\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tech-prompt-engineering",
+      "claude_name": "tech-prompt-engineering",
+      "source_name": "\"tech-prompt-engineering\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-analytics-benchmarks",
+      "claude_name": "tw-ecom-analytics-benchmarks",
+      "source_name": "\"tw-ecom-analytics-benchmarks\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-analytics-ga4",
+      "claude_name": "tw-ecom-analytics-ga4",
+      "source_name": "\"tw-ecom-analytics-ga4\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-channel-strategy",
+      "claude_name": "tw-ecom-channel-strategy",
+      "source_name": "\"tw-ecom-channel-strategy\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-compliance-consumer",
+      "claude_name": "tw-ecom-compliance-consumer",
+      "source_name": "\"tw-ecom-compliance-consumer\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-compliance-cross-border",
+      "claude_name": "tw-ecom-compliance-cross-border",
+      "source_name": "\"tw-ecom-compliance-cross-border\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-compliance-pdpa",
+      "claude_name": "tw-ecom-compliance-pdpa",
+      "source_name": "\"tw-ecom-compliance-pdpa\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-compliance-product",
+      "claude_name": "tw-ecom-compliance-product",
+      "source_name": "\"tw-ecom-compliance-product\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-dtc-91app",
+      "claude_name": "tw-ecom-dtc-91app",
+      "source_name": "\"tw-ecom-dtc-91app\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-dtc-shopify-localization",
+      "claude_name": "tw-ecom-dtc-shopify-localization",
+      "source_name": "\"tw-ecom-dtc-shopify-localization\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-dtc-shopline",
+      "claude_name": "tw-ecom-dtc-shopline",
+      "source_name": "\"tw-ecom-dtc-shopline\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-invoice-carrier",
+      "claude_name": "tw-ecom-invoice-carrier",
+      "source_name": "\"tw-ecom-invoice-carrier\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-invoice-ezpay",
+      "claude_name": "tw-ecom-invoice-ezpay",
+      "source_name": "\"tw-ecom-invoice-ezpay\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-invoice-universalec",
+      "claude_name": "tw-ecom-invoice-universalec",
+      "source_name": "\"tw-ecom-invoice-universalec\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-invoice-void",
+      "claude_name": "tw-ecom-invoice-void",
+      "source_name": "\"tw-ecom-invoice-void\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-logistics-cold-chain",
+      "claude_name": "tw-ecom-logistics-cold-chain",
+      "source_name": "\"tw-ecom-logistics-cold-chain\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-logistics-cross-border",
+      "claude_name": "tw-ecom-logistics-cross-border",
+      "source_name": "\"tw-ecom-logistics-cross-border\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-logistics-cvs",
+      "claude_name": "tw-ecom-logistics-cvs",
+      "source_name": "\"tw-ecom-logistics-cvs\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-logistics-home",
+      "claude_name": "tw-ecom-logistics-home",
+      "source_name": "\"tw-ecom-logistics-home\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-marketplace-momo",
+      "claude_name": "tw-ecom-marketplace-momo",
+      "source_name": "\"tw-ecom-marketplace-momo\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-marketplace-shopee",
+      "claude_name": "tw-ecom-marketplace-shopee",
+      "source_name": "\"tw-ecom-marketplace-shopee\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-operations-customer-service",
+      "claude_name": "tw-ecom-operations-customer-service",
+      "source_name": "\"tw-ecom-operations-customer-service\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-operations-line-oa",
+      "claude_name": "tw-ecom-operations-line-oa",
+      "source_name": "\"tw-ecom-operations-line-oa\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-operations-pricing",
+      "claude_name": "tw-ecom-operations-pricing",
+      "source_name": "\"tw-ecom-operations-pricing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-operations-promotion",
+      "claude_name": "tw-ecom-operations-promotion",
+      "source_name": "\"tw-ecom-operations-promotion\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-payment-dispute",
+      "claude_name": "tw-ecom-payment-dispute",
+      "source_name": "\"tw-ecom-payment-dispute\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-payment-ecpay",
+      "claude_name": "tw-ecom-payment-ecpay",
+      "source_name": "\"tw-ecom-payment-ecpay\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-payment-jkopay",
+      "claude_name": "tw-ecom-payment-jkopay",
+      "source_name": "\"tw-ecom-payment-jkopay\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-payment-newebpay",
+      "claude_name": "tw-ecom-payment-newebpay",
+      "source_name": "\"tw-ecom-payment-newebpay\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-ecom-payment-tappay",
+      "claude_name": "tw-ecom-payment-tappay",
+      "source_name": "\"tw-ecom-payment-tappay\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-einvoice-guide",
+      "claude_name": "tw-einvoice-guide",
+      "source_name": "\"tw-einvoice-guide\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-fintech-compliance",
+      "claude_name": "tw-fintech-compliance",
+      "source_name": "\"tw-fintech-compliance\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-healthcare-regulations",
+      "claude_name": "tw-healthcare-regulations",
+      "source_name": "\"tw-healthcare-regulations\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-manufacturing",
+      "claude_name": "tw-manufacturing",
+      "source_name": "\"tw-manufacturing\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-payment-integration",
+      "claude_name": "tw-payment-integration",
+      "source_name": "\"tw-payment-integration\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-retail-landscape",
+      "claude_name": "tw-retail-landscape",
+      "source_name": "\"tw-retail-landscape\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-startup-legal",
+      "claude_name": "tw-startup-legal",
+      "source_name": "\"tw-startup-legal\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-stock-analysis",
+      "claude_name": "tw-stock-analysis",
+      "source_name": "\"tw-stock-analysis\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/tw-tax-basics",
+      "claude_name": "tw-tax-basics",
+      "source_name": "\"tw-tax-basics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ux-design-thinking",
+      "claude_name": "ux-design-thinking",
+      "source_name": "\"ux-design-thinking\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ux-heuristic",
+      "claude_name": "ux-heuristic",
+      "source_name": "\"ux-heuristic\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ux-jtbd",
+      "claude_name": "ux-jtbd",
+      "source_name": "\"ux-jtbd\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/ux-lean-startup",
+      "claude_name": "ux-lean-startup",
+      "source_name": "\"ux-lean-startup\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/xborder-logistics",
+      "claude_name": "xborder-logistics",
+      "source_name": "\"xborder-logistics\""
+    },
+    {
+      "cursor_path": "asgard-ai-platform/xborder-sea-entry",
+      "claude_name": "xborder-sea-entry",
+      "source_name": "\"xborder-sea-entry\""
+    },
+    {
       "cursor_path": "core-workflow/api-and-interface-design",
       "claude_name": "api-and-interface-design",
       "source_name": "api-and-interface-design"
