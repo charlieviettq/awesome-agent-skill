@@ -22,6 +22,7 @@ DOMAIN_RISK = {
     "frontend-engineering": "medium",
     "mobile": "medium",
     "marketing": "medium",
+    "asgard-ai-platform": "low",
     "ai-agent-systems": "low",
     "reliability-ops": "low",
     "core-workflow": "low",
@@ -48,6 +49,7 @@ DOMAIN_TAGS: dict[str, list[str]] = {
     "marketing": ["marketing", "ads"],
     "architecture": ["architecture", "diagrams"],
     "knowledge-work": ["knowledge-work", "anthropic", "cowork", "plugins"],
+    "asgard-ai-platform": ["asgard", "business", "algorithms", "taiwan", "research", "imported"],
 }
 
 
@@ -55,7 +57,7 @@ def default_tier(domain: str) -> str:
     """Coarse tiering for now; can be refined later."""
     if domain in {"core-workflow", "ai-agent-systems", "reliability-ops", "security-appsec"}:
         return "core"
-    if domain in {"gstack", "voltagent", "knowledge-work"}:
+    if domain in {"gstack", "voltagent", "knowledge-work", "asgard-ai-platform"}:
         return "imported"
     return "community"
 
@@ -65,6 +67,8 @@ def default_provenance(domain: str) -> str:
         return "imported-pack"
     if domain == "knowledge-work":
         return "anthropics/knowledge-work-plugins"
+    if domain == "asgard-ai-platform":
+        return "asgard-ai-platform/skills"
     return "awesome-agent-skill"
 
 

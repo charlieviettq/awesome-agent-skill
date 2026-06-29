@@ -14,6 +14,7 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 | anthropics/knowledge-work-plugins | https://github.com/anthropics/knowledge-work-plugins | MIT | ~18k | **Adapt all 11 plugins** (~80 skills) into `knowledge-work/` domain |
 | Leonxlnx/taste-skill | https://github.com/Leonxlnx/taste-skill | MIT | Unchecked | Import all `skills/` entries plus referenced skill-local files into `frontend-engineering/taste/` |
 | charlieviettq/ppt-master | https://github.com/charlieviettq/ppt-master | MIT | Unchecked | Import full `skills/ppt-master` runtime package into `writing-docs/ppt-master` |
+| asgard-ai-platform/skills | https://github.com/asgard-ai-platform/skills | MIT | n/a | **Vendor all 314 skills** into `asgard-ai-platform/` domain |
 
 ## Decision key
 
@@ -269,6 +270,20 @@ Curated audit of third-party skill sources reviewed for integration into [awesom
 - Repository-level docs that are not referenced by the imported skill runtime
 
 **Attribution:** Skill runtime imported from [charlieviettq/ppt-master](https://github.com/charlieviettq/ppt-master), originally by Hugo He, MIT. Body text and runtime assets preserved; frontmatter and local doc links adapted for this catalog.
+
+---
+
+## asgard-ai-platform/skills
+
+**Audit date:** 2026-06-29. Upstream commit imported: `4e7f4f8e389847757a5a4236c2f1ed9813359179`.
+
+### Verdict: Vendor all 314 skills
+
+| Upstream shape | Local path | Notes |
+|----------------|------------|-------|
+| Root-level `<skill-name>/SKILL.md` folders | `asgard-ai-platform/<skill-name>/` | Full folder copy, including `references/`, `examples/`, `scripts/`, sample files, and placeholders |
+
+**Attribution:** Skills copied from [asgard-ai-platform/skills](https://github.com/asgard-ai-platform/skills) (MIT, Asgard Inc.). Repo-wide license notice retained through this audit ledger and upstream provenance metadata.
 
 ---
 

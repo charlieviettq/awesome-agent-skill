@@ -2,7 +2,21 @@
 
 High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 
-**Catalog size:** 284 skills (including ~79 from Anthropic knowledge-work-plugins).
+**Catalog size:** 598 skills (including ~79 from Anthropic knowledge-work-plugins and 314 from Asgard AI Platform).
+
+## Asgard AI Platform
+
+Imported domain: `asgard-ai-platform/` — complete upstream skill folders from `asgard-ai-platform/skills`, including `references/`, `examples/`, `scripts/`, samples, and placeholders.
+
+**Full bundle:** `asgard-ai-platform`.
+
+**Focused bundles:** `asgard-algorithms`, `asgard-business-frameworks`, `asgard-taiwan-commerce`, `asgard-research-methods`, `asgard-marketing-media`, `asgard-technical-ops`, `asgard-legal-compliance`.
+
+**Persona bundles:** `asgard-business-strategist`, `asgard-tw-ecommerce-operator`, `asgard-research-scholar`, `asgard-algorithm-analyst`, `asgard-growth-marketing-lead`, `asgard-finance-legal-advisor`.
+
+**Linked existing personas:** `data-scientist`, `data-engineer`, `ai-engineer`, `marketing`, `ceo`, `business-development`, `finance-analyst`, `legal-counsel`, `frontend-engineer`, `backend-engineer`.
+
+Includes 314 skills across business frameworks, algorithms, Taiwan-localized commerce/finance/legal workflows, research methods, media, law, operations, UX, and technical playbooks.
 
 ## Knowledge Work (Anthropic plugins)
 
