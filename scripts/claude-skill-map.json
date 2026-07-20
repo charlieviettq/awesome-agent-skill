@@ -33,6 +33,11 @@
       "source_name": "mcp-ecosystem-optimizer"
     },
     {
+      "cursor_path": "ai-agent-systems/ontoly-software-graph",
+      "claude_name": "ontoly-software-graph",
+      "source_name": "ontoly-software-graph"
+    },
+    {
       "cursor_path": "ai-agent-systems/rag-systems",
       "claude_name": "rag-systems",
       "source_name": "rag-systems"
