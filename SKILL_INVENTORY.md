@@ -2,7 +2,7 @@
 
 High-level index of skill domains. For details, open each folder’s `SKILL.md`.
 
-**Catalog size:** 598 skills (including ~79 from Anthropic knowledge-work-plugins and 314 from Asgard AI Platform).
+**Catalog size:** 600 skills (including ~79 from Anthropic knowledge-work-plugins and 314 from Asgard AI Platform).
 
 ## Asgard AI Platform
 
@@ -95,6 +95,7 @@ Imported domain: `knowledge-work/` — see hub `knowledge-work/SKILL.md`.
 - `core-workflow/idea-refine`
 - `core-workflow/incremental-implementation`
 - `core-workflow/interview-me`
+- `core-workflow/ledger-tasks-yylo`
 - `core-workflow/planning-and-task-breakdown`
 - `core-workflow/requesting-code-review`
 - `core-workflow/receiving-code-review`

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-29T14:47:45Z",
+  "generated_at": "2026-09-11T05:06:53Z",
   "schema_version": 2,
-  "count": 598,
+  "count": 600,
   "skills": [
     {
       "id": "ai-agent-systems/agent-evaluation",
@@ -245,6 +245,50 @@
         "rag",
         "tools",
         "mcp-ecosystem-optimizer"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "awesome-agent-skill",
+      "related": [],
+      "tier": "core",
+      "quality_score": null
+    },
+    {
+      "id": "ai-agent-systems/ontoly-software-graph",
+      "name": "ontoly-software-graph",
+      "domain": "ai-agent-systems",
+      "path": ".cursor/skills/ai-agent-systems/ontoly-software-graph/SKILL.md",
+      "description": ">   Use Ontoly's deterministic Software Graph and MCP capabilities for repository   architecture, request tracing, dependency analysis, and impact analysis before   falling back to direct source search. Triggers: \"Ontoly\", \"Software Graph\",   \"trace request\", \"impact analysis\", \"dependency graph\".",
+      "summary": ">   Use Ontoly's deterministic Software Graph and MCP capabilities for repository   architecture, request tracing, dependency analysis, and impact analysis before   falling back to direct source search. Triggers: \"Ontoly\", \"Software Graph\",",
+      "triggers": [
+        "Ontoly",
+        "Software Graph",
+        "trace request",
+        "impact analysis",
+        "dependency graph"
+      ],
+      "trigger_phrases": [
+        "Ontoly",
+        "Software Graph",
+        "trace request",
+        "impact analysis",
+        "dependency graph"
+      ],
+      "risk": "low",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "agents",
+        "mcp",
+        "rag",
+        "tools",
+        "ontoly-software-graph"
       ],
       "requires_tools": [],
       "writes_files": [],
@@ -11653,6 +11697,54 @@
         "review",
         "testing",
         "interview-me"
+      ],
+      "requires_tools": [],
+      "writes_files": [],
+      "network_access": "unknown",
+      "risk_reason": "",
+      "provenance": "awesome-agent-skill",
+      "related": [],
+      "tier": "core",
+      "quality_score": null
+    },
+    {
+      "id": "core-workflow/ledger-tasks-yylo",
+      "name": "ledger-tasks-yylo",
+      "domain": "core-workflow",
+      "path": ".cursor/skills/core-workflow/ledger-tasks-yylo/SKILL.md",
+      "description": ">   Run a persistent, dependency-aware task board for coding agents with YYLO   Ledger: create, list, search, update, and mark tasks, manage blockers, and   derive safe execution order from the command line.   Triggers: \"kanban\", \"task board\", \"YYLO\", \"ledger tasks\", \"blocked by\",   \"task dependencies\", \"run tasks\".",
+      "summary": ">   Run a persistent, dependency-aware task board for coding agents with YYLO   Ledger: create, list, search, update, and mark tasks, manage blockers, and   derive safe execution order from the command line.   Triggers: \"kanban\", \"task boar",
+      "triggers": [
+        "kanban",
+        "task board",
+        "YYLO",
+        "ledger tasks",
+        "blocked by",
+        "task dependencies",
+        "run tasks"
+      ],
+      "trigger_phrases": [
+        "kanban",
+        "task board",
+        "YYLO",
+        "ledger tasks",
+        "blocked by",
+        "task dependencies",
+        "run tasks"
+      ],
+      "risk": "low",
+      "formats": [
+        "cursor",
+        "claude"
+      ],
+      "source": "awesome-agent-skill",
+      "license": "MIT",
+      "tags": [
+        "workflow",
+        "planning",
+        "review",
+        "testing",
+        "ledger-tasks-yylo"
       ],
       "requires_tools": [],
       "writes_files": [],
