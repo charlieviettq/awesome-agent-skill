@@ -1698,6 +1698,11 @@
       "source_name": "interview-me"
     },
     {
+      "cursor_path": "core-workflow/ledger-tasks-yylo",
+      "claude_name": "ledger-tasks-yylo",
+      "source_name": "ledger-tasks-yylo"
+    },
+    {
       "cursor_path": "core-workflow/planning-and-task-breakdown",
       "claude_name": "planning-and-task-breakdown",
       "source_name": "planning-and-task-breakdown"

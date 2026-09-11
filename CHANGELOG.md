@@ -6,6 +6,7 @@ All notable changes to this repository are documented here.
 
 ### Added
 
+- `core-workflow/ledger-tasks-yylo` - dependency-aware task board for coding agents from [yylo-dev/yylo-skills](https://github.com/yylo-dev/yylo-skills): statuses, blockers, `ready`/`order` safe execution order, and searchable board history via `yy ledger`.
 - `writing-docs/ppt-master` - import the full MIT-licensed `ppt-master` skill runtime from [charlieviettq/ppt-master](https://github.com/charlieviettq/ppt-master) for editable PPTX generation, SVG pipelines, templates, workflows, and narration/enhancement tooling.
 - `ppt-master` bundle - dedicated bundle for the imported PPT Master skill package.
 - `writing-docs` bundle - domain bundle for document, presentation, spreadsheet, PDF, prose, and symbolic math skills.
