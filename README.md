@@ -190,6 +190,7 @@ python3 scripts/validate-skills.py --parity
 ```
 
 ## Skill Map
+- [Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — record & replay AI coding-agent runs offline.
 
 <img src=".github/assets/skill-map.svg" alt="Skill map for awesome-agent-skill" width="100%" />
 
