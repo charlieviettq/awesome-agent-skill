@@ -158,6 +158,7 @@ Imported domain: `knowledge-work/` — see hub `knowledge-work/SKILL.md`.
 - `performance/performance-optimization`
 - `reliability-ops/ci-cd-quality-gates`
 - `reliability-ops/cross-platform-error-handling`
+- `reliability-ops/deed-page`
 - `reliability-ops/dynamic-config-management`
 - `reliability-ops/observability-slo`
 - `reliability-ops/postmortem-writing`

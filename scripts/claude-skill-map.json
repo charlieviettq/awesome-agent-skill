@@ -2638,6 +2638,11 @@
       "source_name": "cross-platform-error-handling"
     },
     {
+      "cursor_path": "reliability-ops/deed-page",
+      "claude_name": "deed-page",
+      "source_name": "deed-page"
+    },
+    {
       "cursor_path": "reliability-ops/dynamic-config-management",
       "claude_name": "dynamic-config-management",
       "source_name": "dynamic-config-management"
